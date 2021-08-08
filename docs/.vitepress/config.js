@@ -31,7 +31,7 @@ module.exports = {
       },
       {
         text: 'Release Notes',
-        link: 'https://github.com/ink-kin'
+        link: 'https://github.com/ink-kin/vitepress-starter'
       }
     ],
 
