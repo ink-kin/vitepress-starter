@@ -278,7 +278,10 @@ Email: andrey.andrianov@objectoriented.ru (mailto:andrey.andrianov@objectoriente
 
 а. Добавьте в класс Collections статический атрибут empty типа Collection, предназначенный только для чтения.
 
-б. Реализуйте в классе Collections операцию addAll с помощью нечеткого поведения (метода), используя операцию добавления элемента insert (e: Object) класса Collection. Указание. Алгоритм реализации можно показать как псевдокод в комментарии в формате {method = {<language>} <method body>}.
+б. Реализуйте в классе Collections операцию addAll с помощью нечеткого поведения (метода), используя операцию добавления элемента insert (e: Object) класса Collection. Указание. Алгоритм реализации можно показать как псевдокод в комментарии в формате 
+```
+{method = {<language>} <method body>}.
+```
 
 1.7. Узел дерева Node может иметь несколько дочерних child узлов того же класса Node.
 

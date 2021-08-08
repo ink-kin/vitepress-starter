@@ -8,65 +8,11 @@ categories:
 - Books
 - BPM
 ---
-
-In this monograph, we have attempted to summarize the actively developing
-field of statistical learning with sparsity. A sparse statistical model is one
-having only a small number of nonzero parameters or weights. It represents a
-classic case of “ _less is more_ ”: a sparse model can be much easier to estimate
-and interpret than a dense model. In this age of big data, the number of
-features measured on a person or object can be large, and might be larger
-than the number of observations. The sparsity assumption allows us to tackle
-such problems and extract useful and reproducible patterns from big datasets.
-The ideas described here represent the work of an entire community of
-researchers in statistics and machine learning, and we thank everyone for
-their continuing contributions to this exciting area. We particularly thank our
-colleagues at Stanford, Berkeley and elsewhere; our collaborators, and our
-past and ...
-
-<!-- more -->
-
-
-# with Sparsity
-
-## The Lasso and
-
-## Generalizations
-
-## Statistical Learning with Sparsity
-
-## Trevor Hastie
-
-## Robert Tibshirani
-
-## Martin Wainwright
-
-Hastie • Tibshirani • Wainwright
-
-(^143) Monographs on Statistics and Applied Probability 143
+ 
 copy to come from copywriter for review
 Statistics
-K
+
 [http://www.crcpress.com](http://www.crcpress.com)
-K25103_cover.indd 1 2/24/15 1:35 PM
-
-
-_To our parents:_
-
-_Valerie and Patrick Hastie_
-
-_Vera and Sami Tibshirani_
-
-_Patricia and John Wainwright_
-
-_and to our families:_
-
-_Samantha, Timothy, and Lynda_
-
-_Charlie, Ryan, Jess, Julie, and Cheryl_
-
-_Haruko and Hana_
-
-
 
 ## Contents
 
