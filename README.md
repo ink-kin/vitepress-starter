@@ -1,2 +1,2 @@
 
-Сайт построен на (Vite)[https://github.com/vitejs/vite]
+Сайт построен на [Vite](https://github.com/vitejs/vite])
