@@ -1,0 +1,6 @@
+.DS_Store
+dist/*
+build/*
+coverage
+node_modules/
+thumbs.db
