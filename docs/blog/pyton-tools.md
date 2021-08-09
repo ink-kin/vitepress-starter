@@ -10,7 +10,7 @@ categories:
 
 Python коротко пометки об инструментах Python
 
-<!-- more -->
+
 
 
 Люди

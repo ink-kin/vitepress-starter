@@ -16,7 +16,7 @@ Laboratories
 
 Nancy J. Nersessian
 
-<!-- more -->
+
 
 
 ```

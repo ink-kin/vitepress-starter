@@ -27,10 +27,6 @@ module.exports = {
       {
         text: 'Продвижение Интеллектуальной собственности',
         link: '/pip/'
-      },
-      {
-        text: 'github it',
-        link: 'https://github.com/5'
       }
     ],
 
@@ -45,11 +41,12 @@ module.exports = {
 function getGuideSidebar() {
   return [
     {
-      text: 'Введение',
+      text: 'Введение', link: '/blog/2020-11-11-introdiction',
       children: [
         { text: 'Зачем я публикую всё это здесь?', link: '/' },
-        { text: 'Кого Я ищу?', link: '/guide/getting-started' },
-        { text: 'Что предлагаю', link: '/guide/configuration' },
+        { text: 'Что Я ищу?', link: '/blog/about' },
+        { text: 'Что Я пишу?', link: '/blog/about_my_edi' },
+        { text: 'Что предлагаю', link: '/configuration' },
         { text: 'Вместо резюме', link: 'todone' }
       ]
     },
@@ -57,18 +54,18 @@ function getGuideSidebar() {
       text: 'Продвижение Интеллектуальной собственности',
       children: [
         { text: 'Маркетинг/Реклама', link: '/pip/marketing' },
-        { text: 'Кадры/Таланты', link: '/pip/people' },
-        { text: 'Бух. и Финансы', link: '/pip/buh' },
-        {
-          text: 'Инноваци',
-          link: '/pip/innovate'
-        }
+        { text: 'Продажи', link: '/sales/' },
+        { text: 'Кадры/Таланты', link: '/people/' },
+        { text: 'Бух. и Финансы', link: '/buh/' },
+        { text: 'Закон', link: '/law/' },
+        { text: 'Инноваци', link: '/innovate/' }
       ]
     },
     {
       text: 'Блог',
       children: [
-        { text: 'Маркетинг/Реклама', link: '/blog/marketing' },
+        { text: 'Вместо вступления', link: '/blog/2020-11-11-introdiction' },
+{ text: 'Что такое правильно оставленная задача', link: '/blog/analist' },
         { text: 'images resize', link: '/blog/paketnoe-izmenenie-izobrazhenij' },
         { text: 'XMLSTARLET USER`S GUIDE', link: '/blog/xmlstar' },
 { text: 'ImageMagick convert --help', link: '/blog/convert_--help' },
@@ -119,33 +116,23 @@ function getGuideSidebar() {
 { text: 'Аналитика данных', link: '/blog/data-analist' },
 { text: 'Великая перезагрузка', link: '/blog/chetvertaya_promyshlennaya_revolyuciya_2016' },
 { text: 'Четвертая промышленная революция', link: '/blog/chetvertaya_promyshlennaya_revolyuciya' },
-{ text: 'Маркетинг/Реклама', link: '/blog/business-analysis' },
-{ text: 'Маркетинг/Реклама', link: '/blog/brd-mrd-prd-fsd-psd-srs' },
-{ text: 'Маркетинг/Реклама', link: '/blog/bpm_soft' },
-{ text: 'Маркетинг/Реклама', link: '/blog/bpm_book_cbok' },
-{ text: 'Маркетинг/Реклама', link: '/blog/bomb' },
-{ text: 'Маркетинг/Реклама', link: '/blog/BlueSpice_XWiki' },
-{ text: 'Маркетинг/Реклама', link: '/blog/best-practices' },
-{ text: 'Маркетинг/Реклама', link: '/blog/babok' },
-{ text: 'Маркетинг/Реклама', link: '/blog/avoid-burnout-live-happy' },
-{ text: 'Маркетинг/Реклама', link: '/blog/asciinema' },
-{ text: 'Маркетинг/Реклама', link: '/blog/arhivatsiya-v-linux-tar' },
-{ text: 'Маркетинг/Реклама', link: '/blog/archi_modelling_tool' },
-{ text: 'Маркетинг/Реклама', link: '/blog/archimate_courseware' },
-{ text: 'Маркетинг/Реклама', link: '/blog/analist-todo' },
-{ text: 'Маркетинг/Реклама', link: '/blog/analist' },
-{ text: 'Маркетинг/Реклама', link: '/blog/Anaconda-SODS-Report-2020-Final' },
-{ text: 'Маркетинг/Реклама', link: '/blog/america-smm' },
-{ text: 'Маркетинг/Реклама', link: '/blog/agile' },
-{ text: 'Маркетинг/Реклама', link: '/blog/about_my_edi' },
-{ text: 'Маркетинг/Реклама', link: '/blog/about' },
-{ text: 'Маркетинг/Реклама', link: '/blog/22857009' },
-{ text: 'Маркетинг/Реклама', link: '/blog/7459819' },
-{ text: 'Маркетинг/Реклама', link: '/blog/6158845' },
-{ text: 'Маркетинг/Реклама', link: '/blog/5814905' },
-{ text: 'Маркетинг/Реклама', link: '/blog/2063485' },
-{ text: 'Маркетинг/Реклама', link: '/blog/2020-11-11-prodvizheniye-intellektualnoy-sobstvennosti' },
-{ text: 'Маркетинг/Реклама', link: '/blog/2020-11-11-introdiction' },
+{ text: 'Словарь BI-СИСТЕМ', link: '/blog/business-analysis' },
+{ text: 'BRD, MRD и PRD', link: '/blog/brd-mrd-prd-fsd-psd-srs' },
+{ text: 'BPM Софт', link: '/blog/bpm_soft' },
+{ text: 'Управление бизнес-процессами', link: '/blog/bpm_book_cbok' },
+{ text: 'Ты и атомная бомба', link: '/blog/bomb' },
+{ text: 'BlueSpice, XWiki и DokuWiki', link: '/blog/BlueSpice_XWiki' },
+{ text: 'Методы и правила разработки ПО', link: '/blog/best-practices' },
+{ text: 'Business Analysis Body of Knowledge', link: '/blog/babok' },
+{ text: 'Как избежать выгорания?', link: '/blog/avoid-burnout-live-happy' },
+{ text: 'Проект asciinema', link: '/blog/asciinema' },
+{ text: 'Архивирование', link: '/blog/arhivatsiya-v-linux-tar' },
+{ text: 'Archi', link: '/blog/archi_modelling_tool' },
+{ text: 'ArchiMate', link: '/blog/archimate_courseware' },
+{ text: 'Услуги аналитика', link: '/blog/analist-todo' },
+{ text: 'Anaconda SODS Report 2020', link: '/blog/Anaconda-SODS-Report-2020-Final' },
+{ text: 'Cила Америки в противостоянии с Россией подорвана', link: '/blog/america-smm' },
+{ text: 'Agile', link: '/blog/agile' },
 { text: 'Маркетинг/Реклама', link: '/blog/12-best-charting-libraries-for-web-developers' },
       ]
     },
@@ -155,6 +142,11 @@ function getGuideSidebar() {
         { text: 'Книги', link: '/books/marketing' },
 { text: 'Проектирование на UML', link: '/books/uml' },
 { text: 'Маркетинг от А до Я: 80 концепций', link: '/blog/kotler_f_marketing_ot_a_do_ya_80_k' },
+{ text: 'Психодиагностика', link: '/blog/22857009' },
+{ text: 'Удержать клиентов', link: '/blog/7459819' },
+{ text: 'Фиолетовая корова', link: '/blog/6158845' },
+{ text: 'Кремлевская школа переговоров', link: '/blog/5814905' },
+{ text: 'Маркетинг для топ–менеджеров', link: '/blog/2063485' },
       ]
     },
     { text: 'Политика конфиденциальности', link: '/blog/privacy-policy' },

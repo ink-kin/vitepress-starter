@@ -16,7 +16,7 @@ categories:
 
 ###### Moving from hype toward maturity
 
-<!-- more -->
+
 
 
 
@@ -88,6 +88,7 @@ Data professionals do their work everywhere, in institutions of higher learning,
 ### 77% of our respondents who work in commercial environments do so in these 15 industries.
 
 ### RESPONDENT INDUSTRY
+```
 <table>
     <tr>
     <td> Technology </td><td> Consulting </td><td> Healthcare </td><td> Finance </td><td> Energy </td><td> Banking </td><td> Government </td><td> Engineering </td><td>
@@ -102,7 +103,7 @@ Data professionals do their work everywhere, in institutions of higher learning,
 	<td>4%</td><td>3%</td><td>3%</td><td>3%</td><td>3%</td><td>2%</td><td>2%</td>
 </tr>
 </table>
-
+```
 ## DATA PROFESSIONALS AT WORK
 
 The majority of our respondents (59%) work in commercial environments. We took a closer look at those  environments, to find out where data professionals sit in the organization, how they spend their time, and  what tools they use. Another question on our minds: what are their greatest challenges? 

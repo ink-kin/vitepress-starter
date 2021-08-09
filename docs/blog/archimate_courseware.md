@@ -15,7 +15,7 @@ Standard Courseware
 
 #### Course Introduction
 
-<!-- more -->
+
 
 ```
 January 2017

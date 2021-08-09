@@ -11,7 +11,7 @@ categories:
 
 Migrate to MongoDB Atlas and see the transformation. 
 
-<!-- more --> 
+ 
  
  A few years ago, it was common to ask: 
  “Should we really migrate to a managed database service?” 

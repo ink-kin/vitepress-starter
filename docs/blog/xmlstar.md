@@ -40,7 +40,7 @@ that URL can be used instead as well.
 Type: xml <command> --help <ENTER> for command help
 ```
 
-<!-- more -->
+
 
 
                                            

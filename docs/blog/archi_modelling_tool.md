@@ -12,7 +12,7 @@ categories:
 
 ## Version 4.8.
 
-<!-- more -->
+
 
 
 # Introduction

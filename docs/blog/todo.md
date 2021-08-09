@@ -7,7 +7,7 @@ categories:
 - aboutMe
 ---
 to do по этому сайту
-<!-- more -->
+
 ## TODAY
 Синопсис
 version control (Bazaar, Codeville, CVS, Darcs, Fossil SCM, Git, Mercurial, Monotone, Subversion)

@@ -11,7 +11,7 @@ categories:
 
 Bayesian Statistics
 
-<!-- more -->
+
 Think Bayes
 
 ## BayesianStatistics MadeSimple

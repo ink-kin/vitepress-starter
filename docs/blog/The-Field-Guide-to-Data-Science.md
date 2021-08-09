@@ -16,7 +16,7 @@ and even the convenience of selecting a restaurant,
 can be improved by creating better data analytics
 through Data Science.
 ```
-<!-- more -->
+
 
 THE FIELD GUIDE to DATA SCIENCE
 
