@@ -60,7 +60,7 @@ montage *.jpg -label %f -frame 10 -tile 2x2 -geometry +10+10 out.jpg
 
 ## Изменение размеров изображений
 
-[См подробнее help по convert](/2021/07/06/convert_--help/)
+[См подробнее help по convert](/blog/convert_--help)
 
 ```bash
 convert hkers.png -adaptive-resize 500x guy_hkers_500x.png

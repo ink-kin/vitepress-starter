@@ -79,7 +79,6 @@ function getGuideSidebar() {
 { text: 'Жизнь полна ошибок', link: '/blog/top-issue-support-and-bug-tracking-tools' },
 { text: 'MongoDB GUI Tool', link: '/blog/top-9-mongodb-tools' },
 { text: 'Cмысл фильма Время', link: '/blog/time' },
-{ text: 'Think Bayes', link: '/blog/thinkbayes' },
 { text: 'THE FIELD GUIDE to DATA SCIENCE', link: '/blog/The-Field-Guide-to-Data-Science' },
 { text: 'За миллиард лет до конца света', link: '/blog/strugackiy_arkadiy-za_milliard_let_do_konca_sveta' },
 { text: 'Statistical Learning', link: '/blog/StatLearnSparsity' },
