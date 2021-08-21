@@ -72,3 +72,20 @@ $ xlsx2csv file.xlsx --all > all.csv
 $ xlsx2csv file.xlsx --all -p '' > all-no-delimiter.csv
 $ xlsx2csv file.xlsx -s 1 > sheet1.csv
 ```
+
+## Используйте csvkit
+csvkit - это набор инструментов командной строки для преобразования и работы с CSV, королем табличных форматов файлов.
+
+Он вдохновлен pdftk, GDAL и оригинальным инструментом csvcut Джо Гермуски и Аарона Бикоффе.
+
+Важные ссылки:
+
+Документация: https://csvkit.rtfd.org/
+Репозиторий: https://github.com/wireservice/csvkit
+Проблемы: https://github.com/wireservice/csvkit/issues
+Схемы: https://github.com/wireservice/ffs
+
+in2csv data.xlsx > data.csv
+Подробности смотрите в их отличных документах.
+
+
