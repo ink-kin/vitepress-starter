@@ -65,6 +65,7 @@ function getGuideSidebar() {
       text: 'Блог',
       children: [
         { text: 'Вместо вступления', link: '/blog/2020-11-11-introdiction' },
+{ text: 'Трудовой договор', link: '/blog/trudovoy-dogovor' },
 { text: 'Что такое правильно оставленная задача', link: '/blog/analist' },
         { text: 'images resize', link: '/blog/paketnoe-izmenenie-izobrazhenij' },
         { text: 'XMLSTARLET USER`S GUIDE', link: '/blog/xmlstar' },
