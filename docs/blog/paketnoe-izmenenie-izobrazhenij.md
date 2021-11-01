@@ -58,6 +58,15 @@ montage *.jpg -label %f -frame 10 -tile 2x2 -geometry +10+10 out.jpg
 - frame 10 — 3D-рамка, пиксели
 - label %f — подпись
 
+## Нарезать для Инстаграм
+
+Когда мы хотим сделать 12 изображений для инстаграмм, то нарезать их можно так:
+
+```
+convert IMG-20171120-WA0026.jpg -crop 3x4@ +repage ржу%02d.jpg
+```
+
+
 ## Изменение размеров изображений
 
 [См подробнее help по convert](/blog/convert_--help)
