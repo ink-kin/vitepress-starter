@@ -2,7 +2,6 @@ module.exports = {
   lang: 'ru-RU',
   title: 'ILyaKlishin',
   description: 'Сайт Клишина Ильи Николаевича для открытой информации и лушего Интернета html 5.0',
-  'mailru-verification': 'ecf4d9bf18691da7',
 
   themeConfig: {
     repo: 'ink-kin/vitepress-starter',
