@@ -99,7 +99,7 @@ convert create-code.png -fuzz 0% -fill '#39а' -opaque '#000' new-code.png
 convert *.jpg -scale 50% img.pdf
 ```
 
-## Оптимизация изображений
+## Оптимизация изображений 
 
 ### jpegtran
 
