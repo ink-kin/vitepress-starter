@@ -1,7 +1,9 @@
 ---
 title: privacy-policy
-date: 2010-12-03 18:22:05
-cover_index: "http://picsum.photos/450/450?random=54"
+head:
+  - - meta
+    - name: description
+      content: 'Эта Политика конфиденциальности последний раз пересматривалась 20 июля 2020 г.'
 categories:
 - aboutMe
 - lawsAndLawyers

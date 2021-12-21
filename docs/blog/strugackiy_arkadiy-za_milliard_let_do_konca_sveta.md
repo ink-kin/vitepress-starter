@@ -1,8 +1,10 @@
 ---
 title: За миллиард лет до конца света
 subtitle: Аркадий Стругацкий, Борис Стругацкий
-date: 1976/02/22 21:55:28
-cover_index: "http://picsum.photos/450/450?random=24"
+head:
+  - - meta
+    - name: description
+      content: 'За миллиард лет до конца света» — фантастическая повесть Аркадия и Бориса Стругацких'
 tags:
 - books
 categories:

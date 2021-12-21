@@ -1,7 +1,9 @@
 ---
 title: О моей философии коротко
-date: 2020-12-03 18:22:05
-cover_index: "http://picsum.photos/450/450?random=53"
+head:
+  - - meta
+    - name: description
+      content: 'Время. Отношения. Выбор'
 tags:
 categories:
 - aboutMe

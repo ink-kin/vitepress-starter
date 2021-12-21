@@ -1,7 +1,9 @@
 ---
 title: Свод знаний по управлению бизнес-процессами – BPM CBOK 3.0
-date: 2020-12-08 18:22:05
-cover_index: "http://picsum.photos/450/450?random=28"
+head:
+  - - meta
+    - name: description
+      content: 'В этой книге достаточно подробно разбираются основные понятия, подходы, методы и средства управления бизнес-процессами'
 tags:
 - uml
 categories:

@@ -1,7 +1,9 @@
 ---
 title: Синопсис или резюме сделаного
-date: 2020-12-22 18:22:05
-cover_index: "http://picsum.photos/450/450?random=75"
+head:
+  - - meta
+    - name: description
+      content: 'коротко но всё обо мне'
 tags:
 categories:
 - aboutMe

@@ -1,7 +1,9 @@
 ---
 title: BRD, MRD, PRD, FSD
-date: 2021/01/26 17:25:48
-cover_index: "http://picsum.photos/450/450?random=30"
+head:
+  - - meta
+    - name: description
+      content: 'Управление продуктом и аналитика продукта не исключение – особенно, когда дело касается описания требований'
 tags:
 categories:
 - Innovate

@@ -1,8 +1,9 @@
 ---
 title: Для автоматизации отчетов
-date: 2020-12-07 18:22:05
-cover_index: "http://picsum.photos/450/450?random=31"
-page.comments: true
+head:
+  - - meta
+    - name: description
+      content: 'Ежедневно создаются миллионы отчетов разного уровня сложности и детализации. При этом лишь 3 специалиста из 100 владеют навыками автоматизации отчетов'
 tags:
 categories:
 - Innovate

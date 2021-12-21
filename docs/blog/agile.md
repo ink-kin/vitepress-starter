@@ -1,7 +1,9 @@
 ---
 title: Agile определяет ценности и принципы
-date: 2020-12-08 18:22:05
-cover_index: "http://picsum.photos/450/450?random=18"
+head:
+  - - meta
+    - name: description
+      content: 'Agile Manifesto разработан и принят 11—13 февраля 2001 года на лыжном курорте The Lodge at Snowbird в горах Юты'
 tags:
 - agile
 categories:

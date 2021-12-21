@@ -1,7 +1,9 @@
 ---
 title: Проект asciinema
-date: 2020/12/09 13:41:55
-cover_index: "http://picsum.photos/450/450?random=23"
+head:
+  - - meta
+    - name: description
+      content: 'Проект asciinema состоит из нескольких взаимодополняющих частей'
 tags:
 categories:
 - Innovate

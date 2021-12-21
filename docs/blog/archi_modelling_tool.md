@@ -1,7 +1,9 @@
 ---
 title: Archi modelling tool
-date: 2021/01/17 10:51:50
-cover_index: "http://picsum.photos/450/450?random=20"
+head:
+  - - meta
+    - name: description
+      content: 'Archi® - это бесплатный кроссплатформенный инструмент с открытым исходным кодом для создания моделей ArchiMate'
 tags:
 - Archi
 - ArchiMate
@@ -9,349 +11,219 @@ categories:
 - Innovate
 - BPM
 ---
+## Версия 4.8.
 
-## Version 4.8.
+# 0 Введение
 
+Archi® - это бесплатный кроссплатформенный инструмент с открытым исходным кодом для создания моделей ArchiMate.
 
+Инструмент моделирования Archi® предназначен для архитекторов и разработчиков моделей всех уровней. Он обеспечивает низкую стоимость начального решения для пользователей, которые, возможно, делают свои первые шаги в языке моделирования ArchiMate или которые ищут бесплатный кроссплатформенный инструмент моделирования ArchiMate для своей компании или учреждения и хотят взаимодействовать с языком внутри TOGAF® или другую структуру архитектуры предприятия.
 
+С момента своего появления Archi получил широкое распространение в реальном мире в коммерческом и образовательном секторах, а также используется крупными глобальными компаниями и консультантами внутри компании. Он быстро становится де-факто инструментом моделирования ArchiMate с открытым исходным кодом.
 
-# Introduction
+Язык моделирования ArchiMate® - это открытый и независимый стандарт архитектуры предприятия, который поддерживает описание, анализ и визуализацию архитектуры внутри и между сферами бизнеса. ArchiMate - это один из открытых стандартов, поддерживаемых Open Group®, и полностью согласованный с TOGAF®.
 
-Archi® is a free, open source, cross-platform tool to create ArchiMate models.
+Archi® - зарегистрированная торговая марка Филиппа Бовуара. ArchiMate®, The Open Group® и TOGAF® являются зарегистрированными товарными знаками The Open Group.
 
-The Archi® modelling tool is targeted toward all levels of Enterprise Architects and
-Modellers. It provides a low cost to entry solution to users who may be making their first
-steps in the ArchiMate modelling language, or who are looking for a free, cross-platform
-ArchiMate modelling tool for their company or institution and wish to engage with the
-language within a TOGAF® or other Enterprise Architecture framework.
+Благодаря:
 
-Since its introduction, Archi has been widely adopted for real-world use in the
-commercial and educational sectors and is used in-house by major global companies
-and consultants. It is rapidly becoming the de facto open source ArchiMate modelling
-tool.
+    - All the Archi users, too many to mention, who have supported Archi, contributed
+    ideas and suggestions.
+    - Jean-Baptiste Sarrodie for co-leading the Archi project, contributing features,
+    code, ideas, support, vision, encouragement and much more.
+    - Andrew Josey and The Open Group for positivity and support.
 
-The ArchiMate® modelling language is an open and independent Enterprise Architecture
-standard that supports the description, analysis and visualization of architecture within
-and across business domains. ArchiMate is one of the open standards hosted by The
-Open Group® and is fully aligned with TOGAF®.
+Авторские права (c) 2013-2020 Филип Бовуар, Жан-Батист Сарроди, The Open Group. Все права защищены.
 
-Archi® is a registered trademark of Phillip Beauvoir.
-ArchiMate®, The Open Group® and TOGAF® are registered trademarks of The Open
-Group.
+# 1 Установка и запуск Archi
 
-Thanks to:
+Загрузите нужную версию с https://www.archimatetool.com2
 
-```
-- All the Archi users, too many to mention, who have supported Archi, contributed
-ideas and suggestions.
-- Jean-Baptiste Sarrodie for co-leading the Archi project, contributing features,
-code, ideas, support, vision, encouragement and much more.
-- Andrew Josey and The Open Group for positivity and support.
-```
-Copyright (c) 2013-2020 Phillip Beauvoir, Jean-Baptiste Sarrodie, The Open Group. All
-Rights Reserved.
+Версия для Windows имеет установщик. Запустите установщик, чтобы установить Archi в вашу систему. Поддерживаются 64-битные версии Windows 7, 8 и 10. Программа установки просто копирует файлы программы в целевой каталог и связывает файлы * .archimate с Archi. Также включен деинсталлятор.
 
+Вы также можете установить Archi вручную с помощью zip-архива. Разархивируйте этот файл и запустите либо "Archi", либо файл программы. Также включены некоторые командные файлы Windows - «RegisterFileAssociation.bat» и «UnregisterFileAssociation.bat». Первый из этих файлов зарегистрирует расширение файла * .archimate в Archi в реестре Windows. Второй командный файл отменит регистрацию ассоциации файлов.
 
-# Installing and Launching Archi
+Версии для Mac и Linux упакованы в файлы zip и tar.gz соответственно. Просто разархивируйте загруженный архивный файл и дважды щелкните файл приложения «Archi», чтобы запустить программу.
 
-Download the required version from https://www.archimatetool.com
+## 3 Запуск Archi
 
-The Windows version has an installer. Run the installer to install Archi to your system.
-Windows 7, 8 and 10 64-bit versions are supported. The installer simply copies the
-program files to the target directory and associates *.archimate files with Archi. An
-uninstaller is also included.
+Новое пустое рабочее пространство Archi выглядит следующим образом:
 
-You can also install Archi manually with a zip installation. Unzip this file and run either
-the "Archi" or program file. Also included are some Windows batch files -
-"RegisterFileAssociation.bat" and "UnregisterFileAssociation.bat". The first of these files
-will register the *.archimate file extension with Archi in the Windows Registry. The
-second batch file will unregister the file association.
+Рабочее пространство Archi по умолчанию
 
-The Mac and Linux versions are packaged in zip and tar.gz files respectively. Simply un-
-archive the downloaded archive file and double-click the "Archi" application file to launch
-the program.
+Рабочее пространство разделено на следующие подокна:
 
-## Launching Archi
+    - The Models Tree window. By default this is positioned at the top left and labelled
+    "Models". This is where one or more ArchiMate models can be viewed as a tree
+    structure.
+    - The Properties window. This displays the properties for a selected object. The
+    properties for the selected object can be edited here.
+    - The Outline window. This window displays the contents of an ArchiMate diagram
+    (View) in miniature as a navigation tool for the selected diagram (View).
+    - The Navigator window. This window displays the selected model concept and all
+    of its relationships with other model concepts. It is used to navigate between
+    connected concepts via their relationships and is used in conjunction with the
+    Models Tree window.
+    - The Palette window. When opened will display a single window for the drawing
+    Palette used in Views.
+    - The Visualiser window. This window displays the selected model concept and all
+    of its relationships with other model concepts in a graphical way. It is the
+    graphical equivalent of the Navigator.
+    - The Hints window. This displays short textual hints for the selected object. For
+    example, selecting an ArchiMate "Business Actor" diagram element displays a
+    short summary of that object's meaning and purpose. Selecting an item or
+    hovering over an item, in the diagram's palette also displays a hint in the window.
+    - The Validator window. This provides hints and tips to improve your model.
 
-The new, blank Archi workspace looks like the following:
+Эти подокна можно переупорядочить, перетаскивая их на новые позиции или перетаскивая их из главного окна приложения, чтобы они отключались от главного окна.
 
-The Default Archi Workspace
+Различные окна можно отображать или скрывать, выбирая соответствующие пункты меню из меню «Окно» в строке главного меню или с помощью кнопок на панели инструментов:
 
-The workspace is divided into the following sub-windows:
+Панель инструментов Windows
 
+Чтобы сбросить рабочее пространство окна Archi до его макета по умолчанию, выберите «Сбросить макет окна» в меню «Окно» в главном меню.
 
-```
-- The Models Tree window. By default this is positioned at the top left and labelled
-"Models". This is where one or more ArchiMate models can be viewed as a tree
-structure.
-- The Properties window. This displays the properties for a selected object. The
-properties for the selected object can be edited here.
-- The Outline window. This window displays the contents of an ArchiMate diagram
-(View) in miniature as a navigation tool for the selected diagram (View).
-- The Navigator window. This window displays the selected model concept and all
-of its relationships with other model concepts. It is used to navigate between
-connected concepts via their relationships and is used in conjunction with the
-Models Tree window.
-- The Palette window. When opened will display a single window for the drawing
-Palette used in Views.
-- The Visualiser window. This window displays the selected model concept and all
-of its relationships with other model concepts in a graphical way. It is the
-graphical equivalent of the Navigator.
-- The Hints window. This displays short textual hints for the selected object. For
-example, selecting an ArchiMate "Business Actor" diagram element displays a
-short summary of that object's meaning and purpose. Selecting an item or
-hovering over an item, in the diagram's palette also displays a hint in the window.
-- The Validator window. This provides hints and tips to improve your model.
-```
-These sub-windows can be re-arranged by dragging them into new positions, or by
-dragging them out of the main application window to become detached from the main
-window.
+Вы можете скрыть или показать главную панель инструментов, выбрав «Скрыть / показать панель инструментов» в меню «Окно» в главном меню.
 
-The various windows may be shown or hidden by selecting the appropriate menu items
-from the "Window" menu on the main menu bar or from the buttons on the toolbar:
+# 4 Работа в Archi
 
-The Windows Toolbar
+Работая в приложении, вы, возможно, захотите узнать, как все работает в целом.
 
-To reset the Archi window workspace to its default layout, select "Reset Window
-Layout" from the "Window" menu from the main menu.
+## 5 Окна и вкладки
 
-You can hide or show the main toolbar by selecting "Hide/Show Toolbar" from the
-"Window" menu from the main menu.
+Основная область редактирования представлений находится в центральной правой части приложения. Окна и вкладки можно перетаскивать и переставлять по своему желанию. Вы даже можете отделить некоторые окна, чтобы они «плавали».
 
+    If ever you wish to reset the layout of application windows and tabs back
+    to their defaults, choose "Reset Window Layout" from the main "Window"
+    menu. You can also reset Archi to its default settings from the "Reset Archi
+    to Defaults..." menu item under the "Help" menu.
 
-# Working in Archi
+## 6 Отменить / повторить (в зависимости от модели)
 
-As you work in the application, you may wish to be aware of how things work generally.
+Команды полной отмены и возврата доступны для каждого действия, выполняемого пользователем в Archi.
 
-## Windows and Tabs
+    Undo and Redo commands are contextual depending on the selected
+    model in the Model Tree or a View. Clicking onto a View or the Model Tree
+    will enable the command if an action has been performed for that model.
 
-The main editing area for Views is in the central-right portion of the application. Windows
-and tabs can be dragged and dropped to be re-arranged as you wish. You can even
-detach some windows so that they "float".
+## 7 Шпаргалки
 
-```
-If ever you wish to reset the layout of application windows and tabs back
-to their defaults, choose "Reset Window Layout" from the main "Window"
-menu. You can also reset Archi to its default settings from the "Reset Archi
-to Defaults..." menu item under the "Help" menu.
-```
-## Undo/Redo (contextual per model)
+Шпаргалки могут помочь пользователю выполнить ряд шагов для достижения общей цели. Некоторые шаги могут быть выполнены с помощью шпаргалки, а некоторые описаны так, чтобы пользователь мог выполнить шаг вручную. Шпаргалки доступны из главного меню «Помощь». В настоящее время Archi поставляется с двумя шпаргалками - «Создать вид карты» и «Создать новую модель».
 
-Full Undo and Redo commands are available for every action that is performed by the
-user in Archi.
+## 8 Получать помощь
 
-```
-Undo and Redo commands are contextual depending on the selected
-model in the Model Tree or a View. Clicking onto a View or the Model Tree
-will enable the command if an action has been performed for that model.
-```
-## Cheat Sheets
+Контекстная и полная справка доступна из главного меню «Справка». В Windows нажатие клавиши «F1» вызовет контекстную справку.
 
-Cheat sheets can help guide the user through a series of steps in order to achieve some
-overall goal. Some steps can be performed by the cheat sheet, and some are described
-so that the user can manually complete the step. Cheat sheets are available from the
-main "Help" menu. Currently, Archi ships with two Cheat sheets - "Create a Map View"
-and "Create a New Model".
+# 9 Создание новой модели ArchiMate
 
-## Getting Help
+Чтобы создать новую пустую модель ArchiMate в Archi, сделайте следующее:
 
-Contextual and full help is available from the main "Help" menu. On Windows pressing
-the "F1" key will invoke contextual help.
+Выберите «Пустая модель» в главном меню «Файл-> Создать» или с помощью кнопки на главной панели инструментов:
 
+Кнопка "Новый"
 
-# Creating a New ArchiMate Model
+Модель под названием «(новая модель)» будет создана и видна в окне «Дерево моделей» с открытым «Видом по умолчанию» с пустым холстом для рисования и палитрой:
 
-To create a new, blank ArchiMate model in Archi do the following:
+Рабочее пространство Archi по умолчанию с созданной новой моделью
 
-Select "Empty Model" from the main "File->New" menu or from the button on the main
-toolbar:
+Обратите внимание, что модель по умолчанию называется «(новая модель)». Вы можете изменить это, переименовав его непосредственно в дереве модели или выбрав в дереве модели и отредактировав имя в окне свойств. Вы также можете добавить «Цель» здесь, в окне «Свойства», описывающую цель и задачи модели.
 
-The "New" button
+Также обратите внимание, что для модели был автоматически создан один «Вид» с именем «Вид по умолчанию», который помещается в папку «Виды» в дереве модели. Если вид не открыт (т.е. виден с пустыми холстом и палитрой для рисования), вы можете открыть его, дважды щелкнув по нему в дереве модели. При этом справа откроется редактор представления (диаграммы). Если вы хотите переименовать вид, просто выберите его в дереве модели и отредактируйте имя в окне свойств.
 
-A model entitled "(new model)" will be created and visible in the Models Tree window
-with the "Default View" open with a blank drawing canvas and palette:
+В окне «Модели» может отображаться более одного дерева моделей, что означает, что вы можете работать с более чем одной моделью одновременно.
 
-The default Archi workspace with a new model created
+Звездочка, которая появляется на модели в Дереве после внесения изменений, указывает на то, что эта модель была изменена, но изменения еще не были сохранены.
 
-Note that the model is named by default "(new model)". You may change this by
-renaming it directly in the Model Tree or selecting it in the Model Tree and editing the
-name in the Properties Window. You may also add a "Purpose" here in the Properties
-Window describing the purpose and aims of the model.
+# 10 Модельное дерево
 
-Note also that one "View" has automatically been created for the model and named
-"Default View" and is placed in the "Views" folder in the Model Tree. If the View is not
-open (i.e. visible with blank drawing canvas and palette) you can open it by double-
-clicking on it in the Model Tree. Doing so will open the View (diagram) editor to the right.
-If you wish to rename the View, simply select it on the Model Tree and edit the name in
-the Properties Window.
+Модель ArchiMate состоит из ряда концепций ArchiMate, принадлежащих к разным «слоям» - уровню «Бизнес», уровню «Приложение» и уровню «Технология». Каждая концепция ArchiMate принадлежит к одному из этих слоев. Например, «бизнес-объект» принадлежит к «бизнес-уровню», а «прикладной компонент» - к «прикладному уровню».
 
+Каждая концепция в модели может подключаться к одной или нескольким другим концепциям через одно или несколько отношений (соединений) в соответствии с правилами ArchiMate.
 
-The Models window can display more than one Model Tree which means that you can
-work on more than one model at the same time.
+Объяснение этих концепций и их взаимосвязи выходит за рамки данного руководства. Для получения дополнительной информации см. Спецификацию ArchiMate)
 
-The asterisk that appears on a model in the Tree when changes have been made
-indicates that this model was changed, but that the changes have not yet been saved.
+Модель ArchiMate состоит из конфигураций этих концепций, связанных друг с другом посредством различных отношений. Модель ArchiMate представлена ​​в Archi в окне «Модели» в виде древовидной структуры, организованной в папки:
 
+Окно "Дерево модели" с примером модели.
 
-# The Model Tree
+Каждая концепция ArchiMate помещается в соответствующую папку в дереве модели.
 
-An ArchiMate model consists of a number of ArchiMate concepts belonging to different
-"layers" - the "Business" layer, the "Application" layer and the "Technology" layer. Each
-ArchiMate concept belongs to one of these layers. For example, a "Business Object"
-belongs to the "Business" layer and an "Application Component" belongs to the
-Application layer.
+Добавление элементов непосредственно в дерево модели
 
-Each concept in the model can connect to one or more other concepts via one or more
-relationships (connections) according to the rules of ArchiMate.
+Чтобы добавить новые элементы ArchiMate непосредственно в дерево модели, выберите одну из папок «Бизнес», «Приложение», «Технология» или «Соединители» и щелкните правой кнопкой мыши. Пункт меню «Новый» позволяет добавлять в дерево новые элементы:
 
-It is beyond the scope of this guide to explain these concepts and their relationships. For
-more information refer to the ArchiMate Specification)
+Добавление нового элемента непосредственно в дерево модели
 
-An ArchiMate model consists of configurations of these concepts connected to each
-other via the various relationships. An ArchiMate model is represented in Archi in the
-"Models" window as a tree structure organised into folders:
+Когда элемент добавляется в дерево модели, фокус переходит на элемент, и вы можете дать ему новое имя.
 
-The Model Tree window showing an example model
+Обратите внимание, что невозможно добавить отношения непосредственно в дерево модели, так как они могут быть добавлены только путем их рисования в окне редактора вида (диаграммы).
 
-Each ArchiMate concept is placed into its appropriate folder in the Model Tree.
+Папки и организация
 
+Модель в Archi организована в структуру папок, представляющую слои ArchiMate и взаимосвязи концепций. Новая модель включает следующие папки верхнего уровня:
 
-Adding Elements Directly to the Model Tree
+Бизнес Содержит элементы уровня «Бизнес» и все созданные пользователем подпапки.
 
-To add new ArchiMate elements directly to the Model Tree, select one of the folders,
-"Business", "Application", "Technology" or "Connectors" and right-click. A "New" menu
-item allows you to add new elements to the tree:
+Приложение Содержит элементы уровня «Приложение» и все созданные пользователем подпапки.
 
-Adding a new element directly to the Model Tree
+Технология Содержит элементы уровня «Технология» и все созданные пользователем подпапки.
 
-When the element is added to the Model Tree, the focus is given to the element and you
-can provide a new name for it.
+Мотивация Содержит элементы из категории «Мотивация» и любые созданные пользователем подпапки.
 
-Note that it is not possible to add relationships directly to the Model Tree as these can
-only be added by drawing them in the View (diagram) editor window.
+Внедрение и миграция
 
-Folders and Organisation
+    Contains the elements in the "Implementation & Migration"
+    category and any user-created sub-folders
 
-A model in Archi is organised into a folder structure representing the ArchiMate layers
-and the concepts' relationships. A new model comprises the following top level folders:
+Другое Содержит элементы типа Location, Grouping и Junction, а также любые созданные пользователем подпапки.
 
-Business Contains the elements in the "Business" layer and any user-
-created sub-folders
+Отношения Содержит отношения между концепциями в том виде, в котором они созданы в представлениях (диаграммах), и во всех созданных пользователем подпапках.
 
-Application Contains the elements in the "Application" layer and any user-
-created sub-folders
+Представления (^) Содержит ссылки на представления (диаграммы). Элементы ArchiMate могут быть созданы и удалены непосредственно в дереве модели (см. Добавление элементов непосредственно в дерево модели) или автоматически добавлены в папку соответствующего типа по мере того, как объекты рисуются на холсте модели. представление (см. Добавление новых элементов в представление из палитры). Все концепции в папке автоматически сортируются в алфавитном порядке. Подпапки, созданные пользователем Подпапки пользователя могут быть созданы под основными папками верхнего уровня. Это позволяет вам организовывать концепции так, как вы хотите. Чтобы добавить новую подпапку в дерево модели, выберите папку верхнего уровня (или подпапку, созданную пользователем) и щелкните правой кнопкой мыши. Пункт меню «Новый» позволяет вам добавить в дерево новую подпапку. Обратите внимание, что подпапка может содержать только концепции того же типа, что и самая верхняя родительская папка. Например, в папке «Бизнес» и любой из ее подпапок можно создавать только концепты типа «Бизнес». Вы также можете перетаскивать концепции и подпапки в одной ветке папки, но не между папками разных типов. Чтобы переименовать подпапку в дереве модели, выберите «Переименовать» в главном меню «Правка» или в контекстном меню, вызываемом правой кнопкой мыши. Работа в дереве модели Как правило, вы можете добавлять, удалять, дублировать, перемещать и переименовывать концепции и виды в дереве модели. Вы также можете создавать папки под основными группами папок, чтобы сгруппировать концепции вместе. Чтобы переименовать подпапку в дереве модели, выберите «Переименовать» в главном меню «Правка» или в контекстном меню, вызываемом правой кнопкой мыши. Работа в дереве модели Как правило, вы можете добавлять, удалять, дублировать, перемещать и переименовывать концепции и виды в дереве модели. Вы также можете создавать папки под основными группами папок, чтобы сгруппировать концепции вместе. Чтобы переименовать подпапку в дереве модели, выберите «Переименовать» в главном меню «Правка» или в контекстном меню, вызываемом правой кнопкой мыши. Работа в дереве модели Как правило, вы можете добавлять, удалять, дублировать, перемещать и переименовывать концепции и виды в дереве модели. Вы также можете создавать папки под основными группами папок, чтобы сгруппировать концепции вместе.
 
-Technology Contains the elements in the "Technology" layer and any user-
-created sub-folders
+Перетащить и отпустить
 
+Объекты управляются перетаскиванием в папки. Обратите внимание, что вы не можете перемещать концепции из одного основного типа папки в другой. Например, бизнес-концепции могут находиться только в папке «Бизнес» или в одной из ее подпапок, а отношения могут быть только в папке «Отношения» или одной из ее подпапок.
 
-Motivation Contains the elements in the "Motivation" category and any
-user-created sub-folders
+Вырезать и вставить
 
-Implementation &
-Migration
+Помимо перетаскивания, вы можете вырезать и вставлять объекты между папками. После выбора объектов в дереве выберите «Вырезать», а после выбора целевой папки выберите «Вставить», чтобы переместить объекты.
 
-```
-Contains the elements in the "Implementation & Migration"
-category and any user-created sub-folders
-```
-Other Contains the Location, Grouping, and Junction type elements
-and any user-created sub-folders
+Удаление объектов из дерева модели
 
-Relations Contains the relationships between concepts as they are
-created in Views (diagrams) and any user-created sub-folders
+Чтобы удалить один или несколько объектов в дереве модели, выберите их и выберите «Удалить» в главном меню «Правка» или на главной панели инструментов.
 
-Views (^) Contains links to Views (diagrams)
-ArchiMate elements can be created and deleted directly in the Model Tree (see Adding
-Elements Directly to the Model Tree) or are automatically added to the appropriate type
-folder as objects are drawn onto the canvas of a View (see Adding New Elements to the
-View from the Palette). All concepts in a folder are automatically sorted alphabetically.
-User-Created Sub-Folders
-User sub-folders can be created under the main top-level folders. This allows you to
-organise the concepts in any way you wish. To add a new sub-folder to the Model Tree,
-select a top-level folder (or a user-created sub-folder), and right-click. A "New" menu
-item allows you to add a new sub-folder to the tree.
-Note that a sub-folder can only contain concepts of the same type as the topmost parent
-folder. For example, only "Business" type concepts can be created in the "Business"
-folder and any of its sub-folders.
-You can also drag and drop concepts and sub-folders within the same folder branch, but
-not across folders of different types.
-To rename a sub-folder in the Model Tree choose "Rename" from the main Edit menu or
-from the right-click context menu.
-Working in the Model Tree
-Generally, you can add, delete, duplicate, move, and rename concepts and Views in the
-Model Tree. You can also create folders under the main folder groupings in order to
-group concepts together.
+Обратите внимание: если концепция, которую вы хотите удалить, появляется в одном или нескольких представлениях, вы будете предупреждены о том, что на нее есть ссылки в этих представлениях. Если вы затем удалите концепцию из дерева, вы также удалите ее из всех представлений, где на нее есть ссылка.
 
+Предупреждение об удалении концепта
 
-Drag and drop
+Переименование объекта в дереве модели
 
-Objects are managed with drag and drop in folders. Note that you cannot move
-concepts from one main folder type to another. For example, Business concepts can
-only be in the "Business" folder or one of its sub-folders, and relationships can only be in
-the "Relations" folder or one of its sub-folders.
+Чтобы переименовать объект в дереве модели, выберите «Переименовать» в главном меню «Правка» или в контекстном меню, вызываемом правой кнопкой мыши. Вы также можете переименовать его в окне свойств.
 
-Cut and Paste
+Дублирование элемента или вида в дереве модели
 
-In addition to drag and drop you can cut and paste objects between folders. After
-selecting objects in the tree select "Cut" and, after selecting the target folder, select
-"Paste" to move the objects.
+Чтобы дублировать элементы или виды в дереве модели, выберите «Дублировать» в главном меню «Правка» или в контекстном меню, вызываемом правой кнопкой мыши. Обратите внимание, что повторяющиеся представления содержат ссылки на скопированные исходные концепции.
 
-Deleting Objects from the Model Tree
+Редактирование свойств объекта в дереве модели
 
-To delete one or more objects in the Model Tree select them and choose "Delete" from
-the main "Edit" menu or from the main toolbar.
+Чтобы отредактировать свойства для выбранного объекта в дереве модели, выберите объект в дереве и откройте окно свойств, дважды щелкнув объект, либо в главном меню «Окно» или на главной панели инструментов.
 
-Note that if a concept that you wish to delete appears in one or more Views you will be
-warned that it is referenced in those Views. If you then delete the concept from the
-tree you will also delete it from any Views where it is referenced.
+Каждый объект в дереве модели имеет разные свойства, которые можно установить или просмотреть в окне свойств. Для получения дополнительной информации см. Раздел «Окно свойств».
 
-Warning about deleting a concept
+Примечание. Некоторые свойства можно редактировать только тогда, когда объект выбран в представлении (например, цвет заливки, шрифт или ширина линии).
 
-Renaming an Object in the Model Tree
+Концепции в дереве модели и представлениях
 
-To rename an object in the Model Tree choose "Rename" from the main Edit menu or
-from the right-click context menu. You can also rename it in the Properties Window.
-
-Duplicating an Element or View in the Model Tree
-
-To duplicate Elements or Views in the Model Tree select "Duplicate" from the main "Edit"
-menu or from the right-click context menu. Note that Duplicate Views contain references
-to the original concepts copied.
-
-
-Editing Properties for an Object in the Model Tree
-
-To edit the Properties for a selected object in the Model Tree, select the object in the
-tree and open the Properties Window either by double-clicking the object or from the
-main "Window" menu or main toolbar.
-
-Each object in the Model Tree has different properties that can be set or viewed in the
-Properties Window. For more information see the section, The Properties Window.
-
-Note - some properties can only be edited when the object is selected in a View (for
-example, the fill colour, font or line width).
-
-Concepts in the Model Tree and Views
-
-Concepts in the Model Tree can be added to any number of diagram Views in the model
-by dragging them onto the View's canvas (see the section, "Views"). When a concept
-has been added or used in a View the font used in the Model Tree for that concept is
-normal. However, if the concept only exists in the Model Tree and is not used in any
-View it is shown with an italic font:
+Concepts in the Model Tree can be added to any number of diagram Views in the model by dragging them onto the View's canvas (see the section, "Views"). When a concept has been added or used in a View the font used in the Model Tree for that concept is normal. However, if the concept only exists in the Model Tree and is not used in any View it is shown with an italic font:
 
 Italic font shows concepts not used in Views
 
-This makes it convenient to see those concepts that may have become redundant and
-can be deleted.
+This makes it convenient to see those concepts that may have become redundant and can be deleted.
 
 Synchronising Selections in the Model Tree and a View
 
-When selecting concepts in the Model Tree and in diagram Views it is sometimes useful
-to synchronise the selection between the concepts in both windows. Pressing the "Link
-to View" button in the Model Tree window enables or disables synchronising selected
-concepts between the Model Tree and a diagram:
-
+When selecting concepts in the Model Tree and in diagram Views it is sometimes useful to synchronise the selection between the concepts in both windows. Pressing the "Link to View" button in the Model Tree window enables or disables synchronising selected concepts between the Model Tree and a diagram:
 
 The "Link to View" button
 
@@ -359,184 +231,116 @@ This button is a toggle and can be turned off or on.
 
 Synchronised selection is possible on more than one selected concept.
 
-Note that synchronised selection is only possible if a relevant View is open. Selecting a
-concept in the Model Tree will not synchronise a selection in a View if that View does not
-contain that particular concept or concepts.
+Note that synchronised selection is only possible if a relevant View is open. Selecting a concept in the Model Tree will not synchronise a selection in a View if that View does not contain that particular concept or concepts.
 
 Drill Down
 
-Using the Drill Down buttons, "Home", "Back" and "Go Into", it is possible to "drill into" a
-model or folder. The path to the currently selected object or folder is shown in the Status
-Bar.
+Using the Drill Down buttons, "Home", "Back" and "Go Into", it is possible to "drill into" a model or folder. The path to the currently selected object or folder is shown in the Status Bar.
 
 The "Drill Down" buttons
 
 Searching and Filtering in the Model Tree
 
-The number of objects in the Model Tree can grow quite considerably as you work on
-your model. Of course, you may wish to add sub-folders within the main folder structure
+The number of objects in the Model Tree can grow quite considerably as you work on your model. Of course, you may wish to add sub-folders within the main folder structure
 
+to help organise these objects. However, finding a particular object in the tree may still prove to be difficult.
 
-to help organise these objects. However, finding a particular object in the tree may still
-prove to be difficult.
-
-In order to search the Model Tree a Search Bar is included in Archi. This is accessed by
-clicking on the "Search" button on the toolbar of the Model Tree window. Clicking this
-button reveals the Search Bar:
+In order to search the Model Tree a Search Bar is included in Archi. This is accessed by clicking on the "Search" button on the toolbar of the Model Tree window. Clicking this button reveals the Search Bar:
 
 The Search Bar revealed
 
-As you type into the text field of the Search Bar the Model Tree updates to show only
-those objects that match the search criteria in the Search Bar. By default only the name
-of the objects is matched to the search string. You can also search on the
-"Documentation" field of the objects by ticking this in the "Filter Options" drop-down
-menu in the Search Bar:
-
+As you type into the text field of the Search Bar the Model Tree updates to show only those objects that match the search criteria in the Search Bar. By default only the name of the objects is matched to the search string. You can also search on the "Documentation" field of the objects by ticking this in the "Filter Options" drop-down menu in the Search Bar:
 
 Searching on both "Name" and "Documentation"
 
-To clear the search text selection click on the icon to the right of the text. To clear the
-filters, deselect "Name" and/or "Documentation".
+To clear the search text selection click on the icon to the right of the text. To clear the filters, deselect "Name" and/or "Documentation".
 
 Filtering Object Types
 
-To filter certain types of ArchiMate concept you can select the different types to include
-in the filter/search in the drop-down menu:
-
+To filter certain types of ArchiMate concept you can select the different types to include in the filter/search in the drop-down menu:
 
 Filtering certain object types
 
-To reset the object-type filter, select the "Reset Filters" menu item.
+Чтобы сбросить фильтр по типу объекта, выберите пункт меню «Сбросить фильтры».
 
-Filtering User Properties
+Фильтрация свойств пользователя
 
-To filter User Properties of objects you can select the different Property keys to include
-in the filter/search in the drop-down menu:
+Чтобы отфильтровать свойства пользователя объектов, вы можете выбрать различные ключи свойств для включения в фильтр / поиск в раскрывающемся меню:
 
-Filtering on User Properties
+Фильтрация по свойствам пользователей
 
+Отображение всех папок
 
-Showing All Folders
+По мере того, как вы уточняете свой поиск, в дереве модели будут отображаться только те объекты, которые соответствуют вашим критериям поиска / фильтрации (или вообще не будут отображаться, если ни один из объектов не соответствует). Таким образом, папки без соответствующих дочерних объектов не отображаются. Однако, если вы хотите отображать эти пустые папки при поиске объектов (например, вы можете перетащить объекты в другие папки), вы можете установить это как параметр в меню фильтра, выбрав «Показать все папки».
 
-As you refine your search the Model Tree will only show those objects that match your
-search/filter criteria (or none at all if no objects match). Thus, folders with no matching
-child objects are not shown. If however you wish to show these empty folders as you
-search for objects (you may wish to drag and drop objects to other folders, for example)
-then you can set this as an option in the filter menu by selecting "Show All Folders".
+Чтобы закрыть панель поиска и сбросить фильтр поиска, нажмите кнопку «Поиск» еще раз.
 
-To close the Search Bar and reset the search filter press the "Search" button one more
-time.
+Найти и заменить
 
-Find and Replace
+Также можно найти и заменить объекты в дереве модели по имени.
 
-It is also possible to find and replace objects in the Model Tree by name.
+Диалог поиска и замены
 
-Find and Replace dialog
+# 11 Взгляды
 
+Элементы и отношения, которые составляют модель ArchiMate, представленную в дереве модели, могут быть организованы в один или несколько «видов» или визуальных диаграмм. Следовательно, модель ArchiMate может состоять из одного или нескольких представлений, где каждое представление может отображать концепции модели в различных конфигурациях. Например, вы можете захотеть видеть только элементы бизнес-уровня в одном представлении, а элементы интерфейса приложения модели - в другом представлении. Или вы можете захотеть создать «главный» вид, который действует как карта для всех других видов в модели.
 
-# Views
+ArchiMate поддерживает подход, при котором архитекторы и другие заинтересованные стороны могут определять свои собственные представления об архитектуре предприятия. В этом подходе представления определяются точками обзора. Точки зрения определяют абстракции на наборе моделей, представляющих архитектуру предприятия, каждая из которых нацелена на определенный тип заинтересованных сторон и решает определенный набор проблем. Точки обзора могут использоваться как для изолированного просмотра определенных аспектов, так и для установления связи между двумя или более аспектами.
 
-The elements and relationships that constitute an ArchiMate model as represented in
-the Model Tree can be arranged into one or more "Views" or visual diagrams. Therefore
-an ArchiMate model can consist of one or more Views where each View can display the
-model concepts in various configurations. For example, you may wish to only see the
-Business Layer elements in one View and the model's Application Interface elements in
-another View. Or you may wish to create a "master" View that acts as a map to all of the
-other Views in the model.
+В Archi View неограничен по объему в соответствии с доступными элементами и отношениями, и разработчик должен наложить любые ограничения для данной точки обзора, как предписано спецификацией ArchiMate.
 
-ArchiMate advocates an approach in which architects and other stakeholders can define
-their own Views on the enterprise architecture. In this approach, Views are specified by
-viewpoints. Viewpoints define abstractions on the set of models representing the
-enterprise architecture, each aimed at a particular type of stakeholder and addressing a
-particular set of concerns. Viewpoints can both be used to view certain aspects in
-isolation, and for relating two or more aspects.
+## 12 Открытие просмотра
 
-In Archi a View is unlimited in scope according to the available elements and relations,
-and it is up to the designer to impose any constraints for a given viewpoint as prescribed
-by the ArchiMate specification.
+Если модель уже содержит вид, он будет виден в папке «Виды» в дереве модели:
 
-## Opening a View
+Вид по умолчанию в дереве модели
 
-If the model already contains a View it will be visible in the "Views" folder in the Model
-Tree:
+Чтобы открыть и отредактировать вид, дважды щелкните его в дереве модели (или нажмите Ctrl-Shift-O / Command-Shift-O). Откроется редактор представления, в котором будут отображаться холст и палитра редактирования:
 
-The Default View in the Model Tree
+Редактор представлений, показывающий пустой холст и палитру для рисования.
 
-To open and edit the View, double-click it in the Model Tree (or press Ctrl-Shift-O /
-Command-Shift-O). The View Editor will open showing the editing canvas and palette:
+Создание нового представления
 
+Модель ArchiMate обычно состоит из более чем одного представления. Чтобы добавить новый вид к модели, щелкните правой кнопкой мыши папку «Виды» в дереве модели и выберите «Создать-> ArchiMate View» из контекстного меню:
 
-The View Editor showing a blank drawing canvas and palette
+Добавление нового вида в модель
 
-Creating a New View
+После того, как вид был добавлен в модель, его можно открыть из дерева, дважды щелкнув по нему. Любое количество видов можно добавить к модели и открыть одновременно. Представления расположены на вкладках в основной области редактирования окна приложения.
 
-An ArchiMate model usually consists of more than one View. To add a new View to the
-model, right-click on the "Views" folder in the Model Tree and select "New->ArchiMate
-View" from the context menu:
+Работа с представлениями
 
-Adding a new View to a Model
+Once a View has been opened you may now "draw" on the canvas, adding and creating new ArchiMate elements, connections (relationships) and annotations (notes). As you add figures to the canvas from the palette, the corresponding ArchiMate elements and relationships are added to the ArchiMate model and are visible in the Model Tree.
 
-Once the View has been added to the model it can be opened from the tree by double-
-clicking on it. Any number of Views can be added to a model and be open at the same
-time. Views are arranged in tabs in the main editing area of the application window.
-
-
-Working with Views
-
-Once a View has been opened you may now "draw" on the canvas, adding and creating
-new ArchiMate elements, connections (relationships) and annotations (notes). As you
-add figures to the canvas from the palette, the corresponding ArchiMate elements and
-relationships are added to the ArchiMate model and are visible in the Model Tree.
-
-You also add existing concepts to the View by dragging and dropping them from the
-Model Tree into the View. You can add new elements to the Model Tree (see Adding
-Elements Directly to the Model Tree) and then drag them to any number of Views in the
-model. Thus, elements and relations can appear in more than one View, each
-occurrence referencing the same concept in the Model. Thus, if you change the name of
-the model concept it will change for all occurrences in all Views.
+You also add existing concepts to the View by dragging and dropping them from the Model Tree into the View. You can add new elements to the Model Tree (see Adding Elements Directly to the Model Tree) and then drag them to any number of Views in the model. Thus, elements and relations can appear in more than one View, each occurrence referencing the same concept in the Model. Thus, if you change the name of the model concept it will change for all occurrences in all Views.
 
 Navigating a View
 
 Panning
 
-If you select the first selection tool from the Palette, click somewhere on the View to give
-it the focus and then hold the Space bar down the cursor will change to a hand and you
-can pan the View. You can also pan around the View by holding down the middle mouse
-button.
+If you select the first selection tool from the Palette, click somewhere on the View to give it the focus and then hold the Space bar down the cursor will change to a hand and you can pan the View. You can also pan around the View by holding down the middle mouse button.
 
 Using the Keyboard Instead of the Mouse in a View
 
-It is possible to move and resize selected objects in a View by using the computer
-keyboard instead of a mouse. To move an object, press the period key (".") once to
-reveal the MOVE cursor. Then use the Arrow keys, followed by the ENTER key to
-commit the move. To resize the object, press the period key (".") until the RESIZE cursor
-appears at the desired resize handle. Press the ENTER key to commit the resize.
+It is possible to move and resize selected objects in a View by using the computer keyboard instead of a mouse. To move an object, press the period key (".") once to reveal the MOVE cursor. Then use the Arrow keys, followed by the ENTER key to commit the move. To resize the object, press the period key (".") until the RESIZE cursor appears at the desired resize handle. Press the ENTER key to commit the resize.
 
 Automatic Scrolling in a View
 
-Sometimes you may find that a concept is outside the area of the View area and you
-wish to draw a new connection between one concept and another concept outside of the
-View area (the scrollbars would normally need to be used). To do so, simply click on the
-source concept after selecting the connection tool and then hover the mouse at the edge
-of the Viewport. After a short pause, the View will automatically scroll.
+Sometimes you may find that a concept is outside the area of the View area and you wish to draw a new connection between one concept and another concept outside of the View area (the scrollbars would normally need to be used). To do so, simply click on the source concept after selecting the connection tool and then hover the mouse at the edge of the Viewport. After a short pause, the View will automatically scroll.
 
 Zooming a View
 
 You can zoom in and out of a View in a number of different ways:
 
-```
-- From the main "View" menu
-```
+    - From the main "View" menu
+    
 
-```
-- By using the shortcut key combinations Ctrl +, Ctrl =, Ctrl - and Ctrl 0
-("Command" key on Mac)
-- By using the Zoom combo box on the main toolbar.
-- By holding the Ctrl key down ("Command" key on Mac) and using the mouse
-scroll wheel
-```
-Used in combination with the Outline View you can easily navigate around large
-diagrams.
+    - By using the shortcut key combinations Ctrl +, Ctrl =, Ctrl - and Ctrl 0
+    ("Command" key on Mac)
+    - By using the Zoom combo box on the main toolbar.
+    - By holding the Ctrl key down ("Command" key on Mac) and using the mouse
+    scroll wheel
+
+Used in combination with the Outline View you can easily navigate around large diagrams.
 
 Find and Replace
 
@@ -546,228 +350,152 @@ Find and Replace dialog
 
 The Palette
 
-The palette contains the drawing tools, and elements and relationships that can be
-added to a View. It is an area that is attached to a View.
-
+The palette contains the drawing tools, and elements and relationships that can be added to a View. It is an area that is attached to a View.
 
 The Palette in a View
 
-To create new elements and relationships in a View select the required object tool on
-the palette and either click or drag it onto the canvas area. Once the figure has been
-added to the canvas you can resize and re-position it by the usual drag actions.
+To create new elements and relationships in a View select the required object tool on the palette and either click or drag it onto the canvas area. Once the figure has been added to the canvas you can resize and re-position it by the usual drag actions.
 
-You can configure how the Palette displays items by right-clicking on the Palette and
-choosing "Settings...":
+You can configure how the Palette displays items by right-clicking on the Palette and choosing "Settings...":
 
 Palette Settings
 
-If you cannot see the palette in a View it may be closed. If this is the case, open it by
-clicking the "Show Palette" triangle button at the top-right of the View window.
-
+If you cannot see the palette in a View it may be closed. If this is the case, open it by clicking the "Show Palette" triangle button at the top-right of the View window.
 
 The Detached Palette
 
-By default, each View has its own attached Palette. It is also possible to have a single,
-detachable Palette that you can drag and dock to any position in the application window.
-To do this, click on the "Palette" button on the main toolbar:
+By default, each View has its own attached Palette. It is also possible to have a single, detachable Palette that you can drag and dock to any position in the application window. To do this, click on the "Palette" button on the main toolbar:
 
-The "Palette" button on the main toolbar
+Кнопка «Палитра» на главной панели инструментов.
 
-Pressing this button detaches the Palette from the View and creates a Palette window.
-You can drag and dock this to anywhere in the application space. The following example
-has the Palette docked in the lower left corner:
+Нажатие этой кнопки отключает палитру от вида и создает окно палитры. Вы можете перетащить его и закрепить в любом месте приложения. В следующем примере палитра закреплена в нижнем левом углу:
 
-The Palette window docked in the lower left corner
+Окно палитры закреплено в нижнем левом углу.
 
-Closing the Palette window re-attaches it to any open Views.
+Закрытие окна палитры повторно прикрепляет его ко всем открытым представлениям.
 
-Palette Selection Tools
+Инструменты выбора палитры
 
-There are two selection tools available in the Palette. These are used to select the
-objects in a diagram in various ways.
+В палитре доступны два инструмента выделения. Они используются для выбора объектов на диаграмме различными способами.
 
-The selection tools in the Palette
+Инструменты выделения в палитре
 
+Первый инструмент (инструмент выбора) в основном используется для выбора элементов (блоков). При перетаскивании области выделения вокруг элементов и соединений с помощью этого инструмента будут выделены только элементы (прямоугольники).
 
-The first tool (selection tool) is primarily used to select elements (boxes). When dragging
-a marquee area around elements and connections with this tool, only the elements
-(boxes) will be selected.
+Второй инструмент (инструмент выделения) активируется раскрывающейся кнопкой и используется для выбора как элементов, так и соединений различными способами:
 
-The second tool (marquee tool) is activated by a drop-down button and is used to select
-both elements and connections in various ways:
+Параметры инструмента выделения
 
-The selection tool options
+Вы можете добавить элементы или соединения к выделению с помощью инструмента выделения, удерживая нажатой клавишу Ctrl и щелкая элемент или соединение. Эту же операцию можно использовать для удаления элемента или соединения из выделения.
 
-You can add elements or connections to a selection with the selection tool by holding
-down the Ctrl key and clicking on the element or connection. The same operation can be
-used to remove an element or connection from a selection.
+Когда выбрано несколько элементов или соединений, один будет отмечен темными маркерами. Это называется первичным отбором.
 
-When several elements or connections are selected, one will be marked with dark
-handles. This is called the primary selection.
+Выбраны три элемента, верхний - это основной выбор
 
-Three elements selected, topmost is the primary selection
+Первичный выбор используется с инструментами выравнивания. Вы можете изменить, какой элемент или соединение является первичным выбором, с помощью инструмента выбора, удерживая клавишу Shift и щелкнув элемент или соединение, которое вы хотите сделать первичным выбором.
 
-The primary selection is used with the alignment tools. You can change which element
-or connection is the primary selection with the selection tool by holding down the Shift
-key and clicking the element or connection you wish to make the primary selection.
+    Tip: Pan the View using the selection tool.
+    If you select the first selection tool from the Palette, click somewhere on the
+    View to give it the focus and then hold the Space bar down the cursor will
+    change to a hand and you can pan the View. You can also pan around the
+    View using the middle mouse button.
 
-```
-Tip: Pan the View using the selection tool.
-If you select the first selection tool from the Palette, click somewhere on the
-View to give it the focus and then hold the Space bar down the cursor will
-change to a hand and you can pan the View. You can also pan around the
-View using the middle mouse button.
-```
+Инструменты создания палитры
 
-Palette Creation Tools
+Помимо инструментов выбора, на палитре доступны другие инструменты, используемые для создания новых концепций ArchiMate, заметок, групп и отношений между концепциями (связями). Чтобы добавить новый элемент на холст, выберите один и перетащите его на холст или щелкните мышью на нем.
 
-Apart from the Selection Tools there are other tools available on the Palette used to
-create new ArchiMate concepts, Notes, Groups and Relations between concepts
-(connections). To add a new element to the canvas select one and drag it onto or click
-onto the canvas.
+связи
 
-Relations
+Есть несколько типов отношения ArchiMate и элемент соединения.
 
-There are several types of ArchiMate relation and a Junction element.
+Инструменты создания отношений на палитре
 
-The Relations Creation Tools in the Palette
+Первый инструмент - Magic Connector, используемый для рисования соединений. Затем следуют инструменты создания отношений ArchiMate и элемента Junction.
 
-The first tool is the Magic Connector, used for drawing connections. This is followed by
-creation tools for ArchiMate relations and a Junction element.
+Заметки и группы
 
-Notes and Groups
+Используется для добавления примечания, контейнера группы или соединения примечания к представлению.
 
-Used for adding a Note, Group Container, or a Note Connection to a View.
+Инструменты создания заметок, групп и примечаний
 
-Note, Group and Note Connection Creation Tools
+Элементы ArchiMate
 
-ArchiMate Elements
+Они разделены на области, соответствующие концептуальным группам ArchiMate «Другое», «Бизнес», «Применение», «Технологии», «Физические аспекты», «Мотивация» и «Внедрение и миграция»:
 
-These are divided into areas corresponding to the "Other", Business", "Application",
-"Technology", "Physical", "Motivation", and "Implementation & Migration" ArchiMate
-concept groupings:
+Инструменты создания элементов ArchiMate
 
-The ArchiMate Element Creation tools
+Обратите внимание, что подмножество этих элементов будет доступно только в том случае, если текущий вид ограничен данной точкой обзора.
 
+    Tip: Press the shift key when selecting a palette tool to keep it
+    selected.
+    By default, once an element or connection has been drawn on the canvas
+    the default selection tool (arrow) is re-selected on the palette. If you wish to
+    keep the current palette tool selected hold the "Shift" key down when you
+    select it.
 
-Note that a sub-set of these elements will only be available if the current View is
-restricted to a given Viewpoint.
+Форматный художник
 
-```
-Tip: Press the shift key when selecting a palette tool to keep it
-selected.
-By default, once an element or connection has been drawn on the canvas
-the default selection tool (arrow) is re-selected on the palette. If you wish to
-keep the current palette tool selected hold the "Shift" key down when you
-select it.
-```
-The Format Painter
+Форматирование по образцу - это инструмент на панели инструментов палитры, который позволяет быстро копировать визуальное форматирование одного объекта и вставлять его в другие в представлении. Вместо того, чтобы вручную применять шрифт, цвет шрифта, выравнивание текста и другое форматирование к каждому новому объекту в представлении, вы можете быстро скопировать все атрибуты форматирования с помощью одной кнопки на панели инструментов.
 
-The Format Painter is a tool on the Palette toolbar that allows you to quickly copy the
-visual formatting of one object and paste it to others in a View. Instead of having to
-manually apply the font, font colour, text alignment, and other formatting to each new
-object in a View, you can quickly copy all of the formatting attributes by using one
-toolbar button.
+Инструмент Format Painter находится в верхней части палитры:
 
-The Format Painter tool is at the top of the Palette:
+Инструмент Format Painter
 
-The Format Painter tool
+Чтобы скопировать и вставить форматирование в представлении:
 
-To copy and paste formatting in View:
+1. Выберите инструмент «Формат по образцу» на палитре. Первоначально он будет серым, указывая на то, что он «пустой» и готов к копированию.
+1. Щелкните исходный объект или соединение, из которого вы хотите скопировать форматирование. Курсор инструмента «Формат по образцу» изменится на более темный контур и на цвет копируемого объекта заливки или соединения. Кроме того, запись инструмента на палитре станет темнее, и всплывающая подсказка обновится, чтобы объяснить это.
+1. Теперь щелкните целевые объекты или соединения, чтобы вставить форматирование.
+1. Чтобы очистить средство рисования форматов, чтобы оно было готово к копированию еще одного форматирования, либо дважды щелкните инструмент на палитре, либо дважды щелкните пустое место на холсте.
 
-1. Select the Format Painter tool from the Palette. Initially it will appear grey,
-    indicating that it is "empty" and ready to copy.
-2. Click on the source object or connection from which you wish to copy the
-    formatting. The Format Painter tool cursor will change to a darker outline and to
-    the colour of the fill object or connection that is copied. Also, the tool entry on the
-    Palette will appear darker and the tooltip will update to explain this.
-3. Now click on the target objects or connections to paste the formatting.
-4. To clear the Format Painter so it is ready to copy some more formatting, either
-    double-click on the tool in the Palette or double-click on an empty space on the
-    canvas.
+Обратите внимание, что некоторая часть форматирования не может быть скопирована и вставлена ​​из объекта в соединение и наоборот. Вы можете использовать инструмент Format Painter между различными представлениями. Если он «загружен», просто выберите его из палитры в другом представлении и вставьте форматирование в целевые объекты или соединения.
 
-Note that some formatting cannot be copied and pasted from an object to a connection,
-and vice-versa. You can use the Format Painter tool between different Views. If it is
-"primed", simply select it from the Palette in another View and paste the formatting to
-target objects or connections.
+Добавление новых элементов в вид из палитры
 
+Чтобы создать и добавить новые элементы в представление, выберите требуемый элемент на палитре и либо щелкните, либо перетащите новую фигуру в область холста. После того, как фигура была добавлена ​​на холст, вы можете изменить ее размер и положение обычными действиями перетаскивания.
 
-Adding New Elements to the View from the Palette
+При добавлении элементов в вид они автоматически добавляются в дерево модели
 
-To create and add new elements to the View select the required element on the Palette
-and either click or drag the new figure onto the canvas area. Once the figure has been
-added to the canvas you can resize and re-position it by the usual drag actions.
+Важно понимать, что добавление элементов (и отношений) к виду из палитры автоматически добавляет эти элементы в дерево модели. Например, перетаскивание элемента «Business Actor» на холст создает как фигуру в представлении с именем «Business Actor», так и узел в дереве модели с тем же именем.
 
-Adding Elements to the View Automatically Adds them to the Model
-Tree
+Более того, если вы удаляете элемент в представлении, соответствующий элемент в дереве модели не удаляется. Это связано с тем, что на элемент можно ссылаться в другом представлении модели. Чтобы полностью удалить элемент, вы должны удалить его в дереве модели или выбрать пункт контекстного меню «Удалить из модели».
 
-It is important to understand that adding elements (and relationships) to a View from the
-palette automatically adds those elements to the Model Tree as well. For example,
-dragging a "Business Actor" element onto the canvas creates both a figure on the View
-called "Business Actor" and also a node on the Model Tree with the same name.
+Вы можете редактировать имя элемента напрямую, щелкнув текстовую область на рисунке. Двойной щелчок по фигуре открывает окно свойств, в котором вы можете редактировать свойства выбранного элемента.
 
-Furthermore, if you delete an element in a View the corresponding element in the Model
-Tree is not deleted. This is because the element may be referenced in another View in
-the model. To delete the element completely you have to delete it in the Model Tree or
-choose the right-click menu item, "Delete from Model".
+Редактирование свойств элементов представления
 
-You can edit the element's name directly by clicking the text area on a figure. Double-
-clicking on the figure opens the Properties Window where you may edit the properties of
-the selected element.
+Свойства выбранного элемента в представлении можно редактировать в окне свойств. Чтобы открыть окно свойств, либо дважды щелкните фигуру, либо выберите фигуру и откройте окно на панели инструментов или в главном меню. Каждый элемент в представлении имеет разные свойства, которые можно установить или просмотреть в окне свойств. Для получения дополнительной информации см. Раздел «Окно свойств».
 
-Editing the View's Elements' Properties
-
-The properties for a selected element in a View can be edited in the Properties Window.
-To open the Properties Window, either double-click the figure or select the figure and
-open the window from the toolbar or main menu. Each element in the View has different
-properties that can be set or viewed in the Properties Window. For more information see
-the section, The Properties Window.
-
-Double-clicking an Element in a View opens the Properties Window, single-clicking on
-an already selected Element's text field allows you to directly edit the Element's text.
+Двойной щелчок по элементу в представлении открывает окно свойств, однократный щелчок по уже выбранному текстовому полю элемента позволяет вам напрямую редактировать текст элемента.
 
 Adding New Relationships (Connections) to the View from
 
 the Palette
 
-To add new relationships (connections) to the View select the required connection tool
-on the Palette and drag from one element on the View to another on the same View.
+To add new relationships (connections) to the View select the required connection tool on the Palette and drag from one element on the View to another on the same View.
 
-As with adding elements from the palette, adding a relationship to a View automatically
-adds it to the Model Tree as well, in the "Relations" folder.
+As with adding elements from the palette, adding a relationship to a View automatically adds it to the Model Tree as well, in the "Relations" folder.
 
-
-When adding a new connection in a View, if the same type of model relationship already
-exists between the source and target elements, a dialog box will appear giving you the
-option to reference that model relationship from the connection, or create a new
-connection and model relationship:
+When adding a new connection in a View, if the same type of model relationship already exists between the source and target elements, a dialog box will appear giving you the option to reference that model relationship from the connection, or create a new connection and model relationship:
 
 A dialog providing the option of re-using a model relationship.
 
-```
-Relationships, Rules and Regulations.
-ArchiMate elements can connect to other elements by a given set of
-relationships (connections). Some relationships are allowed, others are not.
-If a relationship is not allowed the cursor will show as a "Not Allowed"
-symbol, a circle with a diagonal line. If a relationship is allowed, it will show
-as a "plug" symbol.
-```
+    Relationships, Rules and Regulations.
+    ArchiMate elements can connect to other elements by a given set of
+    relationships (connections). Some relationships are allowed, others are not.
+    If a relationship is not allowed the cursor will show as a "Not Allowed"
+    symbol, a circle with a diagonal line. If a relationship is allowed, it will show
+    as a "plug" symbol.
+
 Information about Connections
 
-Once a relationship (connection) has been created between elements, some useful
-information can be revealed when the mouse cursor hovers over the connection to
-reveal a tooltip. The tooltip displays the relationship's name, its type, and some text that
-describes the nature of the relationship between the source and target elements.
+Once a relationship (connection) has been created between elements, some useful information can be revealed when the mouse cursor hovers over the connection to reveal a tooltip. The tooltip displays the relationship's name, its type, and some text that describes the nature of the relationship between the source and target elements.
 
 A tooltip shows useful information when hovering over a connection
 
 Adding Circular Relationships (Connections)
 
-
-You may add a circular relationship (connection) if you wish. This is a relationship whose
-target and source element is the same. You can create a connection from an element to
-itself by selecting the required relationship from the Palette, clicking once on the element
-and then clicking again on the element:
+You may add a circular relationship (connection) if you wish. This is a relationship whose target and source element is the same. You can create a connection from an element to itself by selecting the required relationship from the Palette, clicking once on the element and then clicking again on the element:
 
 A circular relationship
 
@@ -775,274 +503,186 @@ Adding New Relationships and Elements to the View using
 
 the Magic Connector
 
-Connecting one element to another in a View depends on whether the relationship is
-allowed according to the ArchiMate specification. For example, you cannot connect an
-Assignment relationship from an Application Component to a Business Actor. Unless
-you are very familiar with the rules governing the relationships in ArchiMate it can be
-frustrating to find the allowable relationships between one element and another. The
-"Magic Connector" solves this problem.
+Подключение одного элемента к другому в представлении зависит от того, разрешены ли отношения в соответствии со спецификацией ArchiMate. Например, вы не можете связать связь «Назначение» из прикладного компонента с бизнес-субъектом. Если вы не очень хорошо знакомы с правилами, регулирующими отношения в ArchiMate, может быть неприятно найти допустимые отношения между одним элементом и другим. «Magic Connector» решает эту проблему.
 
-The Magic Connector in the Palette
+Волшебный соединитель в палитре
 
-The Magic Connector has two uses - firstly to create a new allowed connection between
-one element and another, and secondly to create a new element and an allowed
-connection between the source element and the newly created element.
+Magic Connector имеет два использования: во-первых, для создания нового разрешенного соединения между одним элементом и другим, а во-вторых, для создания нового элемента и разрешенного соединения между исходным элементом и вновь созданным элементом.
 
-To create a connection between a source and a target element using the Magic
-Connector follow these steps:
+Чтобы создать соединение между источником и целевым элементом с помощью Magic Connector, выполните следующие действия:
 
-1. Select the Magic Connector tool from the palette
-2. Click on the source element in the View
-3. Click on the target element in the View
-4. A popup menu will appear showing the allowable relationships between the two
-    elements. Choose the required type from the menu. It is possible to create a
-    relationship from the source to the target element, and also in reverse from the
-    target to the source element. Both directional options are separated in the popup
-    menu.
+1. Выберите на палитре инструмент Magic Connector.
+1. Щелкните исходный элемент в представлении
+1. Щелкните целевой элемент в представлении
+1. Появится всплывающее меню, показывающее допустимые отношения между двумя элементами. Выберите нужный тип из меню. Можно создать отношение от источника к целевому элементу, а также в обратном направлении от целевого к исходному элементу. Оба варианта направления разделены во всплывающем меню.
 
+Создание соединения с помощью Magic Connector
 
-Drawing a connection using the Magic Connector
+Чтобы создать новый элемент и соединение за одну операцию с помощью Magic Connector, выполните следующие действия:
 
-To create a new element and connection in one operation using the Magic Connector
-follow these steps:
+1. Выберите на палитре инструмент Magic Connector.
+1. Щелкните исходный элемент
+1. Щелкните пустую область холста представления или фигуру группы.
+1. Появится каскадное всплывающее меню, показывающее все допустимые элементы и отношения между ними. Выберите нужный элемент и подключение из меню
 
-1. Select the Magic Connector tool from the palette
-2. Click on the source element
-3. Click on a blank area of the View's canvas, or on a Group figure
-4. A cascading popup menu will appear showing all allowable elements and
-    relationships between the two. Choose the required element and connection from
-    the menu
+В следующем примере новый элемент Business Role будет создан вместе с новым отношением Assignment, соединяющимся с исходным выбранным элементом Business Actor.
 
-In the following example a new Business Role element will be created together with a
-new Assignment relationship connecting to the original selected Business Actor element.
+Использование Magic Connector для создания нового элемента и соединения
 
-Using the Magic Connector to create a new element and connection
+Если вы удерживаете клавишу Ctrl (или клавишу Command на Mac) одновременно с нажатием на пустую область холста, то сначала будут показаны элементы, а затем соединения во всплывающих меню (это поведение можно изменить в Предпочтения):
 
-If you hold down the Ctrl key (or the Command key on Mac) at the same time as clicking
-on a blank area of the canvas then the Elements will be shown first followed by the
-Connections in the popup menus (this behaviour can be reversed in Preferences):
+Использование Magic Connector для создания нового элемента и соединения при нажатии клавиши Ctrl / Command
 
+Добавление элементов и взаимосвязей из дерева модели в
 
-Using the Magic Connector to create a new element and connection while pressing the Ctrl /
-Command key
+Вид
 
-Adding Elements and Relations from the Model Tree to a
+Существующие элементы и связи могут быть добавлены к виду, перетаскивая их из дерева модели на вид.
 
-View
+Перетаскивание отношения в представление также добавляет его исходный и целевой элементы в представление, если они еще не присутствуют в представлении. Для любых существующих элементов в представлении автоматически добавляются все их соединения с удаленными элементами.
 
-Existing elements and relationships can be added to a View by dragging and dropping
-them from the Model Tree to a View.
+    When you drag and drop elements from the Model Tree to a View any
+    associated relationships are also added to the view as connections. There
+    may be times when you do not want this to happen, you may simply wish to
+    drag another instance of an element onto the View, for example. In order to
+    do this, on Windows and Linux hold the Ctrl key down, or on Mac hold the Alt
+    key down when dragging and dropping.
 
-Dragging and dropping a relationship into a View also adds its source and target
-elements to the View if they are not already present on the View. Any existing elements
-on the View automatically have all their connections to the dropped element(s) added as
-well.
+Такой способ работы означает, что вы можете рассматривать дерево модели как репозиторий элементов и отношений для модели, которые можно добавить в любой вид внутри той же модели. Один и тот же элемент можно добавить в представление более одного раза.
 
-```
-When you drag and drop elements from the Model Tree to a View any
-associated relationships are also added to the view as connections. There
-may be times when you do not want this to happen, you may simply wish to
-drag another instance of an element onto the View, for example. In order to
-do this, on Windows and Linux hold the Ctrl key down, or on Mac hold the Alt
-key down when dragging and dropping.
-```
-Working this way means that you can regard the Model Tree as a repository of elements
-and relations for the model that can be added to any View within the same model. The
-same element can be added more than once to a View.
+    Important! - A model element or relationship can appear multiple times in
+    the same or different Views. You can set its visual appearance individually
+    for each occurrence.
 
+Добавление группы
 
-```
-Important! - A model element or relationship can appear multiple times in
-the same or different Views. You can set its visual appearance individually
-for each occurrence.
-```
-Adding a Group
+Элементы могут быть сгруппированы в представлении с использованием типа контейнера «Группа». Обратите внимание, что это не то же самое, что группирующий элемент ArchiMate, и что он не имеет семантического значения, кроме визуального набора элементов.
 
-Elements can be grouped together in a View using a Group container type. Note that
-this is not the same as an ArchiMate Grouping Element, and that it has no semantic
-meaning other than being a visual collection of elements.
+Группу можно добавить из палитры просмотра:
 
-A Group can be added from the View's Palette:
+Запись групповой палитры
 
-The Group Palette Entry
+В следующем примере показаны элементы, сгруппированные вместе с использованием элемента Group для обозначения различных слоев модели:
 
-The following example shows elements grouped together using the Group element to
-indicate the various layers in the model:
+Пример групп
 
-Example of Groups
+Имя группы, шрифт и цвет заливки можно редактировать в окне свойств.
 
-A Group's name, font and fill colour can be edited in the Properties Window.
+Двойной щелчок по группе открывает окно свойств, щелчок по текстовому полю группы позволяет вам напрямую редактировать текст группы.
 
+Добавление примечания
 
-Double-clicking a Group opens the Properties Window, clicking on the Group's text field
-allows you to directly edit the Group's text.
+Заметки могут быть добавлены в представление для визуальных аннотаций. Заметка не имеет семантического значения на языке ArchiMate.
 
-Adding a Note
+Примечание можно добавить из палитры просмотра:
 
-Notes can be added to the View to allow for visual annotations. A note has no semantic
-meaning in the ArchiMate language.
+Запись палитры нот
 
-A Note can be added from the View's Palette:
+В следующем примере показаны элементы, помеченные примечанием:
 
-The Note Palette entry
+Использование заметки в представлении
 
-The following example shows elements annotated with a Note:
+Текст, шрифт и цвет заливки заметки можно редактировать в окне свойств.
 
-Using a Note in a View
+Двойной щелчок по примечанию открывает окно свойств, щелчок по выбранному примечанию позволяет напрямую редактировать текст примечания.
 
-A Note's text, font and fill colour can be edited in the Properties Window.
+Добавление связи с нотами
 
-Double-clicking the Note opens the Properties Window, clicking on a selected Note
-allows you to directly edit the Note's text.
+Вы можете провести соединительную линию от и к примечанию, используя инструмент «Линия соединения примечаний» на палитре. Он не имеет семантического значения, как другие типы отношений ArchiMate. Двойной щелчок по Note Connection открывает окно свойств.
 
-Adding a Note Connection
+Добавление перекрестка
 
-You can draw a connecting line from and to a Note using the "Note Connection" line tool
-in the Palette. It has no semantic meaning like the other ArchiMate relationship types.
-Double-clicking the Note Connection opens the Properties Window.
+Элемент Junction можно добавить из палитры View в разделе палитры Relations:
 
-Adding a Junction
+Запись Junction в палитре
 
+Соединение используется в ряде ситуаций для соединения однотипных отношений. Соединение может иметь несколько входящих отношений и одно исходящее отношение, одно входящее отношение и несколько исходящих отношений или несколько входящих и исходящих отношений (последнее можно рассматривать как сокращение двух последующих соединений).
 
-A Junction element can be added from the View's palette in the Relations palette
-section:
+Есть два типа стыков - «И» и «Или». Тип перекрестка можно задать в окне свойств:
 
-The Junction entry in the Palette
+Установка типа перекрестка
 
-A junction is used in a number of situations to connect relationships of the same type. A
-junction may have multiple incoming relationships and one outgoing relationship, one
-incoming relationship and multiple outgoing relationships, or multiple incoming and
-outgoing relationships (the latter can be considered a shorthand of two subsequent
-junctions).
+Соединения появятся в дереве модели в папке «Другое». Их также можно добавить непосредственно в дерево модели, щелкнув правой кнопкой мыши папку «Другое» и выбрав пункт меню «Новый».
 
-There are two types of Junction - "And" and "Or". The type of Junction can be set in the
-Properties window:
+Пример соединения типа "Или"
 
-Setting the type of Junction
+    Note that Archi does not currently enforce the full ArchiMate rules when
+    connecting junctions. You should ensure that only relationships of the same
 
-Junctions appear in the Model tree in the "Other" folder. They can also be added directly
-to the Model Tree by right-clicking on the "Other" folder and selecting the "New" menu
-item.
+    type are used to connect concepts and junctions. You can check for
+    consistency by using the Validator.
 
-Example of an "Or" type Junction
+Добавление ссылки на другое представление
 
-```
-Note that Archi does not currently enforce the full ArchiMate rules when
-connecting junctions. You should ensure that only relationships of the same
-```
+Ссылка на представление действует как ссылка на другое представление внутри представления. Это ярлык, который при двойном щелчке открывает связанный вид.
 
-```
-type are used to connect concepts and junctions. You can check for
-consistency by using the Validator.
-```
-Adding a Reference to Another View
+Чтобы добавить ссылку на представление, перетащите узел представления из модели дерева на холст целевого представления. Обратите внимание, что вы не можете ссылаться на одно и то же представление из самого себя. На следующем снимке экрана показано, как пользователь создал представление «Карта» со ссылками на все остальные виды в модели:
 
-A View Reference figure acts as a link to another View from within a View. It's a shortcut
-that when double-clicked opens the linked View.
+Добавление ссылок на представления для создания представления «Карта»
 
-To add a View Reference drag a View node from the Tree Model onto the canvas of the
-target View. Note that you cannot reference the same View from itself. The following
-screenshot shows how the user has created a "Map" View with View References to all
-the other Views in the model:
+Шрифт и цвет заливки ссылочного рисунка вида можно установить в окне свойств.
 
-Adding View References to create a "Map" View
+Соединение Точки изгиба
 
-The font and fill colour of the View Reference figure can be set in the Properties
-Window.
+Линия соединения (взаимосвязь) может иметь любое количество точек изгиба, так что соединение может быть проложено так, чтобы образовывать изгибы и отклонения на схеме.
 
-Connection Bend-points
+Чтобы добавить точку изгиба к соединению, сначала выберите соединение. В середине соединения появится точка изгиба или точка:
 
-A connection line (relationship) can have any number of bend-points so that the
-connection can be routed to form bends and deviations in the diagram.
+Соединение точки изгиба "ручка"
 
-To add a bend-point to a connection firstly select the connection. A bend-point "handle",
-or dot, will appear in the middle of the connection:
+Перетащите маркер точки изгиба в нужном направлении. Обратите внимание, что при перетаскивании ручки к соединению добавляются две новые ручки точки изгиба:
 
+Появляются "ручки" точек изгиба соединения
 
-A connection bend-point "handle"
+Вы можете продолжать выбирать и перетаскивать эти ручки для создания новых точек изгиба. По мере создания каждой новой точки изгиба по обе стороны от выбранной ручки будут появляться две новые ручки.
 
-Drag the bend-point handle in the desired direction. Notice that as you drag the handle
-two new bend-point handles are added to the connection:
+Чтобы удалить точку изгиба, выберите ручку точки изгиба и перетащите ее так, чтобы линия соединения стала прямой. Как только соединительная линия будет выпрямлена, точка изгиба исчезнет.
 
-Connection bend-point "handles" appear
+Точки изгиба привязываются к сетке, если в меню «Вид» включен параметр «Привязать к сетке». Если вам нужен более точный контроль над размещением точки изгиба, вы можете обойти это, удерживая клавишу Alt в Windows, Alt / Shift в Linux или клавишу Ctrl на Mac.
 
-You can continue to select and drag these handles to create new bend-points. As each
-new bend-point is created, two new handles will appear either side of the selected
-handle.
+Примечание. Точки изгиба не могут быть добавлены к соединениям, если Тип маршрутизатора соединений для обзора установлен на «Манхэттен». Подробнее см. Здесь.
 
-To delete a bend-point, select the bend-point's handle and drag it so that the connection
-line becomes straight. Once the connection line is straightened the bend-point will
-disappear.
+Установка свойств соединения
 
-Bend points snap to grid if "Snap to Grid" is turned on in the "View" menu. If you need
-finer control over placing the bend-point you can over-ride this by holding down the Alt
-key on Windows, Alt/Shift on Linux, or the Ctrl key on Mac.
+Свойства соединения (отношения) можно редактировать, выбрав соединение в представлении и открыв окно свойств. Дополнительную информацию см. В разделе «Свойства внешнего вида соединения отношения».
 
-Note - bend-points cannot be added to connections if the Connection Router Type for
-the View is set to "Manhattan". See here for more details.
+Текст может быть добавлен к соединению (на вкладке «Основные») и отображаться в одном из трех положений, а также может быть установлена ​​толщина самой линии, а также шрифт и цвет текста. На следующем снимке экрана показано соединение со средней шириной линии и текстом, отображаемым в позиции «Target» синим курсивом и фиолетовым цветом линии:
 
-Setting the Properties of a Connection
+Установка текста, положения, ширины линии, шрифта, шрифта и цвета линии соединения
 
-A Connection's (Relationship's) properties can be edited by selecting the connection on
-the View and opening the Properties Window. See the section, Relationship Connection
-Appearance Properties, for more information.
+Установка типа маршрутизатора подключения для просмотра
 
-Text can be added to a connection (on the "Main" tab) and displayed in one of three
-positions, and the thickness of the line itself can be set as can the text's font and colour.
-The following screenshot shows a connection with a medium line width and text showing
-in the "Target" position with a blue italic font and purple line colour:
+По умолчанию соединения рисуются прямыми линиями от объекта к объекту. К соединению можно добавить точки изгиба, как описано здесь. Однако можно установить общий тип маршрутизатора подключения, чтобы подключения проходили вокруг объектов или отображались ортогонально.
 
+Тип маршрутизатора подключения можно установить либо в главном меню «Вид-> Маршрутизатор подключения», либо щелкнув правой кнопкой мыши на представлении, либо на вкладке «Внешний вид» в окне свойств, когда выбран холст просмотра.
 
-Setting a Connection's Text, Position, Line Width, Font, Font and Line Colour
+    Apart from the view specific settings, the global setting Use orthogonal
+    connection anchors from the Connection Preferences tab can be used to
+    change the way connections are drawn.
 
-Setting the Connection Router Type for a View
+Доступны следующие типы маршрутизаторов:
 
-By default, connections are drawn as straight lines from object to object. Bend-points
-can be added to a connection as detailed here. However, it is possible to set the overall
-connection router type so that the connections route around objects or are drawn
-orthogonally.
+Руководство
 
-The connection router type can be set either from the main "View->Connection Router"
-menu or by right-clicking on a View or from the "Appearance" tab in the Properties
-Window when the View canvas is selected.
+Соединения нарисованы прямыми линиями. Точки изгиба могут быть добавлены пользователем.
 
-```
-Apart from the view specific settings, the global setting Use orthogonal
-connection anchors from the Connection Preferences tab can be used to
-change the way connections are drawn.
-```
-The available router types are as follows:
+Ручной маршрутизатор
 
-Manual
+Манхэттен
 
-Connections are drawn in straight lines. Bend-points can be added by the user.
+Соединения проложены ортогонально. Точки изгиба не могут быть добавлены пользователем.
 
+Манхэттенский маршрутизатор
 
-Manual Router
+Элементы контейнера и отношения вложенных элементов
 
-Manhattan
+Each graphical element (except for notes and junctions) can act as a container element for other elements. Dragging and dropping an element inside of another element means that it becomes a child of the parent element. This is useful to represent containment type relationships such as Composition, Aggregation, and Association or for convenient grouping.
 
-Connections are routed orthogonally. Bend-points cannot be added by the user.
-
-Manhattan Router
-
-Container Elements and Nested Element Relationships
-
-Each graphical element (except for notes and junctions) can act as a container element
-for other elements. Dragging and dropping an element inside of another element means
-that it becomes a child of the parent element. This is useful to represent containment
-type relationships such as Composition, Aggregation, and Association or for convenient
-grouping.
-
-In the following screenshot the elements "Register", "Accept", "Valuate" and "Pay" are
-child elements of the parent "Handle Claim Process" element:
-
+In the following screenshot the elements "Register", "Accept", "Valuate" and "Pay" are child elements of the parent "Handle Claim Process" element:
 
 Child elements contained by a parent element
 
-While dragging elements into or over other elements a visual cue is provided to indicate
-that the dragged element will be moved into the parent (container) element. This is a
-blue highlight around the target element as the element is dragged over it:
+While dragging elements into or over other elements a visual cue is provided to indicate that the dragged element will be moved into the parent (container) element. This is a blue highlight around the target element as the element is dragged over it:
 
 A Child Element being Dragged into a Container Element. The Container highlighted in blue
 
@@ -1050,318 +690,180 @@ Creating, Showing and Hiding Relationships between
 
 Nested Parent/Child Elements
 
-The ArchiMate specification states that some relationships may also be expressed by
-nesting the model elements. That is to say, an explicit connection need not be drawn
-between the parent and child elements but that it may be represented as a container
-nesting of elements.
+The ArchiMate specification states that some relationships may also be expressed by nesting the model elements. That is to say, an explicit connection need not be drawn between the parent and child elements but that it may be represented as a container nesting of elements.
 
-Archi supports this convention with Automatic Relationship Management (ARM). This
-system ensures that relationships are automatically created and hidden between
-qualifying parent/child elements. The system can be configured to suit the user's needs.
-See Preferences to configure the ARM.
+Archi supports this convention with Automatic Relationship Management (ARM). This system ensures that relationships are automatically created and hidden between qualifying parent/child elements. The system can be configured to suit the user's needs. See Preferences to configure the ARM.
 
-The best way to explain the Automatic Relationship Management system (ARM) is by
-an example.
+The best way to explain the Automatic Relationship Management system (ARM) is by an example.
 
 Example - Nested sub-processes in a Composite relationship
 
-Suppose the user has a Business Process element named "Handle Claim Process" that
-will act as a container element ("parent") for four sub-processes, "Register", "Accept",
-"Valuate" and "Pay". The relationship between the parent process and the sub-
-processes would normally be expressed as four Composition relationships. These can
-be drawn conventionally using connecting lines as follows:
-
+Suppose the user has a Business Process element named "Handle Claim Process" that will act as a container element ("parent") for four sub-processes, "Register", "Accept", "Valuate" and "Pay". The relationship between the parent process and the sub- processes would normally be expressed as four Composition relationships. These can be drawn conventionally using connecting lines as follows:
 
 Composition relationship between parent and child processes
 
-However, this is visually not as clear as if the sub-processes were placed inside of the
-container parent process.
+However, this is visually not as clear as if the sub-processes were placed inside of the container parent process.
 
-We can solve this problem by enabling the ARM system in Preferences. This ensures
-that when the sub-processes are placed in the parent element the connections are
-hidden in the View, but are still present in the actual semantic model. Dragging the child
-elements in and out of the parent element hides and shows the explicit relationships.
-The hidden connections are "implicit" connections.
+We can solve this problem by enabling the ARM system in Preferences. This ensures that when the sub-processes are placed in the parent element the connections are hidden in the View, but are still present in the actual semantic model. Dragging the child elements in and out of the parent element hides and shows the explicit relationships. The hidden connections are "implicit" connections.
 
 The Connections now hidden from the View
 
 Adding new elements to a parent element
 
-Adding new elements to a parent element in a View from the Palette or dragging and
-dropping from the Model Tree results in a dialog box asking if a new relationship should
-be created between the parent and child elements:
+Adding new elements to a parent element in a View from the Palette or dragging and dropping from the Model Tree results in a dialog box asking if a new relationship should be created between the parent and child elements:
 
 Dialog to create a new nested relationship
 
-Note that the dialog will only display valid relationships between the parent and child
-elements, and only those that are specified in Preferences. Valid relations between the
-child and parent elements can also be selected. These are shown as "(reverse)".
-
+Note that the dialog will only display valid relationships between the parent and child elements, and only those that are specified in Preferences. Valid relations between the child and parent elements can also be selected. These are shown as "(reverse)".
 
 If you do not wish to create a new relationship, select "None".
 
 Moving existing elements to a parent element
 
-If more than one element is moved (drag and drop operation) to a parent element in a
-View or is dragged and dropped from the Model Tree onto a parent element, and there
-are no existing preferred relationships between the parent and the child elements then a
-dialog box is displayed offering to create new relationships between the parent element
-and the child elements. You can choose a different type of relationship for each child
-element:
+If more than one element is moved (drag and drop operation) to a parent element in a View or is dragged and dropped from the Model Tree onto a parent element, and there are no existing preferred relationships between the parent and the child elements then a dialog box is displayed offering to create new relationships between the parent element and the child elements. You can choose a different type of relationship for each child element:
 
 Dialog for creating more than one relationship
 
-If you do not wish to create a new relationship for an element, select "(none)" from the
-drop-down combo box. To select the same type of relationship in the drop-down combo-
-box, hold down the Ctrl / Command key and select.
+If you do not wish to create a new relationship for an element, select "(none)" from the drop-down combo box. To select the same type of relationship in the drop-down combo- box, hold down the Ctrl / Command key and select.
 
 Setting the Order of Overlapping Elements
 
-Overlapping elements in a View can be brought to the front or back, or brought forward
-or sent back. This is also known as the "Z" order. This is achieved by selecting the
-element in a View and right-clicking to invoke the "Order" menu items. These same
-menu items are also available from the main "View" menu.
-
+Overlapping elements in a View can be brought to the front or back, or brought forward or sent back. This is also known as the "Z" order. This is achieved by selecting the element in a View and right-clicking to invoke the "Order" menu items. These same menu items are also available from the main "View" menu.
 
 Changing the order of overlapping elements
 
 Selecting Elements in a View
 
-Diagram elements and connections may be selected in the view by clicking on them with
-the selection tool or the marquee tool. For more information about these tools see
-Palette Selection Tools.
+Diagram elements and connections may be selected in the view by clicking on them with the selection tool or the marquee tool. For more information about these tools see Palette Selection Tools.
 
 Copying and Pasting Elements in a View
 
-Diagram elements may be cut, copied and pasted in Views. There are, however, certain
-constraints on how this works:
+Diagram elements may be cut, copied and pasted in Views. There are, however, certain constraints on how this works:
 
-```
-- If an element is pasted into a View from the same model where the element
-already exists in that View then a new model element and a new diagram
-element are created for the View. The new element is a copy of the original. Any
-connections are also newly created as copies.
-- If an element is pasted in a View from the same model where the element does
-not already exist then a new diagram element is created for the View and the
-original model element is referenced. This is equivalent to dragging the element
-from the Model Tree into the View. Any connections are also referenced.
-```
-If an element is pasted into a View from a different model then a new model element and
-a new diagram element are created for the View. The new element is a copy of the
-original. Any connections are also newly created as copies.
+    - If an element is pasted into a View from the same model where the element
+    already exists in that View then a new model element and a new diagram
+    element are created for the View. The new element is a copy of the original. Any
+    connections are also newly created as copies.
+    - If an element is pasted in a View from the same model where the element does
+    not already exist then a new diagram element is created for the View and the
+    original model element is referenced. This is equivalent to dragging the element
+    from the Model Tree into the View. Any connections are also referenced.
 
+If an element is pasted into a View from a different model then a new model element and a new diagram element are created for the View. The new element is a copy of the original. Any connections are also newly created as copies.
 
-If you choose the "Paste Special" menu option, instead of "Paste" then you can change
-this behaviour such that references to copied elements are created rather than new
-elements. You can set the behaviour for this feature in Preferences.
+If you choose the "Paste Special" menu option, instead of "Paste" then you can change this behaviour such that references to copied elements are created rather than new elements. You can set the behaviour for this feature in Preferences.
 
-```
-If you copy some diagram elements and then click on the View before
-pasting, the copied elements will be pasted at the point where you clicked.
-```
+    If you copy some diagram elements and then click on the View before
+    pasting, the copied elements will be pasted at the point where you clicked.
+
 Copy As Image to Clipboard
 
-A View (diagram) can be copied as an image to the system clipboard. This is available
-from the "Copy As Image To Clipboard" menu command from the main "Edit" menu or
-by right-clicking on a View and selecting the menu item from the contextual menu. This
-menu command is only available if a View is open and selected. The shortcut key
-combination is Ctrl-Shift-C (Command key on Mac). Once the View is copied to the
-system clipboard it can be pasted into other applications such as word processing and
-drawing tools.
+A View (diagram) can be copied as an image to the system clipboard. This is available from the "Copy As Image To Clipboard" menu command from the main "Edit" menu or by right-clicking on a View and selecting the menu item from the contextual menu. This menu command is only available if a View is open and selected. The shortcut key combination is Ctrl-Shift-C (Command key on Mac). Once the View is copied to the system clipboard it can be pasted into other applications such as word processing and drawing tools.
 
 Deleting Elements and Relationships (Connections) in a
 
 View
 
-Selected elements and/or connections in a View can be deleted from the View by
-choosing the "Delete from View" menu item from the main "Edit" menu, from the main
-toolbar or from the right-click menu. Note - this action deletes those elements from the
-View not from the model. To delete the element completely you have to delete it in the
-Model Tree or select "Delete from Model".
+Selected elements and/or connections in a View can be deleted from the View by choosing the "Delete from View" menu item from the main "Edit" menu, from the main toolbar or from the right-click menu. Note - this action deletes those elements from the View not from the model. To delete the element completely you have to delete it in the Model Tree or select "Delete from Model".
 
 Select in Model Tree
 
-This menu item is available when right-clicking an element or relationship in a View. It
-will select the corresponding model element in the Model Tree.
+This menu item is available when right-clicking an element or relationship in a View. It will select the corresponding model element in the Model Tree.
 
 Delete from Model
 
-This menu item is available when right-clicking an element or relationship in a View. The
-selected elements and/or relationships are then deleted from the model itself and any
-Views that reference those elements. This is the equivalent of selecting the elements in
-the Model Tree and choosing "Delete".
+Этот пункт меню доступен при щелчке правой кнопкой мыши по элементу или взаимосвязи в представлении. Выбранные элементы и / или отношения затем удаляются из самой модели и любых представлений, которые ссылаются на эти элементы. Это эквивалент выбора элементов в дереве модели и выбора «Удалить».
 
+Инструменты выравнивания, направляющие и сетка
 
-Alignment Tools, Guides and the Grid
+Чтобы облегчить рисование привлекательных диаграмм, предусмотрены различные инструменты для выравнивания. Они доступны из главного пункта меню «Вид-> Положение», на главной панели инструментов или щелчком правой кнопкой мыши в области холста диаграммы для выбора пунктов меню «Положение». Это следующие:
 
-In order to facilitate the drawing of pleasing diagrams, various alignment tools are
-provided. These are available from the main "View->Position" menu item, from the main
-toolbar or by right-clicking on the diagram's canvas area to select the "Position" menu
-items. These are as follows:
+Увеличение / уменьшение / фактический размер:
 
-Zoom in / Zoom
-out / Actual Size:
+    Zoom in and out of the diagram. This is also available on the
+    toolbar as a combo box. You can also Zoom in and out by holding
+    the Ctrl key and scrolling the mouse wheel.
 
-```
-Zoom in and out of the diagram. This is also available on the
-toolbar as a combo box. You can also Zoom in and out by holding
-the Ctrl key and scrolling the mouse wheel.
-```
-Snap to Grid: Snaps elements to the Grid whether it is visible or not. (Grid
-spacing can be set in Preferences.)
+Привязка к сетке: привязывает элементы к сетке независимо от того, видна она или нет. (Интервал сетки можно установить в настройках.)
 
-Grid Visible: Toggles the visibility of the Grid. (Grid spacing can be set in
-Preferences.)
+Видимая сетка: переключает видимость сетки. (Интервал сетки можно установить в настройках.)
 
-Snap to
-Alignment
-Guides:
+Привязка к направляющим выравнивания:
 
-```
-These are blue alignment guides (lines) that appear when
-elements are dragged in a diagram. They assist in lining the edges
-and centres of elements.
-```
-Align Left: When two or more elements are selected align on the left edge of
-the primary selection.
+    These are blue alignment guides (lines) that appear when
+    elements are dragged in a diagram. They assist in lining the edges
+    and centres of elements.
 
-Align Center: (^) When two or more elements are selected align centrally
-horizontally to the primary selection.
-Align Right: When two or more elements are selected align on the right edge of
-the primary selection.
-Align Top: When two or more elements are selected align on the top edge of
-the primary selection.
-Align Middle: When two or more elements are selected align centrally vertically
-to the primary selection.
-Align Bottom: When two or more elements are selected align on the bottom edge
-of the primary selection.
-Match Width: (^) When two or more elements are selected match the width of the
-elements to the primary selection.
-Match Height: When two or more elements are selected match the height of the
-elements to the primary selection.
-Default Size: Set the selected element to its default size. If disabled then the
-element is already set to its default size.
+Выровнять по левому краю: при выборе двух или более элементов выравнивание по левому краю основного выделения.
 
+Выровнять по центру: (^) Если выбраны два или более элемента, выровняйте их по центру по горизонтали относительно основного выделения. Выровнять по правому краю: если выделены два или более элемента, выравнивание по правому краю основного выделения. Выровнять по верхнему краю: если выбраны два или более элемента, выровняйте их по верхнему краю основного выделения. Выровнять по центру: если выбраны два или более элемента, выровняйте их по центру по вертикали относительно основного выделения. Выровнять по нижнему краю: если выделены два или более элемента, выравнивание по нижнему краю основного выделения. Соответствие ширине: (^) Если выбраны два или более элемента, ширина элементов соответствует ширине основного выбора. Соответствие высоте: если выбраны два или более элемента, высота элементов соответствует высоте основного выбора. Размер по умолчанию: установите для выбранного элемента размер по умолчанию.
 
-For information about the primary selection see Palette Selection Tools.
+Для получения информации о первичном выборе см. Инструменты выбора палитры.
 
-Showing a View in Full Screen Mode
+Отображение просмотра в полноэкранном режиме
 
-On Windows and Linux, a View can be displayed and edited in Full Screen mode (this is
-not available on the Mac OS X version of Archi since OS X has its own full screen
-support). This can be useful to maximise the View for presentation purposes. To do so
-select a View and press the F11 key, or choose the "Full Screen" menu item from the
-main "View" menu. The View will be maximised:
+В Windows и Linux представление можно отображать и редактировать в полноэкранном режиме (это недоступно в версии Archi для Mac OS X, так как OS X имеет собственную поддержку полноэкранного режима). Это может быть полезно для максимального увеличения просмотра для презентационных целей. Для этого выберите «Просмотр» и нажмите клавишу F11 или выберите пункт «Во весь экран» в главном меню «Просмотр». Вид будет увеличен:
 
-A View in Full Screen mode
+Просмотр в полноэкранном режиме
 
-The Floating Palette window can be closed with the Escape key or the window's close
-button. Right-clicking on the View in Full Screen mode invokes a context menu where
-the Palette may be shown if it is not currently visible.
+Окно плавающей палитры можно закрыть с помощью клавиши Escape или кнопки закрытия окна. Щелчок правой кнопкой мыши на Просмотр в полноэкранном режиме вызывает контекстное меню, в котором может отображаться палитра, если она в данный момент не видна.
 
-Export View As Image
+Экспорт в виде изображения
 
-A View (diagram) can be exported as an image file to disk. This is available from the
-"Export View As Image..." menu command from the main "File->Export" menu or by
-right-clicking on a View and selecting the menu item from the contextual menu. This
-menu command is only available if a View is open and selected.
+Вид (диаграмму) можно экспортировать как файл изображения на диск. Это доступно с помощью команды меню «Экспортировать представление как изображение ...» в главном меню «Файл-> Экспорт» или щелчком правой кнопкой мыши по представлению и выбором пункта меню из контекстного меню. Эта команда меню доступна только в том случае, если вид открыт и выбран.
 
+Доступные форматы: BMP, JPG, PNG, PDF и SVG. Первые три формата можно экспортировать с масштабированием от 25% до 400%. Формат SVG имеет больше возможностей, включая встраивание информации о шрифте и настройку границ viewBox для разных масштабов.
 
-Available formats are BMP, JPG, PNG, PDF and SVG. The first three formats can be
-exported at scaled ranging from 25% to 400%. SVG format has more options including
-embedding font information and setting the viewBox bounds for different scales.
+Экспорт представления как изображения
 
-Exporting a View as an image
+# 13 Точки обзора
 
+В спецификации ArchiMate указано, что «точки обзора - это средство для сосредоточения внимания на определенных аспектах и ​​уровнях архитектуры. Эти аспекты и уровни определяются интересами заинтересованной стороны, с которой происходит общение. Что должно и не должно быть видимым с определенной точки зрения. поэтому полностью зависит от аргументации в отношении озабоченности заинтересованной стороны ".
 
-# Viewpoints
+На практике точка зрения - это подмножество элементов и отношений, нацеленных на заинтересованную сторону. Archi позволяет вам указать следующие точки обзора:
 
-The ArchiMate Specification states that "Viewpoints are a means to focus on particular
-aspects and layers of the architecture. These aspects and layers are determined by the
-concerns of a stakeholder with whom communication takes place. What should and
-should not be visible from a specific viewpoint is therefore entirely dependent on the
-argumentation with respect to a stakeholder's concerns."
+Поддерживаемые точки обзора
 
-In practice, a Viewpoint is a sub-set of elements and relationships aimed at a
-stakeholder. Archi allows you to specify the following Viewpoints:
-
-Supported Viewpoints
-
-When creating a new View in Archi, the default Viewpoint is set to "None", meaning that
-all concepts can be added to the View. Setting a Viewpoint on a View means that a sub-
-set of elements is available to place on the View. Some other ArchiMate authoring tools
-require you to specify the Viewpoint in advance when creating the View. Unfortunately,
-this means that you cannot change your mind should you wish to later change the
-Viewpoint in the View. Archi, however, implements Dynamic Viewpoints so that you
-can change the Viewpoint at any time and those elements that are not permitted for that
-Viewpoint are "ghosted" out. Dynamic Viewpoints allow you to change your mind. You
-don't have to decide up-front what the Viewpoint will be. You can experiment with
-different Viewpoints for the same View. And if you decide to keep the Viewpoint, you can
-simply remove any disallowed elements from the View.
-
+When creating a new View in Archi, the default Viewpoint is set to "None", meaning that all concepts can be added to the View. Setting a Viewpoint on a View means that a sub- set of elements is available to place on the View. Some other ArchiMate authoring tools require you to specify the Viewpoint in advance when creating the View. Unfortunately, this means that you cannot change your mind should you wish to later change the Viewpoint in the View. Archi, however, implements Dynamic Viewpoints so that you can change the Viewpoint at any time and those elements that are not permitted for that Viewpoint are "ghosted" out. Dynamic Viewpoints allow you to change your mind. You don't have to decide up-front what the Viewpoint will be. You can experiment with different Viewpoints for the same View. And if you decide to keep the Viewpoint, you can simply remove any disallowed elements from the View.
 
 Setting the Viewpoint
 
-To set the Viewpoint for a View, open the View in the View editor and select the required
-Viewpoint from the main "View->Viewpoint" menu, or by right-clicking on the View's
-drawing area and selecting it from the context menu. You can also change the Viewpoint
-from the View's Properties window.
+To set the Viewpoint for a View, open the View in the View editor and select the required Viewpoint from the main "View->Viewpoint" menu, or by right-clicking on the View's drawing area and selecting it from the context menu. You can also change the Viewpoint from the View's Properties window.
 
 In the following example we start with a View that has the default "None" Viewpoint:
 
 A View with the "None" Viewpoint
 
-Notice that all elements from all the ArchiMate layers (Business, Application, and
-Technology) are displayed. Also, the Palette has all elements available.
+Notice that all elements from all the ArchiMate layers (Business, Application, and Technology) are displayed. Also, the Palette has all elements available.
 
-If we now change the Viewpoint to "Infrastructure" then any elements that do not belong
-in this Viewpoint are "ghosted" out in the View. Notice, also, that only the elements
-permitted for the current Viewpoint are available in the Palette, whilst the others are not
-available:
-
+If we now change the Viewpoint to "Infrastructure" then any elements that do not belong in this Viewpoint are "ghosted" out in the View. Notice, also, that only the elements permitted for the current Viewpoint are available in the Palette, whilst the others are not available:
 
 The same View with the "Technology Usage" Viewpoint
 
-If we look at the elements in the Model Tree we can see that non-permitted elements for
-the Viewpoint are also greyed out:
+If we look at the elements in the Model Tree we can see that non-permitted elements for the Viewpoint are also greyed out:
 
 Elements not permitted for the Viewpoint are greyed out
 
-If we choose to, we can drag and drop any element from the Model Tree to the View but
-the resulting element in the View will be greyed out. This means that we can work with
-the Viewpoint any way we want to but we are reminded at all times of what should and
-shouldn't be added to the Viewpoint.
+If we choose to, we can drag and drop any element from the Model Tree to the View but the resulting element in the View will be greyed out. This means that we can work with the Viewpoint any way we want to but we are reminded at all times of what should and shouldn't be added to the Viewpoint.
 
-
-If you are unsure of the constraints for a Viewpoint select it then open the Hints Window.
-A full explanation is available for the Viewpoint:
+If you are unsure of the constraints for a Viewpoint select it then open the Hints Window. A full explanation is available for the Viewpoint:
 
 A Hint for a Viewpoint
 
+# 14 The Properties Window
 
-# The Properties Window
+The Properties Window allows you to edit the properties for selected objects in the Model Tree or selected figures or connections in a View. Some properties (for example, the name) are shared between a concept in the Model Tree and its counterpart in a View. Some properties are only relevant for an object in a View (fill colour and font, for example).
 
-The Properties Window allows you to edit the properties for selected objects in the
-Model Tree or selected figures or connections in a View. Some properties (for example,
-the name) are shared between a concept in the Model Tree and its counterpart in a
-View. Some properties are only relevant for an object in a View (fill colour and font, for
-example).
+To edit the Properties for selected objects in the Model Tree or in a View, select the object(s) and open the Properties Window either by double-clicking the tree node or View object, or from the main "Window" menu or main toolbar.
 
-To edit the Properties for selected objects in the Model Tree or in a View, select the
-object(s) and open the Properties Window either by double-clicking the tree node or
-View object, or from the main "Window" menu or main toolbar.
+If selected, the local menu option in the drop-down menu, "Single Column Layout", will show some controls in the Appearance tab in a single column.
 
-If selected, the local menu option in the drop-down menu, "Single Column Layout", will
-show some controls in the Appearance tab in a single column.
+    Note - some properties are only available when the object is selected in
+    a View (for example, fill colour or line width).
 
-```
-Note - some properties are only available when the object is selected in
-a View (for example, fill colour or line width).
-```
-## Model Properties
+## 15 Model Properties
 
-Selecting the top level node for a model in the Model Tree means that you can edit or
-view the following properties in the Properties Window.
+Selecting the top level node for a model in the Model Tree means that you can edit or view the following properties in the Properties Window.
 
 The Main Tab
 
@@ -1373,33 +875,23 @@ File: The file name of the model (read-only)
 
 Purpose: A space to enter a description of the purpose of the model
 
+    In the "Purpose" text control, URLs that start with "http://" "https://" or
+    "ftp://" will show as a hyperlink. Pressing the Ctrl / Command key will change
+    the cursor to a "hand" cursor and you can open the link in a Browser.
 
-```
-In the "Purpose" text control, URLs that start with "http://" "https://" or
-"ftp://" will show as a hyperlink. Pressing the Ctrl / Command key will change
-the cursor to a "hand" cursor and you can open the link in a Browser.
-```
 The Properties Tab
 
 For more information about creating and managing User Properties see User Properties.
 
 Element Properties
 
-Selecting a model element in the Model Tree or in a View means that you can edit or
-view the following properties in the Properties Window.
+Selecting a model element in the Model Tree or in a View means that you can edit or view the following properties in the Properties Window.
 
 The Main Tab
 
 Editing the "Main" Properties for an ArchiMate Element
 
-Name: (^) The name of the ArchiMate element
-Documentation: A space to enter some user documentation relating to the ArchiMate
-element
-In the "Documentation" text control, URLs that start with "http://" "https://"
-or "ftp://" will show as a hyperlink. Pressing the Ctrl / Command key will
-change the cursor to a "hand" cursor and you can open the link in a Browser.
-The Junction connector has an additional property for type:
-
+Name: (^) The name of the ArchiMate element Documentation: A space to enter some user documentation relating to the ArchiMate element In the "Documentation" text control, URLs that start with "http://" "https://" or "ftp://" will show as a hyperlink. Pressing the Ctrl / Command key will change the cursor to a "hand" cursor and you can open the link in a Browser. The Junction connector has an additional property for type:
 
 The Junction Type property
 
@@ -1413,29 +905,21 @@ The Analysis Tab
 
 Viewing the "Analysis" for an ArchiMate Element
 
-Used in
-Views:
+Used in Views:
 
-```
-A table showing the Views (if any) where the selected element is used
-(displayed in a diagram). Double-clicking on an entry in the table will
-open the View and select the element in the diagram.
-```
-Model
-Relations:
+    A table showing the Views (if any) where the selected element is used
+    (displayed in a diagram). Double-clicking on an entry in the table will
+    open the View and select the element in the diagram.
 
-```
-A table showing the relationships (if any) to and from the selected
-element in the model. Double-clicking on an entry in the table will select
-the relationship in the Model Tree window if it is open.
-```
+Model Relations:
+
+    A table showing the relationships (if any) to and from the selected
+    element in the model. Double-clicking on an entry in the table will select
+    the relationship in the Model Tree window if it is open.
+
 Element Appearance Properties
 
-Selecting an element in a View means that you can edit or view additional visual
-properties in the Properties Window. Different visual settings can be applied to an
-element for each separate occurrence in a View. For example, the element "Application
-Service" may be coloured blue in one View, and grey in another View.
-
+Selecting an element in a View means that you can edit or view additional visual properties in the Properties Window. Different visual settings can be applied to an element for each separate occurrence in a View. For example, the element "Application Service" may be coloured blue in one View, and grey in another View.
 
 The Appearance Tab
 
@@ -1443,118 +927,82 @@ Editing the "Appearance" Properties for an ArchiMate Element in a View
 
 This tab is only available when an element is selected in a View.
 
-Fill colour: Sets the fill colour for the selected element. The "Default" button sets the
-fill colour to the default setting.
+Fill colour: Sets the fill colour for the selected element. The "Default" button sets the fill colour to the default setting.
 
-Line colour: Sets the colour of the line used to draw the selected element. The
-"Default" button sets the line colour to the default setting. If this is
-disabled it is because line colours are derived from the element's fill
-colour, as set in Preferences.
+Line colour: Sets the colour of the line used to draw the selected element. The "Default" button sets the line colour to the default setting. If this is disabled it is because line colours are derived from the element's fill colour, as set in Preferences.
 
-Gradient: (^) Sets the direction used to draw the gradient fill of the selected element.
-Settings are "None", "Top", Left", "Right" and "Bottom". Note - gradients
-will not show when a diagram is exported in SVG image format.
-Text
-Alignment:
-Align text in the selected element to Left, Centred or Right.
-Text
-Position:
-Align text in the selected element to Top, Middle or Bottom.
-Font: Sets the font used for the text in the selected element. The "Default"
-button sets the font to the default setting as set in Preferences.
-Font colour: Sets the colour of the font used for the text in the selected element. The
-"Default" button sets the font colour to the default setting.
-Fill Opacity: Set the fill opacity of the figure. Range from 0-255.
-Outline
-Opacity:
-Set the outline opacity of the figure. Range from 0-255.
+Градиент: (^) Устанавливает направление, используемое для рисования градиентной заливки выбранного элемента. Настройки: «Нет», «Сверху», «Слева», «Справа» и «Снизу». Примечание - градиенты не будут отображаться, когда диаграмма экспортируется в формат изображения SVG. Выравнивание текста: выравнивание текста в выбранном элементе по левому краю, по центру или Справа. Положение текста: выравнивание текста в выбранном элементе по верхнему, среднему или нижнему краю. Шрифт: установка шрифта, используемого для текста в выбранном элементе. Кнопка «По умолчанию» устанавливает для шрифта значение по умолчанию, установленное в настройках. Цвет шрифта: устанавливает цвет шрифта, используемого для текста в выбранном элементе. Кнопка «По умолчанию» устанавливает цвет шрифта на настройку по умолчанию. Непрозрачность заливки: устанавливает непрозрачность заливки рисунка. Диапазон от 0 до 255. Контур Непрозрачность: Установите прозрачность контура фигуры. Диапазон от 0 до 255.
 
+Вкладка Label
 
-The Label Tab
+Добавление выражения метки для отображения в представлении
 
-Adding a Label Expression to display in the View
+Эта вкладка доступна только в том случае, если элемент выбран в представлении.
 
-This tab is only available when an element is selected in a View.
+По умолчанию имя элемента будет отображаться в любом представлении, в котором оно появляется. Используя выражение метки для каждого экземпляра представления, вы можете выбрать, что будет отображаться для элемента в представлении. Например, вы можете захотеть отобразить имя элемента и его тип. Или вы можете захотеть отобразить значение одного или нескольких его свойств.
 
-By default, an element's name will be displayed in any View in which it appears. Using a
-label expression per View instance, you can choose what is displayed for the element in
-the View. For example you may wish to display the element's name and its type. Or you
-may wish to display the value of one or more of its properties.
+Полный список типов выражений см. В Archi Wiki.
 
-For a full list of expression types please refer to the Archi Wiki.
+Вкладка Figure
 
-The Figure Tab
+Настройка свойств «Рисунок» для устройства
 
-Setting the "Figure" Properties for a Device
+Эта вкладка доступна только в том случае, если элемент выбран в виде и только для определенных фигур.
 
-This tab is only available when an element is selected in a View and only for certain
-figures.
+Некоторые элементы могут быть представлены альтернативными фигурами. Эти:
 
-Some elements can be represented by alternate figures. These are:
+    - Application Component
+    - Application Event
+    - Application Interface
 
-```
-- Application Component
-- Application Event
-- Application Interface
-```
+    - Application Process
+    - Application Service
+    - Business Event
+    - Business Interface
+    - Business Process
+    - Business Service
+    - Constraint
+    - Device
+    - Grouping
+    - Implementation Event
+    - Node
+    - Requirement
+    - Technology Event
+    - Technology Interface
+    - Technology Process
+    - Technology Service
+    - Value Stream
 
-```
-- Application Process
-- Application Service
-- Business Event
-- Business Interface
-- Business Process
-- Business Service
-- Constraint
-- Device
-- Grouping
-- Implementation Event
-- Node
-- Requirement
-- Technology Event
-- Technology Interface
-- Technology Process
-- Technology Service
-- Value Stream
-```
-The default figure to use when creating new elements can be set in Preferences.
+Фигура по умолчанию для использования при создании новых элементов может быть установлена ​​в настройках.
 
-Relationship Properties
+Свойства отношений
 
-Selecting a model relationship in the Model Tree or in a View means that you can edit or
-view the following properties in the Properties Window.
+Выбор отношения модели в дереве модели или в виде означает, что вы можете редактировать или просматривать следующие свойства в окне свойств.
 
-The Main Tab
+Основная вкладка
 
-Editing the "Main" Properties for an ArchiMate Relationship
+Редактирование «основных» свойств отношения ArchiMate
 
-Name: The name of the relationship. If provided, this will be displayed next
-to the connection in a View.
+Имя: название отношения. Если предоставлено, оно будет отображаться рядом с подключением в представлении.
 
-Documentation: (^) A space to enter some user documentation relating to the
-relationship.
+Документация: (^) Пробел для ввода некоторой пользовательской документации, относящейся к взаимоотношениям.
 
+    In the "Documentation" text control, URLs that start with "http://" "https://"
+    or "ftp://" will show as a hyperlink. Pressing the Ctrl / Command key will
+    change the cursor to a "hand" cursor and you can open the link in a Browser.
 
-```
-In the "Documentation" text control, URLs that start with "http://" "https://"
-or "ftp://" will show as a hyperlink. Pressing the Ctrl / Command key will
-change the cursor to a "hand" cursor and you can open the link in a Browser.
-```
-The Association relationship type has an additional property:
+Тип отношения Ассоциация имеет дополнительное свойство:
 
-Directed: Can be set to directed or non-directed. Setting this also changes the
-connection's arrow-head.
+Направленный: можно выбрать направленный или ненаправленный. Установка этого также изменяет стрелку соединения.
 
-The Access relationship type has an additional property:
+Тип отношения доступа имеет дополнительное свойство:
 
-Access
-Type:
+Тип доступа:
 
-```
-Can be set to "Access", "Read", "Write" or "Read/Write". Setting this also
-changes the connection's arrow-heads.
-```
-The Influence relationship type has an additional property:
+    Can be set to "Access", "Read", "Write" or "Read/Write". Setting this also
+    changes the connection's arrow-heads.
+
+Тип отношения "Влияние" имеет дополнительное свойство:
 
 Strength: Can be set to an appropriate value such as "+", "++", "+++", "-", "--", "---".
 
@@ -1566,31 +1014,23 @@ The Analysis Tab
 
 Viewing the "Analysis" Properties for an ArchiMate Relationship
 
-Used in
-Views:
+Used in Views:
 
-```
-A table showing the Views (if any) where the selected relationship is used
-(displayed in a diagram). Double-clicking on an entry in the table will open
-the View and select the relationship (connection) in the diagram.
-```
+    A table showing the Views (if any) where the selected relationship is used
+    (displayed in a diagram). Double-clicking on an entry in the table will open
+    the View and select the relationship (connection) in the diagram.
 
-Model
-Relations:
+Model Relations:
 
-```
-A table showing the relationships (if any) to and from the selected
-relationship in the model. Double-clicking on an entry in the table will
-select the relationship in the Model Tree window if it is open. Note - if the
-relationship has no incoming or outgoing relationships, the table will be
-empty.
-```
+    A table showing the relationships (if any) to and from the selected
+    relationship in the model. Double-clicking on an entry in the table will
+    select the relationship in the Model Tree window if it is open. Note - if the
+    relationship has no incoming or outgoing relationships, the table will be
+    empty.
+
 Relationship Connection Appearance Properties
 
-Selecting a relationship in a View means that you can edit or view additional visual
-properties in the Properties Window. Different visual settings can be applied to a
-relationship for each separate occurrence in a View. For example, the relationship "Used
-By" may be coloured black in one View, and blue in another View.
+Selecting a relationship in a View means that you can edit or view additional visual properties in the Properties Window. Different visual settings can be applied to a relationship for each separate occurrence in a View. For example, the relationship "Used By" may be coloured black in one View, and blue in another View.
 
 The Appearance Tab
 
@@ -1598,34 +1038,26 @@ Editing the "Appearance" Properties for a Relationship in a View
 
 This tab is only available when a relationship is selected in a View.
 
-Show
-Label:
+Show Label:
 
-```
-If selected will show the label if the connection's text is set.
-```
-Text
-Position:
+    If selected will show the label if the connection's text is set.
+    
 
-```
-Specifies the position of the text that will appear next to the line on the
-View. Options are "Source", "Middle" and "Target".
-```
-Line Width: Sets the width of the connection line. Options are "Normal", "Medium" and
-"Heavy".
+Text Position:
 
-Line
-colour:
+    Specifies the position of the text that will appear next to the line on the
+    View. Options are "Source", "Middle" and "Target".
 
-```
-Sets the colour of the connection line. The "Default" button sets the line
-colour to the default setting.
-```
-Font: Sets the font used for the text in the selected connection. The "Default"
-button sets the font to the default setting as set in Preferences.
+Line Width: Sets the width of the connection line. Options are "Normal", "Medium" and "Heavy".
+
+Line colour:
+
+    Sets the colour of the connection line. The "Default" button sets the line
+    colour to the default setting.
+
+Font: Sets the font used for the text in the selected connection. The "Default" button sets the font to the default setting as set in Preferences.
 
 Font Sets the colour of the font used for the text in the selected connection. The
-
 
 colour: "Default" button sets the fill colour to the default setting.
 
@@ -1635,1369 +1067,857 @@ Adding a Label Expression to display in the View
 
 This tab is only available when a relationship is selected in a View.
 
-By default, an relationship's name will be displayed in any View in which it appears.
-Using a label expression per View instance, you can choose what is displayed for the
-relationship in the View. For example you may wish to display the relationship's name
-and its type. Or you may wish to display the value of one or more of its properties.
+По умолчанию имя отношения будет отображаться в любом представлении, в котором оно появляется. Используя выражение метки для каждого экземпляра представления, вы можете выбрать, что будет отображаться для отношения в представлении. Например, вы можете захотеть отобразить название отношения и его тип. Или вы можете захотеть отобразить значение одного или нескольких его свойств.
 
-For a full list of expression types please refer to the Archi Wiki.
+Полный список типов выражений см. В Archi Wiki.
 
-View Properties
+Просмотр свойств
 
-Selecting a View in the Model Tree or in a View means that you can edit or view the
-following properties in the Properties Window.
+Выбор вида в дереве модели или на виде означает, что вы можете редактировать или просматривать следующие свойства в окне свойств.
 
-The Main Tab
+Основная вкладка
 
-Editing the "Main" Properties for a View
+Редактирование «основных» свойств представления
 
+Точка обзора: выберите точку обзора для обзора. Для получения дополнительной информации см. Точки обзора.
 
-Viewpoint: Select the Viewpoint for the View. For more information see
-Viewpoints
+Имя: имя представления.
 
-Name: The name of the View
+Документация: пространство для ввода некоторой пользовательской документации, относящейся к представлению.
 
-Documentation: A space to enter some user documentation relating to the View
+    In the "Documentation" text control, URLs that start with "http://" "https://"
+    or "ftp://" will show as a hyperlink. Pressing the Ctrl / Command key will
+    change the cursor to a "hand" cursor and you can open the link in a Browser.
 
-```
-In the "Documentation" text control, URLs that start with "http://" "https://"
-or "ftp://" will show as a hyperlink. Pressing the Ctrl / Command key will
-change the cursor to a "hand" cursor and you can open the link in a Browser.
-```
-The Properties Tab
+Вкладка "Свойства"
 
-For more information about creating and managing User Properties see User Properties.
+Для получения дополнительной информации о создании и управлении Свойствами пользователя см. Свойства пользователя.
 
-The Appearance Tab
+Вкладка "Внешний вид"
 
-Editing the "Appearance" Properties for a View
+Редактирование свойств «Внешний вид» для вида
 
-Connection
-Router:
+Маршрутизатор подключения:
 
-```
-Specifies the type of connection router for the whole View. Options
-are:
-```
-```
-Manual - Straight line
-Manhattan - Routes using an orthogonal connector.
-```
-```
-For more information see Setting the Connection Router Type for
-a View
-```
-View Reference Properties
+    Specifies the type of connection router for the whole View. Options
+    are:
 
-Selecting a View Reference in a View means that you can edit or view the following
-properties in the Properties Window.
+    Manual - Straight line
+    Manhattan - Routes using an orthogonal connector.
 
+    For more information see Setting the Connection Router Type for
+    a View
 
-The Main Tab
+Просмотр справочных свойств
 
-Editing the "Main" Properties for a View Reference
+Выбор ссылки на представление в представлении означает, что вы можете редактировать или просматривать следующие свойства в окне свойств.
 
-Name: The name of the View
+Основная вкладка
 
-The Appearance Tab
+Редактирование «основных» свойств для ссылки на представление
 
-Editing the "Appearance" Properties for a View Reference
+Имя: имя представления.
 
-Fill colour: Sets the fill colour for the selected object. The "Default" button sets the fill
-colour to the default setting.
+Вкладка "Внешний вид"
 
-Line colour: Sets the colour of the line used to draw the selected object. The "Default"
-button sets the line colour to the default setting. If this is disabled it is
-because line colours are derived from the object's fill colour, as set in
-Preferences.
+Редактирование свойств «Внешний вид» для ссылки на вид
 
-Gradient: Sets the direction used to draw the gradient fill of the selected element.
-Settings are "None", "Top", Left", "Right" and "Bottom". Note - gradients
-will not show when a diagram is exported in SVG image format.
+Цвет заливки: устанавливает цвет заливки для выбранного объекта. Кнопка «По умолчанию» устанавливает для цвета заливки значение по умолчанию.
 
-Text
-Alignment:
+Цвет линии: устанавливает цвет линии, используемой для рисования выбранного объекта. Кнопка «По умолчанию» устанавливает для цвета линии значение по умолчанию. Если это отключено, это связано с тем, что цвета линий являются производными от цвета заливки объекта, установленного в настройках.
 
-```
-Align text in the selected object to Left, Centred or Right.
-```
-Text
-Position:
+Градиент: задает направление, используемое для рисования градиентной заливки выбранного элемента. Настройки: «Нет», «Сверху», «Слева», «Справа» и «Снизу». Примечание - градиенты не отображаются, когда диаграмма экспортируется в формат изображения SVG.
 
-```
-Align text in the selected object to Top, Middle or Bottom.
-```
+Выравнивание текста:
 
-Font: Sets the font used for the text in the selected object. The "Default" button
-sets the font to the default setting as set in Preferences.
+    Align text in the selected object to Left, Centred or Right.
+    
 
-Font colour: Sets the colour of the font used for the text in the selected object. The
-"Default" button sets the font colour to the default setting.
+Положение текста:
 
-Fill Opacity: Set the fill opacity of the figure. Range from 0-255.
+    Align text in the selected object to Top, Middle or Bottom.
+    
 
-Outline
-Opacity:
+Шрифт: устанавливает шрифт, используемый для текста в выбранном объекте. Кнопка «По умолчанию» устанавливает для шрифта значение по умолчанию, установленное в настройках.
 
-```
-Set the outline opacity of the figure. Range from 0-255.
-```
-The Label Tab
+Цвет шрифта: устанавливает цвет шрифта, используемого для текста в выбранном объекте. Кнопка «По умолчанию» устанавливает для цвета шрифта значение по умолчанию.
 
-By default, an View Reference's name will be displayed in any View in which it appears.
-Using a label expression per View instance, you can choose what is displayed for the
-View Reference in the View. For example you may wish to display the View Reference's
-name and the value of one or more of its properties.
+Непрозрачность заливки: установите непрозрачность заливки фигуры. Диапазон от 0 до 255.
 
-For a full list of expression types please refer to the Archi Wiki.
+Непрозрачность контура:
 
-Folder Properties
+    Set the outline opacity of the figure. Range from 0-255.
+    
 
-Selecting a user-created folder in the Model Tree means that you can edit or view the
-following properties in the Properties Window.
+Вкладка Label
 
-The Main Tab
+По умолчанию имя ссылки на представление будет отображаться в любом представлении, в котором оно отображается. Используя выражение метки для каждого экземпляра представления, вы можете выбрать, что будет отображаться для ссылки на представление в представлении. Например, вы можете захотеть отобразить имя ссылки на представление и значение одного или нескольких его свойств.
 
-Editing the "Main" Properties for a Folder
+Полный список типов выражений см. В Archi Wiki.
 
-Name: The name of the Folder - this can only be edited for user-created sub-
-folders.
+Свойства папки
 
+Выбор созданной пользователем папки в дереве модели означает, что вы можете редактировать или просматривать следующие свойства в окне свойств.
 
-Documentation: A space to enter some user documentation relating to the folder
+Основная вкладка
 
-```
-In the "Documentation" text control, URLs that start with "http://" "https://"
-or "ftp://" will show as a hyperlink. Pressing the Ctrl / Command key will
-change the cursor to a "hand" cursor and you can open the link in a Browser.
-```
-The Properties Tab
+Редактирование «основных» свойств папки
 
-For more information about creating and managing User Properties see User Properties.
+Имя: имя папки - его можно редактировать только для подпапок, созданных пользователем.
 
-The Label Tab
+Документация: пространство для ввода некоторой пользовательской документации, относящейся к папке.
 
-Here you can set how child objects' labels in a folder are displayed in the Model Tree. By
-default, an object's name will be displayed. Using a label expression, you can choose
-what is displayed for the element in the Model Tree. For example you may wish to
-display the element's name and its type. Or you may wish to display the value of one or
-more of its properties. By creating a label expression for a folder, it affects only its child
-objects, not the folder itself.
+    In the "Documentation" text control, URLs that start with "http://" "https://"
+    or "ftp://" will show as a hyperlink. Pressing the Ctrl / Command key will
+    change the cursor to a "hand" cursor and you can open the link in a Browser.
 
-For a full list of expression types please refer to the Archi Wiki.
+Вкладка "Свойства"
 
-Note Properties
+Для получения дополнительной информации о создании и управлении Свойствами пользователя см. Свойства пользователя.
 
-Selecting a Note in a View means that you can edit or view the following properties in
-the Properties Window.
+Вкладка Label
 
-The Main Tab
+Здесь вы можете установить, как метки дочерних объектов в папке будут отображаться в дереве модели. По умолчанию отображается имя объекта. Используя выражение метки, вы можете выбрать, что будет отображаться для элемента в дереве модели. Например, вы можете захотеть отобразить имя элемента и его тип. Или вы можете захотеть отобразить значение одного или нескольких его свойств. Создавая выражение метки для папки, оно влияет только на ее дочерние объекты, но не на саму папку.
 
+Полный список типов выражений см. В Archi Wiki.
 
-Editing the "Main" Properties for a Note
+Свойства заметки
 
-Content: The textual content for the Note
+Выбор примечания в представлении означает, что вы можете редактировать или просматривать следующие свойства в окне «Свойства».
 
-The Properties Tab
+Основная вкладка
 
-For more information about creating and managing User Properties see User Properties.
+Редактирование «основных» свойств заметки
 
-The Appearance Tab
+Контент: текстовое содержание заметки.
 
-Editing the "Appearance" Properties for a Note
+Вкладка "Свойства"
 
-Fill colour: Sets the fill colour for the selected object. The "Default" button sets the fill
-colour to the default setting.
+Для получения дополнительной информации о создании и управлении Свойствами пользователя см. Свойства пользователя.
 
-Line colour: Sets the colour of the line used to draw the selected object. The "Default"
-button sets the line colour to the default setting. If this is disabled it is
-because line colours are derived from the object's fill colour, as set in
-Preferences.
+Вкладка "Внешний вид"
 
-Gradient: Sets the direction used to draw the gradient fill of the selected element.
-Settings are "None", "Top", Left", "Right" and "Bottom". Note - gradients
-will not show when a diagram is exported in SVG image format.
+Редактирование свойств «Внешний вид» заметки
 
-Border: Sets the border type. Can be either "Dog Ear", "Rectangle" or "None".
+Цвет заливки: устанавливает цвет заливки для выбранного объекта. Кнопка «По умолчанию» устанавливает для цвета заливки значение по умолчанию.
 
-Text
-Alignment:
+Цвет линии: устанавливает цвет линии, используемой для рисования выбранного объекта. Кнопка «По умолчанию» устанавливает для цвета линии значение по умолчанию. Если это отключено, это связано с тем, что цвета линий являются производными от цвета заливки объекта, установленного в настройках.
 
-```
-Align text in the selected object to Left, Centred or Right.
-```
-Text
-Position:
+Градиент: задает направление, используемое для рисования градиентной заливки выбранного элемента. Настройки: «Нет», «Сверху», «Слева», «Справа» и «Снизу». Примечание - градиенты не отображаются, когда диаграмма экспортируется в формат изображения SVG.
 
-```
-Align text in the selected object to Top, Middle or Bottom.
-```
-Font: Sets the font used for the text in the selected object. The "Default" button
-sets the font to the default setting as set in Preferences.
+Граница: устанавливает тип границы. Может иметь значение «Собачье ухо», «Прямоугольник» или «Нет».
 
+Выравнивание текста:
 
-Font colour: Sets the colour of the font used for the text in the selected object. The
-"Default" button sets the font colour to the default setting.
+    Align text in the selected object to Left, Centred or Right.
+    
 
-Fill Opacity: Set the fill opacity of the figure. Range from 0-255.
+Положение текста:
 
-Outline
-Opacity:
+    Align text in the selected object to Top, Middle or Bottom.
+    
 
-```
-Set the outline opacity of the figure. Range from 0-255.
-```
-The Label Tab
+Шрифт: устанавливает шрифт, используемый для текста в выбранном объекте. Кнопка «По умолчанию» устанавливает для шрифта значение по умолчанию, установленное в настройках.
 
-By default, a Note's text content will be displayed in the View in which it appears. Using
-a label expression, you can choose what is displayed for the Note. For example you may
-wish to display the Note's content and one or more of its properties.
+Цвет шрифта: устанавливает цвет шрифта, используемого для текста в выбранном объекте. Кнопка «По умолчанию» устанавливает для цвета шрифта значение по умолчанию.
 
-For a full list of expression types please refer to the Archi Wiki.
+Непрозрачность заливки: установите непрозрачность заливки фигуры. Диапазон от 0 до 255.
 
-Connection Properties
+Непрозрачность контура:
 
-Selecting a Connection in a View means that you can edit or view its properties in the
-Properties Window.
+    Set the outline opacity of the figure. Range from 0-255.
+    
 
-The Main Tab
+Вкладка Label
 
-Editing the "Main" Properties for a Connection
+По умолчанию текстовое содержимое примечания будет отображаться в том представлении, в котором оно отображается. Используя выражение метки, вы можете выбрать, что будет отображаться для примечания. Например, вы можете захотеть отобразить содержимое заметки и одно или несколько ее свойств.
 
-Name: The name of the Connection. If supplied this will appear next to the
-Connection on the View.
+Полный список типов выражений см. В Archi Wiki.
 
-Documentation: A space to enter some user documentation relating to the Connection
+Свойства подключения
 
-The Properties Tab
+Выбор соединения в представлении означает, что вы можете редактировать или просматривать его свойства в окне свойств.
 
-For more information about creating and managing User Properties see User Properties.
+Основная вкладка
 
+Редактирование «основных» свойств соединения
 
-The Appearance Tab
+Имя: имя подключения. Если предоставлено, оно появится рядом с подключением в обзоре.
 
-Editing the "Appearance" Properties for a Connection in a View
+Документация: пространство для ввода некоторой пользовательской документации, относящейся к Соединению.
 
-Show
-Label:
+Вкладка "Свойства"
 
-```
-If selected will show the label if the connection's text is set.
-```
-Text
-Position:
+Для получения дополнительной информации о создании и управлении Свойствами пользователя см. Свойства пользователя.
 
-```
-Sets the position of the text that will appear next to the line on the View.
-Options are "Source", "Middle" and "Target".
-```
-Line Width: Sets the width of the connection line. Options are "Normal", "Medium" and
-"Heavy".
+Вкладка "Внешний вид"
 
-Line
-colour:
+Редактирование свойств «Внешний вид» соединения на виде
 
-```
-Sets the colour of the connection line. The "Default" button sets the line
-colour to the default setting.
-```
-Line Style: Sets the connection line's source and target head types, and main line
-style.
+Показать этикетку:
 
-Font: Sets the font used for the text in the selected connection. The "Default"
-button sets the font to the default setting as set in Preferences.
+    If selected will show the label if the connection's text is set.
+    
 
-Font
-colour:
+Положение текста:
 
-```
-Sets the colour of the font used for the text in the selected connection. The
-"Default" button sets the font colour to the default setting.
-```
-The Label Tab
+    Sets the position of the text that will appear next to the line on the View.
+    Options are "Source", "Middle" and "Target".
 
-By default, a connection's name will be displayed in the View in which it appears. Using
-a label expression, you can choose what is displayed for the connection. For example
-you may wish to display the connection's name and one or more of its properties.
+Ширина линии: установка ширины соединительной линии. Возможные варианты: «Нормальный», «Средний» и «Тяжелый».
 
-For a full list of expression types please refer to the Archi Wiki.
+Цвет линии:
 
+    Sets the colour of the connection line. The "Default" button sets the line
+    colour to the default setting.
 
-Group Properties
+Стиль линии: задает типы исходной и целевой головки соединительной линии, а также стиль основной линии.
 
-Selecting a Group in a View means that you can edit or view the following properties in
-the Properties Window.
+Шрифт: устанавливает шрифт, используемый для текста в выбранном соединении. Кнопка «По умолчанию» устанавливает для шрифта значение по умолчанию, установленное в настройках.
 
-The Main Tab
+Цвет шрифта:
 
-Editing the "Main" Properties for a Group
+    Sets the colour of the font used for the text in the selected connection. The
+    "Default" button sets the font colour to the default setting.
 
-Name: The name of the Group
+Вкладка Label
 
-Documentation: A space to enter some user documentation relating to the Group
+По умолчанию имя подключения будет отображаться в том представлении, в котором оно отображается. Используя выражение метки, вы можете выбрать, что будет отображаться для соединения. Например, вы можете захотеть отобразить имя соединения и одно или несколько его свойств.
 
-The Properties Tab
+Полный список типов выражений см. В Archi Wiki.
 
-For more information about creating and managing User Properties see User Properties.
+Свойства группы
 
-The Appearance Tab
+Выбор группы в представлении означает, что вы можете редактировать или просматривать следующие свойства в окне «Свойства».
 
-Editing the "Appearance" Properties for a Group
+Основная вкладка
 
-Fill colour: Sets the fill colour for the Group. The "Default" button sets the fill colour
-to the default setting.
+Редактирование «основных» свойств группы
 
+Имя: Название группы.
 
-Line colour: Sets the colour of the line used to draw the Group. The "Default" button
-sets the line colour to the default setting. If this is disabled it is because
-line colours are derived from the object's fill colour, as set in Preferences.
+Документация: место для ввода некоторой пользовательской документации, относящейся к Группе.
 
-Gradient: (^) Sets the direction used to draw the gradient fill of the selected element.
-Settings are "None", "Top", Left", "Right" and "Bottom". Note - gradients
-will not show when a diagram is exported in SVG image format.
-Border: Sets the border type. Can be either "Tabbed" or "Rectangle".
-Text
-Alignment:
-Align text in the selected object to Left, Centred or Right.
-Text
-Position:
-Align text in the selected object to Top, Middle or Bottom.
-Font: Sets the font used for the text in the Group. The "Default" button sets the
-font to the default setting as set in Preferences.
-Font colour: (^) Sets the colour of the font used for the text in the Group. The "Default"
-button sets the font colour to the default setting.
-Fill Opacity: Set the fill opacity of the figure. Range from 0-255.
-Outline
-Opacity:
-Set the outline opacity of the figure. Range from 0-255.
-The Label Tab
-By default, a Group's name will be displayed in the View in which it appears. Using a
-label expression, you can choose what is displayed for the Group. For example you may
-wish to display the Group's name and one or more of its properties.
-For a full list of expression types please refer to the Archi Wiki.
-User Properties
-User Properties can be created and managed from the "Properties" tab in the Properties
-Window.
-The Properties Tab
+Вкладка "Свойства"
 
+Для получения дополнительной информации о создании и управлении Свойствами пользователя см. Свойства пользователя.
+
+Вкладка "Внешний вид"
+
+Редактирование свойств «Внешний вид» для группы
+
+Цвет заливки: устанавливает цвет заливки для группы. Кнопка «По умолчанию» устанавливает для цвета заливки значение по умолчанию.
+
+Цвет линии: устанавливает цвет линии, используемой для рисования группы. Кнопка «По умолчанию» устанавливает для цвета линии значение по умолчанию. Если это отключено, это связано с тем, что цвета линий являются производными от цвета заливки объекта, установленного в настройках.
+
+Gradient: (^) Sets the direction used to draw the gradient fill of the selected element. Settings are "None", "Top", Left", "Right" and "Bottom". Note - gradients will not show when a diagram is exported in SVG image format. Border: Sets the border type. Can be either "Tabbed" or "Rectangle". Text Alignment: Align text in the selected object to Left, Centred or Right. Text Position: Align text in the selected object to Top, Middle or Bottom. Font: Sets the font used for the text in the Group. The "Default" button sets the font to the default setting as set in Preferences. Font colour: (^) Sets the colour of the font used for the text in the Group. The "Default" button sets the font colour to the default setting. Fill Opacity: Set the fill opacity of the figure. Range from 0-255. Outline Opacity: Set the outline opacity of the figure. Range from 0-255. The Label Tab By default, a Group's name will be displayed in the View in which it appears. Using a label expression, you can choose what is displayed for the Group. For example you may wish to display the Group's name and one or more of its properties. For a full list of expression types please refer to the Archi Wiki. User Properties User Properties can be created and managed from the "Properties" tab in the Properties Window. The Properties Tab
 
 User Properties
 
-This tab allows you to add arbitrary User Properties, or attributes, to a concept, model,
-folder, or view, or object. For example you may wish to add information such as "Cost",
-"Location", "Duration", "Time", "Link" and so on. Properties are stored as name/value
-pairs. Properties with the same name may appear more than once in the model or
-object. Values are entered as free text.
+This tab allows you to add arbitrary User Properties, or attributes, to a concept, model, folder, or view, or object. For example you may wish to add information such as "Cost", "Location", "Duration", "Time", "Link" and so on. Properties are stored as name/value pairs. Properties with the same name may appear more than once in the model or object. Values are entered as free text.
 
-If the value of a Property starts with "http://", "https://", "file://", or "ftp://" it will show in
-blue to denote a hyperlink and an icon will be displayed in the left column. Double-
-clicking on the icon will open the link in a Browser.
+If the value of a Property starts with "http://", "https://", "file://", or "ftp://" it will show in blue to denote a hyperlink and an icon will be displayed in the left column. Double- clicking on the icon will open the link in a Browser.
 
 To Add a New User Property entry:
 
-1. Click on the "New" toolbar button to the right of the Properties table, or select
-    "New" from the right-click menu, or double-click in an empty area on the table
-2. Edit the Property's name in the table cell. If there are existing Properties with this
-    name elsewhere in the Model you can select one of these instead from the
-    combo box in the table cell
-3. Edit the Property's value in the "Value" cell. If there are existing Properties with
-    this value (for this Property name) used elsewhere in the Model you can select
-    one of these instead from the combo box in the cell editor
+1. Click on the "New" toolbar button to the right of the Properties table, or select "New" from the right-click menu, or double-click in an empty area on the table
+1. Edit the Property's name in the table cell. If there are existing Properties with this name elsewhere in the Model you can select one of these instead from the combo box in the table cell
+1. Edit the Property's value in the "Value" cell. If there are existing Properties with this value (for this Property name) used elsewhere in the Model you can select one of these instead from the combo box in the cell editor
 
 To Change an Existing User Property Name to a New or Existing Name:
 
 1. Click on the Property Name cell in the Properties table and type in the new name
-2. If there are existing Properties used elsewhere in the Model you can select one of
-    these instead from the combo box in the cell editor
+1. Если есть существующие свойства, используемые где-то еще в модели, вы можете выбрать одно из них вместо этого в поле со списком в редакторе ячеек.
 
+Чтобы удалить запись свойства:
 
-To Remove a Property Entry:
+1. Выберите запись свойства или записи, которые вы хотите удалить
+1. Нажмите кнопку «Удалить» на панели инструментов справа от таблицы свойств или выберите «Удалить» из контекстного меню.
 
-1. Select the Property entry or entries you wish to remove
-2. Click on the "Remove" toolbar button to the right of the Properties table, or select
-    "Remove" from the right-click menu
 
-```
-Note: Adding a new Property to an object in the Properties window means
-that it becomes available as a re-usable Property for all objects in the same
-model that have User Properties. Removing a Property in the Properties
-window only removes it from the selected object. If it is used in other objects
-it is still available.
-```
-To Re-order Property Entries by Drag and Drop:
+    Note: Adding a new Property to an object in the Properties window means
+    that it becomes available as a re-usable Property for all objects in the same
+    model that have User Properties. Removing a Property in the Properties
+    window only removes it from the selected object. If it is used in other objects
+    it is still available.
 
-1. Select the Property entry or entries in the Properties table you wish to re-order
-2. Drag and Drop the entries in the in the Properties table to re-arrange them
+Чтобы изменить порядок записей свойств путем перетаскивания:
 
-To Sort the Property Names:
+1. Выберите запись свойства или записи в таблице свойств, которые вы хотите изменить.
+1. Перетащите записи в таблице свойств, чтобы изменить их расположение.
 
-1. Click on the "Name" table column header
-2. The Property Names will be sorted alphabetically
+Чтобы отсортировать имена свойств:
 
-To Add a Hyperlink Property Entry:
+1. Щелкните заголовок столбца таблицы "Имя".
+1. Имена свойств будут отсортированы в алфавитном порядке.
 
-1. Select the Property entry in the Properties table you wish to use as a hyperlink
-2. Edit the value so that it contains a URL that starts with "http://", "https://" or "ftp://"
-3. Double-click the icon in the left column to open the link in a Browser
+Чтобы добавить запись свойства гиперссылки:
 
-To Add New Property Entries using Existing Property Names:
+1. Выберите запись свойства в таблице свойств, которую вы хотите использовать в качестве гиперссылки.
+1. Измените значение так, чтобы оно содержало URL-адрес, начинающийся с «http: //», «https: //» или «ftp: //».
+1. Дважды щелкните значок в левом столбце, чтобы открыть ссылку в браузере.
 
-1. Click on the "New Multiple..." toolbar button to the right of the Properties table, or
-    select "New Multiple..." from the right-click menu
-2. Select the Properties you wish to add from the dialog
-3. Press OK and then edit the new Values in the Properties table
+Чтобы добавить новые записи свойств с использованием существующих имен свойств:
 
+1. Нажмите кнопку «Создать несколько ...» на панели инструментов справа от таблицы свойств или выберите «Создать несколько ...» из контекстного меню.
+1. В диалоговом окне выберите свойства, которые вы хотите добавить.
+1. Нажмите ОК, а затем отредактируйте новые значения в таблице свойств.
 
-To Manage and View User Properties Globally:
+Для глобального управления и просмотра свойств пользователей:
 
-1. Click on the "Manage" toolbar button to the right of the Properties table, or select
-    "Manage" from the right-click menu
-2. The "Properties Manager" dialog appears showing all used Property keys in the
-    Model globally and the number of times they have been used:
-3. You can Delete Properties here. All occurrences of the Property and its declared
-    Values will be deleted from all objects that use it
-4. You can Rename Properties by editing the name in the "New Name" column. All
-    occurrences of the Property Name will be renamed in all objects that use it
+1. Нажмите кнопку «Управление» на панели инструментов справа от таблицы «Свойства» или выберите «Управление» из контекстного меню.
+1. Появится диалоговое окно «Диспетчер свойств», в котором показаны все используемые ключи свойств в модели в целом и количество их использований:
+1. Вы можете удалить свойства здесь. Все экземпляры свойства и его объявленные значения будут удалены из всех объектов, которые его используют.
+1. Вы можете переименовать свойства, отредактировав имя в столбце «Новое имя». Все вхождения имени свойства будут переименованы во всех объектах, которые его используют.
 
+# 16 Окно навигатора
 
-# The Navigator Window
+В окне навигатора отображается концепция выбранной в данный момент модели и все ее связи с другими концепциями. Он используется для отображения и обеспечения навигации между связанными концепциями через их отношения и используется вместе с окном «Дерево модели» и «Представлениями».
 
-The Navigator window displays the currently selected model concept and all of its
-relationships with other concepts. It is used to display and allow navigation between
-connected concepts via their relationships and is used in conjunction with the Model
-Tree window and Views.
+Дерево модели действует как «плоский» репозиторий для всех элементов, взаимосвязей и представлений в модели. Представления - это графические конфигурации этих концепций. Однако навигатор может отображать все взаимосвязи концепции на уровне модели независимо от того, как они представлены в представлении.
 
-The Model Tree acts as a "flat" repository for all the elements, relationships and Views in
-a model. Views are graphical configurations of those concepts. However, the Navigator
-is able to show all of a concept's relationships at the model level regardless of how they
-are presented in a View.
+Чтобы использовать окно навигатора, выберите любой элемент или взаимосвязь в дереве модели или на виде. Дерево навигатора обновится, чтобы отразить текущий выбор. В дереве отображается «корневая» выбранная концепция и все отношения, которые из нее проистекают, а также любые «целевые» концепции из этих отношений:
 
-To use the Navigator window, select any element or relationship in the Model Tree or in
-a View. The Navigator tree will update to reflect the current selection. The tree shows
-the "root" selected concept and any relationships that stem from it and any "target"
-concepts from those relationships:
+Окно навигатора
 
-The Navigator Window
+На скриншоте выше пользователь выбрал элемент «CRM-система». Между выбранным элементом и тремя элементами «Служба администрирования клиентов», «Служба страхового приложения» и «CIS» существуют три отношения реализации. На основе этих трех элементов показаны дальнейшие отношения между ними и их целевыми концепциями.
 
-In the above screenshot the user has selected the element "CRM System". There are
-three Realisation relationships between the selected element and the three elements
-"Customer Administration Service", "Insurance Application Service", and "CIS". From
-these three elements further relationships are shown between them and their target
-concepts.
+Таким образом, можно «углубиться» в дерево навигатора и перейти от концепции к концепции, следуя ей и ее дочерним отношениям от источника к цели.
 
-It is possible, therefore, to "drill down" into the Navigator tree and traverse from concept
-to concept following it and its child relationships from source to target.
+Выбранная субконцепция может стать «корневой» концепцией, либо дважды щелкнув по ней в дереве, либо нажав кнопку «Перейти» на панели инструментов окна:
 
-A selected sub-concept can become the "root" concept by either double-clicking on it in
-the tree or by clicking on the "Go Into" button on the window's toolbar:
+Кнопка "Перейти"
 
+И наоборот, нажатие кнопки «Назад» возвращает вас к ранее выбранной концепции:
 
-The "Go Into" Button
+Кнопка "Назад"
 
-Conversely, pressing the "Back" button takes you back to the previously selected
-concept:
+Кнопка «Домой» возвращает вас к исходной основной концепции корня, которая была выбрана изначально:
 
-The "Back" button
+Кнопка "Домой"
 
-The "Home" button takes you back to the main root concept that was originally selected:
+По умолчанию навигатор показывает отношения, которые текут от исходного к целевому концепту. Это можно изменить в обратном порядке, чтобы показать отношения концепции, которые текут от цели к источнику, нажав кнопку «Показать отношения источника» на панели инструментов окна:
 
-The "Home" button
+Показать режим отношений с источниками
 
-By default, the Navigator shows relationships that flow from the source to the target
-concept. It is possible to reverse this to show the concept's relations that flow from the
-target to the source by clicking on the "Show source relations" button on the window's
-toolbar:
+На приведенном выше снимке экрана элемент «CRM-система» является целью двух отношений «Используется». Таким образом, поток идет от «мэйнфрейма» к «службе файлов требований» к «системе CRM» и от «файлового сервера NAS» к «файловой службе клиента» к «системе CRM».
 
-Show source relations mode
+Выбранный концепт можно закрепить, если требуется, нажав кнопку булавки в окне навигатора:
 
-In the above screenshot the element "CRM System" is the target of the two "Used By"
-relationships. So the flow is from "Mainframe" to "Claim Files Service" to "CRM System",
-and from "NAS File Server" to "Customer File Service" to "CRM System".
+Кнопка "закрепить"
 
+Также можно перетащить любые выбранные элементы и / или отношения из дерева навигатора в представление точно так же, как перетаскивание из дерева модели в представление (см. Добавление элементов и взаимосвязей из дерева модели в представление )
 
-The selected concept can be pinned if required by selecting the pin button in the
-Navigator window:
+# 17 Окно визуализатора
 
-The "pin" button
+Окно Visualiser отображает выбранную концепцию модели и все ее связи с другими концепциями модели в графическом виде. Это графический эквивалент навигатора. Выбор элемента или отношения в дереве модели, навигаторе или в представлении диаграммы обновит выбор в визуализаторе.
 
-It is also possible to drag and drop any selected elements and/or relationships from the
-Navigator Tree to a View, in exactly the same way as dragging from the Model Tree to a
-View (see Adding Elements and Relations from the Model Tree to a View)
+Окно визуализатора
 
+Чтобы использовать визуализатор, выберите любой элемент или взаимосвязь в дереве модели, навигаторе или в представлении. Визуализатор обновится, чтобы отразить текущий выбор. Визуализатор выделяет выбранную концепцию и показывает все взаимосвязи и любые связанные элементы. Двойной щелчок по одному из связанных элементов позволяет вам «перейти» к элементу, так что он является центральным центральным понятием, и отображаются все его отношения и связанные понятия. Вы также можете «Перейти к элементу» на панели инструментов в окне «Визуализатор», а также выбрать «Назад», чтобы вернуться к предыдущему элементу. Выберите «Главная» на панели инструментов, чтобы вернуться к первой выбранной концепции.
 
-# The Visualiser Window
+## 18 Глубина
 
-The Visualiser window displays the selected model concept and all of its relationships
-with other model concepts in a graphical way. It is the graphical equivalent of the
-Navigator. Selecting an element or relationship in the Model Tree, the Navigator or in a
-Diagram View will update the selection in the Visualiser.
+Визуализатор отобразит связанные концепции выбранной концепции с глубиной по умолчанию в один уровень (непосредственные связи). Чтобы изменить уровень глубины расчета соединений, выберите уровень глубины из раскрывающегося меню в окне визуализатора:
 
-The Visualiser Window
+Меню визуализатора глубины
 
-To use the Visualiser, select any element or relationship in the Model Tree, the
-Navigator, or in a View. The Visualiser will update to reflect the current selection. The
-Visualiser highlights the selected concept and shows all relationships and any
-connected elements. Double-clicking on one of the connected elements allows you to
-"Go Into" to the element so that it is the focal central concept, and all of its relationships
-and connected concepts are displayed. You can also "Go Into" an element from the
-toolbar in the Visualiser window, and also select "Back" to return to the previous
-element. Select "Home" on the toolbar to return to the first selected concept.
+## 19 Фильтр точек обзора
 
-## Depth
+Вы можете отфильтровать отображаемые элементы в визуализаторе из меню «Фильтр точки обзора». Это отобразит только те элементы, которые допустимы в данной точке обзора. Для просмотра всех элементов выберите точку обзора «Нет». Для получения дополнительной информации см. Раздел «Точки обзора».
 
-The Visualiser will display the selected concept's connected concepts to a default depth
-of one level (immediate connections). To change the depth level of how far the
-connections are calculated, select the Depth level from the drop-down menu in the
-Visualiser window:
+Элементный фильтр
 
-The Visualiser Menu for Depth
+Вы можете отфильтровать отображаемый тип элемента в визуализаторе из меню «Фильтр элементов». Будет отображен только выбранный тип элемента. Для просмотра всех типов элементов выберите вариант «Все».
 
-## Viewpoint Filter
+Фильтр отношений
 
+Вы можете отфильтровать отображаемые отношения в визуализаторе из меню «Фильтр отношений». Будет отображен только выбранный тип отношений. Чтобы просмотреть все типы отношений, выберите вариант «Все».
 
-You can filter the displayed elements in the Visualiser from the "Viewpoint Filter" menu.
-This will display only those elements that are permissible in the given Viewpoint. To view
-all elements select the "None" Viewpoint. For more information see the Viewpoints
-section.
+Направление
 
-Element Filter
+Этот пункт меню позволяет вам установить, будут ли отображаться входящие и исходящие отношения и их связанные элементы. Возможны варианты «Оба», «Входящий» и «Исходящий». «Входящие» показывают все входящие отношения, «Исходящие» - исходящие, а «Оба» - как входящие, так и исходящие отношения. Это похоже на функции в навигаторе.
 
-You can filter the displayed type of element in the Visualiser from the "Element Filter"
-menu. This will display only the selected element type. To view all element types select
-the "All" option.
+Опции
 
-Relationship Filter
+В первый раз, когда сфокусированная концепция отображается в окне визуализатора, она размещается с макетом по умолчанию. Если вы хотите изменить макет, вы можете нажать кнопку «Макет» на панели инструментов в окне визуализатора.
 
-You can filter the displayed relationship in the Visualiser from the "Relationship Filter"
-menu. This will display only the selected relationship type. To view all relationship types
-select the "All" option.
+Вы можете сохранить содержимое визуализатора как изображение в файл или скопировать изображение в системный буфер обмена из контекстного меню.
 
-Direction
+# 20 Окно подсказок
 
-This menu item allows you to set whether relationships incoming and outgoing
-relationships and their connected elements are displayed. Options are "Both",
-"Incoming" and "Outgoing". "Incoming" shows all incoming relationships, "Outgoing"
-shows outgoing relationships, while "Both" shows both incoming and outgoing
-relationships. This is similar to the functionality in the Navigator.
+В окне «Подсказки» отображается подсказка для выбранного объекта или элемента палитры. Может быть полезно предоставить основную информацию о назначении концепций и точек зрения в модели.
 
-Options
+Выбранную подсказку можно закрепить, нажав кнопку булавки в окне подсказок.
 
-The first time a focussed concept is displayed in the Visualiser window it is laid out with
-a default layout. If you wish to re-layout, you can press the "Layout" button on the toolbar
-in the Visualiser window.
+Окно подсказок
 
-You can save the contents of the Visualiser as an image to file, or copy the image to the
-system clipboard from the context menu.
+# 21 Окно Outline
 
+Окно Outline действует как миниатюрное окно просмотра для выбранного вида диаграммы, чтобы облегчить навигацию, если диаграмма слишком велика для того, чтобы поместиться в окне.
 
-# The Hints Window
+Чтобы открыть или закрыть окно Outline, выберите опцию в главном меню «Window» или на главной панели инструментов.
 
-The Hints window shows a hint for the selected object or palette entry. It can be useful to
-provide basic information about the purpose of the concepts and viewpoints in a model.
+Если редактируемое представление слишком велико, чтобы поместиться в окно приложения, в окне структуры появится панель навигации. Перетаскивание этой панели навигации приведет к прокрутке объектов на холсте для рисования.
 
-The selected hint can be pinned by selecting the pin button in the Hints window.
+Окно Outline
 
-The Hints Window
+# 22 Инструменты
 
+Следующие функции доступны в главном меню «Инструменты».
 
-# The Outline Window
+# 23 Создать вид из элементов
 
-The Outline window acts as a miniature viewport onto the selected diagram View in
-order to aid in navigation if the diagram is too large to fit in the window.
+Вы можете создать новый вид диаграммы из выбранных элементов ArchiMate. Выбранные элементы ArchiMate затем становятся фокусом вновь созданного представления. Любые элементы ArchiMate, которые связаны с выбранными элементами, также добавляются в созданный Просмотр вместе с любыми подключениями.
 
-To open or close the Outline window, choose the option from the main "Window" menu
-or from the main toolbar.
+Эта функция позволяет быстро создать новый вид и точку обзора специально для одного или нескольких связанных элементов ArchiMate.
 
-If the View that is being edited is too large to fit into the application's window then a
-navigation pane will appear in the Outline window. Dragging this navigation pane will
-scroll the objects into view in the drawing canvas.
+Чтобы создать новое представление из выбранных элементов:
 
-The Outline Window
+1. Убедитесь, что вы выбрали один или несколько элементов ArchiMate в дереве моделей или в виде диаграммы.
+1. Выберите опцию «Создать представление для ...» из контекстного меню, вызываемого правой кнопкой мыши, или из главного меню «Инструменты».
+1. В диалоговом окне выберите целевую точку обзора для созданного обзора. Список доступных точек обзора определяется выбранным элементом (ами) и тем, разрешены ли они в точке обзора. Также обратите внимание, что элементы, связанные с выбранным элементом (ами), которые не разрешены в целевой точке обзора, не будут включены в сгенерированный вид. Если вы хотите включить все связанные элементы в целевое представление или если вы не уверены, выберите точку обзора «Нет». При желании вы можете изменить точку обзора позже.
+1. Если хотите, измените имя созданного представления.
+1. При желании отметьте «Добавить все доступные подключения». Если этот параметр отмечен, все соединения между элементами добавляются в сгенерированный View. Если этот флажок не установлен, в созданный вид добавляются только те соединения, которые напрямую связаны с выбранным элементом (ами).
+1. Нажмите ОК.
 
+Создать диалог просмотра
 
-# Tools
+Будет создано новое представление, содержащее выбранные элементы и их соединения.
 
-The following features are available from the main "Tools" menu.
+# 24 Менеджер по свойствам
 
+Доступ к диспетчеру свойств можно получить из меню «Инструменты», а также из вкладки «Свойства». Дополнительные сведения о диспетчере свойств см. В разделе «Свойства пользователя».
 
-# Generate a View from Elements
+# 25 Валидатор
 
-You can generate a new diagram View from selected ArchiMate element(s). Selected
-ArchiMate element(s) then become the focus of a newly generated View. Any ArchiMate
-elements that are related to the selected elements are also added to the generated View
-together with any connections.
+Валидатор предлагает советы и предупреждения о целостности модели ArchiMate. Он может выделить следующие проблемы:
 
-This feature allows you to quickly create a new View and Viewpoint specifically for one
-or more related ArchiMate elements.
+    - Empty Views (Views without diagram objects)
+    - Invalid Relations (possible if importing from another format)
+    - Invalid nested elements (visual nesting without a relationship or relationship
+    present that does not represent nesting)
+    - Unused elements (not referenced in a View)
+    - Unused relations (not referenced in a View)
+    - Invalid elements in viewpoints (elements that don't belong in a viewpoint)
+    - Duplicate element names for the same element type
 
-To generate a new View from selected element(s):
+Окно Валидатора можно открыть из главного меню «Инструменты», из главной панели инструментов или из главного меню «Окно».
 
-1. Ensure that you have selected one or more ArchiMate elements in the Models
-    Tree or in a diagram View.
-2. Select the option "Generate View For..." from the right-click context menu, or
-    from the main "Tools" menu.
-3. In the dialog window select the target Viewpoint for the generated View. The list
-    of available Viewpoints is determined by the selected element(s) and whether
-    they are permitted in a Viewpoint. Note also that elements that are related to the
-    selected element(s) that are not permitted in the target Viewpoint will not be
-    included in the generated View. If you want to include all related elements in the
-    target View, or if you are not sure, choose the "None" Viewpoint. You can change
-    the Viewpoint later if you wish.
-4. If you wish, change the name of the generated View.
-5. Optionally check "Add all available connections". If this option is checked, all
-    connections between elements are added to the generated View. If unchecked,
-    only connections that are directly related to the selected element(s) are added to
-    the generated View.
-6. Click OK
+Чтобы проверить модель, убедитесь, что модель находится в фокусе, выбрав ее в дереве моделей или выбрав одно из представлений модели. Затем либо выберите «Проверить модель» из меню «Инструменты», либо щелкнув правой кнопкой мыши в дереве моделей, либо в самом окне валидатора.
 
-Generate View Dialog
+Валидатор показывает подсказки
 
-A new View will be created containing the selected element(s) and their connections.
+Двойной щелчок по проблеме или выбор пункта меню правой кнопкой мыши «Показать объект» в окне валидатора откроют затронутый объект либо в дереве моделей, либо в представлении.
 
+Чтобы показать пояснительную подсказку о проблеме, убедитесь, что окно «Подсказки» открыто, или выберите пункт контекстного меню «Показать подсказку с объяснением».
 
-# Properties Manager
+Как только все проблемы будут исправлены в модели, валидатор сообщит, что все в порядке:
 
-The Properties Manager can be accessed from the "Tools" menu as well as from the
-Properties tab. For more information about the Properties Manager see User Properties.
+Валидатор доволен
 
+Предпочтения
 
-# The Validator
+Каждое из правил проверки можно включить или отключить в настройках.
 
-The Validator offers advice and warnings on the integrity of an ArchiMate model. It can
-highlight the following issues:
+# 26 Предварительный просмотр HTML-отчета
 
-```
-- Empty Views (Views without diagram objects)
-- Invalid Relations (possible if importing from another format)
-- Invalid nested elements (visual nesting without a relationship or relationship
-present that does not represent nesting)
-- Unused elements (not referenced in a View)
-- Unused relations (not referenced in a View)
-- Invalid elements in viewpoints (elements that don't belong in a viewpoint)
-- Duplicate element names for the same element type
-```
-The Validator window can be opened from the main "Tools" menu, from the main
-toolbar, or from the main "Window" menu.
+Предварительный просмотр HTML-отчета позволяет вам просматривать сгенерированный HTML-отчет для текущей выбранной модели на вкладке в самом Archi. Возможность сохранить отчет в формате HTML доступна в меню Файл-> Отчет. Для получения дополнительной информации см. HTML-отчеты.
 
-To validate a model, ensure that the model has the focus by selecting it in the Models
-Tree or selecting one of the model's Views. Then either select "Validate Model" from the
-"Tools" menu, or from right-clicking in the Models Tree, or in the Validator window itself.
+Предварительный просмотр HTML-отчета
 
-The Validator showing tips
+Предварительный просмотр HTML-отчета позволяет вам просматривать сгенерированный HTML-отчет на вкладке в самом Archi.
 
-Double-clicking on an issue, or selecting the right-click menu item "Reveal Object" in the
-Validator window, will reveal the affected object in either the Models tree or a View.
+# 27 Открытие, сохранение и печать
 
-To show an explanatory hint about the issue, ensure the Hints window is open, or select
-the right-click menu item "Show Explanation Hint".
+## 28 Открытие существующей модели
 
-Once all issues have been fixed in the model the Validator will indicate that everything is
-OK:
+Чтобы открыть существующую модель ArchiMate, созданную в Archi, выберите пункт меню «Открыть ...» в главном меню «Файл» или на главной панели инструментов. Если модель уже открыта в Archi, эта команда не действует.
 
+Вы также можете перетащить файл «.archimate» с рабочего стола в окно дерева модели, чтобы открыть его.
 
-The Validator is happy
+The Windows and Mac versions of Archi support opening the application from the desktop by opening files with the ".archimate" file extension.
 
-Preferences
+## 29 Saving a Model
 
-Each of the validation rules can be enabled or disabled in Preferences.
-
-
-# Preview HTML Report
-
-The Preview HTML Report allows you to view a generated HTML report of the currently
-selected model in a tab within Archi itself. The ability to save the HTML report is
-available from the File->Report menu. For more information see HTML Reports
-
-Preview HTML Report
-
-The Preview HTML Report allows you to view a generated HTML report in a tab within
-Archi itself.
-
-
-# Opening, Saving and Printing
-
-## Opening an Existing Model
-
-To open an existing ArchiMate model that has been created in Archi, choose the
-"Open..." menu item from the main "File" menu or from the main toolbar. If the model is
-already open in Archi, this command has no effect.
-
-You can also drag an ".archimate" file from the desktop onto the Model Tree window to
-open it.
-
-The Windows and Mac versions of Archi support opening the application from the
-desktop by opening files with the ".archimate" file extension.
-
-## Saving a Model
-
-A model can be saved to disk from the "Save" menu item available from the main "File"
-menu or from the main toolbar. If the model has not been previously saved you will be
-prompted for a file name.
+A model can be saved to disk from the "Save" menu item available from the main "File" menu or from the main toolbar. If the model has not been previously saved you will be prompted for a file name.
 
 The "Save As..." menu command allow you to save the model with a different name.
 
-## Closing a Model in the Model Tree
+## 30 Closing a Model in the Model Tree
 
-It is possible to have more than one ArchiMate model open at the same time in the
-Model Tree. You may wish to close one or model so that it does not appear in the Model
-Tree. This is achieved by right-clicking the model in the Model tree and selecting the
-"Close Model" menu item or selecting the "Close Model" menu item from the main "File"
-menu. Closing a model does not delete the model and it may be re-opened in Archi at
-any time from the "Open" command. If the model has been modified you may be
-prompted to save it before closing it.
+It is possible to have more than one ArchiMate model open at the same time in the Model Tree. You may wish to close one or model so that it does not appear in the Model Tree. This is achieved by right-clicking the model in the Model tree and selecting the "Close Model" menu item or selecting the "Close Model" menu item from the main "File" menu. Closing a model does not delete the model and it may be re-opened in Archi at any time from the "Open" command. If the model has been modified you may be prompted to save it before closing it.
 
-## Printing A View (Diagram)
+## 31 Printing A View (Diagram)
 
-A View (diagram) can be printed to a connected printer. This is available from the
-"Print..." menu command in the main "File" menu. This menu command is only available
-if a View is open.
+A View (diagram) can be printed to a connected printer. This is available from the "Print..." menu command in the main "File" menu. This menu command is only available if a View is open.
 
+# 32 Экспорт и импорт модели в формате CSV
 
-# Exporting and Importing the Model in CSV Format
+## 33 Экспорт модели в CSV
 
-## Export Model To CSV
+Вы можете экспортировать данные модели в формат CSV (значения, разделенные запятыми). Данные экспортируются в три разных файла - «elements.csv», «Relations.csv» и «properties.csv». Все объекты данных идентифицируются уникальными идентификаторами, так что свойство будет ссылаться на элемент или отношение в других файлах.
 
-You can export a model's data to CSV format (Comma Separated Values). The data is
-exported in three different files - "elements.csv", "relations.csv" and "properties.csv". All
-data objects are identified by unique identifiers so that a property will reference an
-element or relation in the other files.
+Эта опция доступна из пункта меню «Экспорт модели в CSV ...» в главном меню «Файл-> Экспорт». Когда модель выбрана в дереве модели или в представлении, этот пункт меню становится доступным.
 
-This option is available from the "Export Model To CSV..." menu item from the main
-"File->Export" menu. Once a model is selected in the Model Tree or in a View this menu
-item is enabled.
+Экспорт модели в CSV
 
-Exporting the model to CSV
+Формат поля CSV для элементов - «ID», «Тип», «Имя», «Документация».
 
-The CSV field format for elements is - "ID", "Type", "Name", "Documentation"
+Формат поля CSV для отношений - «ID», «Тип», «Имя», «Документация», «Источник», «Цель».
 
-The CSV field format for relations is - "ID","Type", "Name", "Documentation", "Source",
-"Target"
+Формат поля CSV для свойств - «ID», «Ключ», «Значение».
 
-The CSV field format for properties is - "ID", "Key", "Value"
+## 34 Параметры экспорта
 
-## Export Options
+Папка вывода Выберите папку для файлов вывода.
 
-Output Folder
-Select the folder for the output files.
+Разделитель Выберите символ разделителя полей CSV - запятую, точку с запятой или табуляцию.
 
-Delimiter
-Select the CSV field delimiter character - comma, semicolon, or tab.
+Префикс файла. Укажите необязательный префикс для добавления к именам файлов. Например, «MyModel-» изменит имена файлов на «MyModel-elements.csv», «MyModel-Relations.csv» и «MyModel- properties.csv».
 
+Кодировка файла Выберите кодировку файла для использования - ANSI, UTF-8 или UTF-8 BOM. Некоторые программы предпочитают ту или иную кодировку файлов. Например, MS Excel предпочитает кодировку «UTF-8 BOM», если в файле CSV присутствуют символы Unicode.
 
-File prefix
-Provide an optional prefix to add to the file names. For example, "MyModel-" will change
-the file names to "MyModel-elements.csv", "MyModel-relations.csv", and "MyModel-
-properties.csv".
+Удалять символы новой строки. Если этот флажок установлен, все символы новой строки удаляются из многострочного текста, например из документации.
 
-File encoding
-Select the file encoding to use - ANSI, UTF-8 or UTF-8 BOM. Some programs prefer
-one or the other file encoding. For example, MS Excel prefers the "UTF- 8 BOM"
-encoding if Unicode characters are present in the CSV file.
+Совместимость с Excel. Если этот флажок установлен, текст, начинающийся с нуля, или пробел будут заключены в кавычки, чтобы данные правильно импортировались в Excel. Кроме того, любое текстовое поле, которое начинается с символа «=», «+», «-» или «@», будет иметь префикс с пробелом, чтобы Excel не интерпретировал его как формулу.
 
-Strip newline characters
-If selected will remove all newline characters from multi-line text such as documentation.
+Импорт данных CSV в модель
 
-Excel compatible
-If selected will surround text starting with a zero or space with quote marks so that the
-data imports correctly into Excel. Also, any text field that starts with a "=", "+", "-", or "@"
-character will be prefixed with a space so that Excel does not interpret it as a formula.
+Вы также можете импортировать данные CSV в существующую модель. Файлы CSV должны быть в том же формате, что и описанный выше. Идентификаторы элемента и отношения не являются обязательными, но вам необходимо предоставить идентификатор для элемента или отношения, если на него ссылается другое понятие или свойство. Если предоставляется идентификатор, он должен быть уникальным для файла с использованием буквенно-цифровых символов, например - «id1», «8fe456d», «субъект3». Если идентификатор не указан, должно быть пустое поле «». В этом случае при импорте будет сгенерирован идентификатор.
 
-Importing CSV Data into a Model
+При импорте данных CSV в существующую модель вы можете предоставить только один или все три файла (элементы, отношения, свойства). Обычно вы предоставляете все три файла. Формат файлов следующий:
 
-You can also import CSV data into an existing model. The CSV files need to be in the
-same format as described above. Element and relationship IDs are optional, but you
-need to provide an ID for an element or relationship if it is referenced by another concept
-or property. If providing an ID then it needs to be unique to the file using alpha-numeric
-characters, for example - "id1", "8fe456d", "actor3". If an ID is not provided, a blank field
-"" should be present. In this case, an ID will be generated on import.
+«xxx-elements.csv» «xxx-Relations.csv» «xxx-properties.csv»
 
-When importing CSV data into an existing model you can provide just one or all three
-files (elements, relations, properties). Usually you will provide all three files. The format
-of the files is as follows:
+Префикс («xxx») необязателен, но должен быть одинаковым для всех трех файлов, если он используется. Все три имени файла должны совпадать, например: «myname-elements.csv», «myname-Relations.csv» и «myname-properties.csv». По крайней мере, имена файлов должны содержать расширение «.csv», а имена заканчиваться на «элементы», «отношения» или «свойства».
 
-"xxx-elements.csv"
-"xxx-relations.csv"
-"xxx-properties.csv"
+Лучший способ понять требуемый формат - это экспортировать существующую модель в формат CSV и открыть полученные файлы в текстовом редакторе или приложении для работы с электронными таблицами.
 
-The prefix ("xxx") is optional but must be the same for all three files if used. All three file
-names need to match - for example: "myname-elements.csv", "myname-relations.csv"
-and "myname-properties.csv". At the very least, the filenames need to contain the ".csv"
-extension and the names end with "elements", "relations" or "properties".
+При импорте файлов CSV в Archi вы можете выбрать любой из трех файлов CSV в диалоговом окне «Импорт». Если есть соответствующие файлы "* .csv", то эти файлы будут автоматически импортированы одновременно.
 
-The best way to understand the required format is to export an existing model to CSV
-format, and open the resulting files in a text editor, or spreadsheet application
+Также возможно объединить / обновить импортированные данные CSV в существующую модель. Если концепция модели уже существует, как обозначено ее идентификатором, а запись строки CSV содержит данные, отличные от данных в модели, она обновляется. Например, бизнес-субъект с идентификатором «9240f5bf», именем «BA1» и никакая документация не может быть обновлен с помощью следующей записи строки:
 
+«ID», «Тип», «Имя», «Документация» «9240f5bf», «BusinessActor», «Новое имя», «Дополнительная документация»
 
-When importing the CSV file(s) into Archi you can select any of the three CSV files in the
-Import dialog box. If there are corresponding "*.csv" files then these file(s) will be
-automatically imported at the same time.
+You can import just one or two CSV files into an existing model. If you import just an "elements.csv" file then only elements will be imported. If you then import a "relations.csv" file that uses the corresponding concept IDs you can import just the relations. The same is true for the "properties.csv" file.
 
-It is also possible to merge/update the imported CSV data into an existing model. If a
-model concept already exists as denoted by its ID, and the CSV row entry contains
-different data to that in the model it is updated. For example, a Business Actor with id
-"9240f5bf", named "BA1", and no documentation can be updated with a row entry as
-follows:
+If you are manually creating CSV files make sure you save them using UTF-8 format to preserve all special characters.
 
-"ID","Type","Name","Documentation"
-"9240f5bf","BusinessActor","New Name","Additional Documentation"
+Note - it is currently not possible to import and export View diagram information in CSV format.
 
-You can import just one or two CSV files into an existing model. If you import just an
-"elements.csv" file then only elements will be imported. If you then import a
-"relations.csv" file that uses the corresponding concept IDs you can import just the
-relations. The same is true for the "properties.csv" file.
+# 35 Importing Another Model into the Current Model
 
-If you are manually creating CSV files make sure you save them using UTF-8 format to
-preserve all special characters.
+It is possible to import and merge another Archi model into the currently selected model. You can then maintain the imported model as a reference model that you can update separately and re-import as required.
 
-Note - it is currently not possible to import and export View diagram information in CSV
-format.
+Некоторые моменты, которые следует учитывать при импорте другой модели:
 
+    - Model objects are uniqely referenced by their type and identifier. When importing
+    a model, these are used to match the imported objects to the target objects.
+    - All User Properties for an object are replaced when importing, there is no
+    merging at this level.
+    - Some changes in the imported model might affect connections in Views if
+    relationships are changed or deleted. These are reported in the status dialog
+    after import.
+    - Existing target objects and folders will not be deleted even if these are deleted
+    from the imported model.
 
-# Importing Another Model into the Current Model
+## 36 Импорт другой модели Archi
 
-It is possible to import and merge another Archi model into the currently selected model.
-You can then maintain the imported model as a reference model that you can update
-separately and re-import as required.
+Чтобы импортировать другую модель Archi в текущую выбранную модель, выберите «Импортировать модель Archi в текущую выбранную модель» в главном меню «Файл». Появится следующий диалог:
 
-Some things to consider when importing another model:
+Импорт другой модели
 
-```
-- Model objects are uniqely referenced by their type and identifier. When importing
-a model, these are used to match the imported objects to the target objects.
-- All User Properties for an object are replaced when importing, there is no
-merging at this level.
-- Some changes in the imported model might affect connections in Views if
-relationships are changed or deleted. These are reported in the status dialog
-after import.
-- Existing target objects and folders will not be deleted even if these are deleted
-from the imported model.
-```
-## Importing another Archi model
+## 37 Параметры импорта
 
-To import another Archi model into the currently selected model select "Import an Archi
-model into the currently selected model" from the main "File" menu. The following dialog
-will appear:
+Обновить существующие объекты и папки. Если этот флажок установлен, все существующие целевые объекты и папки будут обновлены при импорте.
 
-Importing another model
+Обновить информацию о модели и папки верхнего уровня. Если этот флажок установлен, то при любых изменениях в узле модели (Имя,
 
-## Import Options
+Документация, Свойства) они будут обновлены. Если есть изменения в каких-либо папках верхнего уровня (Документация, Свойства), они также будут обновлены.
 
-Update existing objects and folders
-If this is selected then any existing target objects and folders will be updated when
-importing.
+Показать диалоговое окно состояния после импорта. Если этот флажок установлен, после импорта модели отображается диалоговое окно состояния. Это будет список того, что было обновлено или изменено.
 
-Update model information and top-level folders
-If this is selected then if there are any changes to the model node (Name,
+# 38 Формат файла Open Group Exchange
 
+Стандарт Open Group определяет стандартный формат файла, который поддерживает обмен моделями ArchiMate между инструментами. Объем стандарта ограничен элементами и взаимосвязями модели ArchiMate. В него не входят функции, зависящие от производителя, но рассматриваются способы их реализации. Формат файла обмена содержит основную информацию о модели, в том числе:
 
-Documentation, Properties) these will be udpated. If theres are changes to any top-level
-folders (Documentation, Properties) these will also be updated.
+    - Objects of all ArchiMate types with basic attributes
+    - Relationship details between objects
+    - Diagrammatic information (Phase 2)
 
-Show Status Dialog after importing
-If this is selected then a status dialog is shown after importing a model. This will list what
-was updated or changed.
+Формат файла обмена не предназначен в качестве постоянного формата файла для самой модели, это механизм для передачи данных экземпляра от одного инструмента к другому. Данные, содержащиеся в формате файла обмена, предназначены для обработки с помощью инструмента, поддерживающего ArchiMate, что исключает автономный семантический вывод. После того, как данные экземпляра были импортированы в инструмент ArchiMate, этот инструмент, вероятно, сохранит их в собственном проприетарном формате файла.
 
+## 39 Экспорт и настройки
 
-# The Open Group Exchange File Format
+Чтобы экспортировать модель Archi в файл формата Open Exchange, выберите пункт меню «Файл-
 
-The Open Group standard defines a standard file format that supports exchange of
-ArchiMate models between tools. The scope of the standard is restricted to the elements
-and the relationships of an ArchiMate model. It excludes features that are vendor-
-specific, although addresses how these can be accommodated. The exchange file
-format contains basic model information including:
+> Экспорт-> Модель для открытия файла обмена ... ».
 
-```
-- Objects of all ArchiMate types with basic attributes
-- Relationship details between objects
-- Diagrammatic information (Phase 2)
-```
-The exchange file format is not intended as a persistent file format for the model itself, it
-is a mechanism to convey instance data from one tool to another. The data contained in
-the exchange file format is meant to be processed by an "ArchiMate aware" tool, thus
-ruling out standalone semantic inference. Once the instance data has been imported
-into an ArchiMate tool, that tool will probably save it in its own proprietary file format.
+## 40 Опции
 
-## Exporting and Settings
+Включить организацию папок. Если этот флажок установлен, в экспортируемый файл включается организационная структура папок элементов и отношений модели.
 
-To export an Archi model to an Open Exchange Format file, select the menu item "File-
->Export->Model To Open Exchange File...".
+Проверить после экспорта. Если этот флажок установлен, то экспортируемый файл XML проверяется на соответствие файлам схемы XSD в качестве окончательной проверки.
 
-## Options
+Копировать файл схемы XSD в целевое расположение. Если этот флажок установлен, файлы XSD формата ArchiMate Open Exchange копируются в то же расположение, что и выходной файл.
 
-Include Folder Organization
-If this is checked then the organisational structure of the model's elements' and relations'
-folders is included in the exported file.
+Код языка Устанавливает двухбуквенный код языка для строковых значений, как определено в ISO 639.
 
-Validate after export
-If this is checked then the exported XML file is validated against the Schema XSD files
-as a final check.
+## 41 Добавление метаданных
 
-Copy XSD schema file to target location
-If this is checked then the ArchiMate Open Exchange format XSD files are copied to the
-same location as the output file.
+Вы также можете включить базовые метаданные Dublin Core в файл обмена XML.
 
-Language code
-Sets the two letter language code for string values as defined in ISO 639.
+Каждую модель можно дополнительно описать с помощью метаданных. Это необязательный набор элементов, которые можно использовать для описания самой модели. Использование метаданных для дальнейшего описания модели может быть полезно для утверждения таких вещей, как издатель, права и использование, авторское право и лицензирование. Набор элементов метаданных Dublin Core состоит из 15 элементов метаданных:
 
-## Adding Metadata
+Заголовок Имя, присвоенное ресурсу.
 
-You can also include basic Dublin Core Metadata in the XML exchange file.
+Создатель. Сущность, которая несет основную ответственность за создание ресурса.
 
+Тема (^) Тема ресурса. Описание Аккаунт ресурса. Издатель. Субъект, ответственный за предоставление ресурса. Участник. Субъект, ответственный за внесение вкладов в ресурс. Дата Точка или период времени, связанный с событием в жизненном цикле ресурса. Тип Характер или жанр ресурса. Формат Формат файла, физический носитель или размеры ресурса. Идентификатор. Однозначная ссылка на ресурс в заданном контексте. Источник Связанный ресурс, из которого происходит описанный ресурс. Язык Язык ресурса. Связь Связанный ресурс. Охват Пространственная или временная тема ресурса, пространственная применимость ресурса или юрисдикция, в которой ресурс актуален. Права Информация о правах на ресурс. Если все поля оставлены пустыми, то в экспортируемый XML-файл метаданные не включаются. Импорт из файла Open Exchange XML Чтобы импортировать файл в формате Open Exchange, выберите пункт меню «Файл-> Импорт-> Open Exchange XML Model ...». Выберите и откройте требуемый XML-файл. Это создаст новую модель ArchiMate в дереве моделей.
 
-Each model can be further described by the use of Metadata. This constitutes an
-optional set of elements that can be used to describe the model itself. The use of
-metadata to further describe a model can be useful to assert such things as publisher,
-rights and usage, copyright, and licensing. The Dublin Core Metadata Element Set
-consists of 15 metadata elements:
+# 42 Составление отчетов
 
-Title A name given to the resource.
+Archi может создавать два типа отчетов из моделей ArchiMate:
 
-Creator An entity primarily responsible for making the resource.
+HTML отчеты
 
-Subject (^) The topic of the resource.
-Description An account of the resource.
-Publisher An entity responsible for making the resource available.
-Contributor An entity responsible for making contributions to the resource.
-Date A point or period of time associated with an event in the lifecycle of the
-resource.
-Type The nature or genre of the resource.
-Format The file format, physical medium, or dimensions of the resource.
-Identifier An unambiguous reference to the resource within a given context.
-Source A related resource from which the described resource is derived.
-Language A language of the resource.
-Relation A related resource.
-Coverage The spatial or temporal topic of the resource, the spatial applicability of the
-resource, or the jurisdiction under which the resource is relevant.
-Rights Information about rights held in and over the resource.
-If all the fields are left blank then no Metadata is included in the exported XML file.
-Importing from an Open Exchange XML file
-To import an Open Exchange Format file, select the menu item "File->Import->Open
-Exchange XML Model...". Select and open the required XML file. This will create a new
-ArchiMate model in the Models Tree.
+Джаспер отчеты
 
+# 43 HTML отчеты
 
-# Reporting
+Archi поддерживает веб-функции отчетности посредством создания HTML-страниц, содержащих дерево модели, сводные таблицы объектов модели и представления в модели.
 
-Archi is able to produce two types of reports from ArchiMate models:
+Эта опция доступна из пункта меню «Отчет-> HTML ...» в главном меню «Файл». Когда модель выбрана в дереве модели или в представлении, этот пункт меню становится доступным. Выберите папку для экспорта модели и ее видов.
 
-HTML Reports
+В выбранной выходной папке создается одна HTML-страница «index.html» вместе с вспомогательными файлами и файлами изображений для представлений в модели.
 
-Jasper Reports
+Сгенерированный HTML-отчет
 
+# 44 Джаспер отчеты
 
-# HTML Reports
+Jasper Reports - самый популярный в мире механизм отчетов Java. Комбинируйте источники данных и создавайте документы с идеальным разрешением, которые можно просматривать, распечатывать или экспортировать в различные форматы документов с помощью этого мощного инструмента создания отчетов. Archi может экспортировать модели в различные форматы с помощью шаблонов отчетов Jasper.
 
-Archi supports web-based reporting functionality by means of generating HTML pages
-containing a model tree, summary tables of the model objects and the Views in a model.
+Эта опция доступна из пункта меню «Отчет-> Jasper ...» в главном меню «Файл». Когда модель выбрана в дереве модели или в представлении, этот пункт меню становится доступным. Предоставьте подробные сведения на следующей странице мастера:
 
-This option is available from the "Report->HTML..." menu item from the main "File"
-menu. Once a model is selected in the Model Tree or in a View this menu item is
-enabled. Select a folder to export the model and its Views.
+Мастер отчетов Jasper, страница 1
 
-A single HTML page, "index.html" is generated in the chosen output folder, together with
-supporting files and image files for the Views in the model.
+Затем на следующей странице мастера выберите шаблон отчета, который вы предпочитаете, а также языковой стандарт, если вы предоставили строки локализованного языка для шаблона отчета:
 
-A generated HTML Report
+Мастер отчетов Jasper, страница 2
 
+Настраиваемый отчет
 
-# Jasper Reports
+Если вы выбираете шаблон «Настраиваемый отчет» при экспорте, вы можете установить различные свойства для макета отчета, если вы основываете свою модель на шаблоне «Настраиваемый отчет» при создании новой модели. См. «Создание новой модели из шаблона» для получения более подробной информации.
 
-Jasper Reports is the world's most popular Java reporting engine. Combine data
-sources and produce pixel-perfect documents that can be viewed, printed, or exported
-into a variety of document formats with this powerful reporting tool. Archi can export
-models in various formats using Jasper Reports Templates.
+Установив определенные свойства в модели, основанной на шаблоне модели «Настраиваемый отчет», вы можете точно настроить вывод. Когда вы создаете новую модель на основе шаблона модели «Настраиваемый отчет», существует представление под названием « _README_ », в котором перечислены свойства.
 
-This option is available from the "Report->Jasper..." menu item from the main "File"
-menu. Once a model is selected in the Model Tree or in a View this menu item is
-enabled. Provide the details in the following wizard page:
+Свойства настраиваемого отчета
 
-Jasper Reports wizard page 1
+Шаблоны отчетов пользователей
 
-And then in the next wizard page, choose the report template that you prefer, and also
-the locale if you have provided localised language strings for the report template:
+Если вы хотите создать свои собственные шаблоны отчетов Jasper, вы можете поместить их в папку с именем «jasper-reports» в папке настроек приложения. Вы можете изменить расположение этой папки в настройках. Кроме того, вы можете вручную выбрать файл шаблона («main.jrxml») из комбинированного варианта «Выбрать ...».
 
-Jasper Reports wizard page 2
+Пример структуры папок для настраиваемого отчета:
 
+C: \ Users \ Bagpuss \ Application Data \ Archi \ jasper-reports
 
-Customisable Report
+------ Мой персонализированный отчетmain.jrxml------style.jrxt------другие файлы...
 
-If you choose the "Customizable Report" template when exporting, then you can set
-various properties for the report's layout if you base your model on the "Customizable
-Report" model template when creating a new model. See "Creating a New Model from a
-Template" for more details.
+Для получения дополнительной информации о создании пользовательских отчетов Jasper обратитесь к разделу для разработчиков на веб-сайте Archi.
 
-By setting certain properties in the model that is based on the "Customizable Report"
-model template you can fine tune the output. When you create a new model based on
-the "Customizable Report" model template there is a View called "_README_" that lists
-the properties.
+Вывод
 
-Custom report properties
+Ниже приводится пример отчета в формате PDF:
 
-User Report Templates
+Часть сгенерированного отчета Jasper в формате PDF
 
-If you wish to create your own custom Jasper Report templates you can place these in
-the folder named "jasper-reports" in the application preference folder. You can change
-the location of this folder in Preferences. Alternatively, you can manually select a
-template file ("main.jrxml") from the "Choose..." combo option.
+# 45 Шаблоны
 
+Archi поддерживает использование повторно используемых моделей или шаблонов ArchiMate. Шаблон - это модель, которая была сохранена в архивном файле с расширением «* .architemplate». Дополнительная информация, описывающая шаблон и дополнительные изображения эскизов представлений модели, также содержится в файле шаблона. Шаблоны - удобная отправная точка для создания новых моделей.
 
-An example folder structure for a custom report:
+## 46 Создание нового шаблона
 
-C:\Users\Bagpuss\Application Data\Archi\jasper-reports
-|------My Custom Report
-|------
-main.jrxml
-|------
-style.jrxt
-|------
-other files...
+Чтобы создать новый шаблон, выполните следующие действия:
 
-For more information on creating custom Jasper Reports please refer to the developer
-section of the Archi website.
+1. Создайте новую модель Archi или откройте существующую модель, которую вы создали, и отредактируйте ее, чтобы она соответствовала вашему желанию.
+1. Убедитесь, что модель, которую вы хотите сохранить как шаблон, открыта и выбрана в дереве модели.
+1. Выберите в главном меню пункт «Файл-> Сохранить как шаблон ...». Откроется мастер:
+1. В мастере укажите имя файла для расположения файла шаблона, имя для шаблона (оно отличается от имени модели) и описание.
+1. Выберите, хотите ли вы включать миниатюрные изображения видов в шаблон модели. Если вы решите включить в шаблон эскизы представлений, выберите, какое из изображений будет «ключевым» эскизом. Это будет первое миниатюрное изображение, отображаемое в мастере «Новая модель из шаблона».
+1. Нажмите «Далее», чтобы перейти к следующей странице мастера:
+1. Выберите, хотите ли вы добавить шаблон в свою коллекцию. Ваша коллекция шаблонов - это список, отсортированный по категориям, который будет отображаться в мастере «Новая модель из шаблона». Если нет доступных для выбора категорий, вы можете создать новую категорию, нажав кнопку «Создать ...» в мастере.
+1. Нажмите «Готово».
 
-Output
+Шаблон будет сохранен в вашей файловой системе с расширением «* .architemplate». Вы можете поделиться этим шаблоном с другими пользователями Archi, если хотите.
 
-The following is an example of a PDF format report:
+Создание новой модели из шаблона
 
-Part of a Generated Jasper Report in PDF format
+Чтобы создать новую модель на основе существующего шаблона, выполните следующие действия:
 
+1. Выберите пункт меню «Файл-> Создать-> Модель из шаблона ...» в главном меню. Откроется мастер:
+1. Выбираем желаемый шаблон. Некоторые из них представлены в разделе «Установленные шаблоны», а созданные пользователем шаблоны перечислены в своих категориях в разделе «Мои шаблоны» (см. «Создание нового шаблона»). Имя и описание выбранного шаблона отображаются в окне предварительного просмотра галереи.
+1. Вы можете предварительно просмотреть все миниатюры для шаблона, перемещая указатель мыши из стороны в сторону по миниатюре в галерее. Вы также можете изменить размер изображений в галерее с помощью ползунка изменения размера.
+1. Если вы хотите открыть шаблон из файла, который не отображается в мастере, выберите пункт «Открыть ...». Диалоговое окно файла позволит вам выбрать файл шаблона "* .architemplate".
+1. Нажмите Готово. Новая модель будет создана и добавлена ​​в дерево модели. Имя модели имеет префикс «(новый)».
 
-# Templates
+Управление вашими шаблонами
 
-Archi supports the use of re-usable ArchiMate models, or templates. A template is a
-model that has been saved in an archive file with the extension "*.architemplate". Further
-information describing the template and optional thumb-nail images of the model's Views
-is also contained in the template file. Templates are convenient starting points for
-creating new models.
+Вы храните шаблоны в своей файловой системе как файлы «* .architemplate». Их можно хранить где угодно в вашей локальной файловой системе. Archi позволяет создавать коллекции пользователей, которые указывают на эти шаблоны. Это ярлыки к актуальным шаблонам. Чтобы управлять своей коллекцией шаблонов, выполните следующие действия:
 
-## Creating a New Template
+1. Выберите пункт меню «Файл-> Создать-> Модель из шаблона ...» в главном меню. Откроется мастер:
+1. Выберите «Управление ...» в разделе «Шаблоны» слева от мастера. Откроется диалоговое окно:
+1. Этот диалог позволяет вам добавлять, переименовывать и удалять новые категории шаблонов, а также добавлять шаблоны из файла в вашу коллекцию. Вы также можете редактировать и изменять имя и описание каждого шаблона.
+1. Чтобы добавить шаблон из файла, нажмите кнопку «Добавить шаблон ...». В открывшемся диалоговом окне выберите файл «* .architemplate».
+1. Чтобы добавить новую категорию шаблона, нажмите кнопку «Новая категория ...». Укажите название категории.
+1. Чтобы добавить шаблоны в категорию, перетащите запись шаблона из таблицы «Шаблоны» в папку категории в дереве «Категории». Обратите внимание, что шаблон может отображаться в нескольких папках категорий.
 
-To create a new template follow these steps:
+# 47 Отношения в ArchiMate
 
-1. Create a new Archi model or open an existing model that you have created and
-    edit it so that it as you want the template to be.
-2. Make sure the model you wish to save as a template is open and selected in the
-    Model Tree.
-3. Choose the "File->Save As Template..." menu item from the main menu. A
-    wizard will open:
-4. In the wizard, provide a file name for the location for the template file, a name for
-    the template (this is different than the name of the model) and a description.
+Вы можете просмотреть все юридические отношения ArchiMate между объектами. Вы можете получить доступ к этому окну из Help | Пункт меню «Связи ArchiMate». Они предназначены только для чтения и только в информационных целях.
 
+Матрица отношений
 
-5. Select whether you want to include thumbnail images of the Views in the model
-    template. If you choose to include thumbnails of the Views in the template choose
-    which of the images will be the "key" thumbnail. This will be the first thumbnail
-    image displayed in the "New Model from Template" wizard.
-6. Click "Next" to move on to the next page of the wizard:
-7. Choose whether you wish to add the template to your collection. Your collection
-    of templates is a list sorted into categories that will be displayed in the "New
-    Model from Template" wizard. If there are no categories available to choose from
-    you can create a new category by clicking on the "New..." button in the wizard.
-8. Press "Finish".
+# 48 Вид эскиза
 
-The template will be saved on your file system with an "*.architemplate" extension. You
-can share this template with other Archi users if you like.
+Sketch View - это экспериментальная функция Archi. Идея Sketch View вдохновлена ​​документом спецификации ArchiMate, определяющим «Вводную точку зрения»:
 
-Creating a New Model from a Template
+    "The Introductory viewpoint forms a subset of the full ArchiMate language
+    using a simplified notation. It is typically used at the start of a design
+    trajectory, when not everything needs to be detailed yet, or to explain the
+    essence of an architecture model to non-architects that require a simpler
+    notation. Another use of this basic, less formal viewpoint is that it tries to
+    avoid the impression that the architectural design is already fixed, an idea
+    that may easily arise when using a more formal, highly structured or
+    detailed visualization. We use a simplified notation for the concepts, and
+    for the relations. All relations except "triggering" and "realization" are
+    denoted by simple lines; "realization" has an arrow in the direction of the
+    realized service; "triggering" is also represented by an arrow." - ArchiMate
+    Specification 1.0 p.72
 
-To create a new Model based on an existing template follow these steps:
+Это в некотором роде похоже на описание процессов моделирования Марком Ланкхорстом с использованием техник разговора, цель которых - уловить суть модели:
 
-1. Choose the "File->New->Model From Template..." menu item from the main
-    menu. A wizard will open:
+    "In architecture development, we find a number of common conversation
+    techniques where it concerns the communication of architectural models:
 
+* Сессия с коричневой бумагой: структурированная групповая сессия, похожая на мозговой штурм (примерно до 15 человек), в которой элементы (ключевые слова или короткие фразы) запрашиваются у отдельных лиц в группе в ответ на такой вопрос, как: 'Каковы основные проблемы с функциональностью в нашей нынешней ИТ-архитектуре? » Как правило, каждый отдельный предмет написан на небольшой клейкой наклейке («Post-It»). Затем предметы собираются на листе бумаги (традиционно дешевой коричневой бумаги) и с помощью открытого творческого группового процесса структурируются и классифицируются. Это может включать добавление, удаление, объединение или изменение элементов. Обычно задействован посредник или фасилитатор ». - Марк Ланкхорст и др.« Архитектура предприятия в действии », второе издание, стр.82
 
-2. Choose the desired template. Some are provided in the "Installed Templates"
-    section while user-created templates are listed in their categories in the "My
-    Templates" section (see "Creating a New Template"). The selected template's
-    name and description are displayed in the Gallery's preview window.
-3. You can preview all of the thumbnail images for a template by moving your
-    mouse from side to side across the thumbnail image in the Gallery. You can also
-    resize the images in the Gallery by using the resize slider control.
-4. If you wish to open a template from file that is not shown in the wizard select the
-    "Open..." item. A file dialog will allow you to choose a "*.architemplate" template
-    file.
-5. Press Finish. A new model is created and added to the Model Tree. The Model's
-    name is prefixed with "(new)".
+В Archi можно создать «Эскизный вид». Чтобы добавить новый вид эскиза к модели, щелкните правой кнопкой мыши папку «Виды» в дереве модели и выберите «Создать-> Вид эскиза» из контекстного меню:
 
-Managing your Templates
+Добавление нового вида "Эскиз"
 
-You store templates on your file system as "*.architemplate" files. These can be stored
-anywhere on your local filing system. Archi allows you to create user collections that
-point to these templates. These are shortcuts to the actual templates. To manage your
-collection of templates follow these steps:
+После добавления вида эскиза к модели его можно открыть из дерева, дважды щелкнув по нему. Любое количество видов можно добавить к модели и открыть одновременно. Представления расположены на вкладках в основной области окна приложения.
 
-1. Choose the "File->New->Model From Template..." menu item from the main
-    menu. A wizard will open:
+Пример просмотра эскиза
 
+Вы можете добавить новые «стикеры» (стикеры) к виду, фигурку «актера» и три типа связи. Нет никаких правил относительно того, что означают отношения или пристрастия. Все объекты можно редактировать в окне свойств. Вы можете сделать эскиз своей модели, а затем преобразовать его в полностью ограниченную модель ArchiMate и представление.
 
-2. Select "Manage..." from the "Templates" section on the left of the wizard. A dialog
-    window will open:
+Двойной щелчок по стикеру открывает окно свойств, щелчок по выбранному стикеру позволяет напрямую редактировать текст стикера.
 
+При желании можно установить фоновое изображение по умолчанию в настройках, а также установить фон для каждого вида эскиза на вкладке «Внешний вид» окна свойств:
 
-3. This dialog allows you to add, rename and remove new template categories, and
-    also to add templates from file to your collection. You can also edit and change
-    the name and description of each template.
-4. To add a template from file, click on the "Add Template..." button. Choose the
-    "*.architemplate" file from the file dialog that appears.
-5. To add a new template category, click on the "New Category..." button. Provide a
-    name for the category.
-6. To add templates to a category, drag and drop a template entry from the
-    "Templates" table to a category folder in the "Categories" tree. Note that a
-    template can appear in more than one category folder.
+Параметры фона просмотра эскиза
 
+Надеемся, что более поздние версии этой функции позволят вам:
 
-# Relationships in ArchiMate
+    - Transform the Sketch into a full ArchiMate View by means of parameters and
+    queries
+    - Record the modelling conversation in Archi to better capture the purpose of the
+    Sketch
 
-You can view all of the legal ArchiMate relationships between entities. You can access
-this window from the Help | ArchiMate Relationships menu item. These are read-only
-and for informational purposes only.
+# 49 Набор инструментов для моделирования холста
 
-Relationships matrix
+Набор инструментов моделирования холста - это расширение Archi, отчасти похожее на представление эскиза, которое предоставляет инструменты для создания и редактирования «холста», такого как холст бизнес-модели. С помощью набора инструментов Canvas Modeling Toolkit вы можете проектировать и создавать повторно используемые шаблоны Canvas, чтобы делиться ими с коллегами или просто, или вы можете использовать его в качестве инструмента предварительного проектирования для набросков идей и моделей. Вы также можете связать с другими представлениями в вашей модели, чтобы вы могли, например, связать из представления ArchiMate с представлением холста бизнес-модели, чтобы предоставить бизнес-план.
 
+Холст бизнес-модели в Archi
 
-# The Sketch View
+Business Model Canvas находится под лицензией Creative Commons Attribution-Share Alike 3.0 Unported License.
 
-The Sketch View is an experimental feature of Archi. The idea behind the Sketch View is
-inspired by the ArchiMate specification document defining an "Introductory viewpoint":
+## 50 Начиная
 
-```
-"The Introductory viewpoint forms a subset of the full ArchiMate language
-using a simplified notation. It is typically used at the start of a design
-trajectory, when not everything needs to be detailed yet, or to explain the
-essence of an architecture model to non-architects that require a simpler
-notation. Another use of this basic, less formal viewpoint is that it tries to
-avoid the impression that the architectural design is already fixed, an idea
-that may easily arise when using a more formal, highly structured or
-detailed visualization. We use a simplified notation for the concepts, and
-for the relations. All relations except "triggering" and "realization" are
-denoted by simple lines; "realization" has an arrow in the direction of the
-realized service; "triggering" is also represented by an arrow." - ArchiMate
-Specification 1.0 p.72
-```
-This is in some ways similar to Marc Lankhorst's description of modelling processes
-using conversation techniques whose aim is to capture the essence of the model:
+Самый быстрый способ начать работу с набором инструментов для моделирования холста - создать новый холст на основе существующего шаблона. Мы создадим новый холст бизнес-модели.
 
-```
-"In architecture development, we find a number of common conversation
-techniques where it concerns the communication of architectural models:
-```
-- Brown-paper session: Structured brainstorm-like group session (up to
-about 15 people) in which items (keywords or short phrases) are elicited
-from the individuals in the group in answer to a question such as: 'What
-are the key functionality issues in our current IT architecture?' Typically,
-every individual item is written on a small adhesive note ('Post-It'). The
-items are then collected on a sheet of paper (traditionally of the cheap
-brown kind) and, by means of an open and creative group process,
-structured and categorised. This may involve adding, deleting, merging, or
-changing items. Usually, a mediator or facilitator is involved." - Marc
-Lankhorst et al. "Enterprise Architecture at Work", Second Edition, p.82
+1. Создайте новую пустую модель в дереве модели. См. Инструкции здесь, чтобы узнать, как это сделать.
+1. Выберите папку «Виды» в дереве модели, щелкните ее правой кнопкой мыши и выберите «Создать-
 
-In Archi it is possible to create a "Sketch View". To add a new Sketch View to the model,
-right-click on the "Views" folder in the Model Tree and select "New->Sketch View" from
-the context menu:
+> Холст из шаблона ... "
+1. Откроется диалоговое окно мастера. Выберите шаблон «Холст бизнес-модели» из шаблонов в разделе «Установленные шаблоны»:
+1. Нажмите «Готово». Новое представление «Холст бизнес-модели» появится в дереве модели, где вы можете изменить имя по умолчанию. Сам вид будет открыт для редактирования:
 
+Холст состоит из 9 пустых «блоков». Каждый блок действует как контейнер, который может содержать «стикеры» и другие объекты, добавленные из палитры. Каждый блок в настоящее время заблокирован, поэтому вы не можете перемещать его или изменять его размер. По сути, блоки действуют как фоновые контейнеры. Каждый блок также имеет связанную с ним текстовую «подсказку», которая отображается в окне подсказок.
 
-Adding a new "Sketch" View
+Добавьте стикеры из палитры и отредактируйте текст в стикерах, чтобы создать модель холста:
 
-Once the Sketch View has been added to the model it can be opened from the tree by
-double-clicking on it. Any number of Views can be added to a model and be open at the
-same time. Views are arranged in tabs in the main area of the application window.
+Добавление стикеров на холст
 
-An example Sketch View
+Business Model Canvas находится под лицензией Creative Commons Attribution-Share Alike 3.0 Unported License.
 
-You can add new "Stickies" (Post-Its) to the View, an "Actor" figure and three types of
-connection. There are no rules as to what the relationships or stickies mean. All objects
-can be edited in the Properties Window. You are free to capture a sketch of your model
-and then later convert it into a fully constrained ArchiMate model and View.
+Вникание в детали
 
-Double-clicking a Sticky opens the Properties Window, clicking on a selected Sticky
-allows you to directly edit the Sticky's text.
+Основными компонентами и концепциями, составляющими холст, являются блоки, стикеры, изображения, соединения, подсказки и блокировка. Шаблон холста обычно состоит из ряда (заблокированных) блоков и изображений, на которые пользователь может добавлять стикеры, изображения, соединения и дополнительные блоки, если это необходимо. В следующих разделах будет подробно описана каждая из этих концепций, начиная с описания палитры холста и примера построения воображаемого холста.
 
-It is possible to set the default background image in Preferences if you wish, and to set
-the background for each Sketch view in the "Appearance" tab of the Properties Window:
+Палитра холста
 
+При работе с холстом палитра представляет инструменты, необходимые для создания этих объектов.
 
-Sketch View background options
+Палитра холста
 
-Later versions of this feature would hopefully allow you to:
-
-```
-- Transform the Sketch into a full ArchiMate View by means of parameters and
-queries
-- Record the modelling conversation in Archi to better capture the purpose of the
-Sketch
-```
-
-# The Canvas Modelling Toolkit
-
-The Canvas Modelling Toolkit is an extension to Archi somewhat akin to the Sketch
-View that provides the tools for you to create and edit a "Canvas" such as the Business
-Model Canvas. With the Canvas Modelling Toolkit you can design and create re-usable
-Canvas Templates to share with colleagues or simply or you can use it as a pre-design
-tool to sketch out ideas and models. You can also link to other Views in your model so
-you could, for example, link from an ArchiMate View to a Business Model Canvas View
-to provide a Business Plan.
-
-The Business Model Canvas in Archi
-
-The Business Model Canvas is licensed under the Creative Commons Attribution-Share
-Alike 3.0 Unported License
-
-## Getting Started
-
-The quickest way to get started with the Canvas Modelling Toolkit is to create a new
-Canvas based on an existing template. We'll create a new Business Model Canvas.
-
-1. Create a new Empty Model in the Model Tree. See the instructions here for how
-    to do this.
-2. Select the "Views" folder on the Model Tree, right-click on it and select "New-
-    >Canvas from Template..."
-
-
-3. A wizard dialog window will open. Select the "Business Model Canvas" template
-    from the templates in the "Installed Templates" section:
-4. Press "Finish". A new "Business Model Canvas" View will appear in the Model
-    Tree where you can edit the default name. The View itself will be open ready for
-    you to edit:
-
-
-The Canvas consists of 9 empty "Blocks". Each Block acts as container that can contain
-"Stickies" and other objects that are added from the Palette. Each Block is currently
-locked so that you cannot move or resize it. Effectively, the Blocks act as backdrop
-containers. Each Block also has a textual "hint" associated with it that show in the Hints
-Window.
-
-Add "Stickies" from the Palette and edit the text in the Sticky to create your Canvas
-model:
-
-Adding "Stickies" to the Canvas
-
-The Business Model Canvas is licensed under the Creative Commons Attribution-Share
-Alike 3.0 Unported License
-
-
-Getting into the Details
-
-The main components and concepts that constitute a Canvas are Blocks, Stickies,
-Images, Connections, Hints and Locking. A Canvas template typically consists of a
-number of (locked) Blocks and Images onto which the user can add Stickies, Images,
-Connections and additional Blocks if required. The following sections will describe each
-of these concepts in detail starting with a description of the Canvas Palette and an
-example of constructing an imaginary Canvas.
-
-The Canvas Palette
-
-When working with a Canvas, the Palette presents you with the tools that you need to
-create these objects.
-
-The Canvas Palette
-
-Select a tool in the Palette and draw it onto the Canvas. The coloured squares represent
-"Stickies". Note that you are not restricted to the provided colours as you can change the
-colour of the Sticky in the Properties Window. Similarly with the provided Connections,
-you can change the line and arrow head style of a Connection in its Properties Window.
+Select a tool in the Palette and draw it onto the Canvas. The coloured squares represent "Stickies". Note that you are not restricted to the provided colours as you can change the colour of the Sticky in the Properties Window. Similarly with the provided Connections, you can change the line and arrow head style of a Connection in its Properties Window.
 
 Constructing a new Canvas - an Example
 
-Let's work through the process of constructing our own Canvas based on mapping Past,
-Present and Future concepts.
+Let's work through the process of constructing our own Canvas based on mapping Past, Present and Future concepts.
 
 Assuming that you have a model selected in the Model Tree follow these steps:
 
-1. Right click on the "Views" folder of your model on the Model Tree and select
-    "New->Blank Canvas":
+1. Right click on the "Views" folder of your model on the Model Tree and select "New->Blank Canvas":
+1. The Blank Canvas View will automatically open. You can rename it at this point in the Model Tree if you wish.
+1. From the Palette select the Block tool and draw a tall rectangular Block on the Canvas. Edit its text content by clicking on it and changing it to "Past":
+1. Create two more Blocks named "Present" and "Future" adding them to the Canvas so that they line up as follows:
+1. Now let's add some icons to these Blocks to make them visually more appealing. Double-click on the first Block to open the Properties Window. In the Properties Window select the "Image" tab. Then select the "Choose..." drop-down box and the "Set Image..." item:
 
 
-2. The Blank Canvas View will automatically open. You can rename it at this point in
-    the Model Tree if you wish.
-3. From the Palette select the Block tool and draw a tall rectangular Block on the
-    Canvas. Edit its text content by clicking on it and changing it to "Past":
-4. Create two more Blocks named "Present" and "Future" adding them to the
-    Canvas so that they line up as follows:
+    When the "My Images" Image Manager dialog window opens, select the "Open
+    from File..." option and choose an appropriate image from your computer's file
+    system. Do the same for the other Blocks.
 
-
-5. Now let's add some icons to these Blocks to make them visually more appealing.
-    Double-click on the first Block to open the Properties Window. In the Properties
-    Window select the "Image" tab. Then select the "Choose..." drop-down box and
-    the "Set Image..." item:
-
-```
-When the "My Images" Image Manager dialog window opens, select the "Open
-from File..." option and choose an appropriate image from your computer's file
-system. Do the same for the other Blocks.
-```
-6. Here's how it looks so far with the images that we have selected for the three
-    Blocks:
-
-
-7. Now that we have constructed our three main Blocks we could take this
-    opportunity to change their background colour, their text fonts and positions in the
-    Properties Window. But for now let's add an Image underneath the Blocks. From
-    the Palette select the Image tool and draw a rectangular Image place-holder on
-    the Canvas right underneath the Blocks. Double-click on the Image place-holder
-    to open the Properties Window. In the Properties Window on the "Main" tab
-    select the "Choose..." drop-down box and the "Set Image..." item, as you did
-    before for a Block, and select an appropriate image from your computer's file
-    system. Then from the "Appearance" tab set the border to "None". The Canvas
-    now looks like the following:
-
+1. Here's how it looks so far with the images that we have selected for the three Blocks:
+1. Now that we have constructed our three main Blocks we could take this opportunity to change their background colour, their text fonts and positions in the Properties Window. But for now let's add an Image underneath the Blocks. From the Palette select the Image tool and draw a rectangular Image place-holder on the Canvas right underneath the Blocks. Double-click on the Image place-holder to open the Properties Window. In the Properties Window on the "Main" tab select the "Choose..." drop-down box and the "Set Image..." item, as you did before for a Block, and select an appropriate image from your computer's file system. Then from the "Appearance" tab set the border to "None". The Canvas now looks like the following:
 
 Adding Hints and Locking
 
-For the finishing touches let's add some Hints to the Blocks and then lock them so that
-we can re-use the Canvas as a Template. Why do we want to add Hints to the Blocks?
-Well, as with the other objects in Archi models it's extremely helpful to provide a rubric
-that suggests to the end user the intent of the object and how it can be used in the
-model. Let's add the hints:
+For the finishing touches let's add some Hints to the Blocks and then lock them so that we can re-use the Canvas as a Template. Why do we want to add Hints to the Blocks? Well, as with the other objects in Archi models it's extremely helpful to provide a rubric that suggests to the end user the intent of the object and how it can be used in the model. Let's add the hints:
 
-1. First ensure that the Hints Window is open. You can open it from the main
-    "Window" menu.
-2. Double-click on the first Block (the "Past" Block) in order to open the Properties
-    Window.
-3. In the Properties Window select the "Hint" tab.
-4. Type "Past" for the Hint title, and some text for the Hint Content. Note that you
-    can use HTML to mark up your content text. Here's what it looks like now:
+1. First ensure that the Hints Window is open. You can open it from the main "Window" menu.
+1. Double-click on the first Block (the "Past" Block) in order to open the Properties Window.
+1. In the Properties Window select the "Hint" tab.
+1. Type "Past" for the Hint title, and some text for the Hint Content. Note that you can use HTML to mark up your content text. Here's what it looks like now:
+1. Add Hints for the other Blocks.
+1. Now let's lock all these objects so that we can use the Canvas. Select each Block and the Image in turn. In the Properties Window tick the "Locked" checkbox:
 
+Now that we have created the Blocks, added an Image, provided the Hints and locked the objects we can save the whole thing as a Canvas Template and then create new instances of the Canvas from the template. See the sections "Saving a Canvas as a Template" and "Creating a New Canvas from a Template" to do this.
 
-5. Add Hints for the other Blocks.
-6. Now let's lock all these objects so that we can use the Canvas. Select each Block
-    and the Image in turn. In the Properties Window tick the "Locked" checkbox:
-
-Now that we have created the Blocks, added an Image, provided the Hints and locked
-the objects we can save the whole thing as a Canvas Template and then create new
-instances of the Canvas from the template. See the sections "Saving a Canvas as a
-Template" and "Creating a New Canvas from a Template" to do this.
-
-Creating a new Canvas instance from the template means we can now start using it for
-real:
-
+Creating a new Canvas instance from the template means we can now start using it for real:
 
 Our imaginary Canvas
 
-For more ideas, look at how the built-in Canvas templates are constructed for further
-examples. See the section "Creating a New Canvas from a Template".
+For more ideas, look at how the built-in Canvas templates are constructed for further examples. See the section "Creating a New Canvas from a Template".
 
-```
-Archi uses a different file format for "*.archimate" files when adding
-Canvasses that contain images.
-Normally Archi saves "*.archimate" files as single plain text XML format files.
-However, when images are used in a Canvas the file format used is a binary
-archive file (zip format) that contains both the model's XML file and any
-image files. This is to keep all related files together ensuring that you don't
-have to worry about managing the image files.
-```
+    Archi uses a different file format for "*.archimate" files when adding
+    Canvasses that contain images.
+    Normally Archi saves "*.archimate" files as single plain text XML format files.
+    However, when images are used in a Canvas the file format used is a binary
+    archive file (zip format) that contains both the model's XML file and any
+    image files. This is to keep all related files together ensuring that you don't
+    have to worry about managing the image files.
+
 Canvas Block
 
-A Block object is a container area that can contain text and an icon. You can also
-provide your own Help Hints. You can lock the Block if you want to make it read-only. A
-typical scenario is to create a number of container Blocks on the Canvas, arrange them
-into the desired framework, lock them, and then save the Canvas as a template.
-
+A Block object is a container area that can contain text and an icon. You can also provide your own Help Hints. You can lock the Block if you want to make it read-only. A typical scenario is to create a number of container Blocks on the Canvas, arrange them into the desired framework, lock them, and then save the Canvas as a template.
 
 Properties
 
-Selecting a Block in a Canvas View means that you can edit or view the following
-properties in the Properties window.
+Selecting a Block in a Canvas View means that you can edit or view the following properties in the Properties window.
 
 The Main Tab
 
@@ -3005,8 +1925,7 @@ Main Properties for a Canvas Block
 
 Locked: Selecting this ensures that the Block cannot be moved or edited.
 
-Content: A space to enter some text content for the Block. The text will show up in the
-Block.
+Content: A space to enter some text content for the Block. The text will show up in the Block.
 
 The Properties Tab
 
@@ -3016,11 +1935,9 @@ The Hint Tab
 
 Hint Properties for a Canvas Block
 
-Hint Title: The title of the Hint to be displayed in the Hints window when the Block is
-selected.
+Hint Title: The title of the Hint to be displayed in the Hints window when the Block is selected.
 
 Hint A space to enter some text content for the Hint to be displayed in the Hints
-
 
 Content: window when the Block is selected.. HTML tags are permitted.
 
@@ -3028,74 +1945,50 @@ The Appearance Tab
 
 Appearance Properties for a Canvas Block
 
-Fill colour: Sets the fill colour for the selected object. The "Default" button sets the
-fill colour to the default setting.
+Fill colour: Sets the fill colour for the selected object. The "Default" button sets the fill colour to the default setting.
 
-Border
-colour:
+Border colour:
 
-```
-Sets the colour of the border used for the selected object. The "None"
-button removes the border from the object.
-```
-Text
-Alignment:
+    Sets the colour of the border used for the selected object. The "None"
+    button removes the border from the object.
 
-```
-Align text in the selected object to Left, Centred or Right.
-```
-Text
-Position:
+Text Alignment:
 
-```
-Align text in the selected object to Top, Middle or Bottom.
-```
-Font: (^) Sets the font used for the text in the selected object. The "Default"
-button sets the font to the default setting as set in Preferences.
-Font colour: Sets the colour of the font used for the text in the selected object. The
-"Default" button sets the font colour to the default setting.
-Fill Opacity: Set the fill opacity of the figure. Range from 0-255.
-Outline
-Opacity:
-Set the outline opacity of the figure. Range from 0-255.
-The Image Tab
+    Align text in the selected object to Left, Centred or Right.
+    
 
+Text Position:
+
+    Align text in the selected object to Top, Middle or Bottom.
+    
+
+Font: (^) Sets the font used for the text in the selected object. The "Default" button sets the font to the default setting as set in Preferences. Font colour: Sets the colour of the font used for the text in the selected object. The "Default" button sets the font colour to the default setting. Fill Opacity: Set the fill opacity of the figure. Range from 0-255. Outline Opacity: Set the outline opacity of the figure. Range from 0-255. The Image Tab
 
 Image Properties for a Canvas Block
 
-Preview: A preview image that shows how the image will appear. Images are resized
-to a maximum width and height of 100 pixels. Double-clicking the Preview
-box will launch the Image Chooser dialog window. You can also drag and
-drop an image file from the desktop onto the Preview box.
+Preview: A preview image that shows how the image will appear. Images are resized to a maximum width and height of 100 pixels. Double-clicking the Preview box will launch the Image Chooser dialog window. You can also drag and drop an image file from the desktop onto the Preview box.
 
-Image: Select an image for the object or clear the image. See "Adding Images to
-Objects" for more details
+Image: Select an image for the object or clear the image. See "Adding Images to Objects" for more details
 
 Position: Sets the position of the image relative to the object.
 
 Canvas Sticky
 
-A Sticky object can contain text and an icon. You can lock the Sticky if you want to make
-it read-only. There are a number of ready-coloured Stickies available in the Palette, but
-you can always change the colour in the Properties window.
+A Sticky object can contain text and an icon. You can lock the Sticky if you want to make it read-only. There are a number of ready-coloured Stickies available in the Palette, but you can always change the colour in the Properties window.
 
 Properties
 
-Selecting a Sticky in a Canvas View means that you can edit or view the following
-properties in the Properties window.
+Selecting a Sticky in a Canvas View means that you can edit or view the following properties in the Properties window.
 
 The Main Tab
 
 Main Properties for a Canvas Sticky
 
-
 Locked: Selecting this ensures that the Sticky cannot be moved or edited.
 
-Content: A space to enter some text content for the Sticky. The text will show up in the
-Sticky.
+Content: A space to enter some text content for the Sticky. The text will show up in the Sticky.
 
-Notes: A space to enter some text notes for the Sticky. Any notes will appear in the
-tooltip for the Sticky.
+Notes: A space to enter some text notes for the Sticky. Any notes will appear in the tooltip for the Sticky.
 
 The Properties Tab
 
@@ -3105,101 +1998,52 @@ The Appearance Tab
 
 Appearance Properties for a Canvas Sticky
 
-Fill colour: (^) Sets the fill colour for the selected object. The "Default" button sets the
-fill colour to the default setting.
-Border
-colour:
-Sets the colour of the border used for the selected object. The "None"
-button removes the border from the object.
-Text
-Alignment:
-Align text in the selected object to Left, Centred or Right.
-Text
-Position:
-Align text in the selected object to Top, Middle or Bottom.
-Font: Sets the font used for the text in the selected object. The "Default"
-button sets the font to the default setting as set in Preferences.
-Font colour: (^) Sets the colour of the font used for the text in the selected object. The
-"Default" button sets the font colour to the default setting.
-Fill Opacity: Set the fill opacity of the figure. Range from 0-255.
-Outline
-Opacity:
-Set the outline opacity of the figure. Range from 0-255.
+Цвет заливки: (^) Устанавливает цвет заливки для выбранного объекта. Кнопка «По умолчанию» устанавливает для цвета заливки значение по умолчанию. Цвет границы: устанавливает цвет границы, используемой для выбранного объекта. Кнопка «Нет» убирает границу с объекта. Выравнивание текста: выравнивание текста в выбранном объекте по левому краю, по центру или по правому краю. Положение текста: выравнивание текста в выбранном объекте по верхнему, среднему или нижнему краю. Шрифт: устанавливает шрифт, используемый для текста в выбранном объекте. Кнопка «По умолчанию» устанавливает для шрифта значение по умолчанию, установленное в настройках. Цвет шрифта: (^) Устанавливает цвет шрифта, используемого для текста в выбранном объекте. Кнопка «По умолчанию» устанавливает для цвета шрифта значение по умолчанию. Непрозрачность заливки: установите непрозрачность заливки фигуры. Диапазон от 0 до 255. Непрозрачность контура: Установите прозрачность контура фигуры. Диапазон от 0 до 255.
 
+Вкладка "Изображение"
 
-The Image Tab
+Свойства изображения для холста-стикера
 
-Image Properties for a Canvas Sticky
+Предварительный просмотр: изображение для предварительного просмотра, показывающее, как оно будет выглядеть. Размер изображений изменяется до максимальной ширины и высоты 100 пикселей. Двойной щелчок по полю предварительного просмотра откроет диалоговое окно Image Chooser. Вы также можете перетащить файл изображения с рабочего стола в окно предварительного просмотра.
 
-Preview: A preview image that shows how the image will appear. Images are resized
-to a maximum width and height of 100 pixels. Double-clicking the Preview
-box will launch the Image Chooser dialog window. You can also drag and
-drop an image file from the desktop onto the Preview box.
+Изображение: выберите изображение для объекта или очистите изображение. См. «Добавление изображений к объектам» для получения более подробной информации.
 
-Image: Select an image for the object or clear the image. See "Adding Images to
-Objects" for more details
+Позиция: устанавливает положение изображения относительно объекта.
 
-Position: Sets the position of the image relative to the object.
+Изображение холста
 
-Canvas Image
+Объект Image - это заполнитель для изображения. Вы можете заблокировать объект Image, если хотите сделать его доступным только для чтения. Изображения могут быть любого размера, но мы рекомендуем делать их достаточно маленькими, чтобы не потреблять слишком много ресурсов.
 
-An Image object is a place-holder for an image. You can lock the Image object if you
-want to make it read-only. Images can be any size but we suggest that you keep them
-reasonably small so as not to consume too many resources.
+    When resizing an image with the mouse you can hold the Shift key at the
+    same time in order to maintain its aspect ratio. Alternatively, you can select
+    the image object and select the "View->Position->Reset Aspect Ratio" menu
+    item (also available on the toolbar).
 
-```
-When resizing an image with the mouse you can hold the Shift key at the
-same time in order to maintain its aspect ratio. Alternatively, you can select
-the image object and select the "View->Position->Reset Aspect Ratio" menu
-item (also available on the toolbar).
-```
-Properties
+Характеристики
 
-Selecting an Image in a Canvas View means that you can edit or view the following
-properties in the Properties window.
+Выбор изображения в представлении холста означает, что вы можете редактировать или просматривать следующие свойства в окне «Свойства».
 
-The Main Tab
+Основная вкладка
 
+Основные свойства изображения холста
 
-Main Properties for a Canvas Image
+Заблокировано: выбор этого параметра гарантирует, что изображение нельзя будет перемещать или редактировать.
 
-Locked: Selecting this ensures that the Image cannot be moved or edited.
+Изображение: выберите изображение для объекта или очистите изображение. См. «Добавление изображений к объектам» для получения более подробной информации.
 
-Image: Select an image for the object or clear the image. See "Adding
-Images to Objects" for more details.
+Документация: (^) Пробел для ввода некоторой пользовательской документации, относящейся к Образу. Вкладка «Свойства». Для получения дополнительных сведений о создании свойств пользователя и управлении ими см. «Свойства пользователя». Вкладка «Внешний вид» Свойства внешнего вида для цвета границы изображения холста: устанавливает цвет границы, используемой для выбранного объекта. Кнопка «Нет» убирает границу с объекта. Непрозрачность заливки: установите непрозрачность заливки фигуры. Диапазон от 0 до 255. Непрозрачность контура: установите непрозрачность контура фигуры. Диапазон от 0 до 255. Соединение холста Выбор соединения в холсте означает, что вы можете редактировать или просматривать его свойства в окне свойств.
 
-Documentation: (^) A space to enter some user documentation relating to the Image.
-The Properties Tab
-For more information about creating and managing User Properties see User Properties.
-The Appearance Tab
-Appearance Properties for a Canvas Image
-Border
-colour:
-Sets the colour of the border used for the selected object. The "None"
-button removes the border from the object.
-Fill Opacity: Set the fill opacity of the figure. Range from 0-255.
-Outline
-Opacity:
-Set the outline opacity of the figure. Range from 0-255.
-Canvas Connection
-Selecting a Connection in a Canvas means that you can edit or view its properties in the
-Properties Window.
+Характеристики
 
+Выбор соединения в представлении холста означает, что вы можете редактировать или просматривать следующие свойства в окне «Свойства».
 
-Properties
+Основная вкладка
 
-Selecting a Connection in a Canvas View means that you can edit or view the following
-properties in the Properties window.
+Редактирование «основных» свойств соединения
 
-The Main Tab
+Locked: Selecting this ensures that the Connection cannot be moved or edited.
 
-Editing the "Main" Properties for a Connection
-
-Locked: Selecting this ensures that the Connection cannot be moved or
-edited.
-
-Name: The name of the Connection. If supplied this will appear next to the
-Connection on the View.
+Name: The name of the Connection. If supplied this will appear next to the Connection on the View.
 
 Documentation: A space to enter some user documentation relating to the Connection
 
@@ -3211,64 +2055,43 @@ The Appearance Tab
 
 Editing the "Appearance" Properties for a Connection in a Canvas
 
+Show Label:
 
-Show
-Label:
+    If selected will show the label if the connection's text is set.
+    
 
-```
-If selected will show the label if the connection's text is set.
-```
-Text
-Position:
+Text Position:
 
-```
-Sets the position of the text that will appear next to the line on the View.
-Options are "Source", "Middle" and "Target".
-```
-Line Width: Sets the width of the connection line. Options are "Normal", "Medium" and
-"Heavy".
+    Sets the position of the text that will appear next to the line on the View.
+    Options are "Source", "Middle" and "Target".
 
-Line
-colour:
+Line Width: Sets the width of the connection line. Options are "Normal", "Medium" and "Heavy".
 
-```
-Sets the colour of the connection line. The "Default" button sets the line
-colour to the default setting.
-```
-Line Style: Sets the connection line's source and target head types, and main line
-style.
+Line colour:
 
-Font: Sets the font used for the text in the selected connection. The "Default"
-button sets the font to the default setting as set in Preferences.
+    Sets the colour of the connection line. The "Default" button sets the line
+    colour to the default setting.
 
-Font
-colour:
+Line Style: Sets the connection line's source and target head types, and main line style.
 
-```
-Sets the colour of the font used for the text in the selected connection. The
-"Default" button sets the font colour to the default setting.
-```
+Font: Sets the font used for the text in the selected connection. The "Default" button sets the font to the default setting as set in Preferences.
+
+Font colour:
+
+    Sets the colour of the font used for the text in the selected connection. The
+    "Default" button sets the font colour to the default setting.
+
 The Label Tab
 
-By default, a connection's name will be displayed in any View in which it appears. Using
-a label expression per View instance, you can choose what is displayed for the
-connection in the View. For example you may wish to display the connection's name and
-its type. Or you may wish to display the value of one or more of its properties.
+By default, a connection's name will be displayed in any View in which it appears. Using a label expression per View instance, you can choose what is displayed for the connection in the View. For example you may wish to display the connection's name and its type. Or you may wish to display the value of one or more of its properties.
 
 For a full list of expression types please refer to the Archi Wiki.
 
 Adding Images to Objects
 
-Canvas Blocks, Image place-holders and Stickies can contain images. The images in
-Blocks and Stickies are icons and are resized to a maximum width and height of 100
-pixels. Images can be any size but we suggest that you keep them reasonably small so
-as not to consume too many resources.
+Canvas Blocks, Image place-holders and Stickies can contain images. The images in Blocks and Stickies are icons and are resized to a maximum width and height of 100 pixels. Images can be any size but we suggest that you keep them reasonably small so as not to consume too many resources.
 
-To add an image to one of these objects, open the Properties window and select the
-object. Double-clicking the object on the Canvas will also open the Properties window.
-Find the Image tab in the Properties window and select the Image Chooser with the "Set
-Image..." option:
-
+To add an image to one of these objects, open the Properties window and select the object. Double-clicking the object on the Canvas will also open the Properties window. Find the Image tab in the Properties window and select the Image Chooser with the "Set Image..." option:
 
 Selecting the Image Chooser from the Properties window
 
@@ -3276,501 +2099,298 @@ This will open the "My Images" Image Chooser dialog window:
 
 The Image Chooser dialog window
 
-All images that are contained in any loaded models are displayed in the Chooser so that
-you can re-use them. If you wish to open an image file from your computer select the
-"Open from File..." option.
+All images that are contained in any loaded models are displayed in the Chooser so that you can re-use them. If you wish to open an image file from your computer select the "Open from File..." option.
 
-```
-You can drag and drop Image files from the desktop to the Canvas.
-```
+    You can drag and drop Image files from the desktop to the Canvas.
+    
+
 Removing an image from an object
 
-To remove an image from an object select the "Remove Image" option from the Image
-Chooser.
+To remove an image from an object select the "Remove Image" option from the Image Chooser.
 
 Saving a Canvas as a Template
 
 To Save an existing Canvas as a template follow these steps:
 
-
 1. Create a new Canvas or open an existing model containing a Canvas.
-2. Select the Canvas in the Model Tree, right-click on it and choose "Save Canvas
-    as Template...". A wizard will open:
-3. In the wizard, provide a file name for the location for the template file, a name for
-    the template (this is different than the name of the model) and a description.
-4. Select whether you want to include a thumbnail image of the Canvas in the
-    template.
+1. Select the Canvas in the Model Tree, right-click on it and choose "Save Canvas as Template...". A wizard will open:
+1. In the wizard, provide a file name for the location for the template file, a name for the template (this is different than the name of the model) and a description.
+1. Выберите, хотите ли вы включить в шаблон миниатюру холста.
+1. Нажмите «Далее», чтобы перейти к следующей странице мастера:
+1. Выберите, хотите ли вы добавить шаблон в свою коллекцию. Ваша коллекция шаблонов - это список, отсортированный по категориям, который будет отображаться в мастере «Создать холст из шаблона». Если нет доступных для выбора категорий, вы можете создать новую категорию, нажав кнопку «Создать ...» в мастере.
+1. Нажмите «Готово».
 
+Шаблон будет сохранен в вашей файловой системе с расширением «* .archicanvas». Вы можете поделиться этим шаблоном с другими пользователями Archi, если хотите.
 
-5. Click "Next" to move on to the next page of the wizard:
-6. Choose whether you wish to add the template to your collection. Your collection
-    of templates is a list sorted into categories that will be displayed in the "New
-    Canvas from Template" wizard. If there are no categories available to choose
-    from you can create a new category by clicking on the "New..." button in the
-    wizard.
-7. Press "Finish".
+Создание нового холста из шаблона
 
-The template will be saved on your file system with an "*.archicanvas" extension. You
-can share this template with other Archi users if you like.
+Чтобы создать новый холст на основе существующего шаблона, выполните следующие действия:
 
-Creating a New Canvas from a Template
+1. Выберите папку «Views» для выбранной модели в дереве модели, щелкните ее правой кнопкой мыши и выберите «New-> Canvas from Template ...». Откроется мастер:
+1. Выбираем желаемый шаблон. Некоторые из них представлены в разделе «Установленные шаблоны», а созданные пользователем шаблоны перечислены в своих категориях в разделе «Мои шаблоны» (см. «Сохранение холста как шаблона»). Имя и описание выбранного шаблона отображаются в окне предварительного просмотра галереи.
+1. Вы можете изменить размер миниатюр в галерее с помощью ползунка изменения размера.
+1. Если вы хотите открыть шаблон из файла, который не отображается в мастере, выберите пункт «Открыть ...». Диалоговое окно файла позволит вам выбрать файл шаблона "* .archicanvas".
+1. Нажмите Готово. Новый холст создается и добавляется в папку «Виды» в дереве модели, где вы можете изменить имя по умолчанию. Сам вид будет открыт для редактирования.
 
-To create a new Canvas based on an existing template follow these steps:
+Управление вашими шаблонами холста
 
-1. Select the "Views" folder for the chosen Model in the Model Tree, right-click on it
-    and select "New->Canvas from Template..." A wizard will open:
+Вы храните шаблоны Canvas в своей файловой системе как файлы «* .archicanvas». Их можно хранить где угодно в вашей локальной файловой системе. Archi позволяет создавать коллекции пользователей, которые указывают на эти шаблоны. Это ярлыки к актуальным шаблонам. Чтобы управлять своей коллекцией шаблонов, выполните следующие действия:
 
+1. Выберите папку «Views» для выбранной модели в дереве модели, щелкните ее правой кнопкой мыши и выберите «New-> Canvas from Template ...». Откроется мастер:
+1. Выберите «Управление ...» в разделе «Шаблоны» слева от мастера. Откроется диалоговое окно:
+1. Этот диалог позволяет вам добавлять, переименовывать и удалять новые категории шаблонов, а также добавлять шаблоны из файла в вашу коллекцию. Вы также можете редактировать и изменять имя и описание каждого шаблона.
+1. Чтобы добавить шаблон из файла, нажмите кнопку «Добавить шаблон ...». В открывшемся диалоговом окне выберите файл «* .archicanvas».
+1. Чтобы добавить новую категорию шаблона, нажмите кнопку «Новая категория ...». Укажите название категории.
+1. Чтобы добавить шаблоны в категорию, перетащите запись шаблона из таблицы «Шаблоны» в папку категории в дереве «Категории». Обратите внимание, что шаблон может отображаться в нескольких папках категорий.
 
-2. Choose the desired template. Some are provided in the "Installed Templates"
-    section while user-created templates are listed in their categories in the "My
-    Templates" section (see "Saving a Canvas as a Template"). The selected
-    template's name and description are displayed in the Gallery's preview window.
-3. You can resize the thumbnail images in the Gallery by using the resize slider
-    control.
-4. If you wish to open a template from file that is not shown in the wizard select the
-    "Open..." item. A file dialog will allow you to choose a "*.archicanvas" template
-    file.
-5. Press Finish. A new Canvas is created and added to the "Views" folder in the
-    Model Tree where you can edit the default name. The View itself will be open
-    ready for you to edit.
+# 51 Предпочтения
 
-Managing your Canvas Templates
+Настройки для Archi доступны из пункта меню «Настройки». Предпочтения следующие.
 
-You store Canvas templates on your file system as "*.archicanvas" files. These can be
-stored anywhere on your local filing system. Archi allows you to create user collections
-that point to these templates. These are shortcuts to the actual templates. To manage
-your collection of templates follow these steps:
+# 52 Настройки внешнего вида, цветов и шрифтов
 
-1. Select the "Views" folder for the chosen Model in the Model Tree, right-click on it
-    and select "New->Canvas from Template..." A wizard will open:
+## 53 Appearance
 
+Enable Theming If selected, themes are enabled or disabled. A restart will be required for this change to take effect.
 
-2. Select "Manage..." from the "Templates" section on the left of the wizard. A dialog
-    window will open:
+Theme Choose the theme to use for Archi. A restart will be required for this change to fully take effect.
 
+Use round tabs Whether to use round or square tabs.
 
-3. This dialog allows you to add, rename and remove new template categories, and
-    also to add templates from file to your collection. You can also edit and change
-    the name and description of each template.
-4. To add a template from file, click on the "Add Template..." button. Choose the
-    "*.archicanvas" file from the file dialog that appears.
-5. To add a new template category, click on the "New Category..." button. Provide a
-    name for the category.
-6. To add templates to a category, drag and drop a template entry from the
-    "Templates" table to a category folder in the "Categories" tree. Note that a
-    template can appear in more than one category folder.
+Show Status Bar Show or hide the status bar. A restart will be required for this change to take effect.
 
+## 54 Colours
 
-# Preferences
+Choose the default colours to use for elements, connections and folders. These are the colours that will be displayed when a fill or line colour is set to "Default" in the Properties window for a diagram element or connection. The default colours can be set differently for each installation of Archi so, for example, one user can have a completely different set of default fill colours than another user. The colours will not be saved in the .archimate model file unless the option to "Save the default fill colour for a new concept in the .archimate file" is ticked. Folder colours are global for the application and are not saved in the model.
 
-The Preferences for Archi are available from the "Preferences" menu item. Preferences
-are as follows.
+Derive element line colours from fill colours If this is checked a diagram element's line colour is derived as a darker shade of its fill colour. You can adjust the amount of contrast with the "Contrast factor" control. If this option is set, user line colours are ignored.
 
+Save the default fill colour for elements in the model file If this is checked an element's default colour is saved in the model file and will then be "fixed" in the file. This ensures that if the file is shared with another user they will see these colours.
 
-# Appearance, Colours, and Fonts Preferences
+Edit Edit the selected colour(s).
 
-## Appearance
+Reset Reset the selected colour(s) to default value.
 
-Enable Theming
-If selected, themes are enabled or disabled. A restart will be required for this change to
-take effect.
+Import Scheme Import a colour scheme that has previously been exported.
 
-Theme
-Choose the theme to use for Archi. A restart will be required for this change to fully take
-effect.
-
-Use round tabs
-Whether to use round or square tabs.
-
-Show Status Bar
-Show or hide the status bar. A restart will be required for this change to take effect.
-
-## Colours
-
-Choose the default colours to use for elements, connections and folders. These are the
-colours that will be displayed when a fill or line colour is set to "Default" in the Properties
-window for a diagram element or connection. The default colours can be set differently
-for each installation of Archi so, for example, one user can have a completely different
-set of default fill colours than another user. The colours will not be saved in the
-.archimate model file unless the option to "Save the default fill colour for a new concept
-in the .archimate file" is ticked. Folder colours are global for the application and are not
-saved in the model.
-
-Derive element line colours from fill colours
-If this is checked a diagram element's line colour is derived as a darker shade of its fill
-colour. You can adjust the amount of contrast with the "Contrast factor" control. If this
-option is set, user line colours are ignored.
-
-Save the default fill colour for elements in the model file
-If this is checked an element's default colour is saved in the model file and will then be
-"fixed" in the file. This ensures that if the file is shared with another user they will see
-these colours.
-
-Edit
-Edit the selected colour(s).
-
-
-Reset
-Reset the selected colour(s) to default value.
-
-Import Scheme
-Import a colour scheme that has previously been exported.
-
-Export Scheme
-Export a colour scheme to share with other users.
+Export Scheme Export a colour scheme to share with other users.
 
 Fonts
 
-Sets the default font to use elements and connections in diagrams (Views) and fonts to
-use for various user interface controls. Clicking the "Default" button sets the default font
-for the selected items. The "Edit" button will allow you to set the font for the selected
-items.
+Устанавливает шрифт по умолчанию для использования элементов и соединений в схемах (представлениях) и шрифтов для использования в различных элементах управления пользовательского интерфейса. При нажатии кнопки «По умолчанию» устанавливается шрифт по умолчанию для выбранных элементов. Кнопка «Редактировать» позволит вам установить шрифт для выбранных элементов.
 
+# 55 Настройки набора инструментов для моделирования холста
 
-# Canvas Modelling Toolkit Preferences
+## 56 Общий
 
-## General
+Включить инструментарий моделирования холста Если этот флажок не установлен, элементы меню инструментария моделирования холста не будут присутствовать в дереве модели.
 
-Enable Canvas Modelling Toolkit
-If this is unchecked, the Canvas Modelling Toolkit menu items will not be present in the
-Model Tree.
+# 57 Настройки подключений
 
+## 58 Подключения
 
-# Connections Preferences
+## 59 Магический соединитель
 
-## Connections
+Сначала отобразите элементы (используйте клавишу Ctrl / Command, чтобы поменять местами). При щелчке из Magic Connector на пустой холст View сначала отобразите элементы, а затем Connections во всплывающих меню. Одновременное удерживание клавиши Ctrl / Command изменит это.
 
-## Magic Connector
+Сначала покажите соединения (используйте клавишу Ctrl / Command, чтобы поменять местами). При щелчке из Magic Connector на пустой холст View сначала покажите Connections, а затем Elements во всплывающих меню. Одновременное удерживание клавиши Ctrl / Command изменит это.
 
-Show Elements first (Use the Ctrl/Command key to swap)
-When clicking from the Magic Connector onto the empty View canvas show Elements
-first then Connections in the popup menus. Holding the Ctrl / Command key at the same
-time will reverse this.
+## 60 Рисунок
 
-Show Connections first (Use the Ctrl/Command key to swap)
-When clicking from the Magic Connector onto the empty View canvas show Connections
-first then Elements in the popup menus. Holding the Ctrl/Command key at the same time
-will reverse this.
+Использование сглаживания подключений В операционных системах Windows и Linux обеспечивает более плавное отображение подключений.
 
-## Drawing
+Использовать якоря ортогонального соединения. Если этот флажок установлен, используется новый метод вычисления точки привязки для соединения (положение, в котором соединение соединяется с фигурой). По умолчанию (опция не отмечена) точка привязки вычисляется как пересечение границы фигуры и соединения, нацеленного на центр фигуры. С помощью этой опции вычисляется точка привязки, чтобы сделать соединение вертикальной или горизонтальной линией (если это невозможно, она соединяется с одним из углов фигуры). Эту точку привязки можно переместить, просто переместив фигуру или создав точку изгиба в соединении и переместив ее.
 
-Use anti-aliasing on connections
-On Windows and Linux operating systems ensures that connections are drawn more
-smoothly.
+Например, если флажок не установлен (по умолчанию), соединения будут выглядеть следующим образом:
 
-Use orthogonal connection anchors
-If this is ticked then a new method to calculate the anchor point for a connection is used
-(the position where a connection connects to a figure). By default (option not ticked), the
-anchor point is computed as the intersection of the figure's border and the connection
-targeting the figure's centre. With this option, the anchor point is computed to make the
-connection either a vertical or horizontal line (if this not possible, it connects to one of
-the figure's corners). It is possible to move this anchor point just by moving the figure or
-by creating a bend point in the connection and moving that.
+Если этот флажок установлен, соединения отображаются следующим образом:
 
-For example if not ticked (default) the connections appear as follows:
+Использовать линейные кривые. Если этот параметр включен, соединения отображаются с кривыми в точках изгиба.
 
-If ticked the connections appear as follows:
+Использовать линейные переходы для пересечения связей. Если этот параметр включен, кривая перехода отображается, когда одно соединение пересекает другое.
 
+Фон метки Устанавливает стратегию рисования фона меток соединений. Это может быть «Прозрачный», «Непрозрачный» или «Обрезанный».
 
-Use line curves
-If this is enabled, connections are shown with curves at bend-points.
+Общий
 
-Use line jumps for intersecting relations
-If this is enabled, a jump curve is shown when one connection crosses another.
+Отображать предупреждающее сообщение, когда повторное соединение влияет на другие представления. При повторном соединении между элементами ArchiMate в представлении эти элементы и соединение могут присутствовать в одном или нескольких других представлениях. Повторное подключение повлияет на эти представления, и это предупреждение предупреждает пользователя об этом, и действие может быть отменено.
 
-Label background
-Sets the strategy for drawing connection label backgrounds. This can be one of
-"Transparent", "Opaque" or "Clipped".
+РУКА
 
-General
+Автоматическое управление отношениями
 
-Show a warning message when a reconnection affects other Views
-When making a reconnection between ArchiMate elements in a View those elements
-and connection may be present in one or more other Views. The reconnection will affect
-those Views and this warning alerts the user to this and the action can be undone.
+Для получения дополнительной информации см. Элементы контейнера и отношения вложенных элементов.
 
-ARM
+Разрешить неявные соединения в представлениях для вложенных элементов. Если этот параметр включен, считается, что вложенные родительские / дочерние элементы имеют неявное соединение в представлении, представляющее связь между элементами в модели.
 
-Automatic Relationship Management
+Предложить создать новое отношение при создании нового элемента из палитры. Если этот параметр включен, при добавлении нового элемента из палитры в родительский элемент в представлении появляется диалоговое окно, предлагающее создать новую взаимосвязь между родительским и дочерним элементами.
 
-For more information see Container Elements and Nested Element Relationships.
+Предлагать создать новое отношение при добавлении элемента из дерева модели. Если этот параметр включен, то при добавлении нового элемента из дерева модели в родительский элемент в представлении появляется диалоговое окно с предложением создать новое отношение между родительским и дочерним элементами, если таковые имеются. еще не существует.
 
-Enable implicit connections in Views for nested elements
-If this is enabled then nested parent/child elements are considered to have an implicit
-connection in a View representing a relationship between the elements in the model.
+Предложить создать новое отношение при перемещении элемента в новый родительский элемент. Если этот параметр включен, то, когда элемент в представлении перетаскивается на родительский элемент в представлении, появляется диалоговое окно с предложением создать новое отношение между родительским и дочерним элементами, если один еще не существует.
 
-Offer to create new relation when creating new element from Palette
-If this is enabled then when a new element is added from the Palette onto a parent
-element in the View a dialog appears offering to create a new relationship between the
-parent and child elements.
+Типы отношений, предлагаемые при создании новых отношений. Выберите типы отношений, которые будут предлагаться при создании новых неявных связей между родительскими и дочерними элементами в представлении.
 
-Offer to create new relation when adding element from Model Tree
-If this is enabled then when a new element is added from the Model Tree onto a parent
-element in the View a dialog appears offering to create a new relationship between the
-parent and child elements if one does not already exist.
+Типы обратных отношений, предлагаемые при создании новых отношений. Выберите типы отношений, которые будут предлагаться при создании новых неявных связей между дочерними и родительскими элементами в представлении. Это «перевернутые» вложения.
 
+Типы отношений, которые нужно скрыть, когда элементы вложены. Выберите типы взаимосвязей, которые будут скрыты в представлении при наличии вложенных родительских и дочерних элементов.
 
-Offer to create new relation when moving an element to a new parent element
-If this is enabled then when an element in a View is dragged onto a parent element in
-the View a dialog appears offering to create a new relationship between the parent and
-child elements if one does not already exist.
+# 61 Настройки диаграммы
 
-Relation types offered when creating new relations
-Select the types of relationship that will be offered when new implicit connections are
-created between parent and child elements in a View.
+## 62 Вид
 
-Reverse relation types offered when creating new relations
-Select the types of relationship that will be offered when new implicit connections are
-created between child and parent elements in a View. These are "reversed" nestings.
+Размер сетки Устанавливает интервал сетки, используемый в представлениях диаграммы.
 
-Relation types to hide when elements are nested
-Select the types of relationship connection that will be hidden in a View when there are
-nested parent and child elements.
+Палитра открывается при открытии представлений. Если этот параметр включен, палитра в представлении будет открываться при открытии представления.
 
+Показывать всплывающие подсказки в представлениях. Если включено, всплывающие подсказки в представлениях будут отображаться.
 
-# Diagram Preferences
+Редактировать имя после создания нового объекта из палитры Если этот параметр включен, когда новый элемент добавляется из палитры, вы можете сразу же редактировать его имя.
 
-## View
+## 63 Точки обзора
 
-Grid Size
-Sets the grid spacing used in diagram Views.
+Запрещенные концепции в дереве модели выделены серым. Когда этот параметр установлен, все концепции, запрещенные в точке обзора, отображаются серым цветом. Для получения дополнительной информации см. Точки обзора.
 
-Palette is open when opening Views
-If enabled the palette in a View will be open when the View is opened.
+Скрыть запрещенные концепции из палитры Если этот параметр установлен, любые концепции, которые запрещены в точке обзора, не отображаются на палитре. Для получения дополнительной информации см. Точки обзора.
 
-Show tooltips in Views
-If enabled tooltips in Views will be shown.
+Скрыть запрещенные концепции из Magic Connector Если этот параметр установлен, любые концепции, запрещенные в точке обзора, не отображаются в Magic Connector. Для получения дополнительной информации см. Точки обзора.
 
-Edit name after creating new object from Palette
-If enabled when a new element is added from the Palette you can immediately edit its
-name.
+Призрачные недопустимые концепции в представлении Когда этот параметр установлен, запрещенные концепции в точке обзора «скрываются». Для получения дополнительной информации см. Точки обзора.
 
-## Viewpoints
+## 64 Вставить особое поведение
 
-Grey out disallowed concepts in the Model Tree
-When this option is set any concepts that are disallowed in a Viewpoint are greyed out.
-For more information see Viewpoints.
+Всегда вставлять ссылку на скопированный элемент. Если этот параметр установлен, скопированные элементы на схеме всегда ссылаются на исходные элементы.
 
-Hide disallowed concepts from the Palette
-When this option is set any concepts that are disallowed in a Viewpoint are not shown in
-the Palette. For more information see Viewpoints.
+Всегда вставлять дубликат скопированного элемента. Если этот параметр установлен, скопированные элементы на диаграмме всегда являются дубликатами исходных элементов.
 
-Hide disallowed concepts from the Magic Connector
-When this option is set any concepts that are disallowed in a Viewpoint are not shown in
-the Magic Connector. For more information see Viewpoints.
+Для получения дополнительной информации см. Копирование, Вставка, Выбор и удаление элементов.
 
-Ghost disallowed concepts in a View
-When this option is set disallowed concepts in a Viewpoint are "ghosted" out. For more
-information see Viewpoints.
+Поведение при изменении размера
 
-## Paste Special behaviour
+Позиции дочерних объектов фиксированы (по умолчанию). Когда этот параметр установлен, дочерние объекты сохраняют свое абсолютное положение при изменении размера верхнего / левого угла родительского объекта. Изменение размера вверху или слева создаст новое пространство в родительском объекте.
 
-Always paste a reference to copied element
-When this option is set copied elements in a diagram always reference the original
-elements.
+Положение дочернего объекта относительно родительского. Когда этот параметр установлен, дочерние объекты сохраняют свое относительное положение по отношению к родительскому объекту при изменении размера верхнего / левого угла родительского объекта. Изменение размера вверху или слева не приведет к созданию нового пространства в родительском объекте.
 
+Другой
 
-Always paste a duplicate of copied element
-When this option is set copied elements in a diagram are always duplicates of the
-original elements.
+Использовать более старый метод для рисования изображений Если этот параметр установлен, в фигурах изображения холста используется более старый метод рисования масштабированных изображений. Это быстрее, но прозрачность изображения не сохраняется. По умолчанию это должно быть отключено, но опция включена для обратной совместимости.
 
-For more information see Copying, Pasting, Selecting and Deleting Elements.
+Использовать смещение при рисовании контуров на дисплеях с высоким разрешением. Когда этот параметр установлен, контуры фигур рисуются с небольшим смещением, чтобы компенсировать дисплеи с более высоким разрешением. Обычно это требуется только на устройствах Windows с дисплеями высокого разрешения.
 
-Resize behaviour
+Появление
 
-Child object positions are fixed (default)
-When this option is set child objects maintain their absolute position when the parent
-object's top/left is resized. Resizing at the top or left will create new space in the parent
-object.
+Глобальный
 
-Child object positions are relative to parent
-When this option is set child objects maintain their relative position to the parent object
-when the parent object's top/left is resized. Resizing at the top or left will not create new
-space in the parent object.
+Это глобальные настройки приложения.
 
-Other
+Стиль переноса слов Установите стиль переноса слов по умолчанию для фигур ArchiMate.
 
-Use older method for drawing images
-When this option is set an older method for drawing scaled images is used in Canvas
-image figures. It is faster but image transparency is not preserved. By default this should
-be disabled but the option is included for backward compatibility.
+Жесткий перенос будет происходить только при допустимом разрыве строки.
 
-Use an offset when drawing outlines on hi-res displays
-When this option is set figure outlines are drawn with a small offset to compensate for
-higher resolution displays. This is normally only needed on Windows devices with hi-res
-displays.
+Мягкий перенос всегда будет происходить в конце доступного места с разрывом в середине слова. Усеченный - перенос всегда будет происходить в конце доступного пространства, усекая слово, если оно не умещается.
 
-Appearance
+Значения по умолчанию для новых фигур ArchiMate
 
-Global
+Это значения по умолчанию для использования при создании новой фигуры ArchiMate. После этого вы можете изменить эти настройки по отдельности.
 
-These are global settings for the application.
+Ширина Установите ширину по умолчанию для новых фигур ArchiMate.
 
-Word wrap style
-Set the default word wrap style for ArchiMate figures.
+Высота Установите высоту по умолчанию для новых фигур ArchiMate.
 
-Hard - wrapping will only occur at valid line breaks.
+Выравнивание текста Установите выравнивание текста по умолчанию для новых фигур ArchiMate.
 
+Положение текста Установите положение текста по умолчанию для новых фигур ArchiMate.
 
-Soft - wrapping will always occur at the end of the available space, breaking in the
-middle of a word.
-Truncated - wrapping will always occur at the end of available space, truncating a word if
-it doesn't fit.
+Градиент по умолчанию Установите градиент по умолчанию для новых элементов схемы. Примечание. Градиенты не отображаются, когда диаграмма экспортируется в формате изображения SVG.
 
-Defaults for new ArchiMate figures
+Просмотр эскиза
 
-These are the defaults to use when creating a new ArchiMate figure. You can change
-these settings individually thereafter.
+Фон по умолчанию Установите фон по умолчанию для вновь созданных видов эскиза.
 
-Width
-Set the default width for new ArchiMate figures.
+Цифры по умолчанию
 
-Height
-Set the default height for new ArchiMate figures.
+Альтернативные рисунки по умолчанию предусмотрены для рисования определенных фигур в видах диаграмм. Щелкните фигуру, чтобы задать форму по умолчанию, которая будет использоваться при создании новой фигуры.
 
-Text Alignment
-Set the default text alignment for new ArchiMate figures.
+# 65 Общие настройки
 
-Text Position
-Set the default text position for new ArchiMate figures.
+## 66 Файлы
 
-Default Gradient
-Set the default gradient for new diagram elements. Note - gradients will not show
-when a diagram is exported in SVG image format.
+Автоматически открывать виды в модели при открытии из файла При открытии модели из файла выберите, следует ли автоматически открывать все виды в модели.
 
-Sketch View
+Автоматически создавать файл резервной копии (* .bak) при сохранении. Если этот флажок установлен, при каждом сохранении файла .archimate сначала будет создана резервная копия с расширением файла .bak.
 
-Default Background
-Set the default background for newly created Sketch Views.
+Размер списка недавно открытых файлов Установите размер кеша для списка недавно открытых файлов в меню «Файл-> Открыть последние». Можно установить от 3 до 15.
 
-Default Figures
+## 67 Модельное дерево
 
-Alternate default figures are provided for drawing certain figures in diagram Views. Click
-on a figure to set the default shape to be used when creating a new Figure.
+Отображать неиспользуемые понятия курсивом. Если этот флажок установлен, любые элементы или отношения, которые не используются в представлениях, отображаются курсивом.
 
+Обновлять результат поиска по мере ввода. Если этот флажок установлен, результаты поиска в дереве модели обновляются по мере ввода (по умолчанию). Если этот флажок не установлен, результат поиска будет обновляться при нажатии клавиши Return.
 
-# General Preferences
+Всегда предупреждать при удалении объектов. Если этот флажок установлен, при удалении объектов в дереве моделей всегда отображается предупреждение. Если этот флажок не установлен, предупреждение отображается только при удалении объектов, если объекты используются в представлениях.
 
-## Files
+## 68 Выражения метки
 
-Automatically open Views in a Model when opening from file
-When opening a Model from a file, choose whether to automatically open all the Views
-in the model.
+Использовать для имен представлений в таблице анализа. Если этот флажок установлен, параметр «Используется в представлениях» в разделе «Анализ» использует метку, определяемую выражением метки родительской папки (если установлено).
 
-Automatically create a backup file (*.bak) when saving
-If this is ticked, whenever an .archimate file is saved, a backup copy with file extension
-.bak will be created first.
+## 69 Другой
 
-Size of recently opened file list
-Set the cached sized of the recently opened file list in the "File->Open Recent" menu.
-Can be set from 3 - 15.
+Экспорт изображений в двойном масштабе. Если этот флажок установлен, изображения экспортируются и копируются в буфер обмена с удвоенным увеличением.
 
-## Model Tree
+нормальный размер. Это установлено по умолчанию для операционных систем Windows, где масштабирование дисплея превышает 100%, и на устройствах Mac Retina. Это сделано для того, чтобы качество экспортируемого изображения не ухудшилось, поскольку невозможно установить более высокое разрешение в разрешении на дюйм в изображении. Этот параметр обычно не требуется для дисплеев Linux.
 
-Display unused concepts in italics
-When this is ticked, any elements or relations that are not used in Views are displayed in
-an Italic font.
+Если результирующее изображение должно иметь свой логический размер, вы можете отредактировать его в редакторе изображений и установить для DPI двойное значение. Например, на Mac измените DPI с 72 на 144.
 
-Update search result as you type
-When this is ticked, search results in the Model Tree are updated as you type (default). If
-not ticked the search result will update when the Return key is pressed.
+# 70 Настройки помощи
 
-Always warn when deleting objects
-When this is ticked a warning is always displayed when objects are deleted in the
-Models Tree. If unticked, a warning is only displayed when deleting objects if the objects
-are used in Views.
+Устанавливает различные предпочтения для отображения содержимого справки в зависимости от платформы операционной системы.
 
-## Label Expressions
+# 71 Настройки отчетов Jasper
 
-Use for View names in Analysis table
-When this is ticked, the "Used in Views" in the "Analysis "section uses a label
-determined by an ancestor folder's label expression (if set).
+## 72 Настройки
 
-## Other
+Папка пользовательских шаблонов Задайте корневую папку, в которой хранятся настроенные пользовательские шаблоны отчетов Jasper. Каждый шаблон должен быть в отдельной подпапке. При экспорте модели в Jasper Reports имя папки будет отображаться в мастере экспорта. Для получения дополнительной информации см. Отчетность.
 
-Export images at double scale
-When this is ticked, images are exported and copied to the clipboard at twice their
+# 73 Настройки валидатора
 
+## 74 Правила для проверки
 
-normal size. This is set on by default for Windows operating systems where display
-scaling is greater than 100%, and on Mac Retina devices. This is so that the exported
-image quality is not compromised since it is not possible to set a higher DPI in the
-image. This setting is usually not needed on Linux displays.
+Каждое правило проверки можно включить или отключить.
 
-If the resulting image needs to be at its logical size you could edit it in an image editor
-and set the DPI to double its value. For example, on Mac change the DPI from to 72 to
-144.
+# 75 Управление надстройками
 
+Вы можете установить и удалить плагины Archi с помощью Archi Plug-ins Manager или вручную.
 
-# Help Preferences
+## 76 Использование диспетчера подключаемых модулей
 
-Sets various preferences for displaying Help contents depending on Operating System
-platform.
+Чтобы установить или удалить подключаемый модуль Archi, выберите «Управление подключаемыми модулями ...» в меню «Справка».
 
+Откроется диалоговое окно диспетчера подключаемых модулей Archi. Отсюда вы можете просмотреть установленные плагины и их подробную информацию.
 
-# Jasper Reports Preferences
+## 77 Установка
 
-## Settings
+Чтобы установить подключаемый модуль Archi этим методом, вам необходимо иметь подключаемый модуль в формате подключаемого модуля Archi. Это архивный файл (с расширением * .archiplugin или * .zip), содержащий один или несколько файлов jar и файл маркера. Примерами этого типа подключаемого модуля Archi являются подключаемые модули Collaboration и jArchi Scripting. Если подключаемый модуль представляет собой файл jar, вам необходимо установить его вручную (см. Ниже).
 
-User Templates Folder
-Set the root location of where customised user Jasper Reports templates are stored.
-Each template should be in its own sub-folder. When exporting a model to Jasper
-Reports the name of the folder will be displayed in the export wizard. For more
-information see Reporting.
+Чтобы установить новый плагин, нажмите кнопку «Установить новый ...». Выберите файл или файлы подключаемого модуля, которые вы хотите установить. При желании вы можете выбрать и установить несколько подключаемых модулей. Вам будет предложено перезапустить Archi.
 
+## 78 Удаление
 
-# Validator Preferences
+Установленные плагины будут отображаться в виде таблицы в диалоговом окне. Если вы хотите установить один или несколько плагинов, выберите их и нажмите кнопку «Удалить». Вам будет предложено перезапустить Archi.
 
-## Rules to check
+## 79 Ручная установка
 
-Each validation rule can be enabled or disabled.
+Если плагин имеет формат файла * .jar, вы можете просто скопировать файл (ы) * .jar в специальный каталог «dropins» Archi. (Перед тем как сделать это, убедитесь, что вы вышли из Archi.)
 
+Каталог dropins находится в следующих местах:
 
-# Managing Plug-ins
+Windows:% user.home% / AppData / Roaming / Archi4 / dropins
 
-You can install and uninstall Archi plug-ins with the Archi Plug-ins Manager or manually.
+Mac:% user.home% / Библиотека / Поддержка приложений / Archi4 / dropins
 
-## Using the Plug-ins Manager
+Linux:% user.home% /. Archi4 / dropins
 
-To install or uninstall an Archi plug-in, select "Manage Plug-ins..." from the Help menu.
+("% user.home%" обозначает ваш домашний каталог.)
 
-The Archi Plug-ins Manager dialog will show. From here you can view installed plug-ins
-and their details.
+Если каталог dropins не существует, вам нужно сначала его создать.
 
-## Installing
-
-To install an Archi plug-in using this method you need to have the plug-in in Archi plug-in
-format. This is an archive file (*.archiplugin or *.zip file extension) containing one or more
-jar files and a marker file. Examples of this type of Archi plug-in are the Collaboration
-and jArchi Scripting plug-ins. If the plug-in is a jar file you will need to install it manually
-(see below).
-
-To install a new plug-in, click the "Install New..." button. Select the plug-in file or files that
-you wish to install. You can select and install more than one plug-in if you wish. You will
-be prompted to restart Archi.
-
-## Uninstalling
-
-Installed plug-ins will be displayed in the table view in the dialog. If you wish to install
-one or more plug-ins, select them and click the "Uninstall" button. You will be prompted
-to restart Archi.
-
-## Manual installation
-
-If the plug-in is in *.jar file format you can simply copy the *.jar file(s) to Archi's special
-"dropins" directory. (Ensure you quit Archi first before doing this.)
-
-The "dropins" directory is located in the following places:
-
-Windows: %user.home%/AppData/Roaming/Archi4/dropins
-
-Mac: %user.home%/Library/Application Support/Archi4/dropins
-
-Linux: %user.home%/.archi4/dropins
-
-("%user.home%" denotes your home directory.)
-
-If the "dropins" directory does not exist, you will need to create it first.
-
-
-https://www.archimatetool.com/downloads/Archi%20User%20Guide.pdf
+https://www.archimatetool.com/downloads/Archi User Guide.pdf

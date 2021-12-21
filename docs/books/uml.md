@@ -1,7 +1,9 @@
 ---
 title: Проектирование на UML. Сборник задач
-date: 2020-12-08 18:22:05
-cover_index: "http://picsum.photos/450/450?random=78"
+head:
+  - - meta
+    - name: description
+      content: 'В данном сборнике представлены задачи по проектированию ПО с использованием унифицированного языка моделирования UML'
 tags:
 - uml
 categories:

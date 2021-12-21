@@ -1,7 +1,9 @@
 ---
 title: Корпоративные решение BPM
-date: 2021/02/16 13:18:50
-cover_index: "http://picsum.photos/450/450?random=29"
+head:
+  - - meta
+    - name: description
+      content: 'корпоративное решение BPM, предназначенное для деловых людей и разработчиков'
 tags:
 categories:
 - Innovate

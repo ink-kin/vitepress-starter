@@ -1,7 +1,9 @@
 ---
 title: MVP - minimum viable product
-date: 2021/01/26 17:25:48
-cover_index: "http://picsum.photos/450/450?random=49"
+head:
+  - - meta
+    - name: description
+      content: 'Минимально жизнеспособный продукт'
 tags:
 categories:
 - Marketing

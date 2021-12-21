@@ -1,7 +1,9 @@
 ---
 title: Документирование по ГОСТ 34 — это просто
-date: 2020-12-03 18:22:05
-cover_index: "http://picsum.photos/450/450?random=37"
+head:
+  - - meta
+    - name: description
+      content: 'Сегодня мы поговорим об отечественных стандартах на проектную документацию'
 tags:
 - Документирование по ГОСТ 34
 categories:

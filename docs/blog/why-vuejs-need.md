@@ -1,7 +1,9 @@
 ---
 title: Зачем нужен Vue.js
-date: 2021/02/16 13:23:19
-cover_index: "http://picsum.photos/450/450?random=83"
+head:
+  - - meta
+    - name: description
+      content: 'Vue.js известен как «прогрессивный фреймворк для создания пользовательских интерфейсов».'
 tags:
 - vuejs
 categories:

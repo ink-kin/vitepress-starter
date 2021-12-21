@@ -1,7 +1,9 @@
 ---
 title: Для современных сайтов нужен подход к созданию
-date: 2020/12/27 15:36:57
-cover_index: "http://picsum.photos/450/450?random=40"
+head:
+  - - meta
+    - name: description
+      content: 'Архитектура, призванная сделать Интернет быстрее, безопаснее и легче масштабируемой'
 tags:
 categories:
 - aboutMe

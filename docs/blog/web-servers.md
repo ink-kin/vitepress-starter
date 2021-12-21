@@ -1,7 +1,9 @@
 ---
 title: Сравнение веб-серверов
-date: 2021/01/01 19:50:08
-cover_index: "http://picsum.photos/450/450?random=81"
+head:
+  - - meta
+    - name: description
+      content: 'Сравнение веб-серверов коротко пометки об инструментах веб-серверов'
 tags:
 - git
 categories:

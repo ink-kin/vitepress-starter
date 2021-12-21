@@ -1,7 +1,9 @@
 ---
 title: ГОСТ 34. Разработка автоматизированной системы управления (АСУ)
-date: 2020-12-03 18:22:05
-cover_index: "http://picsum.photos/450/450?random=38"
+head:
+  - - meta
+    - name: description
+      content: 'Жизненный цикл процесса создания АСУ согласно ГОСТ 34'
 tags:
 categories:
 - Innovate

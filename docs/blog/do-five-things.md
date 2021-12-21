@@ -1,7 +1,9 @@
 ---
-title: Люди часто 5 поступков, за которые можно получить судимость... но их совершают...
-date: 2010-12-04 18:22:05
-cover_index: "http://picsum.photos/450/450?random=35"
+title: Людей за это судить
+head:
+  - - meta
+    - name: description
+      content: 'Люди часто 5 поступков, за которые можно получить судимость... но их совершают...'
 categories:
 - aboutMe
 - lawsAndLawyers

@@ -1,13 +1,19 @@
 ---
-title: to do по этому сайту
-date: 2010/12/23 10:04:35
-cover_index: "http://picsum.photos/450/450?random=74"
+title: to do по теме ПРОДАЖИ И КЛИЕНТЫ
+date: 2021/12/21
+head:
+  - - meta
+    - name: description
+      content: 'ПРОДАЖИ И КЛИЕНТЫ Теория продаж- Презентация Виды  клиентов Вебинар CRM Встреча с ТОП Call-центр Email маркетинг'
+  - - meta
+    - name: keywords 
+      content: 'ПРОДАЖИ И КЛИЕНТЫ Теория продаж- Презентация Виды  клиентов Вебинар CRM Встреча с ТОП Call-центр Email маркетинг'
 tags:
 categories:
 - aboutMe
 ---
 
-to do по этому сайту
+to do по теме ПРОДАЖИ И КЛИЕНТЫ
 
 
 ПРОДАЖИ И КЛИЕНТЫ

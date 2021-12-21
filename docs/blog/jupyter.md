@@ -1,7 +1,9 @@
 ---
 title: 6 surprising ways to use Jupyter
-date: 2020-12-03 18:22:05
-cover_index: "http://picsum.photos/450/450?random=41"
+head:
+  - - meta
+    - name: description
+      content: 'Начало работы с Jupyter Notebooks'
 tags:
 - jupyter
 categories:

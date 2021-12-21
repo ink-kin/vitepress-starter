@@ -1,7 +1,9 @@
 ---
 title: Python
-date: 2021/01/01 19:50:08
-cover_index: "http://picsum.photos/450/450?random=55"
+head:
+  - - meta
+    - name: description
+      content: 'Python коротко пометки об инструментах Python'
 tags:
 - git
 categories:

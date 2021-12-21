@@ -1,7 +1,9 @@
 ---
 title: ArchiMate Courseware
-date: 2021/01/17 11:59:24
-cover_index: "http://picsum.photos/450/450?random=21"
+head:
+  - - meta
+    - name: description
+      content: 'Стандартные учебные программы ArchiMate'
 tags:
 - Archi
 - ArchiMate
@@ -9,684 +11,532 @@ categories:
 - Innovate
 - BPM
 ---
+
+
 # ArchiMate® 3.
 
-Standard Courseware
+Стандартные учебные программы
 
-#### Course Introduction
+#### 0 Введение в курс
 
-
-
-```
-January 2017
-```
-ArchiMateThe Open Group in the United States and other countries. ®, The Open Group®, and TOGAF® are registered trademarks of
-
-1
-{% post_link archi_modelling_tool %}
+Январь 2017 г.
 
 
-```
-2
-```
-# Course Introduction Sample
+ArchiMateThe Open Group в США и других странах. ®, The Open Group® и TOGAF® являются зарегистрированными товарными знаками
 
 
-### Course Introduction
+# 1 Образец введения в курс
 
-### » This unit presents information about:
+### 2 Введение в курс
 
-- The course goals, and objectives
-- The course sequence
-- The Open Group
-- ArchiMate®, an Open Group Standard
-- TOGAF®, an Open Group Standard
-- The ArchiMate® 3 People Certification
+### 3 »В этом блоке представлена ​​информация о:
 
-### program
+* Цели и задачи курса
+* Последовательность курсов
+* Открытая группа
+* ArchiMate®, стандарт открытой группы
+* TOGAF®, стандарт открытой группы
+* Сертификация ArchiMate® 3 People
 
-```
+### 4 программа
+
 3
-```
 
 
-### Course Goals
+### 5 целей курса
 
-» This course is designed to enable you to make practical
-use of the ArchiMate® 3 modeling language for
-developing enterprise architecture models.
+Этот курс разработан, чтобы дать вам возможность на практике использовать язык моделирования ArchiMate® 3 для разработки моделей архитектуры предприятия.
 
-» The course includes practical exercises to provide
-experience of creating ArchiMate models.
+Курс включает практические упражнения для получения опыта создания моделей ArchiMate.
 
-» Upon completion of this course, you should have gained
-the knowledge of the terminology, structure and concepts
-needed to take the ArchiMate® 3 Certification
-examinations.
+По завершении этого курса вы должны были получить знания терминологии, структуры и концепций, необходимых для сдачи сертификационных экзаменов ArchiMate® 3.
 
-```
 4
-```
 
 
-### Course Sequence (Foundation)
+### 6 Последовательность курсов (основа)
 
-Course Introduction
+Введение в курс
 
-1. Basic Concepts
-2. Language Structure
-3. Generic Metamodel
-4. Modeling Relationships
-5. Modeling Motivation
-6. Modeling Strategy
-7. The Business Layer
-8. The Application Layer
-9. The Technology Layer
-10. Modeling Physical Elements
-11. Cross-Layer Modeling
-12. Modeling Transformation
-13. Addressing Stakeholder Concerns Using Viewpoints and Views
+1. Основные концепции
+1. Структура языка
+1. Общая метамодель
+1. Моделирование отношений
+1. Моделирование мотивации
+1. Стратегия моделирования
+1. Бизнес-уровень
+1. Уровень приложений
+1. Технологический уровень
+1. Моделирование физических элементов
+1. Межуровневое моделирование
+1. Моделирование трансформации
+1. Решение проблем заинтересованных сторон с использованием точек зрения и взглядов
 
-```
+
 5
-```
 
 
-### Course Sequence (Practitioner)
+### 7 Последовательность курса (практик)
 
-» Level 2 material included in the core Foundation units
-should be covered in addition to the Foundation material
+Материал Уровня 2, включенный в основные единицы Фонда, должен быть охвачен в дополнение к материалам Фонда.
 
-- In many cases this is in more depth, e.g. being able to explain a
-    model
+* Во многих случаях это более подробно, например, способность объяснить модель
 
-» Additional unit
+Дополнительный блок
 
-- Language Customization
+* Настройка языка
 
-» Case Studies
+Примеры из практики
 
-- ArchiSurance Case Study, Version 2
-- ArchiMetal Case Study, Version 2
+* Пример использования ArchiSurance, версия 2
+* Пример использования ArchiMetal, версия 2
 
-» Practical Modeling Exercises
+Практические упражнения по моделированию
 
-```
 6
-```
 
 
-### Conventions for Slide Marking
+### 8 Условные обозначения для маркировки слайдов
 
-» Level 1 and 2 Material
+Материалы уровней 1 и 2
 
-- Marked with a bright green triangle in
-    the bottom left of the slide
+* Обозначается ярко-зеленым треугольником в левом нижнем углу слайда.
 
-» Level 2 Material
+Материал 2-го уровня
 
-- Marked with a turquoise triangle with
-    L2 in the bottom left of the slide
+* Обозначается бирюзовым треугольником с L2 в нижнем левом углу слайда.
 
-» Noteworthy changes between
-ArchiMate 2.1 and 3.
+Заслуживающие внимания изменения между ArchiMate 2.1 и 3.
 
-- Marked with a turquoise triangle in
-    the top right of the slide
+* Обозначается бирюзовым треугольником в правом верхнем углу слайда.
 
-```
+
 7
-```
-```
+
+
 L 2
-```
-```
+
+
 2.1	
-to	
+к	
 3.0	
-```
 
 
-### The Open Group
+### 9 Открытая группа
 
-» Is an international vendor-neutral and technology-neutral
-consortium that organizations rely on to lead the
-development of IT standards and certifications
+Это международный консорциум, не зависящий от поставщиков и технологий, на который организации полагаются при разработке стандартов и сертификации ИТ.
 
-» Provides guidance and open environment to enable
-interoperability and vendor-neutrality
+Предоставляет рекомендации и открытую среду для обеспечения взаимодействия и независимости от поставщиков
 
-» Membership is open to all enterprises, small, medium
-and large, anywhere in the world
+Членство открыто для всех предприятий, малых, средних и крупных, в любой точке мира.
 
-```
 8
-```
-```
+
+
 http://www.opengroup.org
-```
 
 
-```
 9
-```
-## The ArchiMate®
-
-## Modeling Language
 
 
+## 10 ArchiMate®
 
-### The ArchiMate® Language^
+## 11 Язык моделирования
 
-» The ArchiMate language was created in the period
-2002-2004 by the Telematica Instituut.
+### 12 Язык ArchiMate® ^
 
-» It is a standard graphical language for representing
-enterprise architectures.
+Язык ArchiMate был создан в период 2002-2004 гг. Институтом Telematica.
 
-```
+Это стандартный графический язык для представления архитектур предприятия.
+
 10
-```
 
 
-### ArchiMate Milestones
+### 13 вехи ArchiMate
 
-```
 11
-```
-```
-ArchiMate	Founda6on	formed	
-```
-```
-ArchiMate	language	created	2002-2004	by	the	Telema6ca Ins6tuut
-```
-‘ 02
-
-```
-ArchiMate	1.0	Specifica6on	
-```
-‘ (^04) ‘ 07
-‘ 09
-Ownership	transferred	
-to	The	Open	Group	
-‘ (^08) ‘ 12
-ArchiMate	2	Cer6fica6on		
-ArchiMate	2.1	Specifica6on	
-‘ (^13) ‘ 14
-‘ 16
-ArchiMate	3.0	Specifica6on	
-ArchiMate	3	Cer6fica6on		
-‘ 17
-ArchiMate	2.0	Specifica6on	
-Sample
 
 
-### ArchiMate, an Open Group Standard
+Создан Фонд ArchiMate	
 
-» An open and independent
-modeling language for
-enterprise architecture
 
-» A notation for describing,
-analyzing and visualizing
-relationships amongst
-business domains
+Язык ArchiMate, созданный в 2002-2004 гг. Компанией Telema6ca Ins6tuut.
 
-» A common language
 
-```
+'02
+
+Особенности ArchiMate 1.0	
+
+
+'(^ 04)' 07 '09 Право собственности передано The Open Group' (^ 08) '12 Особенности ArchiMate 2 на ArchiMate 2.1' (^ 13) '14' 16 Особенности ArchiMate 3.0 на ArchiMate 3 Cer6
+
+### 14 ArchiMate, стандарт открытой группы
+
+Открытый и независимый язык моделирования для архитектуры предприятия.
+
+Нотация для описания, анализа и визуализации отношений между сферами бизнеса.
+
+Общий язык
+
 12
-```
-```
+
+
 http://www.opengroup.org/archimate
-```
 
 
-### The TOGAF® Standard
+### 15 Стандарт TOGAF®
 
-```
 13
-```
 
 
-### What’s New in the ArchiMate® 3.
+### 16 Что нового в ArchiMate® 3.
 
-### Specification?
+### 17 Спецификация?
 
-```
 14
-```
-» Additions to support modeling Business Strategy
-
-» Additions to support modeling the Physical World
-
-» Improved Usability and Consistency
 
 
+Дополнения для поддержки моделирования бизнес-стратегии.
 
-### What’s New in the ArchiMate® 3.
+Дополнения для поддержки моделирования физического мира.
 
-### Specification?
+Повышенное удобство использования и согласованность
 
-» Improved Mapping between ArchiMate and the TOGAF
-ADM
+### 18 Что нового в ArchiMate® 3.
 
-```
+### 19 Спецификация?
+
+Улучшено сопоставление между ArchiMate и TOGAF ADM.
+
 15
-```
 
 
-### What’s New in the ArchiMate® 3.
+### 20 Что нового в ArchiMate® 3.
 
-### Specification?
+### 21 Спецификация?
 
-### » For details see:
+### 22 »Подробнее см .:
 
-- White Paper: W
-- An Introduction to
+* Белая книга: W
+* Введение в
 
-### the ArchiMate® 3.
+### 23 ArchiMate® 3.
 
-### Specification
+### 24 Спецификация
 
-- Free download
+* Бесплатная загрузка
 
-```
+
 16
-```
 
 
-```
 17
-```
-## Certification
-
-## Requirements
 
 
+## 25 Сертификация
 
-### ArchiMate® Certification for People
+## 26 Требования
 
-» Ensures that individuals are knowledgeable and have
-understanding of ArchiMate
+### 27 Сертификация ArchiMate® для людей
 
-» Is a common baseline of knowledge
+Гарантирует, что люди осведомлены и понимают ArchiMate
 
-» Provides a visible trust mark
+Это общий базовый уровень знаний
 
-» Is a foundation element for the emerging Enterprise
-Architecture profession
+Обеспечивает видимый знак доверия
 
-» Two levels of Certification
+Является основополагающим элементом новой профессии в области архитектуры предприятия.
 
-- Level 1 : ArchiMate 3 Foundation
-- Level 2 : ArchiMate 3 Practitioner
+Два уровня сертификации
 
-```
+* Уровень 1: ArchiMate 3 Foundation
+* Уровень 2: Практик ArchiMate 3
+
+
 18
-```
 
 
-```
-No
-```
-```
-ArchiMatePart 1 Exam 3
-```
-```
+Нет
+
+
+ArchiMatePart 1 Экзамен 3
+
+
 ArchiMate 3
-Practitioner
-```
-```
+Практикующий
+
+
 ArchiMateFoundation 3
-```
 
 
-```
-Yes ArchiMate3 Advanced
-Bridge Exam
-```
-```
+Да ArchiMate3 Advanced
+Промежуточный экзамен
+
+
 ArchiMateCertified? 2
-```
-```
-ArchiMatePart 2 Exam 3
-```
-### ArchiMate 3 Certification Paths
 
-```
+
+ArchiMatePart 2 Экзамен 3
+
+
+### 28 Пути сертификации ArchiMate 3
+
 19
-```
 
 
-### ArchiMate Foundation Certification:
+### 29 Сертификация ArchiMate Foundation:
 
-### Target Audience
+### 30 Целевая аудитория
 
-» Individuals who require a basic understanding of the
-ArchiMate modeling language
+Лица, которым требуется базовое понимание языка моделирования ArchiMate
 
-» Professionals who are working in roles associated with
-an architecture project and who need to understand
-architecture artifacts developed using the ArchiMate
-modeling language
+Профессионалы, которые работают в ролях, связанных с архитектурным проектом, и которым необходимо понимать артефакты архитектуры, разработанные с использованием языка моделирования ArchiMate
 
-» Individuals who want to achieve a recognized
-qualification to demonstrate their knowledge of the
-ArchiMate modeling language
+Лица, которые хотят получить признанную квалификацию, чтобы продемонстрировать свои знания языка моделирования ArchiMate
 
-```
 20
-```
 
 
-### ArchiMate 3 Foundation Certification
+### 31 Сертификация ArchiMate 3 Foundation
 
-```
-Certification Purpose
+Цель сертификации
 ArchiMate 3
-Foundation
-```
-```
-The	purpose	of	cer6fica6on	for	ArchiMate	3	
-Founda6on	is	to	provide	valida6on	that	the	
-Candidate	has	gained	knowledge	of	the	
-nota6on,	terminology,	structure,	and	basic	
-concepts	of	the	ArchiMate	modeling	
-language.		
-The	learning	objec6ves	at	this	level	focus	
-on	knowledge	and	comprehension.
-```
-```
-21
-```
+Фонд
 
 
-### Certification Requirements (Foundation)
+Назначение сертификата для ArchiMate 3	
+Фонд должен подтвердить, что	
+Кандидат получил знания	
+примечания, терминология, структура и основные	
+концепции моделирования ArchiMate	
+язык.		
+Цели обучения на этом уровне сосредоточены	
+на знания и понимание.
 
-```
+
+21 год
+
+
+### 32 Требования к сертификации (фундамент)
+
 22
-```
-### Requirements
-
-```
-Certification is achieved after passing the
-ArchiMate 3 Part 1 Examination:
-```
-```
-Exam Type: Multiple Choice
-40 Questions / 60 minutes
-Supervised: Yes
-Open Book: No
-Pass Mark: 60%
-```
 
 
-### ArchiMate Practitioner Certification:
+### 33 Требования
 
-### Target Audience
+Сертификация достигается после прохождения
+Экспертиза ArchiMate 3, часть 1:
 
-» Individuals who require to demonstrate practical usage
-and knowledge of the ArchiMate modeling language
 
-» Individuals who will be responsible for developing
-architecture artifacts using ArchiMate language notation
+Тип экзамена: множественный выбор
+40 вопросов / 60 минут
+Под наблюдением: Да
+Открытая книга: Нет
+Проходной балл: 60%
 
-» Individuals who want to achieve a recognized
-qualification to demonstrate their practical ability to apply
-the ArchiMate modeling language
 
-```
+### 34 Сертификация практикующего специалиста ArchiMate:
+
+### 35 Целевая аудитория
+
+Лица, которым необходимо продемонстрировать практическое использование и знание языка моделирования ArchiMate
+
+Лица, которые будут нести ответственность за разработку артефактов архитектуры с использованием нотации языка ArchiMate
+
+Лица, которые хотят получить признанную квалификацию, чтобы продемонстрировать свои практические способности применять язык моделирования ArchiMate
+
 23
-```
 
 
-### ArchiMate 3 Practitioner Certification
+### 36 Сертификация практика ArchiMate 3
 
-```
-Certification Purpose
+Цель сертификации
 ArchiMate 3
-Practitioner
-```
-```
-The	purpose	of	cer6fica6on	for	ArchiMate	3	
-Prac66oner	is	to	provide	valida6on	that	the	
-Candidate	has	gained	knowledge	of	the	
-nota6on,	terminology,	structure,	and	
-concepts	of	the	ArchiMate	modeling	
-language,	and	has	the	capability	to	use	the	
-ArchiMate	language	for	modeling.		
-The	learning	objec6ves	at	this	level	focus	
-on	knowledge,	comprehension,	including	
-advanced	concepts,	and	the	ability	to	apply	
-the	ArchiMate	modeling	language.	
-```
-```
+Практикующий
+
+
+Назначение сертификата для ArchiMate 3	
+Практикующий должен предоставить подтверждение того, что	
+Кандидат получил знания	
+примечания, терминология, структура и	
+концепции моделирования ArchiMate	
+язык и имеет возможность использовать	
+Язык ArchiMate для моделирования.		
+Цели обучения на этом уровне сосредоточены	
+на знания, понимание, в том числе	
+передовые концепции и способность применять	
+язык моделирования ArchiMate.	
+
+
 24
-```
 
 
-### Certification Requirements (Practitioner)
+### 37 Требования к сертификации (практик)
 
-### Requirements
+### 38 Требования
 
-```
-In addition to passing the ArchiMate 3 Part 1
-Examination, candidates must also pass the
-ArchiMate 3 Part 2 Examination:
-Exam Type: Scenario-based Complex Multiple-
-Choice
-8 Questions / 90 minutes
-Supervised: Yes
-Open Book: Yes
-Pass Mark: 65%
-```
-```
+Помимо прохождения ArchiMate 3 Часть 1
+Экзамен, кандидаты также должны сдать
+Экспертиза ArchiMate 3, часть 2:
+Тип экзамена: Сложный многоцелевой на основе сценария
+Выбор
+8 вопросов / 90 минут
+Под наблюдением: Да
+Открытая книга: Да
+Проходная оценка: 65%
+
+
 25
-```
 
 
-### Certification Requirements (Practitioner via
+### 39 Требования к сертификации (практикующий через
 
-### Bridge)
+### 40 Мост)
 
-### Requirements
+### 41 Требования
 
-```
-For Candidates with the ArchiMate 2 Certified
-qualification, they can take the ArchiMate 3
-Advanced Bridge Exam
-Exam Type: Multiple Choice and Scenario-based
-Complex Multiple-Choice
-20 Questions Multiple choice
-4 Questions scenario based / 75 minutes
-Supervised: Yes
-Open Book: Yes for the Scenario questions only
-Pass Mark: 65%
+Для кандидатов с сертификатом ArchiMate 2
+квалификации, они могут сдать ArchiMate 3
+Экзамен Advanced Bridge
+Тип экзамена: множественный выбор и на основе сценария
+Сложный множественный выбор
+20 вопросов с множественным выбором
+4 вопроса по сценарию / 75 минут
+Под наблюдением: Да
+Открытая книга: да только для вопросов по сценарию
+Проходная оценка: 65%
 26
-```
 
 
-```
 27
-```
-### Exam Summaries
-
-**ArchiMate 3 Exam Summary**^
-**Pearson VUE Exam Exam Title #Items Time Limit**
-
-OGA- 031 ArchiMate 3Examination^ Part 1 40 1 Hour
-
-OGA- 032 ArchiMate 3Examination^ Part 2 8 1 Hour 30 Minutes
-
-OGA-03B ArchiMate 3Bridge Advanced 24 1 Hour 15 Minutes
-
-```
-Additional time may be provided for people taking an English language
-exam for whom English is not their first language.
-Please see https://certification.opengroup.org/examinations#ESL for
-more information.
-```
 
 
-### Certification Duration
+### 42 Резюме экзаменов
 
-» ArchiMate Certification does not expire.
+** Сводка экзамена ArchiMate 3 ** ^ ** Название экзамена Pearson VUE # Пункты Ограничение по времени **
 
-» There are no re-certification or renewal requirements.
+OGA- 031 ArchiMate 3Examination ^ Часть 1 40 1 час
 
-» From time to time The Open Group may introduce new
-versions of the ArchiMate Specification.
+OGA- 032 ArchiMate 3Examination ^ Часть 2 8 1 час 30 минут
 
-» Certified persons are encouraged to learn about the new
-version, and to certify again to the new version.
+OGA-03B ArchiMate 3Bridge Advanced 24 1 час 15 минут
 
-» An upgrade path may be provided.
-
-```
-28
-```
+Дополнительное время может быть предоставлено лицам, изучающим английский язык.
+экзамен, для которых английский не является родным языком.
+См. certification.opengroup.org/examinations для Дополнительная информация.
 
 
-### ArchiMate Certification:
+### 43 Продолжительность сертификации
 
-### Syllabus
+Срок действия сертификата ArchiMate не истекает.
 
-### » Details of the Learning Outcomes are in The
+Нет никаких требований к повторной сертификации или продлению.
 
-### Open Group Certification for People: ArchiMate®
+Время от времени Open Group может представлять новые версии спецификации ArchiMate.
 
-### 3 Conformance Requirements (Multi-Level)
+Сертифицированным лицам рекомендуется узнать о новой версии и повторно пройти сертификацию для новой версии.
 
-### » Document: X1610
+Может быть предоставлен способ обновления.
 
-```
+28 год
+
+
+### 44 Сертификация ArchiMate:
+
+### 45 Учебный план
+
+### 46 »Подробная информация о результатах обучения находится в
+
+### 47 Открытая групповая сертификация для людей: ArchiMate®
+
+### 48 3 Требования соответствия (многоуровневые)
+
+### 49 »Документ: X1610
+
 29
-```
 
 
-```
 30
-```
-# Summary Sample
 
 
-### Summary
+# 50 Сводный образец
 
-» This unit provided basic information about the course.
+### 51 Резюме
 
-» It described The Open Group and the ArchiMate
-language.
+Этот модуль содержит основную информацию о курсе.
 
-» It provided information about the ArchiMate 3 certification
-program.
+Он описывает Open Group и язык ArchiMate.
 
-» It described materials and information that are available
-to support the use of the ArchiMate modeling language.
+В нем представлена ​​информация о программе сертификации ArchiMate 3.
 
-```
-31
-```
+В нем описаны материалы и информация, которые доступны для поддержки использования языка моделирования ArchiMate.
+
+31 год
 
 
-### More Information
+### 52 Дополнительная информация
 
-» ArchiMate 3.0 Specification
+Спецификация ArchiMate 3.0
 
-- ISBN: 1 -937218-74-4
-- Document Number :C162
-- Free pdf download from The
-    Open Group
-- Hardcopy from Van Haren
-    Publishing
-- Read ArchiMate online via the
-    web
-[http://www.opengroup.org/archimate/](http://www.opengroup.org/archimate/)
+* ISBN: 1-937218-74-4
+* Номер документа: C162
+* Бесплатная загрузка в формате pdf с сайта Open Group
+* Печатная копия из издательства Van Haren Publishing
+* Прочтите ArchiMate в Интернете через Интернет 
 
-```
+
 32
-```
 
 
-### The Open Group Youtube Channel
+### 54 Канал Open Group на YouTube
 
-» ArchiMate 3.0 Specification
+Спецификация ArchiMate 3.0
 
-- ISBN: 1 -937218-74-4
-- Document Number :C162
-- Free pdf download from The Open Group
-- Hardcopy from Van Haren Publishing
-- Read ArchiMate online via the web
-[http://www.opengroup.org/archimate/](http://www.opengroup.org/archimate/)
+* ISBN: 1-937218-74-4
+* Номер документа: C162
+* Бесплатная загрузка в формате pdf с сайта Open Group
+* Печатная копия из издательства Van Haren Publishing
+* Прочтите ArchiMate в Интернете через Интернет 
 
-```
+
 33
-```
-```
-hNps://www.youtube.com/user/theopengroup
-```
+www.youtube.com/user/theopengroup
 
 
-### Read ArchiMate® Online
+### 55 Читать ArchiMate® Online
 
-```
 34
-```
 
 
-### Read ArchiMate® Online
+### 56 Читать ArchiMate® Online
 
-```
-35
-```
+35 год
 
 
-### More Information
+### 57 Дополнительная информация
 
-» The ArchiSurance Case
-Study is a fictitious
-example developed to
-illustrate the use of the
-ArchiMate® modeling
-language in the context of
-the TOGAF® framework.
+Пример использования ArchiSurance - это вымышленный пример, разработанный для иллюстрации использования языка моделирования ArchiMate® в контексте структуры TOGAF®.
 
-» Document Number:Y163
+Номер документа: Y163
 
-```
 36
-```
 
 
-### ArchiMetal Case Study
+### 58 Пример использования ArchiMetal
 
-### Version 2
+### 59 Версия 2
 
-» Updated for ArchiMate
-Version 3.0
+Обновлено для ArchiMate версии 3.0
 
-» Available as a free
-download from The Open
-Group Publications Catalog
+Доступно для бесплатной загрузки из каталога публикаций Open Group.
 
-» Document Number:Y164
+Номер документа: Y164
 
-```
 37
-```
 
 
-### More Information – Reference Card Set
+### 60 Дополнительная информация - набор справочных карточек
 
-» Reference Card sets, the
-ArchiMate 3 Pocket
-Guide, Information sheets
-and fact sheets are
-available at the ArchiMate
-website.
+Наборы справочных карточек, Карманное руководство ArchiMate 3, информационные бюллетени и фактологические бюллетени доступны на веб-сайте ArchiMate.
 
-```
-38
-```
-
-
+http://www.opengroup.org/archimate/ 

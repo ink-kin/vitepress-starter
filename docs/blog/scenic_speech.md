@@ -1,7 +1,9 @@
 ---
 title: to do по этому сайту
-date: 2020/12/09 13:27:37
-cover_index: "http://picsum.photos/450/450?random=56"
+head:
+  - - meta
+    - name: description
+      content: 'Каждое утро они делают лучше то, что вчера делали восхитительно'
 tags:
 categories:
 - aboutMe

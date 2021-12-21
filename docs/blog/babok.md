@@ -1,7 +1,9 @@
 ---
 title: BABOK - Business Analysis Body of Knowledge
-date: 2020-12-07 18:22:05
-cover_index: "http://picsum.photos/450/450?random=25"
+head:
+  - - meta
+    - name: description
+      content: 'свод знаний по бизнес-аналитике, составляемый Международным институтом бизнес-анализа IIBA. Первая версия была издана в 2006 году'
 tags:
 categories:
 - Innovate

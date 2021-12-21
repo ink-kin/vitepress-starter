@@ -1,7 +1,13 @@
 ---
-title: to do по этому сайту
-date: 2010/12/23 10:04:35
-cover_index: "http://picsum.photos/450/450?random=74"
+title: to do по теме ИННОВАЦИИ
+date: 2021/12/21
+head:
+  - - meta
+    - name: description
+      content: 'ИННОВАЦИИ ERP CMS CRM Простой набор IT&amp;soft Поиск ИС Сервисы Moe-delo.ru Sbis.ru Контур'
+  - - meta
+    - name: keywords 
+      content: 'ИННОВАЦИИ ERP CMS CRM Простой набор IT&amp;soft Поиск ИС Сервисы Moe-delo.ru Sbis.ru Контур'
 tags:
 categories:
 - aboutMe

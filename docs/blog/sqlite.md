@@ -1,7 +1,9 @@
 ---
 title: SQLite
-date: 2020-12-03 18:22:05
-cover_index: "http://picsum.photos/450/450?random=70"
+head:
+  - - meta
+    - name: description
+      content: 'SQLite чрезвычайно распространен, и, по оценкам, в активном использовании находится 1 триллион баз данных SQLite'
 tags:
 categories:
 - Innovate

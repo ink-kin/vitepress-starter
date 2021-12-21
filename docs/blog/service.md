@@ -1,7 +1,9 @@
 ---
 title: Эссе — услуги
-date: 2020-12-03 18:22:05
-cover_index: "http://picsum.photos/450/450?random=57"
+head:
+  - - meta
+    - name: description
+      content: 'Моделируем процесс обсуждения ТЗ между бизнес-заказчиком и специалистом'
 tags:
 categories:
 - aboutMe

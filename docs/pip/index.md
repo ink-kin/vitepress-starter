@@ -1,12 +1,15 @@
 ---
 title: МАРКЕТИНГ И РЕКЛАМА
-cover_index: "http://picsum.photos/450/450?random=74"
+head:
+  - - meta
+    - name: description
+      content: 'to do по этому разделу МАРКЕТИНГ И РЕКЛАМА'
 tags:
 categories:
 - aboutMe
 ---
 
-to do по этому разделу
+to do по этому разделу МАРКЕТИНГ И РЕКЛАМА
 
 МАРКЕТИНГ И РЕКЛАМА
 
@@ -22,7 +25,7 @@ to do по этому разделу
 - Промо
 - Креатив
 - Нэйминг
-- Бренд  Бук
+- Бренд Бук
 - Mediascope/TNS
 - MLG.ru
 - Интернет

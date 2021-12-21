@@ -1,7 +1,9 @@
 ---
 title: TOP-9 tools for MongoDB
-date: 2020-12-03 18:22:05
-cover_index: "http://picsum.photos/450/450?random=76"
+head:
+  - - meta
+    - name: description
+      content: 'Какие факторы следует учитывать при выборе лучшего инструмента с графическим интерфейсом пользователя MongoDB'
 tags:
 - Studio 3T
 - Robo 3Т

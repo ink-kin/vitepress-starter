@@ -1,7 +1,9 @@
 ---
 title: Что такое Kubernetes
-date: 2020-12-03 18:22:05
-cover_index: "http://picsum.photos/450/450?random=82"
+head:
+  - - meta
+    - name: description
+      content: 'Эта страница посвящена краткому обзору Kubernetes'
 tags:
 - Kubernetes
 categories:

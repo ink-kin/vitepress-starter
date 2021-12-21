@@ -1,7 +1,9 @@
 ---
 title: ClamAV лечим, проверяемся, обновляемся
-date: 2021-04-18 08:22:05
-cover_index: "http://picsum.photos/450/450?random=143"
+head:
+  - - meta
+    - name: description
+      content: 'ClamAV - это антивирусное ядро ​​с открытым исходным кодом для обнаружения троянов, вирусов, вредоносных программ и других вредоносных угроз'
 tags:
 - Linux
 categories:

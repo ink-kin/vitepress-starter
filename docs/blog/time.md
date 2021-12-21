@@ -1,7 +1,9 @@
 ---
 title: Время — скрытый смысл фильма
-date: 2020/12/27 13:41:40
-cover_index: "http://picsum.photos/450/450?random=73"
+head:
+  - - meta
+    - name: description
+      content: 'Редкий экшен может похвастаться столь детально продуманным миром и глубокой идеей, какие есть у фильма'
 tags:
 categories:
 - aboutMe

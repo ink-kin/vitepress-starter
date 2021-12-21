@@ -1,7 +1,9 @@
 ---
 title: О, наконец настал тот час
-date: 2020/12/26 20:01:00
-cover_index: "http://picsum.photos/450/450?random=50"
+head:
+  - - meta
+    - name: description
+      content: 'Я ради ваших глаз готов,  Сразиться с дюжиной котов'
 tags:
 categories:
 - aboutMe

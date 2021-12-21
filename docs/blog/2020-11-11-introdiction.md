@@ -1,7 +1,9 @@
 ---
 title: Данные — это чернила, которыми вы пишите ваш бизнес. 
-date: 2020-12-04 01:22:05
-cover_index: "http://picsum.photos/450/450?random=2"
+head:
+  - - meta
+    - name: description
+      content: 'Данные — это чернила, которыми вы пишите ваш бизнес'
 tags:
 - data
 - pathos

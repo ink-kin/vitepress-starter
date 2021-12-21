@@ -1,7 +1,9 @@
 ---
 title: 3 альтернативы Confluence с открытым исходным кодом
-date: 2020-12-03 18:22:05
-cover_index: "http://picsum.photos/450/450?random=9"
+head:
+  - - meta
+    - name: description
+      content: 'BlueSpice, XWiki и DokuWiki предоставляют вам все функции более популярного программного обеспечения для управления знаниями без проприетарных ограничений'
 tags:
 - BlueSpice
 - XWiki

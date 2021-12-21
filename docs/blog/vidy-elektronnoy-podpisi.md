@@ -1,7 +1,9 @@
 ---
 title: Виды электронной подписи
-date: 2021/01/09 16:31:15
-cover_index: "http://picsum.photos/450/450?random=79"
+head:
+  - - meta
+    - name: description
+      content: 'Простая Неквалифицированная Квалифицированная'
 tags:
 - git
 categories:

@@ -1,7 +1,9 @@
 ---
 title: Обама Бюджет и события 2011 и 2012
-date: 2020/12/25 13:58:42
-cover_index: "http://picsum.photos/450/450?random=51"
+head:
+  - - meta
+    - name: description
+      content: 'ну, что, уважаемые кроты, посчитаем Коротко об Обама Бюджет 2011 и 2012 по событиям'
 tags:
 - data
 categories:

@@ -1,7 +1,9 @@
 ---
 title: Используем GIT для резервного копирования
-date: 2021/01/08 19:50:08
-cover_index: "http://picsum.photos/450/450?random=36"
+head:
+  - - meta
+    - name: description
+      content: 'git — the stupid content tracker Обратите внимание: не Version control system, не Software configuration management system, а именно Content tracker. GITу наплевать, что хранить'
 tags:
 - git
 categories:

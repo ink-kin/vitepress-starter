@@ -1,7 +1,9 @@
 ---
 title: Global Redesign Initiative – программа глобальной диктатуры
-date: 2020-12-22 18:22:05
-cover_index: "http://picsum.photos/450/450?random=33"
+head:
+  - - meta
+    - name: description
+      content: 'директор Всемирного экономического форума Клаус Шваб (Klaus Schwab) опубликовал книгу Covid-19 великая перезагрузка'
 tags:
 categories:
 - aboutMe

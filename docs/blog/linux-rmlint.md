@@ -1,8 +1,9 @@
 ---
-title: Linux и git
-subtitle: системы контроля версий Git и операционной системы Linux
-date: 2021-04-22 11:11:11
-cover_index: "http://picsum.photos/450/450?random=43"
+title: Linux и Линус Торвальдс
+head:
+  - - meta
+    - name: description
+      content: 'Линус Торвальдс. Человек, который совершил революцию в мире информационных технологий'
 tags:
 - Linux
 categories:

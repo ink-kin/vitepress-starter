@@ -1,7 +1,9 @@
 ---
 title: Ценности сообщества
-date: 2020-12-03 18:22:05
-cover_index: "http://picsum.photos/450/450?random=39"
+head:
+  - - meta
+    - name: description
+      content: 'Масштаб проекта «интеллигентное общество» жизнеспособен только благодаря ценности и интересам'
 tags:
 categories:
 - aboutMe

@@ -1,7 +1,9 @@
 ---
-title: How Do Engineering Scientists Think? Model-Based
-date: 2020/12/12 15:22:40
-cover_index: "http://picsum.photos/450/450?random=10"
+title: Моделирование в биомедицинских инженерных исследованиях
+head:
+  - - meta
+    - name: description
+      content: 'Моделирование в биомедицинских инженерных исследованиях How Do Engineering Scientists Think? Model-Based'
 tags:
 - data
 categories:
@@ -9,1171 +11,1146 @@ categories:
 - BPM
 ---
 
+Моделирование в биомедицинских инженерных исследованиях
 
-Simulation in Biomedical Engineering Research
+Лаборатории
 
-Laboratories
+Нэнси Дж. Нерсесян
 
-Nancy J. Nersessian
+ 
+Школа интерактивных вычислений Технологического института Джорджии
+Поступило 10 июля 2008 г .; получено в доработке 6 января 2009 г .; принята к печати 26 марта 2009 г.
+ 
+Абстрактный
 
+Проектирование, создание и эксперименты с физическими имитационными моделями являются центральной проблемой.
+решения практик в инженерных науках. Моделирование на основе моделей - это эпистемическая деятельность, которая
+включает исследование, создание и проверку гипотез, объяснений и умозаключений. Эта бумага
+утверждает, что для интерпретации и понимания того, как эти имитационные модели функционируют в создании знаний
+и технологии требуют построения решения проблем, выполняемого системой исследователь – артефакт.
+Тем. Он использует и развивает структуру «распределенного познания» для интерпретации набора данных.
+читал этнографические и когнитивно-исторические исследования двух биомедицинских инженерных исследований.
+лабораториях, и формулирует понятие познания на основе распределенных моделей, чтобы ответить на вопрос
+изложено в названии.
 
+Ключевые слова: модельные рассуждения; Решение проблем; Распределенное познание; Этнография; Исследовательская работа
+лаборатории; Ментальное моделирование
 
+ 
+[T] компоненты процессов, которые в собранном виде составляют мозаику научных открытий.
+Вообще, качественно не отличаются от процессов, которые наблюдались в более простых
+решения проблемных ситуаций.
+(Саймон, Лэнгли и Брэдшоу, 1981, 2).
+ 
+ 
+Точно так же, как вы не можете сделать много столярных работ голыми руками, так и не нужно много думать-
+Вы можете делать это своим голым умом.
+(Деннет, 2000, стр.17)
+ 
+Корреспонденцию следует направлять Нэнси Дж. Нерсесян, Школа интерактивных вычислений, Институт Джорджии.
+Technology, Атланта, Джорджия, 30332-0280. Электронная почта: nancyn@cc.gatech.edu
 
-```
-School of Interactive Computing, Georgia Institute of Technology
-Received 10 July 2008; received in revised form 6 January 2009; accepted 26 March 2009
-```
-Abstract
+Темы когнитивной науки 1 (2009) 730–
+Авторское право © 2009 Cognitive Science Society, Inc. Все права защищены.
+ISSN: 1756-8757 распечатать / 1756-8765 онлайн
+DOI: 10.1111 / j.1756-8765.2009.01032.x
 
-Designing, building, and experimenting with physical simulation models are central problem-
-solving practices in the engineering sciences. Model-based simulation is an epistemic activity that
-includes exploration, generation and testing of hypotheses, explanation, and inference. This paper
-argues that to interpret and understand how these simulation models function in creating knowledge
-and technologies requires construing problem solving as accomplished by a researcher–artifact sys-
-tem. It draws on and further develops the framework of ‘‘distributed cognition’’ to interpret data col-
-lected in ethnographic and cognitive-historical studies of two biomedical engineering research
-laboratories, and articulates the notion of distributed model-based cognition to answer the question
-posed in the title.
+1. Введение
 
-Keywords:Model-based reasoning; Problem solving; Distributed cognition; Ethnography; Research
-laboratories; Mental modeling
+Долгое время центральным предположением когнитивных исследований науки и технологий было то, что
+когнитивные ресурсы, которые ученые используют при решении проблем, не отличаются по своему характеру
+чем те, которые используются в более обычных случаях, но лежат непрерывно. Конструируя причину-
+стратегии зондирования и репрезентации, разработанные учеными как сложные, в высшей степени
+рефлексивные результаты обычных рассуждений и репрезентативных практик позволяют исследователям
+в этой области для извлечения информации и информирования о природе познания в целом. В виде
+вместе с другими областями когнитивной науки наблюдается тенденция к изучению науки в
+натуралистические настройки (см., например, Alac & Hutchins, 2004; Dunbar, 1995; Dunbar & Blanchette,
+2001; Гудвин, 1995; Холл, Стивенс и Торральба, 2002; Нерсесян, 2006; Нерсесян,
+Курц-Милке, Newstetter, & Davies, 2003; Трикетт, Фу, Шунн и Трафтон, 2000; Трикетт
+И Trafton, 2007). Одна из целей исследования, которое я представляю здесь, - использовать полученные знания.
+от изучения практики решения проблем учеными-инженерами до содействия окружающей среде.
+ронментальная перспектива '' (Нерсесян, 2005) о познании. Наше исследование направлено на комплексное
+изучение воплощения, использования артефактов и социокультурных аспектов человеческого познания.
+ция - та, в которой окружающая среда не просто поддерживает познание, а, скорее, в которой
+аспекты окружающей среды играют неотъемлемую роль в когнитивных процессах. Здесь я ставлю
+вопрос "Как думают ученые-инженеры?"
+Ученые-инженеры - это группа инженеров, часто междисциплинарных, чьи исследования
+стремится внести фундаментальный вклад в фундаментальную науку, а также создавать новые артефакты
+и технологии. Чаще всего эти исследователи исследуют явления реального мира с помощью
+имитационные модели - физические или вычислительные. Это исследование не затрагивает in vivo
+явления, непосредственно исследуемые; скорее, они создают in vitro модели выбранных функций.
+структуры явлений in vivo и рассуждать о явлениях посредством манипулирования
+модели. Таким образом, инженерная наука - это принципиально аналогичная практика: экспериментирование.
+осуществляется посредством моделей, которые являются аналоговыми представлениями объектов и процессов в рамках исследования.
+тигация. Изучение их использования дополняет обширные исследования использования моделей в философии науки.
+познавательные и познавательные исследования науки. В этой литературе широко изучалось использование
+концептуальные модели в научных исследованиях (см., например, Giere, 1988; Morgan & Morrison, 1999;
+Нерсесян, 1992а, 2008а). Философская работа сосредоточена в основном на вопросах, относящихся к
+отношения между моделями и явлениями, которые они представляют, то есть «реализм»
+проблема. Как и в случае с моей предыдущей работой над «рассуждением на основе моделей», наше исследование инженерных
+В науках основное внимание уделяется характеру интеллектуальной работы, которую они выполняют, используя
+моделей, в том числе физических и вычислительных.
+Практика решения проблем ученых-инженеров - отличный ресурс
+для продвижения повестки дня экологических перспектив, потому что их технологии моделирования
+Ги - это одновременно когнитивные и культурные артефакты. В рамках данной статьи
+внимание сосредоточено в первую очередь на одном аспекте - функции физических моделей как когнитивных
+артефактов в распределенных когнитивных процессах, но на самом деле социокультурные аспекты
+всегда присутствуют, если не рассматриваются непосредственно в этом кратком анализе. Цитата из эпиграфа
+Дэниел Деннетт представляет собой краткое изложение основных предпосылок ряда исследований в рамках
+такие заголовки, как «распределенное познание», «тезис расширенного разума»,
 
-```
-[T]he component processes, which when assembled make the mosaic of scientific discov-
-ery, are not qualitatively distinct from the processes that have been observed in simpler
-problem-solving situations.
-(Simon, Langley, & Bradshaw, 1981, 2)
-```
-```
-Just as you cannot do very much carpentry with your bare hands, there’s not much think-
-ing you can do with your bare mind.
-(Dennett, 2000, 17)
-```
-Correspondence should be sent to Nancy J. Nersessian, School of Interactive Computing, Georgia Institute of
-Technology, Atlanta, GA 30332-0280. E-mail: nancyn@cc.gatech.edu
+познания '' и '' теории деятельности ''. Представленное здесь исследование сформулировано в общих чертах в терминах
+распределенного познания: когнитивные явления, такие как решение проблем, "распределены"
+(Hutchins, 1995) или «растянуты» (Lave, 1988) в сложной системе, включающей
+люди и артефакты. В рамках этой структуры, чтобы понять, как достигается решение проблем.
+требует изучения генерации, манипулирования и распространения ярких репрезентаций.
+ции внутри системы; то есть изучение того, как репрезентативные состояния передаются через медиа
+и выполнять познавательную работу. В начале нашего исследования двух биомедицинских инженеров -
+В исследовательских лабораториях наше внимание было направлено на очень важные представления о том, что
+они называют «устройствами», которые представляют собой физические имитационные модели, которые они проектируют, конструируют и
+манипулировать в исследованиях.
+Представленное здесь исследование использует распределенное познание в качестве интерпретирующей «рамки» в
+смысл, предложенный Райаном Твени (Tweney, 1989): «Структура - это попытка воссоздать
+структурировать модель мира, которая отвечает критериям, отличным от проверяемости [требуется для теорий], как
+такой. Адекватная структура - это та, которая согласуется с деталями реальных программ.
+cess, интересно связано с нашими теориями мира и снижает сложность
+реальный процесс таким образом, чтобы можно было привязать каркас к данным '' (стр. 344).
+Я бы добавил к этому, что анализ структуры может привести к новым гипотезам.
+которые можно изучить и проверить в экспериментальных исследованиях (см. также Dunbar, 1995). Дальше,
+понятие «распределенное познание» находится в стадии разработки и является одной из целей данной работы.
+состоит в том, чтобы сформулировать это дальше.
+К настоящему времени проанализированы и проанализированы несколько реальных и экспериментальных явлений.
+интерпретируется с помощью распределенной структуры познания. Обсуждая это в
+контекст взаимодействия человека с компьютером, Hollan et al. (Холлан, Хатчинс и Кирш, 2000)
+перечислил три возможных типа распределенных когнитивных процессов, возникающих в результате наблюдения
+человеческая деятельность 'в дикой природе' '':
 
-Topics in Cognitive Science 1 (2009) 730–
-Copyright2009 Cognitive Science Society, Inc. All rights reserved.
-ISSN: 1756-8757 print / 1756-8765 online
-DOI: 10.1111/j.1756-8765.2009.01032.x
+1. Познавательные процессы могут быть распределены между членами социальной группы.
+2. Познавательные процессы могут включать координацию между внутренними и внешними (материальными
+    или окружающая) структура.
+3. Процессы могут быть распределены во времени таким образом, что продукты более ранних
+    события могут изменить природу более поздних событий (стр. 176).
 
+Деятельность исследованных нами исследовательских лабораторий по решению проблем демонстрирует все
+три вида, хотя здесь я в основном сосредотачиваюсь на последних двух. Что нового в этих доменах
+состоит в том, что все аспекты системы - человеческий и технологический - одновременно подвергаются
+взаимосвязанные изменения (Nersessian et al., 2003). Хотя в этих
+исследовательских сообществ, процессы решения проблем часто носят длительный характер и включают
+проектирование, строительство и модернизация технологии. Более того, все исследователи учатся:
+эры. Как мы обнаружили, у исследователей и их технологий есть пересекающиеся разработки:
+Тальные траектории.
+Ниже я сначала охарактеризую окружающую среду и наши методы анализа.
+Затем я разрабатываю интерпретацию на системном уровне исследовательской деятельности, которую мы называем меж-
+модели блокировки и связанное с ними понятие познания на основе моделей, чтобы объяснить, как
 
-1. Introduction
+решение проблем достигается с помощью распределенной системы вывода, включающей исследования-
+эр (ы) и артефакт (ы).
 
-It has long been a central assumption of cognitive studies of science and technology that
-the cognitive resources scientists bring to bear in problem solving are not different in kind
-than those used in more ordinary instances, but lie along a continuum. Construing the rea-
-soning and representational strategies scientists have developed as sophisticated, highly
-reflective outgrowths of ordinary reasoning and representational practices allows researchers
-in this area to both draw from and inform the study of the nature of cognition, in general. As
-with other areas of cognitive science there has been a move toward studying science in
-naturalistic settings (see, e.g., Alac & Hutchins, 2004; Dunbar, 1995; Dunbar & Blanchette,
-2001; Goodwin, 1995; Hall, Stevens, & Torralba, 2002; Nersessian, 2006; Nersessian,
-Kurz-Milcke, Newstetter, & Davies, 2003; Trickett, Fu, Schunn, & Trafton, 2000; Trickett
-& Trafton, 2007). One of the aims of the research I present here is to use insights gleaned
-from studying the problem-solving practices of engineering scientists to further an ‘‘envi-
-ronmental perspective’’ (Nersessian, 2005) on cognition. Our research aims at an integrated
-study of the embodied, artifact-using, and sociocultural dimensions of human cogni-
-tion—one in which the environment does not simply scaffold cognition, but rather, in which
-aspects of the environment play integral roles in cognitive processes. Here I pose the
-question of ‘‘How do engineering scientists think?’’
-Engineering scientists are a breed of engineer—often interdisciplinary—whose research
-aims to make fundamental contributions to basic science as well as to create novel artifacts
-and technologies. Most often these researchers investigate real-world phenomena through
-simulation models—physical or computational. This research does not engage the in vivo
-phenomena under investigation directly; rather, they build in vitro models of selected fea-
-tures of in vivo phenomena and reason about the phenomena by means of manipulating the
-models. Thus, engineering science is a fundamentally analogical practice: experimentation
-is by means of models that are analog representations of entities and processes under inves-
-tigation. Examining their use adds to extensive research on model use in philosophy of sci-
-ence and cognitive studies of science. That literature has largely examined the use of
-conceptual models in scientific research (see, e.g., Giere, 1988; Morgan & Morrison, 1999;
-Nersessian, 1992a, 2008a). The philosophical work focuses mainly on issues pertaining to
-the relations between the models and the phenomena they represent, that is, the ‘‘realism’’
-issue. As with my earlier work on ‘‘model-based reasoning,’’ our research on the engineer-
-ing sciences focuses on the nature of the intellectual work they accomplish through the use
-of models, now including physical and computational models as well.
-The problem-solving practices of engineering scientists provide an excellent resource
-for advancing the agenda of environmental perspectives because their simulation technolo-
-gies are simultaneously cognitive and cultural artifacts. Within the confines of this paper
-attention is directed primarily to one aspect—the function of physical models as cognitive
-artifacts in distributed cognitive processes—but in fact the sociocultural dimensions are
-always present if not attended to directly in this brief analysis. The epigraph quote from
-Daniel Dennett provides a pithy summary of a major premise of range of research under
-headings such as ‘‘distributed cognition,’’ ‘‘the extended mind thesis,’’ ‘‘situated
+2. Методы сбора и анализа данных
 
+2.1. Когнитивно-историческая этнография
 
-cognition,’’ and ‘‘activity theory.’’ The study presented here is framed, broadly, in terms
-of distributed cognition: cognitive phenomena such as problem solving are ‘‘distributed’’
-(Hutchins, 1995) or ‘‘stretched’’ (Lave, 1988) across a complex system comprising
-humans and artifacts. Within this framing, to understand how problem solving is achieved
-requires examining the generation, manipulation, and propagation of salient representa-
-tions within the system; that is, examining how representational states flow across media
-and accomplish cognitive work. Early on in our investigation of two biomedical engineer-
-ing research labs, our attention was directed toward highly salient representations, what
-they call ‘‘devices,’’ which are the physical simulation models they design, construct, and
-manipulate in research.
-The research presented here uses distributed cognition as an interpretive ‘‘framework’’ in
-the sense proposed by Ryan Tweney (Tweney, 1989): ‘‘A framework is an attempt to recon-
-struct a model of the world that meets criteria other than testability [required for theories] as
-such. An adequate framework is one that is consistent with the details of the real-world pro-
-cess, is interestingly related to our theories of the world, and reduces the complexity of the
-real-world process in a way that permits anchoring the framework to the data’’ (p. 344).
-I would add to this that framework analyses have the potential to lead to new hypotheses
-that can be explored and tested in experimental research (see also Dunbar, 1995). Further,
-‘‘distributed cognition’’ is itself a notion under development and one objective of this work
-is to further articulate it.
-By now, several real-world—and experimental—phenomena have been analyzed and
-interpreted by means of the distributed cognition framework. In their discussion of it in the
-context of human–computer interaction, Hollan et al. (Hollan, Hutchins, & Kirsch, 2000)
-listed three possible kinds of distributed cognitive processes arising from ‘‘observation of
-human activity ‘in the wild’’’:
+В нашу собственную междисциплинарную исследовательскую группу входят исследователи с докторской степенью и опытом.
+в этнографии, качественных методах, лингвистике, психологии, философии и истории
+наука, когнитивная наука и наука об обучении. Студенты-исследователи (аспиранты и
+бакалавриат) поступили из программ в области когнитивных наук, интеллектуальных систем и
+человеко-ориентированные вычисления. Все члены команды прошли стажировку в
+этнография, качественные методы и когнитивно-исторический анализ.
+Следуя за исследователями распределенного и ситуативного познания, которые адаптировали этно-
+графические методы из антропологии для изучения когнитивных процессов в естественных условиях
+(Goodwin, 1995; Hutchins, 1995; Lave, 1988), мы провели когнитивный этног-
+raphies '' (Hutchins, 1995) исследовательских лабораторий. Этнографическая часть исследования.
+(наблюдения и интервью) стремились раскрыть действия, инструменты и значение -
+сделать это исследование поддержки в соответствии с текущей практикой сообщества. Несколько
+Члены группы стали участниками-наблюдателями повседневных практик в каждой лаборатории.
+Мы делали полевые заметки о наших наблюдениях, записывали интервью, видео- и аудиозаписи.
+исследовательских встреч (полная транскрипция завершена для 148 интервью и 40 исследований
+встречи). Мы сосредоточили свое внимание на пользовательских имитационных моделях (устройствах) в качестве
+они функционировали как «центры», вокруг которых когнитивные, социальные и культурные практики
+по центру. Поскольку наше внимание было сосредоточено на повседневных действиях, связанных с устройствами,
+исследовательские встречи (ежемесячно или реже для лаборатории A и раз в две недели для лаборатории D), хотя и полезны,
+приобрели меньшее значение, чем в других исследованиях когнитивных практик в лабораториях.
+ries (см., особенно, Dunbar, 1995). Нам нужно было больше узнать у исследователей, как они понимают
+воспринимать и воспринимать отношения с этими артефактами, а также видеть, как они функционируют в жизни
+лабораторий - аспекты, которые лучше решать с помощью собеседований и обширного поля
+наблюдения. Исторический аспект исследований в этих лабораториях, особенно с
+Что касается устройств моделирования, необходимо, чтобы мы объединили интерпретирующие методы, родственные
+к тем, которые используются в когнитивно-историческом анализе (Нерсесян, 1995) с качественными методами
+когнитивной этнографии. В этом смысле когнитивно-исторический анализ исследует исторические
+записи с целью понимания познания, а не построения исторического
+аккаунт как таковой. По этому направлению нашего исследования сбор данных включал публикации, грант.
+предложения, предложения по диссертациям, презентации в PowerPoint, лабораторные тетради, электронные письма,
+материалы, связанные с технологическими артефактами, и интервью по истории лаборатории.
+Как группа мы оцениваем проведение более 800 часов полевых наблюдений. Хотя мы были
+разрешено видео-исследовательские встречи, оказалось невозможным видео-исследования в лабораторных условиях.
+ржи. Виды наблюдений, за которыми мы следили, не подлежали запросу об уведомлении.
+так что мы могли снимать, когда происходит «Х». В лаборатории D один исследователь дал согласие на
 
-1. Cognitive processes may be distributed across the members of a social group.
-2. Cognitive processes may involve coordination between internal and external (material
-    or environmental) structure.
-3. Processes may be distributed through time in such a way that the products of earlier
-    events can transform the nature of later events (p. 176).
+позволяя нам снимать ее на расстоянии во время исследования, но она нашла это отвлекающим и неудобным
+удачный. Она продолжала просить нас «отойти подальше», пока это не стало бесполезным. Шерсть-
+Кроме того, исследования проводились круглосуточно (один из наших исследователей разбил лагерь
+вечерами в Лаборатории D, потому что вначале мы не могли предсказать, когда участники
+быть там, а некоторые приходили в лабораторию только в вечерние часы). Монтаж потолочных видеокамер
+постоянно работать или предоставлять налобные камеры для ношения исследователям, возможно, было
+полезны, но оба были непомерно дорогими и создавали серьезные проблемы для людей.
 
-The problem-solving activities of the research laboratories we have studied exhibit all
-three kinds, though here I focus largely on the latter two. What is novel about these domains
-is that all aspects of the system—human and technological—are simultaneously undergoing
-interrelated changes (Nersessian et al., 2003). Although there are loci of stability in these
-research communities, problem-solving processes are often of long duration and involve
-designing, building, and redesigning the technology. Furthermore, all researchers are learn-
-ers. As we have found, the researchers and their technologies have intersecting developmen-
-tal trajectories.
-In what follows, I first characterize the environments and our methods of analysis.
-I then develop a system level interpretation of the research activities we callinter-
-locking models and its correlated notion, model-based cognition, to explicate how
+2.2. Полевые объекты: две исследовательские лаборатории в области биомедицинской инженерии.
 
+Мы провели 5-летнее исследование двух университетских исследовательских лабораторий в
+область биомедицинской инженерии. В частности, в первый год мы начали с тканевой инженерии.
+нейроинженерная лаборатория и на втором курсе добавлена ​​лаборатория нейронной инженерии. Интенсивный
+сбор данных проводился в каждой лаборатории в течение 2 лет с последующим наблюдением за участниками.
+штаны, их исследования и вопросы, относящиеся к нашим исследованиям в течение дополнительных 2 лет. ^ 1
+Анализ продолжается.
+Мы выбрали эти сайты в соответствии с многочисленными целями нашего исследования. Центральная цель -
+изучить когнитивные практики в междисциплинарных областях и проблемы, которые они создают для
+обучение. Основные особенности сайтов:
 
-problem solving is achieved by a distributed inferential system comprising research-
-er(s) and artifact(s).
+1. Это богатые места для исследования взаимодействия познания и культуры в творческой среде.
+    научная практика.
+2. Они являются важными местами обучения в области науки и техники.
+3. Это междисциплинарные сообщества, в которых концепции, методы, дискурсы, артефакты,
+    и так далее, из разных дисциплин взаимодействуют.
 
-2. Methods of data collection and analysis
+Лаборатория А - лаборатория тканевой инженерии. В ходе нашего исследования в число основных участников входили
+директор, один заведующий лабораторией, один постдокторант, семь аспирантов
+(трое закончили, пока мы были там; остальные четверо после того, как закончили формальный сбор),
+два аспиранта MS, четыре студента долгосрочного обучения (два семестра и более).
+Дополнительные студенты со всей страны участвовали в летних стажировках и
+краткосрочные визиты иностранных аспирантов и постдоков. Дирекция лаборатории
+Тор («А13») был старшим и широко известным пионером в области биомедицинской инженерии.
+Все исследователи имели инженерное образование, в основном механическое или химическое.
+инженерии, а некоторые в настоящее время учатся по программе биомедицинской инженерии. Немного
+до прихода в лабораторию работал в промышленности. Заведующий лабораторией имел степень магистра биохимии.
+пытаться. Исследователи часто консультировались с гистологом, находящимся в здании, и путешествовали.
+в другие учреждения для различных целей, в том числе для сбора клеток животных и запуска генов
+микрочиповые анализы. Лаборатория тканевой инженерии как учреждение существовала в
+существование почти 20 лет, когда мы вошли.
+Всеобъемлющие исследовательские задачи лаборатории А заключаются в том, чтобы понять механические размеры клетки.
+биология, такая как экспрессия генов в эндотелиальных клетках, и создание живой заменителя крови
+сосуды для имплантации в сердечно-сосудистую систему человека. Двойные цели этой лаборатории
 
-2.1. Cognitive-historical ethnography
+расширить понятие ученого-инженера как обладающего как традиционными инженерными
+и цели научных исследований. Примеры промежуточных проблем, которые способствовали
+повседневная работа во время нашего исследования включала проектирование и строительство жилых
+ткани - «конструкции» - имитирующие свойства естественных сосудов; создание эндотелиальных клеток
+(высокая иммунная чувствительность) из взрослых стволовых клеток и клеток-предшественников; проектирование и строительство
+среды для механического кондиционирования конструкций; и средства проектирования для тестирования
+их механическая прочность.
+Лаборатория D - лаборатория нейроинженерии. Во время нашего исследования в число основных участников входили
+директор, заведующий лабораторией, один постдокторант, четыре аспиранта
+по месту жительства (один ушел через 2 года, трое закончили после того, как мы завершили формальный сбор),
+один аспирант в другом учреждении, который периодически посещал и был доступен через видео
+ссылка, один студент магистратуры, шесть долгосрочных студентов и один волонтер на протяжении почти 2 лет,
+не получив ученую степень (со степенью бакалавра наук), помогал с разведением мышей. Когда мы начали,
+директор лаборатории («D6») был новым доцентом, только что проработавшим 7 лет.
+постдок в лаборатории биофизики, которая разрабатывает методики и технологии обучения
+культуры нейронов. Он уже добился определенного признания как пионер. Его биография
+был в области химии и биохимии, с его инженерным опытом в основном самоучкой,
+хотя и очень изощренный. Опыт исследователей в Лаборатории D был более
+отличался от лаборатории А и включал машиностроение, электротехнику, физику,
+наук о жизни, химии, микробиологии, а некоторые в настоящее время изучают биомедицинские
+инженерная программа. Как учреждение, лаборатория нейронной инженерии существовала.
+в течение нескольких месяцев и все еще в процессе формирования, когда мы вошли.
+Всеобъемлющие исследовательские задачи лаборатории D заключаются в том, чтобы понять механизмы, с помощью которых
+нейроны обучаются в мозгу и потенциально могут использовать эти знания для разработки вспомогательных средств для нейро-
+логические недостатки и «сделать людей умнее» (ИП). Примеры промежуточных задач, которые
+вносил свой вклад в повседневную работу, включая разработку способов культивирования, стимулирования, контроля,
+записывать и изображать нейронные массивы; проектирование и построение среды обратной связи
+(роботизированный и смоделированный), в котором «блюдо» культивируемых нейронов могло обучаться; и используя
+электрофизиологии и оптической визуализации для изучения «пластичности».
+имеют двойную научную и инженерную повестку дня.
 
-Our own interdisciplinary research group comprises PhD-level researchers with expertise
-in ethnography, qualitative methods, linguistics, psychology, philosophy and history of
-science, cognitive science, and learning sciences. Student researchers (graduate and
-undergraduate) have come from programs in cognitive science, intelligent systems, and
-human-centered computing. All members of the team received apprenticeship training in
-ethnography, qualitative methods, and cognitive-historical analysis.
-Following researchers in distributed and situated cognition who have adapted ethno-
-graphic methods from anthropology to study cognitive processes in naturally situated
-practices (Goodwin, 1995; Hutchins, 1995; Lave, 1988), we conducted ‘‘cognitive ethnog-
-raphies’’ (Hutchins, 1995) of the research laboratories. The ethnographic part of the study
-(observations and interviews) has sought to uncover the activities, tools, and meaning-
-making that support research as situated in the ongoing practices of the community. Several
-members of the group became participant observers of the day-to-day practices in each lab.
-We took field notes on our observations, audiotaped interviews, and video- and audiotaped
-research meetings (full transcriptions are completed for 148 interviews and 40 research
-meetings). We focused our attention on the custom-built simulation models (devices) as
-these appeared to function as ‘‘hubs’’ around which cognitive, social, and cultural practices
-centered. Because our focus was on the day-to-day activities surrounding the devices, the
-research meetings (monthly or less for Lab A and biweekly for Lab D), though useful,
-assumed less importance than they have in other studies of cognitive practices in laborato-
-ries (see, esp., Dunbar, 1995). We needed more to elicit from researchers their understand-
-ing and perceived relations to these artifacts, and to see how they functioned within the life
-of the labs—aspects that are better addressed through interviewing and extensive field
-observations. The historical dimension of research in these laboratories, especially with
-respect to the simulation devices, required that we bring together interpretive methods akin
-to those used in cognitive-historical analysis (Nersessian, 1995) with the qualitative methods
-of cognitive ethnography. In this use, cognitive-historical analysis examines historical
-records with the objective of understanding cognition, rather than constructing an historical
-account per se. For this dimension of our study, data collection included publications, grant
-proposals, dissertation proposals, powerpoint presentations, laboratory notebooks, e-mails,
-materials related to technological artifacts, and interviews on lab history.
-As a group we estimate conducting over 800 hr of field observations. Although we were
-allowed to video research meetings, it proved unfeasible to video research in the laborato-
-ries. The kinds of observations we were after were not amenable to requesting to be notified
-so that we could film when ‘‘X’’ was happening. In Lab D, one researcher did consent to
+2.3. Вопросы исследования
 
+Несколько вопросов, касающихся когнитивных и обучающих практик в этих лабораториях, помогли
+рамки нашего расследования. Наиболее значимыми для этой статьи были следующие:
 
-letting us video her at a distance during research, but she found it a distraction and uncom-
-fortable. She kept asking that we ‘‘move farther away’’ until it was no longer useful. Fur-
-thermore, research took place all hours of the day (one of our researchers camped out
-evenings in Lab D because in its early days we could not predict when the members would
-be there and some only came to the lab in the evening hours). Mounting overhead cameras
-running continually or providing head cameras for the researchers to wear might have been
-useful, but both were prohibitively expensive and posed serious human subjects’ issues.
+1. Какие когнитивные практики используются в исследованиях в этих областях?
+2. Каковы методы расследования, с помощью которых решаются исследовательские проблемы?
+3. Каковы методы взаимодействия в лабораторной культуре, которые способствуют и
+    поддерживать обучение и исследования?
 
-2.2. Field sites: Two biomedical engineering research laboratories
+Чтобы зафиксировать взаимосвязь между когнитивными и культурными аспектами системы, мы:
+разработал аналитическую схему, включающую когнитивные, исследовательские и интерактивные практики.
 
-We have conducted a 5-year investigation of two university research laboratories in the
-area of biomedical engineering. Specifically, we began in the first year with a tissue engi-
-neering laboratory and added a neural engineering laboratory in the second year. Intensive
-data collection was conducted in each laboratory for 2 years with follow-up of the partici-
-pants, their research, and questions pertaining to our research for an additional 2 years.^1
-Analysis is ongoing.
-We selected these sites in accord with the multiple aims of our research. A central aim is
-to examine cognitive practices in interdisciplinary fields and the challenges these pose for
-learning. Salient features of the sites are as follows:
+Познавательные практики порождают следственные практики и взаимодействуют с ними, которые, в свою очередь,
+реализуется через интерактивные практики, которые поддерживают и поддерживают и то и другое. В этом контексте
+когнитивные практики включают формулировку проблемы, рассуждение и решение проблем
+подходы, которые определяют работу лаборатории. Исходя из этого, исследовательское измерение
+включает суть повседневной работы сотрудников лаборатории, поскольку они стремятся понять:
+техника, техника и технологии. Взаимодействие включает лабораторную культуру.
+и социальные конфигурации, которые объясняют виды и характер отношений, сформированных в
+лаборатории и как они поддерживаются.
+Результаты нашего исследования богаты, и описание и интерпретации, представленные в этой статье
+в значительной степени ограничиваются теми, которые относятся к центральной когнитивной практике пересечения внутренней
+vivo – in vitro и связанная с этим исследовательская практика проектирования, строительства и
+экспериментирование с имитационными моделями и интерактивная практика «когнитивного партнерства».
+Имитационные модели, называемые в этих лабораториях устройствами, предоставляют средства, с помощью которых
+исследователи проверяют, контролируют и исследуют мир in vivo, создавая параллельные in vitro
+Когнитивное партнерство означает идею о том, что исследование предполагает построение отношений.
+поставляется как с другими исследователями, так и с устройствами.
 
-1. They are rich locales for investigating the interplay of cognition and culture in creative
-    scientific practices.
-2. They are significant sites of learning in science and engineering fields.
-3. They are interdisciplinary communities where concepts, methods, discourses, artifacts,
-    and so forth, from different disciplines interact.
+2.4. Методы кодирования
 
-Lab A is a tissue engineering laboratory. During our study, the main members included a
-director, one laboratory manager, one postdoctoral researcher, seven PhD graduate students
-(three graduated while we were there; the other four, after we concluded formal collection),
-two MS graduate students, four long-term undergraduates (two semesters or more).
-Additional undergraduates from around the country participated in summer internships and
-international graduate students and postdocs visited for short periods. The laboratory direc-
-tor (‘‘A13’’) was a senior, highly renowned pioneer in the field of biomedical engineering.
-All of the researchers came from engineering backgrounds, mainly mechanical or chemical
-engineering, and some were currently students in a biomedical engineering program. Some
-had spent time in industry prior to joining the lab. The lab manager had an MS in biochemis-
-try. Researchers frequently consulted with a histologist located in the building and traveled
-to other institutions for various purposes, including to collect animal cells and to run gene
-microarray analyses. The tissue engineering laboratory, as an institution, had been in
-existence nearly 20 years when we entered.
-Lab A’s overarching research problems are to understand mechanical dimensions of cell
-biology, such as gene expression in endothelial cells, and to engineer living substitute blood
-vessels for implantation in the human cardiovascular system. The dual objectives of this lab
+В общем, в соответствии с целями обоснованной теории, мы подошли к интерпретации
+аналитическое и индуктивное кодирование (Glaser & Strauss, 1967; Strauss & Corbin, 1998)
+позволяя основным категориям (и, в конечном итоге, «теории» ^ 2) возникать из данных и оставаться
+основывались на нем, руководствуясь при этом нашими первоначальными исследовательскими вопросами. Кодирование началось с
+еженедельные совместные встречи двух психологов с докторской степенью с использованием качественных методов
+экспертиза. Небольшая выборка интервью анализировалась постепенно построчно из
+от начала до конца, чтобы дать начальное описание большинства, если не всех отрывков
+в интервью. Описание и код записывались только тогда, когда оба исследователя находились в
+полное согласие с его соответствием и соответствием отрывку, и поначалу не было никаких попыток
+чтобы минимизировать количество категорий кодирования. Два основных подхода к разработке кодов
+оказался самым продуктивным. Один из них соответствовал классическим подходам к кодированию, которые
+подчеркивать появление тем и кодов из описываемых блоков текста. Секунда
+подход возник в более тесной связи с продолжающимися этнографическими полевыми наблюдениями в
+лаборатории. Первоначальные коды были представлены на собраниях наших исследовательских групп, проводимых каждые две недели (все читали
+расшифровки стенограммы заранее) и коды обсуждались до достижения договоренности. Описания
+и коды были пересмотрены на протяжении всего процесса в соответствии с новым обсуждением текста,
+а также новые наблюдения в лабораториях. Затем коды были проанализированы на предмет концептуальных
+сходства, совпадения и различия, и были сгруппированы вместе под вышестоящей главой -
+увеличения и т. д. до тех пор, пока дальнейшие сокращения не прекратятся.
+После того, как коды были установлены, несколько студентов-исследователей прошли обучение по ним, с
+особый упор на коды, которые были собраны в категории «модельные
+познания '', и большее количество транскриптов были закодированы на `` высоком уровне '' для случаев
+эти. И снова по крайней мере два исследователя посмотрели на одни и те же расшифровки стенограмм и разрешили любые
+противоречивые интерпретации через обсуждение. Из полностью записанных интервью 18%
 
+закодировано. В ходе этого процесса появилось 79 категорий, которые были перенесены между двумя лабораториями. Из этих
+27 были особенно надежными, и во всех 11 вышестоящих категориях были созданы. 11
+вышестоящие категории демонстрируют диапазон эмерджентных кодов: агентство, аналогия, история,
+идентичность, ограничения, познание на основе моделей, нормы, прагматика, формулировка проблемы, поиск
+согласованность и визуализация. Один экземпляр из вышестоящих категорий -
+«познание, основанное на моделях». В закодированных записях 389 случаев подпадают под это
+вышестоящая категория. ^ 3 На рис. 1 представлены подкатегории и примеры примеров.
+Под «основанным на модели» мы подразумеваем, что представление было организовано таким образом, чтобы отражать структурные,
+функциональные или поведенческие аспекты явлений. Таким образом, мы заключаем, что эти исследователи
+понимать, объяснять и рассуждать с помощью «ментальных моделей», как будет обсуждаться в Разделе 4.
+Чтобы гарантировать «надежность» (Lincoln & Guba, 1985) наших интерпретаций, мы следуем:
+сформулировал три принципа Эйснера (2003): структурное подтверждение, ссылочная адекватность и
+согласованное подтверждение. Структурное подтверждение требует наличия достаточного количества данных.
+точки сходятся в выводе, подтверждающем полученную интерпретацию. Этот принцип призывает
+для триангуляции между различными типами данных, в нашем случае интервью, полевые заметки, лабораторные встречи-
+ценные бумаги и документы. Ссылочная адекватность касается разнообразия описания и
+интерпретации и согласуется ли она с пониманием того же феномена участниками. Это
+важно уметь четко и лаконично объяснить свойства каждой кодовой категории.
+кровавый ради прозрачности. На ранних этапах кодирования мы представили интерпретации
+члены лаборатории, чтобы проверить выравнивание. И, наконец, согласованная проверка относится к уровню
+межэкспертное соглашение, которое может быть достигнуто между двумя или более членами команды, используя код
+схемы. Неспособность достичь такой проверки означает, что схема кодирования не работает.
+подтверждены данными или адекватно описаны. Наши согласованные процедуры проверки были
+как обсуждалось выше.
 
-explicate further the notion of an engineering scientist as having both traditional engineering
-and scientific research goals. Examples of intermediate problems that contributed to
-the daily work during our investigation included designing and building living
-tissue—‘‘constructs’’—that mimic properties of natural vessels; creating endothelial cells
-(highly immune-sensitive) from adult stem cells and progenitor cells; designing and build-
-ing environments for mechanically conditioning constructs; and designing means for testing
-their mechanical strength.
-Lab D is a neural engineering laboratory. During our study the main members included a
-director, one laboratory manager, one postdoctoral researcher, four PhD graduate students
-in residence (one left after 2 years, three graduated after we concluded formal collection),
-one PhD student at another institution who periodically visited and was available via video
-link, one MS student, six long-term undergraduates, and one volunteer for nearly 2 years,
-not pursing a degree (with a BS), who helped out with breeding mice. When we began, the
-laboratory director (‘‘D6’’) was a new tenure-track assistant professor, fresh from a 7-year
-postdoc in a biophysics laboratory that develops techniques and technologies for studying
-cultures of neurons. He already had achieved some recognition as a pioneer. His background
-was in chemistry and biochemistry, with his engineering experience largely self-taught,
-though highly sophisticated. The backgrounds of the researchers in Lab D were more
-diverse than Lab A and included mechanical engineering, electrical engineering, physics,
-life sciences, chemistry, microbiology, and some were currently students in a biomedical
-engineering program. As an institution, the neural engineering laboratory was in existence
-for a few months and still very much in the process of forming when we entered.
-Lab D’s overarching research problems are to understand the mechanisms through which
-neurons learn in the brain and, potentially, to use this knowledge to develop aids for neuro-
-logical deficits and ‘‘to make people smarter’’ (PI). Examples of intermediate problems that
-contributed to the daily work included developing ways to culture, stimulate, control,
-record, and image neuron arrays; designing and constructing feedback environments
-(robotic and simulated) in which the ‘‘dish’’ of cultured neurons could learn; and using
-electro-physiology and optical imaging to study ‘‘plasticity.’’ Here, again, the researchers
-have dual scientific and engineering agendas.
+ 
+Рис. 1. Примеры познания на основе моделей.
+ 
 
-2.3. Research questions
+3. Лабораторная практика
 
-Several questions pertaining to cognitive and learning practices in these labs served to
-frame our investigation. The most significant for this paper were as follows:
+В этом разделе я приведу примеры центральных когнитивных, исследовательских и интерактивных
+практики в каждой лаборатории.
 
-1. What are the cognitive practices in research in these areas?
-2. What are the investigative practices through which research problems are addressed?
-3. What are the interactional practices within the laboratory culture that facilitate and
-    sustain learning and research?
+3.1. Когнитивная практика: преодоление разрыва in vivo – in vitro
 
-As a way of capturing relations among cognitive and cultural facets of the system, we for-
-mulated an analytical scheme comprising cognitive, investigative, and interactive practices.
+Исследования в обеих изученных нами лабораториях обусловлены необходимостью решения
+сложные, междисциплинарные проблемы. Центральная когнитивная практика - преодоление
+деление in vivo – in vitro. Исследования в области биомедицинской инженерии сталкиваются с проблемой:
+непрактично или неэтично проводить эксперименты непосредственно на животных или людях.
+Таким образом, должны быть разработаны способы имитации отдельных аспектов явлений in vivo в определенной степени.
+точности, достаточной для того, чтобы гарантировать передачу выбранных аспектов результатов моделирования в
+явления in vivo. В результате основной следственной практикой, общей для обеих лабораторий, является
+проектировать, строить и экспериментировать с имитационными моделями in vitro, которые стремятся к параллельному выбору
+особенности систем in vivo. ^ 4 Исследователи называют свои физические модели «устройствами»,
+которые обычно являются фирменными артефактами этой лаборатории или небольшой группы лабораторий в
+область исследования. Эксперименты с устройствами требуют конфигураций, в которых биологические
+и инженерные компоненты объединяются в расследование, которое исследователи
+называют «модельной системой». Как сказал один респондент: «когда все складывается вместе
+Я бы назвал это «модельной системой» [...] Я думаю, вы могли бы очень безопасно использовать это [понятие] как
+интегрированная природа, биологический аспект в сочетании с техническим аспектом, поэтому
+это многогранная система моделирования. Я думаю, это очень хорошая терминология для описания
+это ''. Многие интерактивные практики, например, наставничество новичков, развиваются вокруг
+устройств. В частности, по мере того, как учащиеся становятся полноправными исследователями, они начинают понимать
+имитационные модели в качестве партнеров и активных участников в своих исследованиях. Мы называем это взаимодействием
+циональная практика, когнитивное партнерство.
 
+3.2. Следственная практика: экспериментирование посредством имитационного моделирования.
 
-Cognitive practices give rise to and interact with investigative practices, which in turn are
-enacted through interactional practices, which support and sustain both. In this framework,
-cognitive practices include the problem formulation, reasoning, and problem-solving
-approaches that drive the work in the lab. Deriving from these, the investigative dimension
-comprises the nature of the lab members’ daily work as they strive to develop understand-
-ing, techniques, and technologies. The interactional dimension comprises the lab culture
-and the social configurations that account for the kinds and nature of relationships formed in
-the lab and how these are sustained.
-Our research findings are rich, and the account and interpretations presented in this paper
-are largely restricted to those pertaining to a central cognitive practice of crossing the in
-vivo–in vitro divide and the associated investigative practice of designing, building, and
-experimenting with simulation models and interactional practice of ‘‘cognitive partnering.’’
-The simulation models, calleddeviceswithin these labs, provide the means through which
-researchers screen, control, and investigate the in vivo world via creating parallel in vitro
-worlds.Cognitive partneringdenotes the idea that the research involves building relation-
-ships both with other researchers and with devices.
+Необходимость преодоления разрыва in vivo и in vitro порождает исследовательскую практику
+экспериментирование посредством имитационного моделирования. В изучаемых нами лабораториях физическое моделирование
+была основным средством исследования, хотя Лаборатория D использовала вычислительные
+моделирование. Поскольку основная цель этой статьи - обсудить наши когнитивные интерпретации
+исходя из этого исследования, я предлагаю лишь краткий пример практики моделирования с
+устройства в каждой лаборатории.
 
-2.4. Coding methods
+3.2.1. Лабораторная работа A: Цикл потока и конструкция.
+Исследования в лаборатории А проистекают из понимания ее директора в начале 1970-х годов: «характер-
+истики кровотока [механические силы] действительно влияли на биологию стенки
+кровеносный сосуд. И даже более того ... кровеносный сосуд устроен так: он имеет
+внутренняя оболочка называется эндотелием. Это монослой ... это слой клеток в прямом контакте
+с текущей кровью. Так что для меня было логично, что, если бы это влияние потока на
 
-Broadly consistent with the aims of grounded theory, we have been approaching interpre-
-tive coding analytically and inductively (Glaser & Strauss, 1967; Strauss & Corbin, 1998)
-enabling core categories (and eventually ‘‘theory’’^2 ) to emerge from the data and remain
-grounded in it, while being guided by our initial research questions. Coding began with
-weekly collaborative meetings by two PhD-level psychologists with qualitative methods
-expertise. A small sample of interviews were analyzed progressively line-by-line from
-beginning to end, with the aim of providing an initial description for most if not all passages
-in the interview. A description and code were recorded only when both researchers were in
-full agreement about its fit and relevance to the passage and, initially, there was no attempt
-to minimize the number of coding categories. Two main approaches to developing codes
-proved most productive. One was consistent with classic grounded coding approaches that
-emphasize the emergence of themes and codes from described units of text. The second
-approach arose in closer connection with ongoing ethnographic field observations in the
-labs. Initial codes were presented in our biweekly research group meetings (all had read the
-transcripts in advance) and codes were discussed until there was agreement. Descriptions
-and codes were revisited throughout the process in keeping with new discussion on the text,
-as well as new observations in the laboratories. Codes were then analyzed for conceptual
-similarities, overlap, and distinction, and were grouped together under superordinate head-
-ings, and so forth until no further reductions could be made.
-Once codes were established several student researchers were trained on these, with
-special emphasis on the codes that had been collected under the category ‘‘model-based
-cognition’’ and a larger number of transcripts were ‘‘high level’’ coded for instances of
-these. Again at least two researchers looked at the same transcripts and resolved any
-conflicting interpretations through discussion. Of the fully transcribed interviews 18% are
+лежащая в основе биология стенки сосуда, что каким-то образом этот тип клеток должен был быть задействован ''.
+(Обратите внимание на «конструкторский» взгляд на биологию инженера-механика!) Устройство, которое
+в настоящее время в центре внимания лаборатории A находится сосудистый трансплантат, засеянный клетками («конструкция»).
+это живое тканеинженерное изображение стенки кровеносного сосуда (рис. 2А). Природа
+изображения изменяется по разным направлениям в зависимости от ограничений
+эксперимент, в котором он будет использоваться. Например, он может быть засеян гладкомышечными клетками.
+и эндотелиальные клетки, или просто последние (полученные от различных животных) и композиционные
+Состав коллагенового каркаса может быть разным. Его конструкция основана на том, что в настоящее время не используется.
+положение биологической среды эндотелиальных клеток в клеточной и сосудистой биологии, виды
+доступных материалов и разработанных на данный момент методов биоинженерии. Их текущие
+исследования служат для продвижения всех этих аспектов.
+После построения конкретным представлением конструкции можно управлять различными способами. Один
+форма манипуляции - устройство канала потока («петля потока»), инженерное представление
+изменение силы кровотока в просвете in vivo; то есть это модель гемодинамики-
+ics (рис. 2Б). Конструкция контура потока основана на механике жидкости длинного канала с
+прямоугольное сечение. При воздействии на эндотелиальные клетки, выстилающие конструкцию, сдвиг
+стрессов, эта манипуляция "обуславливает" или "тренирует" клетки и может быть локусом
+сам экспериментальный процесс (например, относящийся к морфологии клетки или экспрессии генов), или только один
+шаг в многомодельном процессе. Чтобы определить результаты манипуляции с контуром потока,
+условный конструкт удаляется и исследуется с помощью различных инструментов, например, кондиционера.
+связанная конструкция с конфокальным микроскопом, прибор, который генерирует изображения для многих
+цветовые каналы, в нескольких местах, увеличениях и усилениях.
 
+3.2.2. Лаборатория D: блюдо MEA и варианты его воплощения.
+Центральным устройством моделирования в Лаборатории D является многоэлектродный нейронный массив, локально
+называется "блюдо". Исследования в этой лаборатории проистекают из желания директора
 
-coded. In this process, 79 categories emerged that transferred across the two labs. Of these
-27 were particularly robust, and in all 11 superordinate categories were constructed. The 11
-superordinate categories demonstrate the range of emergent codes: agency, analogy, history,
-identity, limitations, model-based cognition, norms, pragmatic, problem formulation, seek-
-ing coherence, and visualization. One exemplar from the superordinate categories is
-‘‘model-based cognition.’’ In the coded transcripts, 389 instances fall under this
-superordinate category.^3 Fig. 1 provides subcategories and sample instances.
-By ‘‘model-based,’’ we mean that the representation was organized to reflect structural,
-functional, or behavioral aspects of the phenomena. Thus, we infer that these researchers
-understand, explain, and reason with ‘‘mental models,’’ as will be discussed in Section 4.
-To ensure the ‘‘trustworthiness’’ (Lincoln & Guba, 1985) of our interpretations, we fol-
-lowed Eisner’s (2003) three principles: structural corroboration, referential adequacy, and
-consensual validation. Structural corroboration requires that a sufficient number of data
-points converge on a conclusion to support the interpretation arrived at. This principle calls
-for triangulation among different data types, in our case, interviews, field notes, lab meet-
-ings, and documents. Referential adequacy addresses the richness of the description and
-interpretation and whether it aligns with member understanding of the same phenomena. It
-is important to be able to clearly and succinctly explain the properties of each coding cate-
-gory for the sake of transparency. In our early coding phases we presented interpretations to
-lab members to check for alignment. And finally consensual validation refers to the level of
-inter-rater agreement that can be reached among two or more team members using the cod-
-ing schemes. Failure to achieve such validation means that the coding scheme is not well
-corroborated in the data or adequately described. Our consensual validation procedures were
-as discussed above.
+ 
+(В)
+ 
+ 
+(А)
+ 
+ 
+Рис. 2. Фотографии трубчатых конструкций на мандриллах в культуре (A) и установки проточной петли (B).
+ 
 
-```
-Fig. 1. Model-based cognition examples.
-```
-
-3. Laboratory practices
-
-In this section, I develop examples of central cognitive, investigative, and interactional
-practices in each laboratory.
-
-3.1. Cognitive practice: Traversing the in vivo–in vitro divide
-
-Research in both of the laboratories we have studied is driven by the need to solve
-complex, interdisciplinary problems. The central cognitive practice is traversing the
-in vivo–in vitro divide. Research in biomedical engineering confronts the problem that it is
-impractical or unethical to carry out experiments directly on animals or human subjects.
-Thus, ways must be devised to emulate selected aspects of in vivo phenomena to a degree
-of accuracy sufficient to warrant transfer of selected aspects of simulation outcomes to the
-in vivo phenomena. As a result, the central investigative practice common to both labs is to
-design, build, and experiment with in vitro simulation models that aim toparallelselected
-features of in vivo systems.^4 The researchers refer to their physical models as ‘‘devices,’’
-which are usually signature artifacts of that laboratory or of a small group of laboratories in
-the research area. Experimentation with devices requires configurations in which biological
-and engineering components are brought together in an investigation, which researchers
-refer to as a ‘‘model system.’’ As one respondent stated: ‘‘when everything comes together
-I would call it a ‘model system’ [...] I think you would be very safe to use that [notion] as
-the integrated nature, the biological aspect coming together with an engineering aspect, so
-it’s a multifaceted modeling system. I think that’s a very good terminology to describe
-that.’’ Many interactive practices, for instance, mentoring newcomers, develop around the
-devices. In particular, as learners mature into full-fledged researchers, they come to see the
-simulation models as partners and active participants in their research. We call this interac-
-tional practice, cognitive partnering.
-
-3.2. Investigative practice: Experimentation through simulative modeling
-
-The need to traverse the in vivo–in vitro divide gives rise to the investigative practice of
-experimentation through simulative modeling. In the labs we studied, physical simulation
-was the primary means of investigation, though Lab D made some use of computational
-simulation. As the primary objective of this paper is to discuss our cognitive interpretations
-stemming from this research, I offer only a brief example of the modeling practices with
-devices in each lab.
-
-3.2.1. Lab A: The flow loop and construct
-Research in Lab A stems from the insight its director had in the early 1970s: ‘‘character-
-istics of blood flow [mechanical forces] actually were influencing the biology of the wall of
-a blood vessel. And even more than that....the way a blood vessel is designed is—it has an
-inner lining called the endothelium. It’s a monolayer....it’s the cell layer in direct contact
-with flowing blood. So it made sense to me that, if there was this influence of flow on the
-
-
-underlying biology of the vessel wall, that somehow that cell type had to be involved.’’
-(Note the ‘‘design’’ perspective on biology of a mechanical engineer!) The device that is
-now the central focus of research in Lab A is the cell-seeded vascular graft (‘‘construct’’)
-that is a living, tissue-engineered representation of a blood vessel wall (Fig. 2A). The nature
-of the representation changes along various dimensions depending on the constraints of the
-experiment in which it will be used. For instance, it can be seeded with smooth muscle cells
-and endothelial cells, or simply the latter (derived from a variety of animals) and the compo-
-nents of the collagen scaffolding can vary. Its design is based on what is currently under-
-stood of biological environment of endothelial cells in cell and vascular biology, the kinds
-of materials available, and bio-engineering techniques thus far developed. Their ongoing
-research serves to advance all of these aspects.
-Once built, a specific construct representation can be manipulated by various means. One
-form of manipulation is by the flow channel device (‘‘flow loop’’), an engineered represen-
-tation of the in vivo force of blood flow over the lumen; that is, it is a model of hemodynam-
-ics (Fig. 2B). The flow loop design is based on the fluid mechanics of a long channel with a
-rectangular cross-section. In exposing the endothelial cells lining the construct to shear
-stresses, this manipulation ‘‘conditions’’ or ‘‘exercises’’ the cells and can be the locus of an
-experimental process itself (e.g., relating to cell morphology or gene expression), or just one
-step in a multimodel process. To determine the results of a flow loop manipulation, the
-conditioned construct is removed and examined with various instruments, such as the condi-
-tioned construct with a confocal microscope, an instrument that generates images for many
-color channels, at multiple locations, magnifications, and gains.
-
-3.2.2. Lab D: The MEA dish and embodiments
-The central simulation device in Lab D is the multielectrode neuron array, locally
-referred to as ‘‘the dish.’’ The research in this laboratory stems from the director’s desire to
-
-```
-(B)
-```
-```
-(A)
-```
-```
-Fig. 2. Photographs of tubular constructs on mandrills in a culture (A) and a flow loop set-up (B).
-```
-
-understand the nature of network activity of the brain. ‘‘There are a lot of people out there
-doing very detailed modeling of single neurons.... but I’m much more interested in what
-happens when you take a bunch of cells and have them interact with one another, what sort
-of emergent properties pop up.... that’s part of our job to find out which of the details of the
-biology are important in these sorts of network properties and network phenomena, and
-which are sort of incidental.’’ He spent his postdoc years developing ways of growing (and
-keeping alive for years), recording, and imaging live in vitro networks of neurons to study
-how they learn, and these now form the basis for research in Lab D.
-The very construction of the ‘‘dish’’ of cultured neurons interlocks concepts, methods,
-and materials from biology, chemistry, and electrical engineering. The neurons are plated
-on a multielectrode array (MEA), which is a small, glass, Petri-style dish with an 8·8 grid
-of microelectrodes embedded in the bottom (Fig. 3A). The electrodes poke into the neurons
-giving researchers the capacity for recording and injecting electrical activity in the network
-(Fig. 3B). The living cells (around 40K) are neurons and glia harvested from a rat’s cortex,
-dissociated, and cultured in the Petri dish, bathed in a medium of biological chemicals that
-provide food. Finally, a Teflon film is stretched over the dish and held in place by another
-Teflon ‘‘O’’-shaped piece. Teflon is used because it is nontoxic and allows oxygen and
-carbon dioxide to pass through so the cells can breathe, while at the same time keeping out
-bacteria and fungi. For recording, stimulating, and imaging purposes, the dish needs to be
-enclosed in a sterile environmental chamber.
-The MEA dish is a generic representation of cortical processing behavior and function,
-but ‘‘it’s a simplified model... it’s not how it is in the brain, but I still think that the model
-would answer some basic questions.’’ Part of the research in Lab D is determining more
-specifically the nature of the modeling representation, which includes learning to interpret,
-control, and mathematically represent the dish’s behavior under various conditions of stimu-
+понять природу сетевой активности мозга. '' Там много людей
+делать очень подробное моделирование отдельных нейронов ... но меня гораздо больше интересует, что
+происходит, когда вы берете кучу ячеек и заставляете их взаимодействовать друг с другом, какого рода
+всплывающих окон ... это часть нашей работы, чтобы выяснить, какие из деталей
+биология важна для такого рода сетевых свойств и сетевых явлений, и
+которые являются своего рода случайными ''. Он потратил свои постдокторские годы, разрабатывая способы роста (и
+сохранение жизни в течение многих лет), запись и визуализация живых сетей нейронов in vitro для изучения
+как они учатся, и теперь они составляют основу исследований в лаборатории D.
+Само построение «тарелки» культивируемых нейронов связывает концепции, методы,
+материалы из биологии, химии и электротехники. Нейроны покрыты
+на многоэлектродной решетке (МЭА), которая представляет собой небольшую стеклянную чашку Петри с сеткой 8 · 8
+микроэлектродов, встроенных в нижнюю часть (рис. 3А). Электроды проникают в нейроны.
+дает исследователям возможность записывать и вводить электрическую активность в сеть
+(Рис. 3B). Живые клетки (около 40 тыс.) - это нейроны и глия, полученные из коры головного мозга крысы,
+диссоциировали и культивировали в чашке Петри, погруженной в среду с биологическими химическими веществами, которые
+обеспечить еду. Наконец, на блюдо натягивается тефлоновая пленка, которую удерживает другой
+Тефлоновый O-образный элемент. Тефлон используется, потому что он нетоксичен и пропускает кислород и
+углекислый газ, чтобы клетки могли дышать, в то же время не допуская проникновения
+бактерии и грибки. Для записи, стимуляции и визуализации блюдо должно быть
+заключен в стерильную экологическую камеру.
+Блюдо MEA представляет собой общее представление о поведении и функции обработки коры головного мозга,
+но '' это упрощенная модель ... это не то, что в мозгу, но я все же думаю, что модель
+ответит на некоторые основные вопросы ''. Часть исследований в Лаборатории D определяет больше
+конкретно характер модельного представления, которое включает обучение интерпретации,
+контроля и математически отображают поведение блюда при различных условиях стимулирования.
 lation.
-Although the details cannot be specified here, some of the most important model system
-simulations it participates in are closed loop configurations or ‘‘embodiments,’’ which
+Хотя здесь невозможно указать подробности, некоторые из наиболее важных модельных систем
+моделирование, в котором он участвует, являются конфигурациями замкнутого цикла или «вариантами», которые
 
-```
-(A) (B)
-```
-```
-Fig. 3. Photograph of the MEA (A) and the neuron dish (B).
-```
+ 
+(А) (В)
+ 
+ 
+Рис. 3. Фотография MEA (A) и нейронной тарелки (B).
+ 
 
-represent the in vivo embodiment of the brain. One involves its connection to a computa-
-tionally simulated animal and world in which it ‘‘behaves’’—called an ‘‘animat.’’ The other
-involves connection with various robotic devices designed to mimic motor activity in the
-world—called a ‘‘hybrot.’’ These model systems bring the domains of computational mod-
-eling and mechanical engineering, respectively, into the interdisciplinary mix.
-The arrows in Fig. 4 represent the flow of representations (solid boxes) as the infor-
-mation they provide is generated, manipulated, and propagated within the artifact model
-system.
+представляют собой воплощение мозга in vivo. Один из них связан с его подключением к компьютеру.
+смоделированное животное и мир, в котором оно «ведет себя» - называемое «аниматом».
+включает в себя соединение с различными роботизированными устройствами, предназначенными для имитации двигательной активности в
+мир, называемый «гибротом». Эти модельные системы приносят области вычислительной моде
+элинг и машиностроение, соответственно, в междисциплинарную смесь.
+Стрелки на рис. 4 представляют собой поток представлений (сплошные прямоугольники) в виде информации.
+Предоставляемая ими информация создается, обрабатывается и распространяется в рамках модели артефакта.
+система.
 
-3.3. Interactional practice: Cognitive partnering
+3.3. Интерактивная практика: когнитивное партнерство
 
-We use the notion ofcognitive partneringto characterize the special relations that
-develop among researchers and between them and simulation devices (as opposed to with
-other important artifacts such as the pipette or the confocal microscope) in the course of
-learning in the lab (Nersessian et al., 2003; Osbeck & Nersessian, 2006). What it means for
-learners to form cognitive partnerships with other researchers is fairly straightforward. How-
-ever, we developed the notion in the first instance to capture the significant shift in the way
-learners think and talk about, and interact with their devices—and only these—as they pro-
-gress in their research. Significantly, the language used to discuss the devices shifts from
-that of the newcomer who discusses ‘‘that thing over there with hooks and pulleys’’ to that
-of the advancing researcher who increasingly uses anthropomorphic language as she
-becomes more expert. Although much of it concerns cells, which are living entities,
-significantly, this language use extends to nonliving parts of model systems as well. Some
-examples of both are as follows:
+Мы используем понятие когнитивного партнерства, чтобы охарактеризовать особые отношения, которые
+развиваются среди исследователей и между ними, а также устройства моделирования (в отличие от
+другие важные артефакты, такие как пипетка или конфокальный микроскоп) в процессе
+обучение в лаборатории (Nersessian et al., 2003; Osbeck & Nersessian, 2006). Что это значит для
+Учащимся довольно просто установить когнитивное партнерство с другими исследователями. Как-
+Тем не менее, мы разработали это понятие в первую очередь для того, чтобы уловить существенный сдвиг в способах
+учащиеся думают, говорят и взаимодействуют со своими устройствами (и только ими), поскольку они продвигают
+gress в своих исследованиях. Примечательно, что язык, используемый для обсуждения устройств, меняется с
+новичка, который обсуждает "ту штуку с крючками и шкивами"
+продвигающегося исследователя, который все чаще использует антропоморфный язык, поскольку она
+становится более опытным. Хотя многое из этого касается клеток, которые являются живыми существами,
+Важно отметить, что использование этого языка распространяется и на неживые части модельных систем. Немного
+примеры обоих следующие:
 
-```
-Fig. 4. Hybrot model system (partial).
-```
+ 
+Рис. 4. Модельная система Гиброта (частичная).
+ 
 
-1. I’m strengthening that particular pathway so that the network would prefer to always
-    excite these two cells in a certain way after my modifying input. (Dish model
-    system—Lab D)
-2. The cells once they are in the construct will reorganize it and secrete a new matrix and
-    kind of remodel the matrix into what they think is most appropriate. (Construct mod-
-    el—Lab A)
-3. [The board] sees voltages in different ways. (Bioreactor model—Lab A)
-4. Yeah, seven parameters it has to look at in order to decide what’s a burst. (Burst detec-
-    tor software in dish model system—Lab D)
+1. Я усиливаю этот конкретный путь, чтобы сеть всегда предпочитала
+    возбуждают эти две клетки определенным образом после моего изменяющего ввода. (Модель посуды
+    система - лаборатория D)
+2. Клетки, как только они окажутся в конструкции, реорганизуют ее и выделяют новую матрицу и
+    вид преобразовать матрицу в то, что они считают наиболее подходящим. (Построить мод-
+    el - Лаборатория A)
+3. [Плата] по-разному видит напряжения. (Модель биореактора - лаборатория А)
+4. Да, семь параметров, на которые нужно обратить внимание, чтобы решить, что такое всплеск. (Обнаружение вспышки-
+    программное обеспечение в системе моделирования тарелки - Лаборатория D)
 
-We construe such anthropomorphizing as signaling the researcher’sattribution of agency
-to the artifact. As the researcher matures, the simulation device comes to be conceived as a
-‘‘partner’’ in research. In one sense, cognitive partnering marks coming to understand the
-research through the lens of what the device affords and constrains. But it goes beyond this
-to conceptualizing the devices as possessing quasi-independence—as distinct from and
-interacting with the researcher. In the course of experimenting, the artifact reacts and inter-
-acts often in undesired or unexpected ways, which leads the researcher to come to treat the
-device as an active participant in the investigative process.^5 Finally, this language signals,
-too, that there is an affective dimension of research, as there is in forming relationships gen-
-erally. This is evidenced, for instance, by a researcher in Lab A telling a newcomer to
-‘‘think of them [cells] as pets’’ and by the frustration of a researcher in Lab D with the
-behavior of her device: ‘‘Pfft—you keep them [the dish neurons] happy by feeding them, by
-taking care of them, hopefully stimulating them [in a motherly and condescending voice],
-and telling them to do something! I don’t know what to do to make them happy. I don’t
-know—make them happy!’’ If the MEA dish is not happy, neither is the researcher.
+Мы истолковываем такую ​​антропоморфизацию как указание на то, что исследователь присваивает свою силу агентству.
+к артефакту. По мере взросления исследователя имитационное устройство начинает восприниматься как
+«партнер» в исследовании. В каком-то смысле когнитивные партнерские знаки приходят к пониманию
+исследование через призму того, что устройство позволяет и что ограничивает. Но это выходит за рамки этого
+к концептуализации устройств как обладающих квазинезависимостью - в отличие от
+взаимодействие с исследователем. В ходе экспериментов артефакт реагирует и взаимодействует.
+часто действует нежелательным или неожиданным образом, что побуждает исследователя лечить
+устройства как активного участника следственного процесса. ^ 5 Наконец, этот язык сигнализирует о том, что
+Кроме того, существует аффективный аспект исследования, как и в формировании взаимоотношений между поколениями.
+обычно. Об этом свидетельствует, например, исследователь из лаборатории А, рассказывающий новичку о
+«думать о них [клетках] как о домашних животных» и разочарованием исследователя в Лаборатории D из-за
+поведение ее устройства: «Пффф - вы делаете их [тарелочные нейроны] счастливыми, кормя их,
+заботясь о них, надеясь стимулировать их [материнским снисходительным голосом],
+и велел им что-то делать! Я не знаю, что им делать, чтобы они были счастливы. Я не
+знай - сделай их счастливыми! »Если блюдо MEA не устраивает, то и исследователь тоже.
 
-3.4. Discussion
+3.4. Обсуждение
 
-These laboratories are rich sites that provide numerous findings about cognition and
-learning. Given that the objective of our research has been to discover practices that might
-be in common use in the field of biomedical engineering we focused on those coding catego-
-ries and interpretations that transferred robustly across the labs. Each laboratory provided us
-with a systemic perspective of their research. Fig. 5 provides a self-mapping of the research
-space for each laboratory. Fig. 5A was drawn by the Lab A director in response to our
-request that he ‘‘draw a picture’’ of the research in his lab. He mapped not only the prob-
-lems (‘‘major barriers’’) but also the technologies (at the bottom), the relations of research-
-ers to both of these and to one another in that space. The content of Fig. 5B was constructed
-by the entire Lab D research group in a meeting we observed which they organized specifi-
-cally to ‘‘map the research,’’ that is, to consider the nature of the problems, the range of
-resources, and the potential range of contributions for their research. The lab director then
-created this representation from what was written on the white boards, and video and audio
-capture of the discussion. Here too, problems and technologies delimit a finite, though
-significantly unconstrained, research space. In this case, he did not draw the relational
+Эти лаборатории представляют собой богатые сайты, которые предоставляют многочисленные сведения о познании и
+обучение. Учитывая, что целью нашего исследования было выявление практик, которые могут
+быть широко используемым в области биомедицинской инженерии, мы сосредоточились на тех, которые кодируют catego-
+теории и интерпретации, которые надежно передавались в лабораториях. Каждая лаборатория предоставила нам
+с системной точки зрения своих исследований. На рис. 5 показано собственное отображение исследования.
+место для каждой лаборатории. Рис. 5A был нарисован директором лаборатории A в ответ на наши
+попросите его «нарисовать картину» исследования в его лаборатории. Он нанес на карту не только проблему.
+лемы («главные препятствия»), но также и технологии (внизу), отношения исследования-
+к ним обоим и друг к другу в этом пространстве. Содержание Фиг. 5B было построено
+всей исследовательской группой Лаборатории D на встрече, которую мы наблюдали, которую они организовали в частности
+В частности, чтобы «составить карту исследования», то есть рассмотреть природу проблем, диапазон
+ресурсы и потенциальный диапазон вкладов в их исследования. Тогда директор лаборатории
+создали это представление из того, что было написано на белых досках, а также видео и аудио
+захват обсуждения. И здесь проблемы и технологии ограничивают конечное, хотя
+значительно неограниченное, исследовательское пространство. В этом случае он не рисовал реляционную
 
+информация, касающаяся исследователей, но она была частью их обсуждения. Так что полнее
+мэппинг состоит из схемы и видео и аудио захвата.
+Каждая карта начинает формулировать пространство исследования, распределенное по проблемам, методам,
+технологий и участников, а также подключение лаборатории к ресурсам и сообществам
+внешнее по отношению к нему. Например, для «генного профилирования» Лаборатории А требуется использование технологии в
+близлежащая медицинская школа; для Лаборатории D «клинические связи» относятся к другим исследовательским сообществам.
+Эти лабораторные карты подтверждают наши наблюдения о том, что исследовательская деятельность в обеих лабораториях
+на устройствах. Устройства, ашубы, соединяют исследователей, проблемы и технологии. Они
+являются основными площадками для исследований, инноваций и обучения.
+Исследовательская практика использования моделирования in vitro глубоко вовлечена в эти карты.
+пинги. Чтобы устранить «барьер» «механических свойств» эндотелиальных клеток в
+vivo, например, необходимо разработать и использовать проточные камеры и конструкции из коллагенового геля.
+Чтобы достичь научного факта, нужно строить «научную фантастику» (как говорит член лаборатории D).
+Устройства, как модели, предназначены для демонстрации того, что исследователи считают важным свойством.
+свойства и поведение биологических систем. Но устройства сами по себе являются системами, причем
+технические и материальные ограничения, которые часто приводят к упрощениям и идеализации
+не связаны с моделируемыми ими биологическими системами.
+Устройства - это гибридные объекты, отражающие лаборатории как биоинженерные среды.
+и отражены в характеристиках студентов-исследователей, участвующих в программе.
 
-information concerning the researchers, but it did form part of their discussion. So the fuller
-mapping comprises the diagram and the video and audio capture.
-Each map begins to articulate a research space distributed across problems, methods,
-technologies, and members, as well as connecting the lab to resources and communities
-external to it. For example, for Lab A ‘‘gene profiling’’ requires using technology at a
-nearby medical school; for Lab D ‘‘clinical ties’’ relate to other research communities.
-These lab mappings reinforce our observations that the research activities in both labs center
-on the devices. The devices, ashubs, connect researchers, problems, and technologies. They
-are the primary sites of inquiry, innovation, and learning.
-The investigative practice of using in vitro simulation is deeply implicated in these map-
-pings. In order to address the ‘‘barrier’’ of ‘‘mechanical properties’’ of endothelial cells in
-vivo, for instance, one needs to design and use flow chambers and collagen gel constructs.
-One needs to build ‘‘science fiction’’ (as the Lab D member utters) to achieve science fact.
-The devices, as models, are designed to represent what researchers deem to be salient prop-
-erties and behaviors of biological systems. But the devices are also systems themselves, with
-engineering and material constraints that often impose simplifications and idealizations
-unrelated to the biological systems they model.
-Devices arehybridobjects reflecting the laboratories as bio-engineering environments
-and reflected in the characteristics of the researcher-students who are part of a program
+ 
+(А) Лаборатория А
+(B) Лаборатория D
+ 
+ 
+Рис. 5. Лабораторные исследовательские помещения.
+ 
 
-```
-(A) Lab A
-(B) Lab D
-```
-```
-Fig. 5. Laboratory research spaces.
-```
+явно направлен на подготовку междисциплинарных, интегративных мыслителей в области биомедицинских инженеров.
+ing. Учитывая гибридный характер имитационных моделей, основная проблема обучения для них
+исследователи должны разработать избирательное, комплексное понимание биологических концепций, методов
+оды, материалы и инженерные концепции, методы и материалы. По "выборочному"
+Я имею в виду, что исследователь-ученик должен интегрировать в мышлении и экспериментировании только
+те аспекты биологии и инженерии, которые имеют отношение к их исследовательским целям и задачам.
+Например, в Лаборатории А исследователям необходимо разработать комплексное понимание эндо-
+телиальная клетка с точки зрения напряжений гидродинамики кровотока в артерии. В лаборатории D
+понятие пластичности, биологического свойства, необходимо понимать с точки зрения количественного
+измерения, основанные на зарегистрированных всплесках электрической активности нейронной сети.
+Кроме того, при разработке и проведении экспериментов с устройствами исследователям необходимо:
+понять, какие инженерные ограничения они имеют, вытекающие из их дизайна, и
+структуры, и какие ограничения они накладывают на моделирование и последующую интерпретацию
+и выводы. То есть устройство следует понимать и как устройство как модель in vitro.
+и устройство как спроектированная модель. Таким образом, какие бы выводы исследователи ни делали о внутреннем
+vivo явления обусловлены пониманием устройства как модели
+явления и как спроектированная система.
+Строительные работы, основанные на устройствах, широко распространены в обеих лабораториях, и они служат
+несколько функций в исследовательском сообществе. Устройства соединяют познавательную практику
+моделирование in vitro с использованием социальных практик; например, много начального наставничества и обучения
+лабораторного этоса происходит в контексте культивирования клеток - то, что все новички
+должен освоить. Для новичков построение клеточных культур, конструкций и блюд MEA служит
+войти в сообщество. Наставничество часто начинается с них. Строительная деятельность обеспечивает
+возможности быстро впитаться в культуру лаборатории. Процессы
+построения моделей артефактов также предоставляют исследователям возможности для построения интегрированных
+ментальные представления. Например, в лабораторной работе A создание физической конструкции для кондиционирования
+с контуром потока облегчает построение мысленного представления, которое выборочно интегрирует кон-
+cepts из клеточной биологии и гидродинамики - например, представляющих биологические
+аспекты эндотелиальных клеток по отношению к механическим силам с точки зрения интегрированного
+понятие скорости артериального сдвига (сила крови, когда она течет по этим клеткам, вызывая удлинение,
+распространение и т. д.). Такое интерактивное построение психофизических представлений требует
+размещать в течение коротких периодов времени во время практических процессов и в течение более длительных периодов. В
+Например, в лаборатории D один исследователь построил компьютерное моделирование и динамическую визуализацию.
+системы модели тарелки и взаимодействовали с другими пользователями, работающими над самой системой тарелки.
+Это было всего лишь в течение более чем года создания и экспериментов с обоими этими
+вся группа исследователей пришла к новому способу концептуализации распространения
+«всплески» электрической активности в тарелке (Nersessian & Chandrasekharan, 2009).
+Важно отметить, что специально разработанные технологии исследовательских лабораторий биомедицинской инженерии
+истории не являются стабильными артефактами. Как части модельных систем они спроектированы и переработаны в
+контекст эксперимента и от одного исследовательского проекта к другому. Далее одно устройство
+часто приводит к созданию нового устройства. Например, исследования контура потока привели к
+разработка модели конструкции, которая, в свою очередь, привела к изменению конструкции контура потока
+устройства и разработке дополнительных новых устройств моделирования. В этих условиях
 
-aimed explicitly at producing interdisciplinary, integrative thinkers in biomedical engineer-
-ing. Given the hybrid nature of the simulation models, a major learning challenge for these
-researchers is to develop selective, integrated understandings of biological concepts, meth-
-ods, and materials and engineering concepts, methods, and materials. By ‘‘selective,’’
-I mean that a researcher-learner needs to integrate, in thinking and experimenting, only
-those dimensions of biology and engineering relevant to their research goals and problems.
-For example, in Lab A, researchers need to develop an integrated understanding of the endo-
-thelial cell in terms of the stresses of fluid dynamics of blood flow in an artery. In Lab D the
-notion of plasticity, a biological property, needs to be understood in terms of quantitative
-measures based on recorded spikes of electrical activity of the neuronal network.
-Further, in designing and conducting experiments with devices, researchers need to
-understand what engineering constraints they possess deriving from their design and con-
-struction, and what limitations these impose on the simulation and subsequent interpretation
-and inferences. That is, the device needs to be understood both as device qua in vitro model
-and device qua engineered model. Thus, whatever inferences researchers make about the in
-vivo phenomena are conditioned on an understanding of the device both as a model of the
-phenomena and as an engineered system.
-Building activities centered on devices are pervasive in both laboratories and these serve
-several functions within the research community. Devices connect the cognitive practice of
-in vitro simulation with social practices; for instance, much initial mentoring and learning
-of laboratory ethos takes place in the context of cell culturing—something all newcomers
-must master. For newcomers, building cell cultures, constructs, and MEA dishes serves as
-entre ́e into the community. Mentoring often begins around them. Building activities provide
-opportunities to quickly become absorbed into the culture of the laboratory. The processes
-of building artifact models also provide opportunities for the researcher to build integrated
-mental representations. For instance, in Lab A, building a physical construct to condition
-with the flow loop facilitates building a mental representation that selectively integrates con-
-cepts from cell biology and fluid dynamics—one that represents, for example, biological
-aspects of the endothelial cells with respect to mechanical forces in terms of the integrated
-concept ofarterial shear rate(force of blood as it flows over these cells, causing elongation,
-proliferation, and so forth). Such interactive mental⁄physical representation building takes
-place over short periods of time during the hands-on processes and over longer spans. In
-Lab D, for instance, one researcher built a computational simulation and dynamic visualiza-
-tion of the dish model system and interacted with others working on the dish system itself.
-It was only over the course of more than a year of building and experimenting with both that
-the entire group of researchers was led to a new way of conceptualizing the propagation of
-‘‘bursts’’ of electrical activity in the dish (Nersessian & Chandrasekharan, 2009).
-Importantly, the custom-built technologies of the biomedical engineering research labora-
-tories are not stable artifacts. As parts of model systems they are designed and redesigned in
-the context of an experiment, and from one research project to another. Further, one device
-often leads to the creation of a new device. For instance, the flow loop studies led to the
-development of the construct model, which in turn led both to a redesign of the flow loop
-device and to the design of additional new simulation devices. In these circumstances the
+истории устройств в рамках развивающейся исследовательской программы лаборатории становятся
+жизненно важный ресурс для современных исследований. В исследованиях история получает практическое применение в
+знания лаборатории как содержательно связанные с работой с устройствами. Это важно
+в продвижении исследования, чтобы исследователи знали, например, что, как и
+почему в устройство были внесены изменения в конструкцию. Таким образом, нынешний дизайн понимается как
+обусловлено проблемной ситуацией, существовавшей для лаборатории в предыдущий период. Так что
+историчность устройств - источник новых вариантов дизайна.
+Имея это базовое представление о лабораториях и их исследовательской практике, мы теперь
+в состоянии обратиться к рефлексивной цели данной статьи: опираясь на структуру распределения
+развитое познание для интерпретации процессов решения проблем в лабораториях с использованием наших результатов
+и вопросы, которые они поднимают для дальнейшего развития этой основы.
 
+4. Общее обсуждение
 
-histories of the devices within the evolving research program of the laboratory become a
-vital resource for present-day research. In research, history is appropriated hands-on in the
-lore of the laboratory as meaningfully related to working with devices. It is important
-in moving the research forward for researchers to know, for instance, what, how, and
-why design changes have been made to a device. Thus, the current design is understood as
-conditioned on the problem situation as it existed for the laboratory at a prior time. So the
-historicity of the devices is a resource for novel design options.
-With this basic understanding of the labs and their research practices in hand, we are now
-in a position to address the reflexive goal of this paper: drawing on the framework of distrib-
-uted cognition to interpret problem-solving processes in the labs while using our findings
-and the issues they raise to further develop that framework.
+Сторонники концепции распределенного познания стремятся переосмыслить когнитивные
+процессы как совокупность систем людей и артефактов. На сегодняшний день распределенное познание
+исследователи сосредоточили большую часть своего внимания на артефактах, участвующих в когерентной
+нитивных процессов и о ролях людей в координации генерации, манипулировании
+распространение и распространение представлений артефактов по мере их выполнения когнитивной работы.
+Конечно, как отметили Хатчинс и другие, мозг является частью когнитивных систем и
+перцепционные и моторные процессы играют роль в координации представлений артефактов (Alac
+И Хатчинс, 2004; Беквар, Холлан и Хатчинс, 2008). Однако характер представителя
+возмущения в рамках человеческих компонентов, что облегчает их участие
+в когнитивной системе, не получили должного внимания. Как будет показано в
+Раздел 4.2, наши данные свидетельствуют о том, что представления исследователей сами по себе
+подобны модели по структуре - традиционно называемые «ментальными моделями».
+распределенное познание, ментальные модели исследователей и системы моделей устройств составляют
+распределенные системы вывода, с помощью которых достигаются возможные решения проблем.
+В дальнейшем я использую понятие взаимосвязанных моделей для объяснения размеров таких
+распределенные системы вывода.
+Взаимосвязанные модели - это интерпретация системного уровня, которую мы разработали для определения размеров
+исследовательских практик, которые пересекаются со многими нашими категориями кодирования (Курц-Милке,
+Нерсесян, & Newstetter, 2004; Нерсесян, 2005; Нерсесян и др., 2003). Этот мультиди-
+смысловое понятие служит для формулирования отношений между компонентами лабораторной модели.
+как когнитивно-социокультурную систему. В частности, он позволяет указать, в каких
+способы, которыми имитирующие устройства служат в качестве концентраторов. Как и в случае с транспортными системами, где многие
+сервисные линии блокируются на центральных станциях, устройства служат для блокировки многих размеров
+упражняться. Три измерения, относящиеся к формулировке рассуждений на основе распределенных моделей, будут
+рассматривать по очереди:
 
-4. General discussion
+1. Междисциплинарные аспекты
+2. Исследователь и компоненты системы артефактов
 
-Proponents of the distributed cognition framework seek to reconceptualize cognitive
-processes as comprising systems of humans and artifacts. To date, distributed cognition
-researchers have focused much of their attention on the artifacts that participate in cog-
-nitive processes and on the roles of the humans in coordinating the generation, manipu-
-lation, and propagation of artifact representations as they accomplish cognitive work.
-Of course, as Hutchins and others have noted, brains are parts of cognitive systems and
-perceptual and motor processes play a role in coordinating artifact representations (Alac
-& Hutchins, 2004; Becvar, Hollan, & Hutchins, 2008). However, the nature of the rep-
-resentations within the bounds of the human components, which facilitate their partici-
-pation in a cognitive system, have received scant attention. As will be demonstrated in
-Section 4.2, our data provide evidence that researcher representations are themselves
-model-like in structure—traditionally called ‘‘mental models.’’ From the perspective of
-distributed cognition, researcher mental models and device model systems constitute
-distributed inferential systems through which candidate problem solutions are achieved.
-In what follows I use the notion ofinterlocking modelsto explicate dimensions of such
-distributed inferential systems.
-Interlocking models is a system-level interpretation we developed to capture dimensions
-of research practices that cut across many of our coding categories (Kurz-Milcke,
-Nersessian, & Newstetter, 2004; Nersessian, 2005; Nersessian et al., 2003). This multidi-
-mensional notion serves to articulate relations among the components of the laboratory cast
-as a cognitive-social-cultural system. In particular, it provides a means of specifying in what
-ways the simulation devices serve as hubs. As with transportation systems, where many
-service lines interlock at central stations, devices serve to interlock many dimensions of
-practice. Three dimensions pertinent to articulating distributed model-based reasoning will
-be considered in turn:
+3. Конфигурации моделей в экспериментах.
 
-1. Interdisciplinary facets
-2. Researcher and artifact system components
+4.1. Междисциплинарная взаимосвязь
 
+В этой области экспериментирование требует, чтобы исследователи создавали модели, связывая
+концептуальные, материальные и методологические аспекты биологии и инженерии. Исследователь
+концептуальные модели являются гибридными представлениями, как и системы моделей артефактов. Рис. 6
+обеспечивает частичные схематические изображения областей, которые вносят такие аспекты в
+составление артефактов и ментальных моделей.
+Наши данные о том, как исследователи концептуализируют и понимают свои модельные системы, обеспечивают
+многочисленные примеры междисциплинарного взаимодействия. Расшифровка материалов из нескольких лабораторий
+Исследователи иллюстрируют это на примере системы построения и модели контура потока. Для моделирования
+для прогнозирования явлений in vivo, контура потока и построения модельной системы
+должен вести себя так, как если бы кровь текла по артерии в удовлетворительной степени
+приближение. Контур потока, как модель, представляет напряжения сдвига во время кровотока в
+артерии до 1-го порядка приближения к среде кровеносных сосудов ... когда кровь течет по
+просвета '' и позволяет '' способ наложить очень четко определенное напряжение сдвига через очень
+большая популяция клеток ''. Но моделирование контура потока - это '' нечто очень абстрактное, потому что
+существует множество сред in vivo и множество условий in vivo в этой среде.
+В наших телах на протяжении всей жизни постоянно что-то меняется; включая физиологический поток
+оценки. '' Исследователи делают это приближение при проектировании, потому что '' как инженеры, мы стараемся
+исключить как можно больше посторонних переменных .... так что наши выводы можно сделать из
+изменение только одной переменной ''. Первоначальный контур потока был разработан для проточных ячеек, но
+«культура клеток не является физиологической моделью», и хотя многое еще можно узнать, просто используя
+ячеек '', помещать ячейки в пластик и подвергать их воздействию потока - не очень хорошая имитация
+что на самом деле происходит в организме. Эндотелиальные клетки ... имеют естественного соседа, называемого
+гладкомышечные клетки ... эти типы клеток взаимодействуют друг с другом ''.
 
-3. Configurations of models in experiments.
+ 
+Рис. 6. Взаимосвязанные междисциплинарные модели.
+ 
 
-4.1. Interdisciplinary interlocking
+Для решения этой проблемы были использованы биологические и инженерные материалы и методы.
+используется для проектирования конструктивного устройства. В отличие от клеточных культур на предметных стеклах, конструкции
+трехмерные поверхности, в которые встроены ячейки. Модель конструкции '' ведет себя
+как родная артерия, потому что она на один шаг ближе к функциональности ''.
+контура потока (изначально разработан для ячеек на предметных стеклах и немного изменен для
+более толстые конструкции), однако требуют, чтобы трубчатые конструкции были разрезаны и опущены
+плоский (в отличие от артерии in vivo). Однако, поскольку эндотелиальные клетки, выстилающие артерию,
+vivo настолько малы по сравнению с артерией, что исследователи считают, что текущая жидкость
+(представляющий кровь) над плоской конструкцией in vitro (представляющий артерию) является манипуляцией
+д., которая предоставит достаточно точную информацию о влиянии сил на
+эндотелиальные клетки. С точки зрения клетки ... клетка [in vivo в артерии] видит
+в основном ровная поверхность. Кривизна может быть больше одного сантиметра, тогда как ячейка
+это как микрометр ... поэтому клетка не знает, что у нее действительно есть кривая ''.
+Таким образом, за исключением эксперимента по имплантации с животным (часто называемым
+модель ex vivo), исследователи считают, что нет необходимости протекать конструкции в трубчатых
+форма, что потребует серьезных изменений в контуре потока. Однако должно ли это быть
+выяснили, например, что in vivo '' существует совершенно другой паттерн генов, которые
+с усилением пульсирующего сдвига [in vitro] », а затем новый контур потока - построение модельной системы
+должен быть разработан для моделирования эффектов более высокого порядка, таких как in vivo,
+"кровь хлестает по кровеносным сосудам".
+В этом кратком образце одной модельной системы междисциплинарные взаимосвязанные модели
+содержат как минимум:
 
-In this field, experimentation requires that researchers create models by interlocking
-conceptual, material, and methodological facets of biology and engineering. Researcher
-conceptual models are hybrid representations, as are artifact model systems. Fig. 6
-provides partial schematic representations of areas that contribute such facets to the
-make-up of artifact and mental models.
-Our data on how researchers conceptualize and understand their model systems provide
-numerous examples of interdisciplinary interlocking. Transcript material from several Lab
-A researchers illustrate this for the construct and flow loop model system. For a simulation
-to enable prediction about the in vivo phenomena, the flow loop and construct model system
-needs to behave as though blood were flowing through an artery to a satisfactory degree of
-approximation. The flow loop, as a model, represents the shear stresses during blood flow in
-an artery to a ‘‘1st order approximation of a blood vessel environment...as blood flows over
-the lumen’’ and enables a ‘‘way to impose a very well-defined shear stress across a very
-large population of cells.’’ But a flow loop simulation is ‘‘something very abstract because
-there are many in vivo environments and many in vivo conditions within that environment.
-Things change constantly in our bodies over our lifetimes; including physiological flow
-rates.’’ The researchers make this approximation in design because ‘‘as engineers, we try to
-eliminate as many extraneous variables as possible.... so our conclusions can be drawn from
-the change of only one variable.’’ The original flow loop was designed to flow cells, but
-‘‘cell culture is not a physiological model’’ and though much still is learned by just using
-cells, ‘‘putting cells in plastic and exposing them to flow is not a very good simulation of
-what is actually happening in the body. Endothelial cells... have a natural neighbor called
-smooth muscle cells... these cell types communicate with one another.’’
+1. Биологические и инженерные модели явлений in vivo в более широком сообществе (как
+    подробно, например, в текстах и ​​журналах)
+2. Биоинженерные модели артефактов in vitro
+3. Ментальные модели исследователей
+    - явления in vivo и in vitro
+    - устройства как модели in vitro
+    - устройства как инженерные модели.
 
-```
-Fig. 6. Interlocking interdisciplinary models.
-```
+В следующем разделе исследуется, как распределенные когнитивные процессы образуют системы меж-
+запирание моделей исследователей и моделей артефактов.
 
-To address this concern, biological and engineering materials and methods were
-employed to engineer the construct device. Unlike cell cultures on slides, constructs are
-three-dimensional surfaces in which cells are embedded. The construct model ‘‘behaves
-like a native artery because that’s one step closer to being functional.’’ The constraints
-of the flow loop (designed originally for cells on slides and modified slightly for the
-thicker constructs), however, require that the tubular constructs be cut open and flowed
-flat (unlike an in vivo artery). However, as the endothelial cells that line an artery in
-vivo are so small relative to the artery, the researchers believe that flowing the liquid
-(representing blood) over the flat in vitro construct (representing the artery) is a manip-
-ulation that will provide accurate enough information about the effect of forces on the
-endothelial cells. From the ‘‘cell’s perspective... the cell [in vivo in an artery] sees
-basically a flat surface. The curvature is maybe over one centimeter, whereas the cell
-is like a micrometer... so to the cell it has no idea that there’s actually a curve to it.’’
-So, other than in the case of an implantation experiment with an animal (often called
-‘‘ex vivo’’ model), researchers believe there is no need to flow constructs in tubular
-form, which would require major changes to the flow loop. However, should it be
-found out, for instance, that in vivo ‘‘there’s a whole different pattern of genes that are
-upregulated in pulsatile shear [in vitro]’’ then a new flow-loop—construct model system
-would need to be designed to simulate higher-order effects, such as that in vivo,
-‘‘blood sloshes around in the blood vessel.’’
-In just this brief exemplar of one model system, the interdisciplinary interlocking models
-comprise at least:
+4.2. Распространение познания: «Ставить мысль на скамейку запасных»
 
-1. Biological and engineering models of in vivo phenomena in the wider community (as
-    detailed, e.g., in texts and journals)
-2. Bio-engineered in vitro artifact models
-3. Researcher mental models of
-    - in vivo and in vitro phenomena
-    - devices qua in vitro models
-    - devices qua engineered models.
+4.2.1. Исследовательские модели
+Наши данные о том, как исследователи думают и размышляют о явлениях in vivo и
+устройства in vitro предоставляют веские доказательства того, что ментальные представления, которые они используют в
+Решение проблем и рассуждения имеют модельную структуру (см. рис. 2). То есть они
+организованные представления частей физических систем и взаимодействия между ними,
+обычно называемые «ментальными моделями». Данные о том, как эти исследователи объясняют, до-
+диктуют, и в противном случае разум поддерживает интерпретацию, что долгосрочные представления, которые они
 
-The next section examines how distributed cognitive processes comprise systems of inter-
-locking researcher models and artifact models.
+опираться на организованные понимания, содержащие представления структур,
+функций и / или поведения исследуемых явлений и модификатора артефакта.
+els они создают для экспериментов.
+Как отмечалось в разделе 2.4, познание, основанное на моделях, является центральной высшей категорией.
+происходящие из нашего кодирования стенограмм. Комбинированные полевые наблюдения и стенограммы
+интервью и исследовательские встречи предоставили достаточно доказательств того, что исследователи конструировали
+и моделирование подобных моделей представлений сущностей и процессов для когнитивных задач.
+Они рассуждают, объясняют и предсказывают с помощью модельных представлений. Итак, мы были
+стремятся понять, как функционируют ментальные модели исследователей и системы моделей артефактов
+вместе как компоненты распределенных когнитивных процессов. Литература по ментальным моделям
+включает широкий спектр исследований в области когнитивных наук, в которых модели рассматриваются как организованные единицы.
+ментальных представлений, которые используются в различных когнитивных процессах, включая рассуждение,
+решение проблем, понимание дискурса и осмысление. Как я уже отмечал ранее
+сочинений (Нерсесян, 2002, 2008а, б), существует два основных употребления этого термина в литературе.
+Направление: обращаются к природе репрезентаций долговременной памяти (см., например, Gentner
+И Стивенс, 1983); другой обращается к природе представлений рабочей памяти
+в процессах вывода, то есть в деятельности «ментального моделирования» в интерпретации дискурса.
+ции (см., например, Perrig & Kintsch, 1985), логическое рассуждение (см., например, Johnson-Laird, 1983),
+и мысленное моделирование (см., например, Nersessian, 1992b, 2008a). Гипотеза, которую я выдвинул
+в том, что '' в некоторых задачах решения проблем люди рассуждают, конструируя ментальную модель
+ситуации, событий и процессов в рабочей памяти, которые в динамических случаях могут быть
+манипулируют посредством моделирования '' (Нерсесян, 2002; с. 143). ^ 6 Эта гипотеза выводит
+от изучения ряда исторических записей научных рассуждений, первоначальная концепция
+рассуждения посредством ментального моделирования Кеннета Крейка (Craik, 1943) и
+обширная экспериментальная литература за последние 25 лет исследований по ментальному моделированию,
+ментальная анимация, ментальное пространственное моделирование и воплощенное ментальное представление. Полный
+аргумент в поддержку этой гипотезы развит в главе 4 книги «Создание научных исследований».
+Концепции (Нерсесян, 2008а). Недавнее психологическое исследование, основанное на наблюдательных исследованиях.
+ученых и инженеров, пытающихся решить исследовательские задачи, оказывает поддержку
+гипотезы и дальнейшие подробности о природе и роли ментальной модели - или концептуальной -
+моделирования (Christensen & Schunn, 2008; Trafton, Trickett, & Mintz, 2005; Trickett &
+Трафтон, 2007).
+До сих пор я использовал выражение «ментальные модели», чтобы связать свою учетную запись
+научного познания с обширной литературой по мирскому познанию. До того, как про-
+перейдя к распространению этого понятия на распределенные процессы вывода, я перехожу к
+более нейтральный дескриптор «модель исследователя». Традиционные корреляты «разум – тело»
+«ментально-физическое» и «внутреннее-внешнее» (по отношению к телу) наделены дуалистическими
+предположения (Нерсесян, 2005). Таким образом, в оставшейся части своего анализа я буду использовать
+«модель исследователя» и «модель артефакта», где первое относится к представлению модели.
+процессы и процессы внутри человеческого тела и последнего, к другой модели
+компоненты распределенной когнитивной системы. Цель оставшейся части этого
+статья заключается в том, чтобы расширить понятие рассуждений, основанных на имитационных моделях, на распределенную
+понятие, в котором исследователь и представления артефактов являются соучастниками выводимого
 
-4.2. Distributing cognition: ‘‘Putting a thought into the bench top’’
+процессы. Расширение гипотезы заключается в том, что в рассуждениях, основанных на имитационных моделях,
+выводы возникают в результате обработки информации в системе, которая включает исследования-
+модели памяти и артефактов. ^ 7
 
-4.2.1. Researcher models
-Our data on how researchers think about and reflect on the in vivo phenomena and the
-in vitro devices provide substantial evidence that the mental representations they use in
-problem solving and reasoning have a model-like structure (see, Fig. 2). That is, they are
-organized representations of the parts of physical systems and interactions among these, cus-
-tomarily referred to as ‘‘mental models.’’ The data on how these researchers explain, pre-
-dict, and otherwise reason support the interpretation that the long-term representations they
+4.2.2. Рассуждения на основе распределенной модели
+Один исследователь охарактеризовал свои эксперименты с помощью моделирования.
+модели, как «подумать о скамейке и посмотреть, работает она или нет».
+Мы нашли эту характеристику вполне уместной. В качестве примера можно сказать, что устройство является физическим
+Реализованное представление с соответствием модели исследователя. Как осязаемый
+артефакта, он развивается вместе с пониманием исследователем экспериментальных процессов.
+Как представление, это относится как к модели исследователя, так и к феномену in vivo.
+Моделирование с использованием систем моделей артефактов является неотъемлемой частью исследовательских моделей в том смысле, что они
+предназначены для эпистемического функционирования. То есть модель артефакта - это площадка моделирования.
+не только какого-то биологического или механического процесса, но и понимания исследователя.
+ing. В поисках знаний о системах in vivo, исследователях и моделях артефактов.
+блокируются одновременно в процессах моделирования, в которых активизируется построение и моделирование.
+они вносят непосредственный вклад в трансформацию модели рабочей памяти исследователя, и
+в долгосрочной перспективе за счет процессов, вызывающих изменения в долговременной памяти
+представления.
+Эксперимент с моделью артефакта является расширением научной практики
+мысленный эксперимент («научная фантастика», отмеченная на рис. 5B) - более полный и
+сложный и потенциально менее подверженный индивидуальным предубеждениям и ошибкам. Это дает более подробный
+репрезентация, более широкий спектр манипуляций и больший контроль, чем это возможно для
+мысленный эксперимент. Подобно тому, как микроскопы и телескопы расширяют науку
+способность людей видеть, имитационные модели артефактов расширяют их биологическую способность выполнять
+моделирование рассуждений. Как и в случае мысленного эксперимента, моделирование системы имитирует
+Используется для прогнозов о том, как система in vivo может работать в определенных условиях.
+Надежно ли переносить их на явления in vivo, зависит от видов
+соображений, кратко обсуждаемых в разделе 4.1, которые касаются соответствия между представлением
+выполненные операции и манипуляции, а также явления in vivo. Например: это первый
+порядка приближения, достаточного для представления кровотока? Воздействие напряжения сдвига на
+клетки в плоской конструкции существенно отличаются от воздействия на трубчатые артерии? И
+так далее. Таким образом, моделирование с использованием моделей дает своего рода контрфактическую аргументацию. В виде
+другой исследователь объяснил: «Обычно мы используем модели, чтобы предсказать, что произойдет.
+в системе [in vivo]. Как люди используют математические модели, чтобы предсказать .... что будет
+случиться в механической системе? Что ж, это экспериментальная модель, которая предсказывает, что
+случится - или вы надеетесь, что он предсказал бы - что случится в реальной жизни ''.
+Аргумент, который здесь приводится, состоит в том, что «предсказывающая экспериментальная модель» - это
+взаимосвязанная распределенная модельная система, состоящая из исследователя и артефакта. Рассуждение
+Средства этой системы включают совместную обработку информации в памяти человека и в окружающей среде.
+ронмент. То есть, в рамках структуры распределенного познания, средство решения проблем
+не просто использует представления артефактов; скорее, они включены непосредственно в познание.
+активная обработка. Природа механизмов, соединяющих человека и компоненты артефакта, такова.
 
+все еще открытый вопрос для когнитивной науки. Исследования должны рассмотреть оба случая
+одновременные интерактивные манипуляции с моделями исследователя и артефактами, а также кейсы, в которых
+моделирование осуществляется моделью артефакта, и его результаты приводят к изменениям в исследователе
+долгосрочные модели. ^ 8
+Анализ в этом разделе предоставляет аргумент, расширяющий понятие модельно-ориентированного
+познание, включающее взаимосвязанные модели исследователя и артефактов для распределения когнитивных
+процессы в таких системах. В этих лабораториях процессы решения проблем включают экспериментальные
+элементы, которые генерируют, манипулируют и распространяют эти взаимосвязанные модели. Симулятивный
+Основанное на моделях рассуждение - это процесс совместного конструирования и манипулирования моделями исследователя.
+Все подробности явлений, устройства и модели устройства, каждая неполная. В
+экспериментальные процессы, взаимосвязанный исследователь и модели артефактов образуют распределенный эксперимент.
+ментальные конфигурации, из которых вытекают умозаключения. Я проиллюстрирую это понимание эксперимен-
+мышления с помощью расширенного примера из лабораторной работы A, который предоставляет моментальный снимок
+процесс решения проблем, который длился несколько лет и осуществлялся с помощью
+развивающаяся распределенная система вывода.
 
-draw upon consist of organized understandings comprising representations of the structures,
-functions, and⁄or behaviors of the phenomena they are investigating and of the artifact mod-
-els they create for experimenting.
-As noted in Section 2.4,model-based cognition is a central superordinate category
-deriving from our coding of transcripts. Combined, field observations and transcripts of
-interviews and research meetings provided ample evidence of the researchers constructing
-and simulating model-like representations of entities and processes for cognitive tasks.
-They reason, explain, and predict by means of model representations. So we have been
-seeking to understand how researcher mental models and artifact model systems function
-together as components of distributed cognitive processes. The mental models literature
-comprises a wide range of cognitive science research that posits models as organized units
-of mental representation that are used in various cognitive processes, including reasoning,
-problem solving, discourse comprehension, and sense making. As I have noted in previous
-writings (Nersessian, 2002, 2008a,b), there are two primary usages of the term in the liter-
-ature: one addresses the nature of the long-term memory representations (see, e.g., Gentner
-& Stevens, 1983); the other addresses the nature of the working memory representations
-in inferential processes, that is, the activity of ‘‘mental modeling’’ in discourse interpreta-
-tion (see, e.g., Perrig & Kintsch, 1985), logical reasoning (see, e.g., Johnson-Laird, 1983),
-and mental simulation (see, e.g., Nersessian, 1992b, 2008a). The hypothesis I advanced
-was that ‘‘in certain problem-solving tasks humans reason by constructing a mental model
-of the situation, events, and processes in working memory that in dynamic cases can be
-manipulated through simulation’’ (Nersessian, 2002; p. 143).^6 This hypothesis derived
-from examining a range of historical records of scientific reasoning, the original concep-
-tion of reasoning by means of mental simulation by Kenneth Craik (Craik, 1943), and
-extensive experimental literature over the last 25 years of research on mental modeling,
-mental animation, mental spatial simulation, and embodied mental representation. The full
-argument in support of this hypothesis is developed in Chapter 4 ofCreating Scientific
-Concepts(Nersessian, 2008a). Recent psychological research, based on observational stud-
-ies of scientists and engineers as they try to solve research problems, lends support to the
-hypothesis and further details the nature and role of mental model—or conceptual—
-simulations (Christensen & Schunn, 2008; Trafton, Trickett, & Mintz, 2005; Trickett &
-Trafton, 2007).
-Thus far I have been using the expression ‘‘mental models’’ to connect my account
-of scientific cognition with an extensive literature on mundane cognition. Before pro-
-ceeding to extend that notion to distributed inferential processes, I now shift to the
-more neutral descriptor ‘‘researcher model.’’ The traditional correlates ‘‘mind–body,’’
-‘‘mental–physical,’’ and ‘‘internal–external’’ (to the body) are laden with dualistic
-assumptions (Nersessian, 2005). Thus, for the remainder of my analysis I will use
-‘‘researcher model’’ and ‘‘artifact model,’’ where the former refers to model representa-
-tions and processes inside the bounds of a human body and the latter, to other model
-components of the distributed cognitive system. The objective of the remainder of this
-paper is to extend the notion of simulative model-based reasoning to a distributed
-notion in which researcher and artifact representations are co-participants in inferential
+4.3. Распределенные экспериментальные конфигурации: система модели сосудистой конструкции.
 
+В экспериментальных ситуациях модели, как правило, имеют взаимосвязанные конфигурации, то есть
+они не являются изолированными сущностями, но находятся в определенных отношениях с другими моделями - исследователь
+и артефакт. Анализ плана и проведения эксперимента предоставит средства
+формулируя это измерение взаимосвязанных моделей. Вскоре после того, как A7 прибыла в лабораторию A, она была
+обозначила «человека, который возьмет конструкт in vivo», что означает, что ее исследование
+была направлена ​​на проведение экспериментов с животным, которое служит моделью для
+человеческое тело в контексте эксперимента. Эта цель немедленно потребовала, чтобы она
+(а) потребуется спроектировать и построить конструкцию, которая будет более точно имитировать функцию
+характеристики артерии in vivo, чем те, которые использовались в большинстве других экспериментов, и могут
+обладают достаточной прочностью, чтобы противостоять силе кровотока in vivo; (б) изменить поток
+петля, чтобы работать с трубчатыми конструкциями трубчатой ​​формы; и (c) организовать
+животное (бабуин), подлежащее хирургическому вмешательству, чтобы экспериментировать с конструкцией за пределами его
+тела и минимально инвазивным способом. Также требовалось, чтобы она соединяла пряди
+исследования проводятся почти всеми другими членами лаборатории. По ее словам, «перейти в
+модель in vivo у нас должна быть все, ну и большинство аспектов, которые люди изучали ''.
+Она приступила к выявлению компонентов, полученных от других исследователей, подчеркнув, что это
+- это интеграция того, что они узнали ... вы не можете просто изучить один аспект. '' '' Чтобы улучшить
+механическая целостность .... очевидно объединит результаты коллег здесь в
+лаборатория ''. Интегративное положение A7 в проблемном пространстве лаборатории еще раз подтверждается на рисунке.
+сделано директором (рис. 5А).
+Когда мы начинали, она пробыла в лаборатории около года, но все еще в процессе.
+определения конкретных целей и задач своего исследования. Наш анализ основан на полевых
+наблюдения за тем, как она проводит части своих исследований, которые проводились в лаборатории
+(бабуин жил в лаборатории в другом штате); беседуя с ней по мере ее продвижения, с
+заключительное послевузовское собеседование; видео и аудио стенограммы лабораторных встреч, на которых она
 
-processes. The extension of the hypothesis is that in simulative model-based reasoning
-inferences arise through processing information in the system that comprises research-
-er(s) memory and artifact models.^7
+представлены; и несколько ее произведений. Ее окончательное всеобъемлющее определение проблемы было
+чтобы определить, можно ли использовать циркулирующие эндотелиальные клетки ('' предшественник
+клетки ''), полученные из периферической крови пациента, чтобы выстилать сосудистый трансплантат. Эндотелиальный
+клетки, выстилающие артерию, являются одними из наиболее чувствительных к иммунитету клеток в организме. Если
+собственные эндотелиальные клетки-предшественники пациента могут быть собраны и использованы, что в значительной степени
+увеличить потенциал сосудистого трансплантата. Однако клетки-предшественники не модулируют
+тромбоз, который является функцией зрелых клеток. A7 предположил, что условия напряжения сдвига
+использование (с помощью контура потока) конструкции перед имплантацией решило бы проблему
+лем образования тромбоцитов и возникшего тромбоза. Прежде чем перейти к нашему анализу ее
+решение проблем в качестве примера познания на основе распределенной модели, поучительно
+изучите ее собственное краткое резюме.
+Что наиболее примечательно в отчете A7 о своем эксперименте, так это то, что она плавно блокирует
+мысли и выражения биологических и инженерных концепций и моделей, как она вводила
+в построении и сборке компонентов ее модельных систем, а также в проведении и
+выводы путем экспериментов:
 
-4.2.2. Distributed model-based reasoning
-One researcher characterized what they do in experimenting by means of simulation
-models as ‘‘putting a thought into the bench top and seeing whether it works or not.’’
-We found this characterization quite apt. As an instantiated thought, the device is a phys-
-ically realized representation with correspondences to the researcher model. As a tangible
-artifact, it evolves along with the researcher’s understanding in experimental processes.
-As a representation, it refers both to the researcher model and to the in vivo phenomena.
-Simulations with artifact model systems are integral to the researcher models in that they
-are intended to function epistemically. That is, the artifact model is a site of simulation
-not just of some biological or mechanical process but also of the researcher’s understand-
-ing. In the search for knowledge about in vivo systems, researcher and artifact models
-interlock both in concurrent simulation processes, in which building and simulation activ-
-ities contribute directly to transformations of the researcher working memory model, and
-over the longer term, through processes that bring about changes in long-term memory
-representations.
-An experiment with an artifact model provides an extension of the scientific practice of
-thought experimenting (the ‘‘science fiction’’ remarked on in Fig. 5B)—more complete and
-complex and potentially less subject to individual bias and error. It affords a more detailed
-representation, a wider range of manipulations, and more control than is possible for a
-thought experiment. In a manner similar to how microscopes and telescopes extend scien-
-tists’ capacity to see, artifact simulation models extend their biological capacity to perform
-simulative reasoning. As with thought experimenting, the model system simulation contrib-
-utes to predictions about how the in vivo systemmightperform under specified conditions.
-Whether one is warranted in transferring these to in vivo phenomena depends on the kinds
-of considerations discussed briefly in Section 4.1, which concern the fit between the repre-
-sentations and manipulations performed and the in vivo phenomena. For instance: Is a first
-order approximation sufficient for representing blood flow? Do the effects of shear stress on
-the cells in a flat construct differ in relevant ways from the effects on tubular arteries? And
-so forth. Simulations with models, then, provide a kind of counterfactual reasoning. As
-another researcher explained: ‘‘We typically use models to predict what is going to happen
-in a system [in vivo]. Like people use mathematical models to predict.... what’s going to
-happen in a mechanical system? Well, this is an experimental model that predicts what
-would happen—or you hope that it would predict—what would happen in real life.’’
-The argument being made here is that the ‘‘experimental model that predicts’’ is the
-interlocked, distributed model system comprising researcher and artifact. Reasoning by
-means of this system involves co-processing information in human memory and in the envi-
-ronment. That is, as cast within the distributed cognition framework, the problem solver
-does not simplyuseartifact representations; rather, they are incorporated directly into cogni-
-tive processing. The nature of the mechanisms connecting human and artifact components is
+ 
+Мы использовали шунт для оценки отложения тромбоцитов, и это, другими словами,
+были клетки в зависимости от лечения, которое они получали до того, как
+высевается на искусственно созданную ткань, способную предотвратить свертывание крови? И поэтому мы специально
+измерили количество тромбоцитов, которые осядут на поверхности. Больше тромбоцитов
+равняется сгустку. Итак, в итоге мы смогли посмотреть на эффекты напряжения сдвига.
+предварительное кондиционирование способности клеток предотвращать тромбоциты и обнаружило, что это действительно необходимо.
+Срезать предварительное кондиционирование этих клеток крови при анартериальной скорости сдвига, которую я
+использовал 15 дин на квадратный сантиметр по сравнению с низкой скоростью сдвига, что в моем случае
+используется как 1 дин на квадратный сантиметр, так что разница довольно большая. Но я обнаружил, что
+артериальный сдвиг был необходим для усиления экспрессии антикоагулянтных белков и
+поэтому предотвратить свертывание. Другими словами, сдвиг, которому они подвергались раньше,
+вход в шунт, безусловно, был критичным по величине.
+ 
+Выделенные курсивом термины относятся к взаимосвязанным междисциплинарным моделям, поскольку они
+функции в ее понимании и рассуждениях и взаимосвязанных физических имитационных моделях.
+Чтобы распечатать некоторые из его выражений, «клетки» - это эндотелиальные клетки-предшественники, которые она
+извлекается из крови павиана и засевается на «искусственную ткань» (сосудистую конструкцию
+устройство). «Обработка», которую они получили, заключалась в «предварительном кондиционировании напряжения сдвига», проведенном
+с использованием модифицированного устройства проточной петли. Целью ее исследования было определить,
+на каком уровне предварительное кондиционирование (моделирование «артериального сдвига») конструкций будет
+«усиливают экспрессию в их [клетках] антикоагулянтных белков» («предотвращают тромбоциты»). Она
+было обнаружено, с помощью нескольких итераций всей модельной системы ex vivo ('' использовали шунт для
+оценить отложение тромбоцитов ''), что скорость артериального сдвига у человека in vivo ('' 15 дин / см ^ 2 '')
+требовалось для достаточной экспрессии белка («было критично по величине»). Нравится-
+мудро, ее конкретная «мысль» об обращении с клетками привела к пересмотру ее мнения.
+правильное понимание сосудистой конструкции, чтобы отразить необходимость использования артериальной
+срезать, чтобы предотвратить тромбоз.
 
+Диаграмма на рис. 7 дает сокращенное представление нашего анализа сосудов.
+Построить модельную систему для этого эксперимента. Он был взят из наших данных довольно давно
+перед этим заключительным интервью, но каждый компонент появляется в ее объяснении. По нашему толкованию
+Он отслеживает создание, манипулирование и распространение исследователя и артефакта.
+модели в рамках распределенной системы решения проблем, составляющей эксперимент. в
+На рисунке модели выделены жирными линиями. Стрелки потока обозначают распространение
+представлений в системе по мере их создания и манипулирования.
+Чтобы диаграмма не стала слишком сложной, многочисленные связи с другими
+исследователи в лабораторном проблемном пространстве (отображенном на рис. 5A) не включены, но конструкция,
+петлю потока, а модели бабуинов следует понимать как коллективные достижения, представляют-
+лет исследований. Каждая модель исследователя - это отчасти индивид, отчасти представитель сообщества.
+тация. Модели устройств представляют и работают как аспекты сердечно-сосудистой системы:
+конструировать модели представляют и работают как избранные аспекты биологической среды
+кровеносный сосуд, модель проточной петли представляет собой и действует как сдвигающее напряжение на артериальном сосуде.
+стены, а модель павиана представляет и действует как кровоток через человеческую артерию.
+Ни артефакты, ни модели исследователей в этой экспериментальной установке не статичны; скорее они
+представления, которые менялись с течением времени по мере разработки каждого компонента. Есть три
+основные компоненты этой модельной системы, которые я назову «конструкцией» (левая треть диаграммы),
+«петля потока» (в центре) и «бабуин» (правая третья). Потребовалось более 3 лет проектирования,
+построение и экспериментирование с первыми двумя компонентами, прежде чем A7 сможет провести финальную
 
-still an open question for cognitive science. Research needs to address both cases of
-concurrent, interactive manipulations of researcher and artifact models and cases where
-simulation is carried out by the artifact model, and its results lead to changes in researcher
-long-term models.^8
-The analysis in this section provides an argument extending the notion of model-based
-cognition to comprise interlocking researcher and artifact models for distributing cognitive
-processes across such systems. In these labs, problem-solving processes comprise experi-
-ments that generate, manipulate, and propagate these interlocked models. Simulative
-model-based reasoning is a process of co-constructing and manipulating the researcher mod-
-els of the phenomena and of the device and the model that is the device, each incomplete. In
-experimental processes, interlocking researcher and artifact models form distributed experi-
-mental configurations from which inferences flow. I illustrate this understanding of experi-
-mentation by means of an extended example from Lab A that provides a snapshot of a
-problem-solving process that extended over several years and was carried out by means of
-an evolving distributed inferential system.
+ 
+Рис. 7. Распределенная модельная система сосудистых конструкций (частичная).
+ 
 
-4.3. Distributed experimental configurations: The vascular construct model system
+ex vivo эксперименты в течение дальнейшего 2-летнего периода. Модель конфигурации системы, хотя и соответствует
+Постоянно развивающиеся артефакты - это долгосрочные инвестиции. Здесь невозможно предоставить
+подробный отчет о многочисленных циклах проектирования, строительства, моделирования и оценки
+модели, представленные в каждой части диаграммы. Я даю краткий очерк.
+Значительное новое исследование было направлено только на создание конструкции (диаграмма слева
+третий), чтобы его можно было использовать ex vivo. Вопросы механической целостности (прочности) стали актуальными.
+значительный, поскольку он должен был выдерживать почти нормальные силы крови, а также не протекать.
+Желаемая окончательная экспериментальная конфигурация требовала, чтобы эта конструктивная модель была такой, какой они
+считается наиболее "физиологичным", созданным лабораторией, поскольку в нем реализованы все, кроме
+внешний слой (адвентиция), который, по мнению исследователя, не был необходим для эксперимента
+и даже может расти сам по себе. Эндотелиальные клетки-предшественники (EPC) были извлечены из
+периферическая кровь павиана. При работе только с EPC она использовала лабораторный контур потока.
+модели при различных скоростях сдвига, а затем с помощью нескольких инструментов извлекли информацию о
+их белок и экспрессия генов. Многочисленные итерации манипулирования EPC и использования var-
+различные инструменты, такие как проточный цитометр, для исследования клеток на экспрессию моле-
+клетки для тромбомодулина, помогли ей построить исследовательскую модель их функции и
+поведение по отношению к касательным напряжениям и способствовало созданию окончательного конструктивного устройства
+для этих экспериментов. Для построения этой модели артефакта дополнительно потребовалось изолировать неповрежденный
+эластиновый каркас, удаляющий гладкомышечные клетки сосудов из сонных артерий павиана
+(принесена в жертву для экспериментов, отличных от ее собственных), и определение правильной смеси коллагена и
+материал каркаса для наложения швов (тефлон).
+Для придания конструкциям трубчатой ​​формы (средняя треть схемы) в А7 изначально использовались
+предложил переработать камеру контура потока, чтобы лучше приблизиться к модели in vivo.
+В конце концов, значительный редизайн оказался ненужным, потому что она понимала, что это
+должна быть возможность спроектировать внешний шунт для контура потока - проводя аналогию напрямую
+с шунтом, который она разработала ранее для модели на животных, и прикрепите конструкцию к этому
+для моделирования ряда касательных напряжений. Модель на животных (диаграмма справа, третья) была необходима для
+обеспечить функциональную оценку EPC в среде, более приближенной к
+среда in vivo, чем модель артефакта. Модель на животных включает павиана, хирурга.
+изменен так, что экстериоризированный шунт соединяет бедренную вену и бедренную артерию,
+позволяя небольшому количеству кровотока отклоняться через конструкцию во время эксперимента.
+мент. При постановке эксперимента к затвору присоединяется гораздо более длинная трубка, так что кон-
+struct можно разместить непосредственно на гамма-камере (коммерчески доступный инструмент,
+размер небольшого стола) для захвата и наблюдения за образованием тромбоцитов во время кровотока в реальном времени.
+Бабуин сидит в специально сконструированном удерживающем кресле, а поверх его тела - костюм, предотвращающий
+это от натяжения шунта. В кровь павиана вводят иридий, чтобы тромбоциты
+быть видимым через гамма-камеру. Затем конструкция отключается от
+бабуин и другие инструменты и программное обеспечение используются для анализа EPC с целью получения информации.
+информация об экспрессии тромбомодулина, оптической плотности и электрическом сопротивлении.
+Хотя животная модель обеспечивает лучшее физиологическое представление человеческого тела in vivo.
+явления, она менее надежна, чем система, полностью разработанная in vitro, потому что «в лаборатории мы
+могут полностью контролировать среду их [эндотелиальных клеток] .... мы можем контролировать, что именно
+поток подобен, и мы можем отслеживать его визуально. Но когда мы переходим к модели животных
 
-In experimental situations, models tend to be put into interlocking configurations, that is,
-they are not isolated entities, but stand in particular relations to other models—researcher
-and artifact. Analyzing the design and execution of an experiment will provide a means of
-articulating this dimension of interlocking models. Soon after A7 arrived at Lab A she was
-designated the ‘‘person who would take the construct in vivo,’’ meaning that her research
-was directed towards conducting experiments with an animal that serves as a model for the
-human body in the context of the experiment. This objective immediately required that she
-would (a) need to design and build a construct that would both more closely mimic the func-
-tional characteristics of an in vivo artery than was used in most other experiments and would
-have sufficient strength to withstand the force of in vivo blood flow; (b) modify the flow
-loop so that it would work with tubular constructs in tubular form; and (c) arrange for an
-animal (baboon) to be surgically altered so as to experiment with the construct outside of its
-body and in a minimally invasive way. It also required that she bring together the strands of
-research being conducted by nearly all the other lab members. As she expressed it, ‘‘to go to
-an in vivo model we have to have all, well most of the aspects that people have studied.’’
-She proceeded to identify components stemming from other researchers, stressing ‘‘so this
-is integration of what they’ve learned....you can’t just study one aspect.’’ ‘‘To improve
-mechanical integrity....is gonna obviously integrate the results of colleagues here in the
-lab.’’ A7’s integrative position in the lab problem space is further evidenced in the drawing
-made by the director (Fig. 5A).
-When we started, she had been in the laboratory about a year but was still in the process
-of defining the specific goals and problems of her research. Our analysis is based on field
-observations of her conducting the parts of her research that took place in the laboratory
-(the baboon lived in a laboratory in another state); interviewing her as it progressed, with a
-final postgraduation interview; video and audio transcripts of the lab meetings in which she
+это более физиологично - проблема в том, что это гораздо более сложная система ''.
+продвигать исследования, нужно было пожертвовать некоторым контролем и точностью, чтобы лучше продемонстрировать
+сложить комплексные характеристики физиологии человека. A7 совершил несколько поездок за 2 года на
+лаборатория за пределами штата, где живут модели на животных, чтобы проводить эксперименты, изменять модели,
+и, в конце концов, она смогла предотвратить образование тромбоцитов. Об интерпретации распределенного познания
+Таким образом, «предсказывающая экспериментальная модель» включает в себя всю систему исследователей-исследователей.
+модели артефактов на животных, с помощью которых был сделан вывод, что если бы человеческие EPC
+кондиционированные с нормальной скоростью артериального оттока до имплантации сосудистого трансплантата, они будут
+функционируют как зрелые эндотелиальные клетки в отношении модуляции тромбоза.
 
+5. Заключение
 
-presented; and several of her writings. Her final overarching definition of the problem was
-to determine whether it would be possible to use circulating endothelial cells (‘‘progenitor
-cells’’) derived from a patient’s peripheral blood to line the vascular graft. The endothelial
-cells that line the artery are among the most immune-sensitive cells in the body. If the
-patient’s own endothelial progenitor cells could be harvested and used, that would greatly
-enhance the potential of a vascular graft. However, the progenitor cells do not modulate
-thrombosis, which is a function of the mature cells. A7 hypothesized that shear stress condi-
-tioning (by means of the flow loop) the construct prior to implantation would solve the prob-
-lem of platelet formation and the resulting thrombosis. Before turning to our analysis of her
-problem solving as an example of a distributed model-based cognition, it is instructive to
-examine her own succinct summary statement.
-What is most notable from A7’s account of her experiment is she seamlessly interlocks in
-thought and expression biological and engineering concepts and models as she had enacted
-these in building and assembling the components of her model systems and conducting and
-drawing inferences through experiments:
+Использование нами распределенного познания как основы для интерпретации исследовательской практики
+эти лаборатории помогают понять, как думают инженеры, с помощью
+модели артефактов, которые они проектируют и строят. Преодолевая разделение in vivo и in vitro, они находятся в
+реальный смысл практики того, что исследователь лаборатории D назвал «научной фантастикой» (рис. 5B). Они
+переводить их понимание исследуемых явлений в симуляцию реального мира.
+модели и пересмотреть их понимание с помощью моделирования. Чтобы понять, как инженерное дело
+Ученые думают, что модели артефактов требуют внимания к природе исследователя.
+представления, которые участвуют в процессах решения проблем. Здесь я утверждал, что они,
+тоже являются модельными представлениями, и что выводящие процессы содержат взаимосвязанные
+система исследователей и моделей артефактов.
+Добавив к этому аккаунту признание устройств как «концентраторов» для блокировки
+различных измерений практики, мы продвигаемся дальше по пути к интегративному
+понимание когнитивно-социокультурных аспектов исследовательской практики. Как хабы,
+устройства - это фокусы, в которых вращаются лабораторные действия, и через которые они блокируются.
+Устройства и модельные системы - это то, что социокультурные исследования науки называют
+«материальная культура» сообщества, но также и то, что когнитивные исследования в науке называют
+как «когнитивные артефакты», участвующие в представлении, рассуждении и проблемном
+решающие процессы распределенной системы. Наши данные позволяют интерпретировать их как когнитивные.
+культурные артефакты. Они являются репрезентациями и, таким образом, играют роль в модельных рассуждениях.
+и решение проблем; они являются центральными артефактами, вокруг которых формируются социальные практики; они есть
+сайты обучения; они связывают одно поколение исследователей с другим; они действуют как
+культурные трещотки (Tomasello, 1999) в эпистемическом сообществе (Knorr Cetina, 1999),
+позволяя исследователям опираться на результаты предыдущих поколений и, таким образом, продвигать
+решение проблемы вперед.
 
-```
-We used the shunt to evaluate platelet depositionand that would be—in other words—
-werethe cells, as a function of the treatmentthat they were given before they were
-seeded onto theengineered tissue, able to prevent blood clotting? And so we specifically
-measured thenumber of plateletsthat would sit down onthe surface. Moreplatelets
-equals a clot. So, it ended up being that we were able to look at the effects ofshear stress
-preconditioning on the cells ability to prevent plateletsand found that it was actually nec-
-essary to shear precondition these blood derived cells at anarterial shear rate,which I
-used15 dynes per square centimetercompared to a low shear rate, which in my case I
-used like 1 dyne per square centimeter, so, a pretty big difference. But I found that the
-arterial shear was necessary to enhance their expression of anti-coagulant proteinsand
-therefore prevent clotting. So in other words, the shear that they were exposed to before
-going into the shunt was critical in terms of magnitude, for sure.
-```
-The italicized terms mark reference both to interlocking interdisciplinary models as they
-function in her understanding and reasoning and to interlocked physical simulation models.
-To unpack a few of her expressions ‘‘the cells’’ are the endothelial progenitor cells she
-extracted from baboon blood and seeded onto the ‘‘engineered tissue’’ (vascular construct
-device). The ‘‘treatment’’ they received was ‘‘shear stress preconditioning’’ conducted by
-using the modified flow loop device. The objective of her research was to determine if, and
-at what level, the preconditioning (‘‘arterial shear’’ simulation) of constructs would
-‘‘enhance their [cells] expression of anti-coagulant proteins’’ (‘‘prevent platelets’’). She
-found, through several iterations of the entire ex vivo model system (‘‘used the shunt to
-evaluate platelet deposition’’), that the in vivo human arterial shear rate (‘‘15 dynes⁄cm^2 ’’)
-was required for sufficient protein expression (‘‘was critical in terms of magnitude’’). Like-
-wise, her instantiated ‘‘thought’’ about the treatment of the cells led to a revision of her con-
-ceptual understanding of the vascular construct so as to reflect the necessity of using arterial
-shear in order to prevent thrombosis.
+Примечания
 
+1. Кроме того, в течение следующих 2 лет мы проводили исследование лаборатории биоробототехники с
+    цель проверки надежности наших выводов об обучении и принципах
 
-The diagram in Fig. 7 provides a pared-down representation of our analysis of thevascu-
-lar construct model systemfor this experiment. It was drawn from our data quite a while
-before this final interview, but each component appears in her explanation. On our interpre-
-tation, it traces the construction, manipulation, and propagation of researcher and artifact
-models within the distributed problem-solving system that constitutes the experiment. In the
-figure, the models are highlighted by thick lines. The flow arrows represent the propagation
-of representations in the system as they are generated and manipulated.
-To keep the diagram from becoming too complex, the numerous connections to other
-researchers in the lab problem space (mapped in Fig. 5A) are not included, but the construct,
-flow loop, and baboon models are to be understood as communal achievements, represent-
-ing years of research. Each researcher model is a part individual, part community represen-
-tation. The device models represent and perform as aspects of a cardiovascular system: The
-construct models represent and perform as selected aspects of the biological environment of
-a blood vessel, the flow loop model represents and performs as shear stresses on arterial
-walls, and the baboon model represents and performs as blood flow through a human artery.
-Neither artifact nor researcher models in this experimental set up are static; rather, they are
-representations that changed over time as each component was developed. There are three
-major components of this model system that I will call ‘‘construct’’ (left third of diagram),
-‘‘flow loop’’ (middle), and ‘‘baboon’’ (right third). It required over 3 years of designing,
-building, and experimenting with first two components before A7 could conduct the final
+ 
+разработка эффективных учебных сред, основанных на лабораторных работах A и D, посредством наблюдения
+был ли перевод в исследовательскую лабораторию вне домена. Поскольку первичный
+В центре внимания этого исследования было сравнение практик обучения, данные из него не
+включены в анализ, представленный здесь.
+ 
+2. Я заключил здесь слово «теория» в кавычки, потому что какая обоснованная теория
+    Защитники имеют в виду, что под этим термином лучше понимается то, что Твини назвал «фрейм-
+    работа '', как обсуждалось ранее.
+3. Если мы добавим «аналогию», которая представляет собой тип модели, для которой мы кодировали отдельно, общая
+    повышается до 723.
+4. Что означает параллель в этих моделях, определяется понятием «примерный».
+    цию '', сформулированную Нельсоном Гудманом (1968) и Кэтрин Элгин (1996). В качестве вступления
+    Согласно Гудману, репрезентация иллюстрирует определенные особенности, если она и есть, и
+    относится к чему-то, что имеет эти особенности; то есть, «[е] xэмплификация обладает-
+    сион плюс ссылка '' (Goodman, 1968, 53). Устройства обладают и относятся к
+    избранные особенности систем in vivo, такие как сила, с которой течет кровь
+    в артерии человека.
+5. Наше понятие когнитивного партнерства может показаться похожим на теорию «сети акторов».
+    введен Бруно Латуром (1987). Однако существенные различия заключаются в следующем: во-первых,
+    по нашему мнению, не все «акторы» равны, то есть не было бы распределенного познания.
+    система без человеческих агентов, и, во-вторых, «агентство» в нашем понимании
+    подразумевает «интенциональность», поэтому артефакты могут выполнять когнитивные функции в системе.
+    они и демонстрируют независимое поведение, но сами не являются агентами. Дело в том, что мы
+    заключается в том, что обучение и исследования требуют от исследователей налаживания отношений, и
+    тот, который мы наблюдаем, формирует отношения с устройствами, что включает
+    Исследователи приписывают эти артефакты, живые и неживые, агентству.
+6. Значительные исследования в области когнитивных наук подтверждают гипотезу о том, что моделирование
+    фундаментальная форма вычислений в человеческом мозгу (см. Барсалоу, 2008).
+    обзор).
+7. Соответствующие взгляды см. В Gorman (1997); Горман и Карлсон (1990); и Грино (1989).
+8. Trafton et al. (2005) обнаружили, что при наличии компьютерных визуализаций наука
+    Во взаимодействии с визуализационными агентами специалисты совершают значительные умственные манипуляции.
+    приводит пример первого случая. Кристенсен и Шунн (2008) исследование
+    концептуальное моделирование и прототипирование в инженерном проектировании показали, что концепция
+    фактическое моделирование уменьшилось, когда были построены прототипы, обеспечивая пример
+    последнего случая.
 
-```
-Fig. 7. Distributed vascular construct model system (partial).
-```
+Благодарности
 
-ex vivo experiments over a further 2-year period. Model system configurations, though con-
-tinually evolving artifacts, are long-term investments. It is not possible here to provide a
-detailed account of the numerous cycles of designing, building, simulating, and evaluating
-the models represented in each part of the diagram. I provide a brief outline.
-Considerable novel research went into just the making of the construct (diagram left
-third) so that it could be used ex vivo. Issues of mechanical integrity (strength) became sig-
-nificant as it needed to be able to withstand nearly normal blood forces and also not leak.
-The desired final experimental configuration required that this construct model be what they
-considered the most ‘‘physiologic’’ one the lab has created in that it instantiated all but the
-outer layer (adventitia), which the researcher thought was not necessary to the experiment
-and might even grow on its own. Endothelial progenitor cells (EPCs) were extracted from a
-baboon’s peripheral blood. When working just with the EPCs, she used the lab flow loop
-model at various shear rates and then used several instruments to extract information about
-their protein and gene expression. Numerous iterations of manipulating EPCs and using var-
-ious instruments, such as the flow cytometer to examine the cells for expression of mole-
-cules for thrombomodulin, facilitated her building a researcher model of their function and
-behavior in relation to shear stresses, and contributed to building the final construct device
-for these experiments. Constructing this artifact model further required isolating an intact
-elastin scaffold, removing vascular smooth muscle cells from carotid arteries of baboon
-(sacrificed for experiments other than her own), and determining the right collagen mix and
-the scaffold material for suturing (Teflon).
-For conditioning the constructs in tubular shape (diagram middle third), A7 had originally
-proposed redesigning the chamber of the flow loop to better approximate the in vivo model.
-In the end, significant redesign turned out to be unnecessary because she had the insight that it
-should be possible to design an external shunt for the flow loop—making an analogy directly
-with the shunt she had designed earlier for the animal model—and attach the construct to that
-for simulating a range of shear stresses. The animal model (diagram right third) was needed to
-provide a functional evaluation of the EPCs in an environment more closely approximating
-the in vivo environment than an artifact model. The animal model comprises a baboon, surgi-
-cally altered so that an exteriorized shunt connects the femoral vein and the femoral artery,
-allowing a small amount of blood flow to be diverted through a construct during an experi-
-ment. In setting up the experiment a much longer tube is attached to the shut so that the con-
-struct can be placed directly on the gamma camera (a commercially available instrument the
-size of a small table) to capture and observe platelet formation during real-time blood flow.
-The baboon sits in a specially designed restraining chair and has a suit over its body to prevent
-it from pulling on the shunt. The baboon’s blood is injected with iridium so that platelets will
-be made visible through the gamma camera. The construct is then disconnected from the
-baboon and other instruments and software programs are used to analyze the EPCs for infor-
-mation about expression of thrombomodulin, optical density, and electrical resistance.
-Although the animal model provides a better physiological representation of in vivo human
-phenomena, it is less reliable than a fully in vitro engineered system because ‘‘in the lab we
-can control their [endothelial cells] environment completely....we can control exactly what
-flow is like and we can monitor by visually seeing it. But when we move to an animal model
+Я с благодарностью отмечаю поддержку грантов Национального научного фонда РОЛЕ.
+REC0106773 и DRL0411825 при проведении исследований в лабораториях. Этот анализ
+взяты из исследования, проведенного с моим партнером Венди Ньюстеттер, и нашим исследованием.
+группа, особенно Элли Хармон, Эльке Курц-Милке, Лиза Осбек, Кристофер Паттон и
 
+Санджай Чандрасекхаран. Я благодарю сотрудников исследовательских лабораторий за то, что они позволили нам
+рабочую среду, позволяя нам наблюдать за ними и давая нам многочисленные интервью. я благодарен
+также Райан Твени, Майкл Горман и трое анонимных рецензентов за их комментарии
+в более ранней версии этой статьи.
 
-it’s more physiologic—the challenge then is that it’s a much more complex system.’’ To
-advance the research, some control and precision needed to be sacrificed so as to better exem-
-plify complex characteristics of human physiology. A7 made several trips over 2 years to the
-out-of-state lab where the animal models reside to run experiments, modify her simulations,
-and, in the end, she was able to prevent platelet formation. On a distributed cognition interpre-
-tation, the ‘‘experimental model that predicts’’ comprises the entire system of researcher-
-artifact-animal models through which the inference was made that if human EPCs were to be
-conditioned at the normal arterial sheer rate prior to vascular graft implantation, they would
-function as mature endothelial cells with respect to modulating thrombosis.
+использованная литература
 
-5. Conclusion
-
-Our use of distributed cognition as a framework for interpreting the research practices of
-these laboratories helps to make sense of how engineering scientists think by means of the
-artifact models they design and build. In negotiating the in vivo–in vitro divide, they are in
-a real sense practicing what the researcher in Lab D called ‘‘science fiction’’ (Fig. 5B). They
-translate their understandings of the phenomena under investigation into real-world simula-
-tion models and revise their understandings through simulation. To fathom how engineering
-scientists think by means of artifact models requires attending to the nature of the researcher
-representations that participate in problem-solving processes. Here I have argued that they,
-too, are model-like representations, and that inferential processes comprise an interlocking
-system of researcher and artifact models.
-Adding to this account an appreciation of the devices as ‘‘hubs’’ for interlocking the
-various dimensions of practice, we move further along the path toward an integrative
-understanding of cognitive–social–cultural dimensions of research practices. As hubs,
-devices are focal points around with lab activities revolve and through which they interlock.
-Devices and model systems are what socio-cultural studies of science refer to as the
-‘‘material culture’’ of the community, but are also what cognitive studies of science refer to
-as ‘‘cognitive artifacts’’ participating in the representational, reasoning, and problem-
-solving processes of a distributed system. Our data lead to their interpretation as cognitive-
-cultural artifacts. They are representations and thus play a role in model-based reasoning
-and problem solving; they are central artifacts around which social practices form; they are
-sites of learning; they connect one generation of researchers to another; they perform as
-cultural ratchets(Tomasello, 1999) in an epistemic community (Knorr Cetina, 1999),
-enabling researchers to build upon the results of the previous generations, and thus move
-the problem solving forward.
-
-Notes
-
-1. In addition, for 2 further years, we conducted a study of a bio-robotics laboratory with
-    the objective of testing the robustness of our findings about learning and principles for
-
-
-```
-designing effective learning environments derived from Labs A and D through seeing
-whether there was transfer to an out-of-domain research laboratory. Since the primary
-focus of that study was a comparison of learning practices, data from it are not
-included in the analysis presented here.
-```
-2. I place the word ‘‘theory’’ in quotation marks here because what grounded theory
-    advocates mean by that term better approximates what Tweney has called a ‘‘frame-
-    work,’’ as discussed previously.
-3. If we add ‘‘analogy,’’ which is a type of model that we coded for separately, the total
-    rises to 723.
-4. What it means to parallel in these models is captured by the notion of ‘‘exemplifica-
-    tion’’ as formulated by Nelson Goodman (1968) and Catherine Elgin (1996). As intro-
-    duced by Goodman, a representation exemplifies certain features if it ‘‘both is and
-    refers to’’ something which has those features; that is, ‘‘[e]xemplification is posses-
-    sion plus reference’’ (Goodman, 1968, 53). Devices both possess and refer to the
-    selected features of the in vivo systems, such as the force with which the blood flows
-    in a human artery.
-5. Our notion of cognitive partnering might appear similar to ‘‘actor network’’ theory
-    introduced by Bruno Latour (1987). Salient differences, though, are as follows: first,
-    on our account not all ‘‘actors’’ are equal, that is, there would be no distributedcogni-
-    tivesystem without the human agents, and second, ‘‘agency’’ as we understand it
-    implies ‘‘intentionality,’’ so the artifacts can perform cognitive functions in the sys-
-    tem and exhibit independent behaviors, but are not, themselves, agents. The point we
-    are making is that learning and research require researchers to form relationships, and
-    one that we witness is forming a relationship with the devices, which involves
-    researchersattributingagency to these artifacts, living and nonliving.
-6. Significant cognitive science research supports the hypothesis that simulation is a
-    fundamental form of computation in the human brain (see Barsalou, 2008 for an
-    overview).
-7. For related views, see Gorman (1997); Gorman & Carlson (1990); and Greeno (1989).
-8. Trafton et al.’s (2005) finding that in the presence of computer visualizations scien-
-    tists do considerable mental manipulation in interaction with the visualization pro-
-    vides an example of the former case. Christensen and Schunn’s (2008) research on
-    conceptual simulation and prototyping in engineering design showed that concep-
-    tual simulation decreased when prototypes were constructed, providing an example
-    of the latter case.
-
-Acknowledgments
-
-I gratefully acknowledge the support of the National Science Foundation ROLE grants
-REC0106773 and DRL0411825 in conducting the research on the laboratories. This analysis
-derives from research conducted with my co-PI, Wendy Newstetter, and with our research
-group, especially Ellie Harmon, Elke Kurz-Milcke, Lisa Osbeck, Christopher Patton, and
-
-
-Sanjay Chandrasekharan. I thank the members of the research labs for allowing us into their
-work environment, letting us observe them, and granting us numerous interviews. I thank
-also Ryan Tweney, Michael Gorman, and the three anonymous referees for their comments
-on the earlier version of this article.
-
-References
-
-Alac, M., & Hutchins, E. (2004). I see what you are saying: Action as cognition in fMRI brain mapping practice.
-Journal of Cognition and Culture, 4 (3–4), 629–662.
-Barsalou, L. (2008). Grounded cognition.Annual Review of Psychology, 59 , 615–645.
-Becvar, A., Hollan, J., & Hutchins, E. (2008). Representing gestures as cognitive artifacts. In M. S. Ackerman,
-C. Halverson, T. Erickson & W. A. Kellog (Eds.),Resources, co-evolution,and artifacts: Theory in CSCW
-(pp. 117–143). NewYork: Springer.
-Christensen, B. T., & Schunn, C. D. (2008). The role and impact of mental simulation in design.Applied Cogni-
-tive Psychology, 22 , 1–18.
-Craik, K. (1943).The nature of explanation. Cambridge, England: Cambridge University Press.
-Dunbar, K. (1995). How scientists really reason: Scientific reasoning in real-world laboratories. In R. J.
-Sternberg & J. E. Davidson (Eds.),The nature of insight(pp. 365–395). Cambridge, MA: MIT Press.
-Dunbar, K., & Blanchette, I. (2001). Thein vivo⁄in vitroapproach to cognition: The case of analogy.TRENDS
-in Cognitive Science, 5 , 334–339.
-Eisner, E. (2003). On the art and science of qualitative research in psychology. In P. Camic, J. Rhodes, &
-L. Yardly (Eds.),Qualitative research in psychology. Washington, DC: American Psychological Association.
-Elgin, C. Z. (1996).Considered judgment. Princeton, NJ: Princeton University Press.
-Gentner, D., & Stevens, A. L. (1983).Mental models. Hillsdale, NJ: Erlbaum.
-Giere, R. N. (1988).Explaining science: A cognitive approach. Chicago: University of Chicago Press.
-Glaser, B., & Strauss, A. (1967).The discovery of grounded theory: Strategies for qualitative research. Piscata-
-way, NJ: Aldine Transaction.
-Goodman, N. (1968).Languages of art. Indianapolis, IN: Hackett.
-Goodwin, C. (1995). Seeing in depth.Social Studies of Science, 25 , 237–274.
-Gorman, M. (1997). Mind in the world: Cognition and practice in the invention of the telephone.Social Studies
-of Science, 27 , 583–624.
-Gorman, M. E., & Carlson, W. B. (1990). Interpreting invention as a cognitive process: The case of Alexander
-Graham Bell, Thomas Edison, and the telephone.Science, Technology, and Human Values, 15 , 131–164.
-Greeno, J. G. (1989). Situations, mental models, and generative knowledge. In D. Klahr & K. Kotovsky (Eds.),
-Complex information processing(pp. 285–318). Hillsdale, NJ: Erlbaum.
-Hall, R., Stevens, R., & Torralba, T. (2002). Disrupting representational infrastructure in conversation across
-disciplines.Mind, Culture, and Activity, 9 , 179–210.
-Hollan, J., Hutchins, E., & Kirsch, D. (2000). Distributed cognition: Toward a new foundation for human-
-computer interaction research.ACM Transactions on Computer-Human Interaction, 7 (2), 174–196.
-Hutchins, E. (1995).Cognition in the wild. Cambridge, MA: MIT Press.
-Johnson-Laird, P. N. (1983).Mental models. Cambridge, MA: MIT Press.
-Knorr Cetina, K. (1999).Epistemic cultures: How the sciences make knowledge. Cambridge, MA: Harvard
+Алак, М., и Хатчинс, Э. (2004). Я понимаю, о чем вы говорите: действие как познание в практике картирования мозга с помощью фМРТ.
+Журнал познания и культуры, 4 (3–4), 629–662.
+Барсалов, Л. (2008). Обоснованное познание. Ежегодный обзор психологии, 59, 615–645.
+Беквар А., Холлан Дж. И Хатчинс Э. (2008). Представление жестов как когнитивных артефактов. В MS Ackerman,
+К. Халверсон, Т. Эриксон и В. А. Келлог (редакторы), Ресурсы, совместная эволюция и артефакты: теория в CSCW
+(стр. 117–143). Нью-Йорк: Springer.
+Кристенсен, Б.Т. и Шунн, компакт-диск (2008). Роль и влияние ментального моделирования в дизайне.
+тивная психология, 22, 1–18.
+Крейк К. (1943) Природа объяснения. Кембридж, Англия: Издательство Кембриджского университета.
+Данбар, К. (1995). Как на самом деле рассуждают ученые: научные рассуждения в реальных лабораториях. В RJ
+Стернберг и Дж. Дэвидсон (ред.), Природа понимания (стр. 365–395). Кембридж, Массачусетс: MIT Press.
+Данбар, К., и Бланшетт, И. (2001). Подход к познанию in vivo / in vitro: случай аналогии.
+in Cognitive Science, 5, 334–339.
+Эйснер, Э. (2003). Об искусстве и науке качественных исследований в психологии. В P. Camic, J. Rhodes, &
+Л. Ярдли (ред.), Качественные исследования в психологии. Вашингтон, округ Колумбия: Американская психологическая ассоциация.
+Элгин, Ч.З. (1996) Обсужденное решение. Принстон, Нью-Джерси: Издательство Принстонского университета.
+Гентнер Д., Стивенс А. Л. Ментальные модели. Хиллсдейл, Нью-Джерси: Эрлбаум.
+Гьер, Р. Н. (1988). Объяснение науки: когнитивный подход. Чикаго: Издательство Чикагского университета.
+Глейзер Б. и Штраус А. (1967). Открытие обоснованной теории: стратегии качественного исследования. Писката
+Кстати, Нью-Джерси: Aldine Transaction.
+Гудман Н. Языки искусства. Индианаполис, IN: Hackett.
+Гудвин, К. (1995). Взгляд вглубь. Социальные исследования науки, 25, 237–274.
+Горман М. (1997). Разум в мире: познание и практика изобретения телефона // Социальные исследования
+наук, 27, 583–624.
+Горман, ME, и Карлсон, WB (1990). Интерпретация изобретения как познавательного процесса: случай Александра
+Грэм Белл, Томас Эдисон и телефон. Наука, технологии и человеческие ценности, 15, 131–164.
+Грино, Дж. Г. (1989). Ситуации, ментальные модели и генеративные знания. В Д. Кларе и К. Котовском (ред.),
+Комплексная обработка информации (стр. 285–318). Хиллсдейл, Нью-Джерси: Эрлбаум.
+Холл Р., Стивенс Р. и Торральба Т. (2002). Нарушение репрезентативной инфраструктуры в разговоре
+дисциплины. Разум, культура и деятельность, 9, 179–210.
+Холлан, Дж., Хатчинс, Э., и Кирш, Д. (2000). Распределенное познание: к новому основанию для человеческого
+исследование компьютерного взаимодействия. Транзакции ACM по взаимодействию компьютера и человека, 7 (2), 174–196.
+Хатчинс Э. Познание в дикой природе. Кембридж, Массачусетс: MIT Press.
+Джонсон-Лэрд П.Н. (1983). Ментальные модели. Кембридж, Массачусетс: MIT Press.
+Кнорр Цетина, К. (1999). Эпистемические культуры: как науки создают знания. Кембридж, Массачусетс: Гарвард
 University Press.
-Kurz-Milcke, E., Nersessian, N. J., & Newstetter, W. (2004). What has history to do with cognition? Interactive
-methods for studying research laboratoriesJournal of Cognition and Culture, 4 , 663–700.
-Latour, B. (1987).Science in action. Cambridge, MA: Harvard University Press.
-Lave, J. (1988).Cognition in practice: Mind, mathematics, and culture in everyday life. New York: Cambridge
+Курц-Милке, Э., Нерсесян, Нью-Джерси, и Ньюстеттер, В. (2004). Какое отношение история имеет к познанию? Интерактивный
+методы изучения исследовательских лабораторий Журнал познания и культуры, 4, 663–700.
+Латур Б. Наука в действии. Кембридж, Массачусетс: Издательство Гарвардского университета.
+Лаве Дж. Познание на практике: разум, математика и культура в повседневной жизни. Нью-Йорк: Кембридж
 University Press.
 
-
-Lincoln, Y., & Guba, E. (1985).Naturalistic inquiry. Newbury Park, CA: Sage.
-Morgan M. S., & Morrison M. (Eds.) (1999).Models as mediators. Cambridge, England: Cambridge University
-Press.
-Nersessian, N. J. (1992a). How do scientists think? Capturing the dynamics of conceptual change in science.
-In R. Giere (Ed.),Minnesota studies in the philosophy of science(pp. 3–45). Minneapolis, MN: University of
-Minnesota Press.
-Nersessian, N. J. (1992b). In the theoretician’s laboratory: Thought experimenting as mental modeling. In
-D. Hull, M. Forbes, & K. Okruhlik (Eds.),PSA 1992, Vol. 2 (pp. 291–301). Lansing, MI: PSA.
-Nersessian, N. J. (1995). Opening the black box: Cognitive science and the history of science.Osiris, 10 , 194–
+Линкольн Ю., Губа Э. (1985). Натуралистическое исследование. Ньюбери-Парк, Калифорния: Сейдж.
+Морган М.С. и Моррисон М. (редакторы) (1999). Модели как посредники. Кембридж, Англия: Кембриджский университет
+Нажмите.
+Нерсесян, штат Нью-Джерси (1992a). Как думают ученые? Захват динамики концептуальных изменений в науке.
+В Р. Гиере (ред.), Миннесота изучает философию науки (стр. 3–45). Миннеаполис, Миннесота: Университет г.
+Миннесота Пресс.
+Нерсесян, штат Нью-Джерси (1992b). В лаборатории теоретика: Мысленный эксперимент как мысленное моделирование. В
+Д. Халл, М. Форбс и К. Окрухлик (редакторы), PSA 1992, Vol. 2 (стр. 291–301). Лансинг, Мичиган: PSA.
+Нерсесян, штат Нью-Джерси (1995). Открытие черного ящика: Когнитивная наука и история науки. Осирис, 10, 194–
 211.
-Nersessian, N. J. (2002). The cognitive basis of model-based reasoning in science. In P. Carruthers, S. Stich, &
-M. Siegal (Eds.),The cognitive basis of science(pp. 133–153). Cambridge, England: Cambridge University
-Press.
-Nersessian, N. J. (2005). Interpreting scientific and engineering practices: Integrating the cognitive, social, and
-cultural dimensions. In M. Gorman, R. D. Tweney, D. Gooding, & A. Kincannon (Eds.),Scientific and tech-
-nological thinking(pp. 17–56). Hillsdale, NJ: Erlbaum.
-Nersessian, N. J. (2006). The cognitive—cultural systems of the research laboratory.Organization Studies, 27 ,
+Нерсесян, штат Нью-Джерси (2002). Когнитивные основы модельного мышления в науке. В P. Carruthers, S. Stich, &
+М. Сигал (ред.), Когнитивные основы науки (стр. 133–153). Кембридж, Англия: Кембриджский университет
+Нажмите.
+Нерсесян, Нью-Джерси (2005). Интерпретация научных и инженерных практик: интеграция когнитивных, социальных и
+культурные аспекты. В M. Gorman, RD Tweney, D. Gooding, & A. Kincannon (Eds.), Scientific and tech-
+логическое мышление (с. 17–56). Хиллсдейл, Нью-Джерси: Эрлбаум.
+Нерсесян, Нью-Джерси (2006). Когнитивно-культурные системы исследовательской лаборатории. Организационные исследования, 27, корп.
 125–145.
-Nersessian, N. J. (2008a).Creating scientific concepts. Cambridge, MA: MIT Press.
-Nersessian, N. J. (2008b). Mental modeling in conceptual change. In S. Vosniadou (Ed.),Interntional handbook
-of conceptual change(pp. 391–416). New York: Routledge.
-Nersessian, N. J., & Chandrasekharan, S. (2009). Hybrid analogies in conceptual innovation in science.Cogni-
-tive Systems Research, 10 , 178–188.
-Nersessian, N. J., Kurz-Milcke, E., Newstetter, W., & Davies, J. (2003). Research laboratories as evolving dis-
-tributed cognitive systems. In D. Alterman & D. Kirsch (Eds.),Proceedings of the cognitive science society
-25 (pp. 857–862). Hillsdale, NJ: Erlbaum.
-Osbeck, L., & Nersessian, N. J. (2006). The distribution of representation.The Journal for the Theory of Social
-Behaviour, 36 , 141–160.
-Perrig, W., & Kintsch, W. (1985). Propositional and situational representations of text.Journal of Memory and
-Language, 24 , 503–518.
-Strauss, A., & Corbin, J. (1998).Basics of qualitative research: Techniques and procedures for developing
-grounded theory(2nd ed.). Thousand Oaks, CA: Sage Publications.
-Tomasello, M. (1999).The cultural origins of human cognition. Cambridge, MA: Harvard University Press.
-Trafton, J. G., Trickett, S. B., & Mintz, F. E. (2005). Connecting internal and external representations: Spatial
-transformations of scientific visualizations.Foundations of Science, 10 , 89–106.
-Trickett, S. B., Fu, W. T., Schunn, C. D., & Trafton, J. G. (2000). From dipsy-doodles to streaming motions:
-Changes in representation in the analysis of visual scientific data. Paper presented at the Proceedings of the
-Cognitive Science Society 22.
-Trickett, S. B., & Trafton, J. G. (2007). ‘‘What if....’’: The use of conceptual simulations in scientific reasoning.
-Cognitive Science, 31 , 843–876.
-Tweney, R. D. (1989). A framework for the cognitive psychology of science. In B. Gholson, W. R. Shadish Jr,
-R. A. Neimeyer, & A. C. Houts (Eds.),Psychology of science: Contributions to metascience(pp. 342–366).
-New York: Cambridge University Press.
-
+Нерсесян, Нью-Джерси (2008a). Создание научных концепций. Кембридж, Массачусетс: MIT Press.
+Нерсесян, Нью-Джерси (2008b). Ментальное моделирование в концептуальном изменении. В S. Vosniadou (Ed.), Interntional handbook
+концептуальных изменений (стр. 391–416). Нью-Йорк: Рутледж.
+Нерсесян, Нью-Джерси, и Чандрасекхаран, С. (2009). Гибридные аналогии в концептуальных инновациях в науке.
+тивные системные исследования, 10, 178–188.
+Нерсесян, Нью-Джерси, Курц-Милке, Э., Ньюстеттер, В., и Дэвис, Дж. (2003). Исследовательские лаборатории как развивающиеся
+распределенные когнитивные системы. В D. Alterman & D. Kirsch (Eds.), Proceedings of the когнитивно-научное общество
+25 (стр. 857–862). Хиллсдейл, Нью-Джерси: Эрлбаум.
+Осбек, Л., и Нерсесян, Нью-Джерси (2006). Распределение репрезентаций.
+Поведение, 36, 141–160.
+Перриг В. и Кинч В. (1985). Пропозициональные и ситуативные репрезентации текста // Журнал памяти и
+Язык, 24, 503–518.
+Штраус А., Корбин Дж. Основы качественного исследования: методы и процедуры разработки
+обоснованная теория (2-е изд.). Таузенд-Оукс, Калифорния: Sage Publications.
+Томаселло М. Культурные истоки человеческого познания. Кембридж, Массачусетс: Издательство Гарвардского университета.
+Трафтон, Дж. Г., Трикетт, С. Б., и Минц, Ф. Э. (2005). Соединение внутренних и внешних представлений: Пространственное
+трансформации научных визуализаций. Основы науки, 10, 89–106.
+Трикетт, С.Б., Фу, В.Т., Шунн, К.Д. и Трафтон, Дж. Г. (2000). От дипси-каракулей до потоковых движений:
+Изменения в представлении при анализе визуальных научных данных. Доклад, представленный в Труды
+Общество когнитивных наук 22.
+Трикетт, С.Б., и Трафтон, Дж. Г. (2007). «Что, если ....»: использование концептуального моделирования в научных рассуждениях.
+Когнитивная наука, 31, 843–876.
+Твени, Р. Д. (1989). Основа когнитивной психологии науки. В Б. Голсон, В. Р. Шадиш-младший,
+Р. А. Неймейер и А. С. Хаутс (ред.), Психология науки: вклад в метанауку (стр. 342–366).
+Нью-Йорк: Издательство Кембриджского университета.
 
