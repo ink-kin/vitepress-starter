@@ -29,4 +29,4 @@ MoinMoin - это полнофункциональный вики-движок.
 Вы должны знать о разрешениях, пользователях, группах и т. Д.
 
 ## slides
-Presentation [slides]() for developers
+Presentation slides for developers
