@@ -3,14 +3,14 @@ title: DJango
 head:
   - - meta
     - name: description
-      content: 'SQLite чрезвычайно распространен, и, по оценкам, в активном использовании находится 1 триллион баз данных SQLite'
+      content: 'DJango'
 tags:
 categories:
 - Innovate
 - DataBase
 ---
 
-#
+# DJango
 
 ## venv
 

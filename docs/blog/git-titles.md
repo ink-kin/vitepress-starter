@@ -1,5 +1,5 @@
 ---
-title: Git проекты
+title: WiKi МойнМойн
 head:
   - - meta
     - name: description
@@ -9,10 +9,9 @@ tags:
 categories:
 - Innovate
 ---
+ 
 
-# Все и про что
-
-## WiKi [moinmoin](https://github.com/ink-kin/MoinMoin)
+## WiKi МойнМойн [moinmoin](https://github.com/ink-kin/MoinMoin)
 О МойнМойн
 MoinMoin - это полнофункциональный вики-движок.
 
@@ -27,6 +26,4 @@ MoinMoin - это полнофункциональный вики-движок.
 Требуются общие знания в области администрирования серверов
 Вы должны знать о конфигурации веб-сервера
 Вы должны знать о разрешениях, пользователях, группах и т. Д.
-
-## slides
-Presentation slides for developers
+ 
