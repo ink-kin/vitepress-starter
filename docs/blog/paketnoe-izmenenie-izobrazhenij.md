@@ -172,12 +172,54 @@ pngnq -s 1 -v automotive_logofeature-pngnq.png
 pngquant --speed 1 --force automotive_logofeature-pngquant.png
 ```
 
-SVG
+## Еще об SVG
+
 batik-svgpp
-Batik SVG pretty printer — The SVG Pretty Printer lets developers «pretty-up» their SVG files and get their tabulations and other cosmetic parameters in order. It can also be used to modify the DOCTYPE declaration on SVG files
 
- 
+Batik SVG pretty printer — SVG Pretty Printer позволяет разработчикам «приводить в порядок» свои SVG-файлы и приводить в порядок свои таблицы и другие косметические параметры. Он также может быть использован для изменения объявления DOCTYPE в файлах SVG
 
-svgcleaner
+
+И svgcleaner
+
 Пакетная очистка SVG-файлов от ненужной информации, утилита удаляет атрибуты, не участвующие в формировании конечного изображения, а задействованные атрибуты приводит к более компактному виду. Размер файла может быть уменьшен на 60%.
 
+
+## Сокращенная информация о изображении:
+
+```
+identify img.jpg
+```
+
+А та же команда с параметром -verbose выведет полную информацию о изображении.
+
+
+```
+identify -verbose img.jpg
+```
+
+## Пакетная обработка изображений с помощью ImageMagick
+
+Я сам ей практически и пользуюсь чаще всего. Мне нечасто нужно работать с отдельными изображениями.
+Следующая команда обработает все изображения с разрешением .png повернет их на 180 градусов и запишет в файлы с новым именем rotated-предыдущее имя файла.
+
+
+```
+for file in *.png; do convert $file -rotate 180 rotated-$file; done
+```
+
+В общем утилита ImageMagick очень удобна и хороша в работе. А главное она сжимает практически без потерь качества, что немаловажно.
+Конечно она не подойдет для тех кто терпеть не может консоль. Но для других – очень даже ничего:)
+Пользуйтесь!;)
+
+Как финал прочтения наиподробнейшего мануала, вот код:
+
+
+```
+for file in *.png; do convert -background red -fill white -gravity center \
+-size 200 caption:СветланаАндреевнаКлишина \
+$file +swap -gravity Northwest -composite \
+/media/ink/ink-disk1/html/1_deploy/mama/label/$file; done
+
+for file in *.png; do convert -caption "Клишина.РФ" $file -gravity center \
+-background black +polaroid polaroid/$file; done
+```
